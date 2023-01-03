@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* font inter */
+@font-face {
+	font-family: "hnt-font";
+	font-weight: 400;
+	src: url(https://image.hanatour.com/usr/static/fonts/hnt/OTF/JourneyItself-Regular.otf);
+  }
+  @font-face {
+	font-family: "hnt-font";
+	font-weight: 500;
+	src: url(https://image.hanatour.com/usr/static/fonts/hnt/OTF/JourneyItself-Light.otf);
+  }
+  
+  @font-face {
+	font-family: "hnt-font";
+	font-weight: 600;
+	src: url(https://image.hanatour.com/usr/static/fonts/hnt/OTF/JourneyItself-Bold.otf);
+  }
+  
+  @font-face {
+	font-family: "hnt-font";
+	font-weight: 400;
+	src: url(https://image.hanatour.com/usr/static/fonts/hnt/OTF/JourneyItself-Regular.ttf);
+  }
+  @font-face {
+	font-family: "hnt-font";
+	font-weight: 500;
+	src: url(https://image.hanatour.com/usr/static/fonts/hnt/OTF/JourneyItself-Light.ttf);
+  }
+  
+  @font-face {
+	font-family: "hnt-font";
+	font-weight: 600;
+	src: url(https://image.hanatour.com/usr/static/fonts/hnt/OTF/JourneyItself-Bold.ttf);
+  }
+
+body,h1,h2,h3,h4,h5,
+h6,th,td,select,
+input,textarea,button {
+      font-family: 'Inter', 'AppleSDGothicNeo', 'AppleSDGothicNeo-Regular', 'Apple Gothic', 'Noto Sans KR', 'Malgun Gothic', Arial, Helvetica, serif, sans-serif;
+      letter-spacing: -.4px
+  }
+
+  /* 'Nanum Gothic' */
+body{
+	-webkit-text-size-adjust: none;
+	font-size: 14px;
+	font-weight: 400;
+	color: #333;
+	word-break: break-all;
+	line-height: 1;
+	letter-spacing: -.4px;
+}
+
+html, body{
+	-webkit-text-size-adjust : none;  /* 크롬, 사파리, 오페라 신버전 */
+	-ms-text-size-adjust : none;  /* IE */
+	-moz-text-size-adjust : none;  /* 파이어폭스 */
+	-o-text-size-adjust : none;  /* 오페라 구버전 */
+  }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+code, form, fieldset, legend, input, textarea, p, blockquote, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header,
+hgroup, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html{ 
+    overflow-y:scroll;
+    box-sizing: border-box;
+    font-size:62.5%;
+	font-size: 14px;
+	font-weight: 400;
+	word-break: keep-all;
+	word-wrap: break-word;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica
+		Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+body {
+	line-height: 1; 
+    width:100%; 
+    height:100%;
+    -webkit-text-size-adjust:none;
+    /* font-family:"Noto Sans KR", sans-serif, 微软雅黑; */
+}
+
+input:focus, select:focus {
+    outline: transparent!important;
+    border: 1px solid #5e2bb8!important;
+}
+
+ol, ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+img {
+	max-width: 100%;
+	width: auto;
+	border: 0;
+	border-style: none;
+}
+
+em, address {
+    font-style: normal;
+}
+
+/*
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+ button,
+ [type=button],
+ [type=reset],
+ [type=submit] {
+   -webkit-appearance: button;
+ }
+ 
+ /*
+  * Remove the inner border and padding in Firefox.
+  */
+ button::-moz-focus-inner,
+ [type=button]::-moz-focus-inner,
+ [type=reset]::-moz-focus-inner,
+ [type=submit]::-moz-focus-inner {
+   border-style: none;
+   padding: 0;
+ }
+ 
+
+:root{
+	--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}

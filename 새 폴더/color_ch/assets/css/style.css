@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/* header stert ***************************************/
+.header {z-index:900; position:fixed; top:0; width:100%; background-color: #fff; transition: all 0.3s; border-bottom: 1px solid rgb(179 179 179 / 54%); border-bottom: 1px solid #ccc;} 
+.header ul {margin:0 auto; width:80%; display:flex; justify-content:space-between; padding:20px; list-style:none;} 
+.header ul li a {text-decoration:none; color:#333;} 
+
+@media screen and (max-width:990px){
+    .header ul {width:100%; flex-wrap: wrap; padding: 0;} 
+    .header ul li {flex:1 1 30%; text-align:center; border: 1px solid #d5d5d5; padding: 10px 0; margin: 3px; transition: all 0.5s;} 
+    .header ul li:hover {background: rgb(33 63 99); transition: all 0.5s;} 
+    .header ul li:hover a {color: #fff;} 
+    
+ }/* max-width 990px end */
+
+@media screen and (max-width:580px) {
+     header ul li {flex:1 1 50%; text-align:center;} 
+    .header ul li a {font-size: 12px;} 
+
+ }/* max-width 580px end */
+
+@media screen and (max-width:310px) { 
+    header ul li a {font-size: 10px;} 
+
+}/* max-width 310px end */
+
+/* header end **************************************/
+
+
+/**content stert ***************************************/
+.body {position:relative;} 
+.section {width:100%; display: inline-block; text-align: center;} 
+.section h2 {padding:100px 0 0 0; font-size:30px; font-weight:700; color:#6f4892; text-align:center;} 
+.section .page_sld {width:70%; margin:50px auto 0; border:1px solid #f6f7f7;} 
+.section img {max-width: 800px;} 
+
+@media screen and (max-width:1280px){
+    #content1 {background-position: right;} 
+    #content1 .text1 {position:relative; top:400px; left:0; width:90%; padding:20px; font-size:26px; line-height:1.2; background-color:rgba(255,255,255,0.7); animation:none;} 
+    .section .page_sld {width: 100%; margin: 0 auto; display: block;} 
+
+ }/* max-width 1280px end */
+
+@media screen and (max-width:876px){
+    #content1 {height: inherit;} 
+    .content3 ul li img {width: 100%; margin: 0 auto; display: block;} 
+    .section img {max-width: initial;} 
+    .section h2 {font-size: 17px;} 
+
+ }/* max-width 876px end */
+
+/* content end ********************************************/
+
+
+
+ /* footer stert ******************************************/
+.foo-wrap {background: #ededed; margin-top: 55px;} 
+.foo-k {display: flex; align-items: center; padding: 51px 36px; max-width: 1200px; margin: 0 auto;} 
+.foo-img {display: inline-block; text-align: center;} 
+.foo-img>img {width: 50%;} 
+.foo-in {padding-right: 66px; padding-top: 15px; position: relative;} 
+.foo-in::after {content: ""; display: inline-block; position: absolute; right: 35px; top: 0; height: 100%; border-right: 1px solid rgb(74 74 74 / 17%);} 
+.foo-in span {display: block; width: 100%; padding-bottom: 15px; font-size: 15px;} 
+.foo-in span.in-al {padding-bottom: 30px;} 
+.foo-in span.in-a2 {padding-top: 4px;} 
+.foo-in h6 {font-weight: 800; color: #000; font-size: 18px; padding-bottom: 8px;} 
+.foo-num p {padding-bottom: 9px;} 
+.foo-num p:last-child {padding-bottom: 0;} 
+.foo-num span {font-weight: 500; color: #000; font-size: 15px;} 
+.foo-num span:first-child {font-weight: 600; margin-right: 22px;} 
+.foo-num span.nin {margin-right: 8px;} 
+.foo-num span.nim {margin-right: 15px;} 
+.foo-num p span a {font-weight: 500; color: #000; font-size: 15px; display: inline-block;} 
+
+
+@media screen and (max-width:990px){
+    .foo-wrap {margin-top: 0;} 
+    .foo-k {flex-direction: column; align-items: flex-start;} 
+    .foo-img {text-align: left; } 
+    .foo-img>img {margin-bottom: 11px;} 
+    .foo-in::after {display: none;} 
+    .foo-num {padding-top: 12px;} 
+    .foo-k {padding: 37px 9px;} 
+    .foo-in {padding-right: 0px;} 
+    .foo-in span {font-size: 14px;} 
+    .foo-in h6 {font-size: 16px;} 
+
+ }/* max-width : 990px end*/
+
+@media screen and (max-width:350px){
+    .foo-num p {display: flex; flex-direction: column;} 
+    .foo-num span:first-child {margin-right: 0; padding-bottom: 10px; padding-top: 10px;} 
+    .foo-num span {font-size: 14px;} 
+    .foo-num p span a {font-size: 14px; font-weight: 500;} 
+
+ }/* max-width : 350px end */
