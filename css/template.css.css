@@ -1,15 +1,13 @@
 @charset "utf-8";
 
-@media screen and (max-width:1025px) {
+@media screen and (max-width:1025px){
     br{display: none;}
 }
 
 /*footer */
-
 .notice_tem{
     flex-basis: 100%;
 }
-
 .titi_wrap{
     position: relative;
 }
@@ -141,7 +139,6 @@
     font-weight: 700;
     color: #666;
 }
-
 /* HANATOUR THEME stert */
 .hanatour{
     padding: 110px 0;
@@ -575,9 +572,13 @@ ul.menu_sub li a::after{
         font-size: 14px;
         border-bottom: 2px solid #999;
     }
-    .intro_bg .intro_a h4 br{display: none;}
-}
-@media screen and (max-width:1025px) {
+    .intro_bg .intro_a h4 br{
+        display: none;
+    }
+
+}/* max-width:1205px */
+
+@media screen and (max-width:1025px){
     .wiw_cont nav ul{
         width: auto;
     }
@@ -634,9 +635,9 @@ ul.menu_sub li a::after{
     .prdItemList ul li p{
         font-size: 15px;
     }
-}
+}/* max-width:1025px */
 
-@media screen and (max-width:656px) {
+@media screen and (max-width:656px){
     .range_product ul li.add_remove{
         display: none;
     }
@@ -654,7 +655,7 @@ ul.menu_sub li a::after{
         line-height: 20px;
         font-size: 12px;
     }
-    .wiw_cont nav ul {
+    .wiw_cont nav ul{
         width: auto;
         flex-direction: column;
         align-items: center;
@@ -717,4 +718,5 @@ ul.menu_sub li a::after{
     .prdItemList ul li .prd_text p.prdnene{
         font-size: 10px;
     }
-}
+}/* max-width:656px */
+
