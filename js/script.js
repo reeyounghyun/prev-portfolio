@@ -1,6 +1,30 @@
 $(document).ready(function () {
 
-    // alert("클릭해주셔서 감사합니다^^");
+     // alert("클릭해주셔서 감사합니다^^");
+
+
+    $(".aside>ul>li>a").click(function(){
+        $(".aside ul li a .menu_sub").addClass('onfoo');
+        $(this).addClass("onfoo");
+        $(".")
+    });
+
+   
+   $(".prd_add_btn").click(function(){
+    $(".prdItemList ul li").addClass('add');
+  $(this).addClass("add");
+  $(".prd_remove_btn").removeClass("add");
+});
+$(".prd_remove_btn").click(function(){   
+  $(".prdItemList ul li").removeClass('add');
+  $(this).addClass("add");
+  $(".prd_add_btn").removeClass("add");
+}); //indexsub_add button
+
+
+
+
+
     $(".gnb_in .gnb_wrap .n_l .r_all_m").click(function () {
         if ($(".n_l .r_all_m .all_sam").hasClass("off")) {
             $(".n_l .r_all_m .all_sam").removeClass("off");
@@ -194,6 +218,6 @@ $(document).ready(function () {
       $(".prd_add_btn").removeClass("add");
     }); //indexsub_add button
 		
-    
+
 
 });
