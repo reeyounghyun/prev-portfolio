@@ -273,27 +273,26 @@
     position: relative;
 
 }
-
-.goods_list button{
+.goods_list button,
+.sam_in button{
     position: absolute;
     right: 0;
     top: 45%;
-
     background:none;
     border:0;
-
 }
-
-.goods_list button span{
-    width: 23px;
-    height: 23px;
+.goods_list button span,
+.sam_in button span{
+    width: 25px;
+    height: 25px;
     line-height: 23px;
     display: block;
     max-width: 100%;
-
-    background: url(../images/spr_com.png) no-repeat;
-    background-position: -3px 1px;
-    opacity: 0.5;
+    background: url(../images/ico-alllmenu_close.png) no-repeat;
+    /* opacity: 0.5; */
+}
+.sam_in button{
+    top: 20px;
 }
 
 
@@ -640,10 +639,9 @@
 }
 .n_l .r_all_m .all_sam {
     position: absolute;
-    top: 155px;
+    top: 170px;
     right: 0;
     left: 0;
-    width: 1903px;
     background-color: #fff;
     height: 100%;
     min-height: 500px;
