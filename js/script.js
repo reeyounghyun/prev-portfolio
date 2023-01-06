@@ -2,28 +2,23 @@ $(document).ready(function () {
 
      // alert("클릭해주셔서 감사합니다^^");
 
-
     $(".aside>ul>li>a").click(function(){
         $(".aside ul li a .menu_sub").addClass('onfoo');
         $(this).addClass("onfoo");
         $(".")
     });
 
-   
-   $(".prd_add_btn").click(function(){
-    $(".prdItemList ul li").addClass('add');
-  $(this).addClass("add");
-  $(".prd_remove_btn").removeClass("add");
-});
-$(".prd_remove_btn").click(function(){   
-  $(".prdItemList ul li").removeClass('add');
-  $(this).addClass("add");
-  $(".prd_add_btn").removeClass("add");
-}); //indexsub_add button
+    $(".prd_add_btn").click(function(){
+        $(".prdItemList ul li").addClass('add');
+        $(this).addClass("add");
+        $(".prd_remove_btn").removeClass("add");
+    });
 
-
-
-
+    $(".prd_remove_btn").click(function(){   
+        $(".prdItemList ul li").removeClass('add');
+        $(this).addClass("add");
+        $(".prd_add_btn").removeClass("add");
+    }); //indexsub_add button
 
     $(".gnb_in .gnb_wrap .n_l .r_all_m").click(function () {
         if ($(".n_l .r_all_m .all_sam").hasClass("off")) {
@@ -124,7 +119,7 @@ $(".prd_remove_btn").click(function(){
     $('.but_tit button').click(function () {
         var tab_id = $(this).attr('data-tab');
         $('.but_tit button').removeClass('acitve');
-        $('.tab-content').removeClass('acitve');
+        $('.tab_content').removeClass('acitve');
         $(this).addClass('acitve');
         $("#" + tab_id).addClass('acitve');
     });
@@ -133,7 +128,7 @@ $(".prd_remove_btn").click(function(){
     $('.but_tits span button').click(function () {
         var tab_id = $(this).attr('data-tab');
         $('.but_tits span button').removeClass('acitve');
-        $('.tits_con').removeClass('acitve');
+        $('.tits_cons').removeClass('acitve');
         $(this).addClass('acitve');
         $("#" + tab_id).addClass('acitve');
     });
@@ -141,11 +136,12 @@ $(".prd_remove_btn").click(function(){
 
     $('.but_titsx span button').click(function () {
         var tab_id = $(this).attr('data-tab');
-        $('.but_titsx span button').removeClass('acitve');
-        $('.tits_con').removeClass('acitve');
-        $(this).addClass('acitve');
-        $("#" + tab_id).addClass('acitve');
+        $('.but_titsx span button').removeClass('play');
+        $('.tits_con').removeClass('play');
+        $(this).addClass('play');
+        $("#" + tab_id).addClass('play');
     });
+    
     //마침내 특가
 
     $(".prd_add_btn").click(function () {

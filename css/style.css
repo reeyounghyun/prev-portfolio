@@ -21,23 +21,35 @@
     border-color: #252525!important;
     color: #fff!important;
 }
-.tab-content{
+.tab_content{
     display: none;
     padding: 24px 0 0 0; 
     transition: all 0.5s;
     margin-bottom: 40px;
+    max-width: 330px;
 }
-.tab-content.acitve{
+.tab_content.acitve{
     display: block;
     transition: all 0.3s;
 }
-.tits_con{
+.tits_cons{
     display: none;
     padding: 24px 0 0 0; 
     transition: all 0.5s;
     margin-bottom: 40px;
 }
-.tits_con.acitve{
+.tits_cons.acitve{
+    display: block;
+    transition: all 0.3s;
+}
+
+.content_wrap{
+    display: none;
+    padding: 24px 0 0 0; 
+    transition: all 0.5s;
+    margin-bottom: 40px;
+}
+.content_wrap.play{
     display: block;
     transition: all 0.3s;
 }
@@ -91,7 +103,7 @@
 .but_tit{
     border-bottom: 1px solid #000;
     box-sizing: border-box;
-    width: 330px;
+    max-width: 330px;
 
 }/*왕복/항공/호텔 버튼 */
 
@@ -100,7 +112,7 @@
     align-items: center;
 }
 .air_inp input{
-    width: 149px;
+    max-width: 149px;
     height: 52px;
     line-height: 52px;
     color: #888;
@@ -160,7 +172,8 @@
     flex: 1;
     position: relative;
     margin-right: 0;
-    margin-left: 25px;
+    margin-left: 27px;
+    max-width: 149px;
 }
 .air_day .bowl_m{
     margin-left: 0;
@@ -209,7 +222,6 @@
     font-size: 14px;
     color: #111;
     font-weight: 400;
-    justify-content: space-between;
 }
 .flight .hotel{
     background-color: #fff;
@@ -685,11 +697,11 @@
 }
 
 /* 마침내 특가 버튼 */
-.inner_tab .con_inner .but_tit{
+.inner_tab .con_inner .but_titsx{
     display: inline-flex;
     flex-direction: column;
 }
-.bt_p .inner_tab .but_tit button{
+.bt_p .inner_tab .but_titsx button{
     border: none; 
     background-color: #fff;
     margin: 6px 0;
@@ -702,9 +714,15 @@
     width: auto;
     text-align: left;
 }
-.bt_p .inner_tab .but_tit button:last-child{
+.bt_p .inner_tab .but_titsx button:last-child{
     margin-right: 0;
 } 
+.but_titsx button.play{
+    transition: all 0.3s;
+    background-color: #252525!important;
+    border-color: #252525!important;
+    color: #fff!important;
+}
 
 /* 컨텐스 박스 */
 .bt_p .inner_tab .con_inner .tab-content{

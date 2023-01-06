@@ -719,14 +719,15 @@
     top: 155px;
     margin: 0;
     z-index: 19;
-    width: 1903px;
     left: 0;
+    right: 0;
     background: #fff;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     box-sizing: border-box;
+    display: none; 
 
-    display: none;
+    width: 100%;
 }
 .n_l .l_bar ul li .in_sub_m>ul{
     width: 990px;
