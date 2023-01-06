@@ -256,6 +256,7 @@
 
     float: left;
 }
+
 .list_close{
     position: absolute;
     top: 37px;
@@ -267,6 +268,37 @@
     font-weight: 400;
     color: #111;
 }
+
+.goods_list{
+    position: relative;
+
+}
+
+.goods_list button{
+    position: absolute;
+    right: 0;
+    top: 45%;
+
+    background:none;
+    border:0;
+
+}
+
+.goods_list button span{
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    display: block;
+    max-width: 100%;
+
+    background: url(../images/spr_com.png) no-repeat;
+    background-position: -3px 1px;
+    opacity: 0.5;
+}
+
+
+
+
 /* header stert */
 .gnb{
     position: relative;
@@ -295,9 +327,8 @@
     letter-spacing: -0.3px;
 }
 .h_gnb_in{
-    height: 50px;
+        padding-bottom: 20px;
 } 
-
 .quick_menu.on{
     display: block;
 }
@@ -305,8 +336,6 @@
 .quick_menu.off{
     display: none;
 }
-
-
 .hea_wrap{
     display: flex;
         display: -webkit-box;
@@ -556,6 +585,9 @@
         display: -webkit-flex;
         display: -ms-flexbox;
 }
+/* .gnb_in .gnb_wrap .n_l .l_bar{
+    position: relative;
+} */
 .gnb_in .gnb_wrap .n_l .l_bar ul{
     display: flex;
         display: -webkit-box;
@@ -692,6 +724,7 @@
 }
 .gnb_in .gnb_wrap .n_l .l_bar>ul>li:first-child{
     padding: 0 7.5px;
+    padding-left: 26px;
 }
 .gnb_in .gnb_wrap .n_l .l_bar>ul>li{
     padding: 0 7.5px;
@@ -716,18 +749,16 @@
 }
 .n_l .l_bar ul li .in_sub_m{
     position: absolute;
-    top: 155px;
+    top: 172px;
     margin: 0;
     z-index: 19;
     left: 0;
     right: 0;
     background: #fff;
-    border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     box-sizing: border-box;
-    display: none; 
 
-    width: 100%;
+    display: none; 
 }
 .n_l .l_bar ul li .in_sub_m>ul{
     width: 990px;
@@ -782,7 +813,7 @@
 .private_menu ul li{
     display: inline-block;
     text-align: center;
-    margin-right: 15px;
+    margin-right: 17px;
     padding-top: 30px;
 }
 .private_menu ul li:last-child{
