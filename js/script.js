@@ -137,11 +137,10 @@ $(document).ready(function () {
     $('.but_titsx span button').click(function () {
         var tab_id = $(this).attr('data-tab');
         $('.but_titsx span button').removeClass('play');
-        $('.tits_con').removeClass('play');
+        $('.content_wrap').removeClass('play');
         $(this).addClass('play');
         $("#" + tab_id).addClass('play');
     });
-    
     //마침내 특가
 
     $(".prd_add_btn").click(function () {
