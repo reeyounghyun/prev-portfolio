@@ -20,15 +20,17 @@ $(document).ready(function () {
         $(".prd_add_btn").removeClass("add");
     }); //indexsub_add button
 
-    $(".gnb_in .gnb_wrap .n_l .r_all_m").click(function () {
-        if ($(".n_l .r_all_m .all_sam").hasClass("off")) {
-            $(".n_l .r_all_m .all_sam").removeClass("off");
-            $("this").removeClass("off");
-        } else {
-            $(".n_l .r_all_m .all_sam").addClass("off");
-            $(this).addClass("off");
-        }
-    })
+    // $(".gnb_in .menu_wrap .n_l .r_all_m").click(function () {
+    //     if ($(".n_l .r_all_m .all_sam").hasClass("off")) {
+    //         $(".n_l .r_all_m .all_sam").removeClass("off");
+    //         $("this").removeClass("off");
+    //     } else {
+    //         $(".n_l .r_all_m .all_sam").addClass("off");
+    //         $(this).addClass("off");
+    //     }
+    // })
+
+    // 메뉴
 
     $(".btn_close").click(function () {
         if ($(".n_l .r_all_m .all_sam").hasClass("on")) {

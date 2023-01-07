@@ -619,7 +619,6 @@
         display: -ms-flexbox;
 }
 .best_inner ul li{
-    margin-left: 24px;
     flex: 1;
 }
 .best_inner ul li:first-child{
@@ -629,37 +628,41 @@
     height: 210px;
     width: 100%;
 }
-.best_inner .offer_text span{
+.best_inner ul li a{
+    display: block;
+    margin-left: 24px;
+}
+.best_inner .offer_text .offer_tit{
     color: #111;
     font-weight: 600;
     font-size: 17px;
-    padding-top: 5px;
-    display: inline-block;
+    display: block;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    line-height: 1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .best_inner .offer_text{
-    overflow: hidden;
-    width:95%
+
 }
-.best_inner .offer_text p{
+.best_inner .offer_text .unit{
     color: #111;
     font-weight: 600;
     padding-top: 15px;
     font-size: 17px;
-
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 100%;
-}
-.price_group{
     margin-top: 18px;
 }
-.price_group .price{
+.price_group{
+   
+}
+.price_group .unit{
     color: #111;
     display: block;
     font-size: 22px;
 }
-.price_group .price span{
+.price_group .unit span{
     font-size: 17px;
     font-weight: 400;
     color: #111;
@@ -739,11 +742,13 @@
 .inner_tab .con_inner .content_wrap ul li{
     background-color: #fff;
     box-shadow: 0px 1px 10px 0px rgb(0 0 0 / 6%);
-    margin-left: 24px;
-    max-width: 282px;
 }
 .inner_tab .con_inner .content_wrap ul li .offer_text{
     padding: 0 20px 20px;
+}
+.inner_tab .con_inner .content_wrap ul li a{
+    display: block;
+    margin-left: 24px;
 }
 .inner_tab .con_inner .content_wrap ul li img{
     min-height: 210px;
@@ -774,11 +779,11 @@
 .inner_tab .con_inner .content_wrap .price_group{
     margin-top: 8px;
 }
-.inner_tab .con_inner .content_wrap .price_group .price{
+.inner_tab .con_inner .content_wrap .price_group .unit{
     font-size: 22px;
     font-weight: 600;
 }
-.inner_tab .con_inner .content_wrap .price_group .price span{
+.inner_tab .con_inner .content_wrap .price_group .unit span{
     font-size: 17px;
     font-weight: 400;
     color: #111;
@@ -793,6 +798,9 @@
 }
 .off_wrap .tr_off_inner .item_wra{
     position: relative;
+}
+.off_wrap .tr_off_inner .off_slide a{
+    display: block;
 }
 .off_wrap .tr_off_inner .off_slide img{
     min-height: 210px;
@@ -816,7 +824,7 @@
 .off_wrap .tr_off_inner .off_slide .price_group{
     margin-top: 18px;
 }
-.off_wrap .tr_off_inner .off_slide .price_group .price span{
+.off_wrap .tr_off_inner .off_slide .price_group .unit span{
     font-size: 17px;
     font-weight: 400;
     color: #111;
@@ -987,6 +995,9 @@
         -webkit-box-align: center;
         -webkit-align-items: center;
         -ms-flex-align: center;
+}
+.Korea_travel ul li a{
+    display: block;
 }
 .Korea_travel .item_title{
     font-size: 17px;
