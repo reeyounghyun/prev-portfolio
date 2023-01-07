@@ -1,6 +1,16 @@
 @charset "utf-8";
 
 /* 공통 Style CSS */
+button {
+    cursor: pointer;
+}
+.blind {
+    text-indent: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+}
 .w_m {
     width: 1200px;
     margin: 0 auto;
@@ -408,14 +418,10 @@
     font-size: 22px;
     text-align: center;
     display: inline-block;
-
     background: url(../images/ico_search.png) no-repeat;
     background-position: center;
-
-
-
-
 }
+
 
 
 
