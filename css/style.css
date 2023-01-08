@@ -61,11 +61,11 @@
 
 
 /* index. style stert */
-.top_wrappr .wrapper {
+.visual_wrap .wrapper {
     width: 100%;
     background-color: #E2DAF2;
 }
-.w_m_wrap .top_wrappr .wrapper .slide_in{
+.w_m_wrap .visual_wrap .wrapper .slide_in{
     display: flex;
         display: -webkit-box;
         display: -webkit-flex;
@@ -258,7 +258,7 @@
 }
 
 /* 항공 왕복 css */
-.slide_in .main_le .but_tit>button{
+.slide_in .main_le .but_tit>a{
     padding-bottom: 10px;
     background-color: initial!important;
     border: none;
@@ -266,9 +266,11 @@
     line-height: 15px;
     width: calc(100% / 3);
     font-weight: 400;
+    text-align: center;
+    cursor: pointer;
 }/* 패키지/항공/호텔 버튼 */
 
-.slide_in .main_le .but_tit>button.acitve {
+.slide_in .main_le .but_tit>a.acitve {
     transition: all 0.3s;
     font-weight: 600;
     color: #111!important;
@@ -885,7 +887,7 @@
 }
 .off_wrap .tr_off_inner .item_wrap{
     position: relative;
-    padding: 0 30px;
+    padding-right: 30px;
 }
 .off_wrap .tr_off_inner .off_slide a{
     display: block;
@@ -936,6 +938,16 @@
 
     right: 0px;
     top: 113px;
+
+    /* background: url(../images/page_r2.png) no-repeat #fff;
+    position: absolute;
+    background-position: center;
+    right: 0px;
+    top: 113px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 30px; */
 } 
 
 .off_wrap .tr_off_inner .off_slide .offer-prev{

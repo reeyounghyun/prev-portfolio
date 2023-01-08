@@ -17,7 +17,7 @@ $(document).ready(function () {
     $('.bnt_le').click(function(){
         $('.bnt_le').css({"border": "1px solid #5e2bb8"});
     });
-    // 인천/김포 출발 셀렉트 박스 테두리
+    // 인천/김포 출발 셀렉트 박스 
 
     $(".aside>ul>li>a").click(function(){
         $(".aside ul li a .menu_sub").addClass('onfoo');
@@ -135,9 +135,9 @@ $(document).ready(function () {
         }
     });
 
-    $('.but_tit button').click(function () {
+    $('.but_tit a').click(function () {
         var tab_id = $(this).attr('data-tab');
-        $('.but_tit button').removeClass('acitve');
+        $('.but_tit a').removeClass('acitve');
         $('.tab_content').removeClass('acitve');
         $(this).addClass('acitve');
         $("#" + tab_id).addClass('acitve');
