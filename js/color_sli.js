@@ -3,7 +3,7 @@ $(document).ready(function () {
     var swiper = new Swiper(".color_sli", {
         spaceBetween: 30,
         centeredSlides: true,
-
+        loop:true,
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,
@@ -28,7 +28,6 @@ $(document).ready(function () {
     });
 
     swiper.on('slideChange', function(e) {
-
         if (swiper.activeIndex == "0") {
             $(".wrapper").css("background-color", "#E2DAF2");
         } else if (swiper.activeIndex == "1") {

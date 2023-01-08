@@ -2,6 +2,23 @@ $(document).ready(function () {
 
      // alert("클릭해주셔서 감사합니다^^");
 
+    $(".bnt_le").click(function () {
+        if ($(".btn_a").hasClass("active")) {
+            $(".btn_a").removeClass("active");
+            $("this").removeClass("active");
+        } else {
+            $(".btn_a").addClass("active");
+            $(this).addClass("active");
+        }
+    })
+
+    //인천/김포 출발 셀렉트 박스
+
+    $('.bnt_le').click(function(){
+        $('.bnt_le').css({"border": "1px solid #5e2bb8"});
+    });
+    // 인천/김포 출발 셀렉트 박스 테두리
+
     $(".aside>ul>li>a").click(function(){
         $(".aside ul li a .menu_sub").addClass('onfoo');
         $(this).addClass("onfoo");

@@ -15,12 +15,12 @@
 }
 
 /* 탭 버튼css */
-.but_tit button.acitve{
+/* .but_tit button.acitve{
     transition: all 0.3s;
     background-color: #252525!important;
     border-color: #252525!important;
     color: #fff!important;
-}
+} */
 .tab_content{
     display: none;
     padding: 24px 0 0 0; 
@@ -42,7 +42,6 @@
     display: block;
     transition: all 0.3s;
 }
-
 .content_wrap{
     display: none;
     padding: 24px 0 0 0; 
@@ -53,6 +52,13 @@
     display: block;
     transition: all 0.3s;
 }
+
+
+.tab_2 .but_tits span{
+    display: inline-block;
+}
+
+
 
 /* index. style stert */
 .top_wrappr .wrapper {
@@ -90,8 +96,9 @@
     border: none;
     border-radius: 30px;
     background-color: #fff!important;
-   
-    width: 70px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 75px;
     height: 35px;
     line-height: 35px;
     margin-right: 5px;
@@ -101,9 +108,9 @@
     color: #fff!important;
 }
 .but_tit{
-    border-bottom: 1px solid #000;
-    box-sizing: border-box;
     max-width: 330px;
+    display: flex;
+    border-bottom: 1px solid #111;
 
 }/*왕복/항공/호텔 버튼 */
 
@@ -116,8 +123,7 @@
     height: 52px;
     line-height: 52px;
     color: #888;
-    padding-bottom: 5px;
-    padding-left: 43px;
+    padding-left: 35px;
 }
 .air_inp .inp_box{
     position: relative;
@@ -128,14 +134,15 @@
     height: 14px;
     display: block;
     position: absolute;
+
+    left: 15px;
+    top: 17px;
 }
 .air_inp .inp_box i::before{
     content: "";
     position: absolute;
     clear: both;
     background: url(../images/spr_icn.png) no-repeat -135px 0;
-    left: 24px;
-    top: 15px;
     display: inline-block;
     vertical-align: middle;
     width: 14px;
@@ -197,7 +204,7 @@
     position: absolute;
     clear: both;
     background: url(../images/spr_icn.png) no-repeat -155px 0;
-    left: 24px;
+    left: 17px;
     top: 15px;
     display: inline-block;
     vertical-align: middle;
@@ -209,6 +216,9 @@
     padding-left: 47px;
     color: #111;
     font-size: 14px;
+    overflow: hidden;
+    height: inherit;
+    display: inline-block;
 }
 .th_inner ul li.flight{
     display: flex;
@@ -228,7 +238,7 @@
     margin-right: 5px;
     width: 265px;
     height: 42px;
-    padding-left: 11px;
+    padding-left: 16px;
 }
 .flight:focus{
     border: 1px solid #5e2bb8;
@@ -248,23 +258,24 @@
 }
 
 /* 항공 왕복 css */
-.slide_in .main_le .but_tit button{
+.slide_in .main_le .but_tit>button{
     padding-bottom: 10px;
-    background-color:initial!important;
+    background-color: initial!important;
     border: none;
     font-size: 15px;
     line-height: 15px;
-    width: calc(33.3333% - 5px);
+    width: calc(100% / 3);
     font-weight: 400;
-
 }/* 패키지/항공/호텔 버튼 */
 
-.slide_in .main_le .but_tit button.acitve {
+.slide_in .main_le .but_tit>button.acitve {
     transition: all 0.3s;
     font-weight: 600;
     color: #111!important;
-    border-bottom: 2px solid #000;
     box-sizing: border-box;
+    border-bottom: 1.5px solid #000;
+    
+
 
 } /* 패키지/항공/호텔 버튼 클릭했을 때 */
 
@@ -292,7 +303,7 @@
 
 } /* 슬라이드 검색 버튼 */
 
-.package .le_box ul li {
+.package .le_box>ul>li {
     display: flex;
         display: -webkit-box;
         display: -webkit-flex;
@@ -315,6 +326,7 @@
 }
 .package .le_box .bnt_le{
     margin-right: 5px;
+    position: relative;
 }
 .package .le_box .bnt_le, 
 .package .le_box .bnt_ri {
@@ -326,6 +338,7 @@
     margin-top: 10px;
     padding-left: 12px;
     font-size: 14px;
+    border-radius: 5px;
 }
 .package .le_box .bnt_le span,
 .package .le_box .bnt_ri span{
@@ -338,8 +351,6 @@
     background: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png) no-repeat -135px 0;
     width: 14px;
     height: 14px;
-    left: 24px;
-    top: 15px;
     vertical-align: middle;
     display: inline-block;
 }
@@ -347,13 +358,47 @@
     background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_icn.png);
     background-repeat: no-repeat;
     background-position: -135px -18px;
-    top: -2px;
     width: 14px;
     height: 14px;
     margin-right: 7px;
     vertical-align: middle;
     display: inline-block;
 }
+.package .le_box .bnt_le ul.btn_a{
+    background-color: #fff;
+    width: 161px;
+    position: absolute;
+    left: 0px;
+    top: 39px;
+    border: 1px solid #5e2bb8;
+    box-sizing: border-box;
+    z-index: 100;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    display: none;
+    transition: all 0.3s;
+}
+
+.package .le_box .bnt_le ul.btn_a.active{
+    display: block;
+    transition: all 0.5s;
+}
+
+.package .le_box .bnt_le ul li{
+    padding-left: 15px;
+    height: 40px;
+    line-height: 40px;
+}
+.package .le_box .bnt_le ul li:hover{
+    background-color: #ccc;
+}
+.package .le_box .bnt_le ul li:first-child{
+    padding-top: 10px;
+}
+/* .package .le_box .bnt_le ul li:first-child.{
+    background: #e6e8ec;
+} */
 .package .le_box>ul>li:nth-child(2){
     display: flex;
         display: -webkit-box;
@@ -402,8 +447,10 @@
 .th_inner button{
     margin-top: 30px;
     display: block;
-    background-color: #111;
-    border: 1px solid #111;
+    background-color: #333;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    transition: all 0.3s;
     min-width: 140px;
     height: 56px;
     line-height: 54px;
@@ -413,6 +460,13 @@
     width: 100%;
 
 }/* 패키지&호텔 버튼 */
+
+.package .le_box button:hover,
+.th_inner button:hover{
+    background-color: #000;
+    border: 1px solid #000;
+    transition: all 0.3s;
+}
 
 /* 고객님, 어떤 여행을 꿈꾸시나요? 호텔 탭 */
 .th_le_input{
@@ -471,6 +525,35 @@
     box-sizing: border-box;
     margin: 0 7px;
 }
+.hotel .icn{
+    position: relative;
+    left: 0;
+    top: 0;
+    padding-left: 30px;
+}
+.hotel .icn::after{
+    content: "";
+    clear: both;
+    display: inline-block;
+    position: absolute;
+    background: url(../images/spr_icn.png) no-repeat;
+    background-position: -232px -81px;
+
+    width: 16px;
+    height: 16px;
+    left: 1px;
+    top: 14px;
+}
+.hotel .cal::after{
+    background-position: -135px -18px;
+}
+
+.hotel .Entity{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+
 /* 슬라이드 시작*/
 .main_slider{
     flex-basis: 65%;
@@ -522,6 +605,8 @@
     left: 43px;
     z-index: 1;
     position: relative;
+    border:none;
+    
 }
 .main_slider .color_sli .swiper-pagination::before{
     content: "|";
@@ -540,23 +625,27 @@
     left: 0!important;
     transform: translate(141px, 255px);
     z-index: 119;
-    width: 16px!important;
-    height: 14px!important;
+    width: 16px;
+    height: 14px;
     line-height: 14px;
     position: absolute;
+
+    border: none;
 }
 .main_slider  .swiper-button-prev{
     background: url(../images/page_l2_h.png);
     background-repeat: no-repeat;
-    right: auto!important;
-    left: 0!important;
+    right: auto;
+    left: 0;
     top: 50%;
     transform: translate(107px, 255px);
     z-index: 119;
-    width: 16px!important;
-    height: 14px!important;
+    width: 16px;
+    height: 14px;
     line-height: 14px;
     position: absolute;
+
+    border: none;
 }
 .btn button {
     overflow: hidden;
@@ -618,19 +707,19 @@
         display: -webkit-flex;
         display: -ms-flexbox;
 }
-.best_inner ul li{
+.best_inner ul li+li{
     flex: 1;
+    margin-left: 24px;
 }
-.best_inner ul li:first-child{
+/* .best_inner ul li:first-child{
     margin-left: 0;
-}
+} */
 .best_inner ul li img{
     height: 210px;
     width: 100%;
 }
 .best_inner ul li a{
     display: block;
-    margin-left: 24px;
 }
 .best_inner .offer_text .offer_tit{
     color: #111;
@@ -650,12 +739,10 @@
 .best_inner .offer_text .unit{
     color: #111;
     font-weight: 600;
-    padding-top: 15px;
     font-size: 17px;
-    margin-top: 18px;
 }
-.price_group{
-   
+.best_inner .offer_text .price_group{
+    margin-top: 18px;
 }
 .price_group .unit{
     color: #111;
@@ -708,14 +795,11 @@
     border: none; 
     background-color: #fff;
     margin: 6px 0;
-    font-size: 16px;
-    font-weight: 600;
-    color: #333;
+    font-size: 18px;
+    font-weight: 500;
     border-radius: 30px;
     padding: 7px 16px;
     display: inline-block;
-    width: auto;
-    text-align: left;
 }
 .bt_p .inner_tab .but_titsx button:last-child{
     margin-right: 0;
@@ -742,13 +826,21 @@
 .inner_tab .con_inner .content_wrap ul li{
     background-color: #fff;
     box-shadow: 0px 1px 10px 0px rgb(0 0 0 / 6%);
+    margin-left: 24px;
+    max-width: 278px;
+    width: 100%;
+    height: 411px;
 }
+.off_wrap .tr_off_inner .swiper-wrapper{
+   
+}
+
 .inner_tab .con_inner .content_wrap ul li .offer_text{
-    padding: 0 20px 20px;
+    padding: 0 18px 20px;
 }
 .inner_tab .con_inner .content_wrap ul li a{
     display: block;
-    margin-left: 24px;
+    height: 100%;
 }
 .inner_tab .con_inner .content_wrap ul li img{
     min-height: 210px;
@@ -760,28 +852,23 @@
     color: #6672a4;
     padding: 15px 0;
 }
-.inner_tab .con_inner .content_wrap ul li p.tit_hashtag{
+.inner_tab .con_inner .content_wrap ul li .tit_hashtag{
     font-size: 17px;   
-    margin: 0 0 12px;
     color: #111;
-    font-weight: 600;
     display: block;
+    padding-bottom: 5px;
 }
-.inner_tab .con_inner .content_wrap ul li p.hashtag{
+.inner_tab .con_inner .content_wrap ul li .hashtag{
     color: #333;
-    margin-top: 2px;
     font-size: 14px;
     display: inline-block;
-    padding-bottom: 31px;
     line-height: 1.2;
 
 }
-.inner_tab .con_inner .content_wrap .price_group{
-    margin-top: 8px;
-}
 .inner_tab .con_inner .content_wrap .price_group .unit{
-    font-size: 22px;
+    color: #111;
     font-weight: 600;
+    font-size: 17px;
 }
 .inner_tab .con_inner .content_wrap .price_group .unit span{
     font-size: 17px;
@@ -796,8 +883,9 @@
 .off_wrap .tr_off_inner{
     position: relative;
 }
-.off_wrap .tr_off_inner .item_wra{
+.off_wrap .tr_off_inner .item_wrap{
     position: relative;
+    padding: 0 30px;
 }
 .off_wrap .tr_off_inner .off_slide a{
     display: block;
@@ -829,18 +917,35 @@
     font-weight: 400;
     color: #111;
 }
-.off_wrap .tr_off_inner .off_slide .offer-next{
-    background: #fff;
+
+.off_wrap .tr_off_inner .off_slide button{
     opacity: 100%;
     border-radius: 30px;
     width: 50px;
     height: 50px;
     border: 1px solid #000;
     box-sizing: border-box;
+
+    position: relative;
+}
+
+.off_wrap .tr_off_inner .off_slide .offer-next{
+    background: url(../images/page_r2.png) no-repeat #fff;
     position: absolute;
-    right: -24px;
+    background-position: center;
+
+    right: 0px;
     top: 113px;
 } 
+
+.off_wrap .tr_off_inner .off_slide .offer-prev{
+    background: url(../images/page_l2.png) no-repeat #fff;
+    position: absolute;
+    background-position: center;
+
+    left: 0px;
+    top: 113px;
+}
 
 /* 하나 Original */
 .travel_sug{
@@ -1439,7 +1544,7 @@
         width: calc(33.3333% - 5px);
         text-align: center;
         background-color: rgba(69,133,255,.08);
-        -webkit-tap-highlight-color: rgba(0,0,0,0)
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
         min-height: 30px;
         line-height: 30px;
         border-left: 1px solid #fff;
