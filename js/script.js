@@ -98,7 +98,7 @@ $(document).ready(function () {
     // step(1);
 
     $(".list_close").click(function(){
-        $(".Goods_wrap").css("display",'none')
+        $(".goods_wrap").css("display",'none')
     });
 
     // $(".btn_pause").on('slideChange', function (e) {
