@@ -11,10 +11,10 @@ button {
     overflow: hidden;
     position: absolute;
 }
-.w_m {
+.content{
     width: 1200px;
-    margin: 0 auto;
     max-width: 100%;
+    margin: 0 auto;
 }
 .w_m_wrap{
     width: auto;
@@ -24,6 +24,17 @@ button {
     overflow: hidden;
     margin: 0 auto;
 }
+
+.content .inden_text{
+    text-indent: -9999px;
+    position: absolute;
+    width: 1px;
+    height: 0px;
+    overflow: hidden;
+}
+
+
+
 /* 상담로봇 css */
 .right_fixed {
     width: 120px;
@@ -346,7 +357,7 @@ button {
 .quick_menu.off{
     display: none;
 }
-.hea_wrap{
+/* .hea_wrap{
     display: flex;
         display: -webkit-box;
         display: -webkit-flex;
@@ -361,7 +372,7 @@ button {
         -ms-flex-align: space-between;
 
     max-width: 100%;
-}
+} */
 .gnb_in>.hea_wrap>.h_divide{
     display: flex;
         display: -webkit-box;
@@ -371,8 +382,19 @@ button {
         -webkit-box-align: center;
         -webkit-align-items: center;
         -ms-flex-align: center;
-    width: calc(85% - 10px);
+    width: 100%;
+    justify-content: space-between;
 }
+
+
+
+.h_divide .header_left{
+    display: flex;
+    align-items: center;
+}
+
+
+
 
 .h_divide .le_logo a {
     display: block;
@@ -385,7 +407,7 @@ button {
 }
 .hea_wrap .searchform_com {
     margin: 1px 0 0 30px;
-    width: 410px;
+    max-width: 410px;
     height: 44px;
     border-radius: 100px;
     border: solid 2px #111;
@@ -435,6 +457,10 @@ button {
 
 
 /* Tooltip text */
+
+.head_btn{
+    overflow: hidden;
+}
 .real_time>span{
     position: absolute;
     top: 0;
@@ -453,39 +479,17 @@ button {
     margin: 8px 0 0 15px;
     position: relative;
     flex-basis: 20%;
+    overflow: hidden;
 }
 .head_btn .conten{
     padding-left: 15px;
 }
-.rank-list {
-    overflow: hidden;
-    height: 16px;
-    margin: 0;
-}
-.rank-list dd{
-    position: relative;
-    margin: 0;
-}
-.rank-list ol{
-    margin: 0;
-    padding: 0;  
-    width: 85%;
-    height: 16px;
-    height: 15px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    list-style-type: none;
-}
-.rank-list dd ol li{
-    height: 21px;
-    text-align: left;
-    margin-left: 40px;
-    padding-left: 13px;
-}
-.rank-list li a {
+.rank_list li a {
     font-size: 14px;
 }  
+.wrap_pinng{
+    height: 20px;
+}
 .section .tooltip .tooltiptext {
     position: absolute;
     width: 168px;
@@ -499,7 +503,7 @@ button {
     display: none;
     transform: all 0.3s;
 }
-.wrap_pinng>.tooltiptext{
+.conten .tooltiptext{
     border: 1px solid #5e2bb8;
     box-sizing: border-box;
     width: 32px;
@@ -571,6 +575,7 @@ button {
 }
 
 /*실시간 팝업*/
+
 .top_line{
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #111;
@@ -847,6 +852,19 @@ button {
     display: block;
 }
 /* footer style stert */
+
+.notice_bor{
+    padding: 10px 0;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.area_notice{
+    display: flex;
+    align-items: center;
+}
+
+
 .notice_icon {
     display: flex;
         display: -webkit-box;
@@ -861,73 +879,43 @@ button {
         -webkit-justify-content: flex-end;
         -ms-flex-pack:  flex-end;
     flex-basis: 50%;
-    width: 100%;
-    margin: 0 auto;
-}
-.notice_bor{
-    display: flex;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-    border-top: 1px solid #f3f3f3;
-    border-bottom: 1px solid #f3f3f3;
-    padding: 5px 0;
 }
 
 /* 공지사항 */
 .not{
-    flex-basis: 80%;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    line-height: 30px;
+} 
+.not .notice_text{
+    display: inline-block;
+    width: 100%;
+    max-width: 45px;
 }
-.not ul li a{
-    font-size: 14px;
-    color: #111;
+.notice{
+    height: 30px;
 }
-.not > ul{
-   display: flex;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-    justify-content: space-around;
-    height: 45px;
-	line-height: 54px;
+.notice .swiper-wrapper .swiper-slide{
     overflow: hidden;
-    flex-basis: 70%;
-    width: 74%;
-}
-.not > ul>li:nth-child(1){
-    width: 80px;
-}
-.not > ul>li:nth-child(2){
-    width: calc(75% - 10px);
-}
-.not ul li a{
-    display: block;
-    line-height: 44px;
-    text-indent: 10px;
-    font-weight: 300;
-}
-.not > ul>li:nth-child(3){
-    width: 80px;
-}
-.no_notes ul{
-   position: relative;
-    height: 60px;
-}
-.no_notes ul> li{
-    position: absolute;
-    top: 100%;
-	width: 100%;
-}
-.no_notes ul> li:first-child{
-    top: 0;
-}
-.no_notes > ul > li >a {
-    font-size: 14px;
-	width: 100%;
-	overflow: hidden;
+    width: 90%;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+.not .more{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    max-width: 34px;
+    font-size: 12px;
+    color: #111
+}
+.not .more:hover{
+    color:#5e2bb8;
+    font-weight: 500;
+}
+
+
 /* 공지사항 끝 */
 
 .foo_notice {
@@ -967,11 +955,11 @@ button {
         -webkit-align-items: flex-end;
         -ms-flex-align: end;
 }
-.foo_sns_icon ul li {
-    margin-right: 15px;
+.foo_sns_icon ul li + li {
+    margin-left: 15px;
 }
-.foo_sns_icon ul li:last-child {
-    margin-right: 0;
+.foo_sns_icon ul li a{
+    display: block;
 }
 /* footer 공지사항 및 sns 아이콘 stert */
 .fl_f{
@@ -984,6 +972,7 @@ button {
         -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
     margin-top: 20px;
+    width: 100%;
 
 }
 .foo_bott {
@@ -993,8 +982,7 @@ button {
         display: -ms-flexbox;
 }
 .foo_bott .fl{
-    /* flex-basis: 83%; */
-    width: 83%;
+
 }
 .foo_bott .fl ul{
     display: flex;
@@ -1040,7 +1028,12 @@ button {
 }
 .footer_licensee span{
     position: relative;
-    display: inline-block;
+}
+.footer_licensee span + span{
+    padding:0 15px;
+}
+.footer_licensee span:first-child::before{
+    display: none;
 }
 .footer_licensee span::before{
     content: "";
@@ -1055,29 +1048,78 @@ button {
 .foo_bott .fl ul li a strong{
     font-weight: 600;
 }
-.foo_bott p,.foo_bott span{
+.foo_bott p,
+.foo_bott span{
     font-size: 13px;
     color: #333; 
-    display: inline-block;
-    padding-left: 21px;
+    /* display: inline-block; */
+    /* padding-left: 21px; */
 }
-.foo_bott p,.foo_bott span:first-child{
+/* .foo_bott p,
+.foo_bott span:first-child{
     padding-left: 0;
-}
-.foo_bott span{
+} */
+/* .foo_bott span{
     padding-right: 15px;
     line-height: 13px;
+    display: inline-block;
+} */
+.footer_licensee span .busins_info{
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.customer_center{
+    margin: 10px 0;
+}
+.customer_center>p{
+    padding-bottom: 15px;
+    display: inline-block;
 }
 .customer_center .guide_txt{
-    line-height: 20px;
-    padding-top: 10px;
-}
-.customer_center .copy{
-    padding-top: 15px;
+    line-height: 22px;
+    font-size: 13px;
+    color: #333;
+    /* padding-left: 21px; */
+    margin-bottom: 15px;
+    display: block;
 }
 .customer_center .info{
     position: relative;
 }
+ .icon_phone{
+    position: relative;
+    /* max-width: 20px; */
+    /* height: 20px; */
+    font-size: 15px;
+    display: inline-block;
+    margin: 0 0;
+}
+
+.icon_phone .icon{
+    padding: 0 10px 0 25px;
+    font-size: 13px;
+}
+
+.icon_phone .icon::after{
+    content: "";
+    clear: both;
+    display: inline-block;
+    background: url(../images/ico-callcenter.png) no-repeat;
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+
+
+
+}
+
+
+
 .foo_bott .fr{
     display: flex;
         display: -webkit-box;
@@ -1097,17 +1139,15 @@ button {
 .fr p{
     font-size: 12px;
     color: #888;
-    line-height: 18px;
+    line-height: 1.4;
 }
 .fr a{
     display: inline-block;
-    margin-top: 4px;
-    color: #333;
-    padding-right: 9px;
+    margin-top: 6px;
+    color: #000;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: underline;
-    cursor: pointer;
 } 
 .foo_slied{
     overflow: hidden;
@@ -1125,13 +1165,17 @@ button {
     height: 96px;
 }
 .foo_swiper{
-    flex-basis: 74%;
     width: 100%;
+    max-width: 702px;
+}
+.foo_swiper .swiper-wrapper .swiper-slide p{
+    padding-left: 15px;
 }
 .foo_swiper .swiper-wrapper .swiper-slide span{
     display: inline-block;
-    font-size: 12px;
-    color: #111;
+    font-size: 11px;
+    color: #333;
+    line-height: 1.2;
 }
 .foo_swiper .swiper-slide{
     display: flex;
@@ -1153,14 +1197,18 @@ button {
         -webkit-align-items: center;
         -ms-flex-align: center;
 }
-.foo_bot_i img:first-child{
+/* .foo_bot_i img:first-child{
     margin-left: 0;
-}
+} */
 .foo_bot_i img{
     max-width:50px;
     display: inline-block;
-    margin-left: 20px!important;
 }
+
+.foo_bot_i img + img{
+    margin-left: 20px;
+}
+
 .fo_bot_i p img{
     display: inline-block;
     font-size: 10px;
@@ -1172,23 +1220,32 @@ button {
 }
 .foo_com{ 
     border: 1px solid #000;
-    height: 25px!important;
+    height: 26px;
+    width: 26px;
+
+    position: relative;
+    z-index: 350;
 }
+
 .next-foo{
-    background: url(../images/ico-arrow-right.png) no-repeat center!important;
-    left: auto!important;
-    right: 10px!important;
-    top: 70px!important;
-    border: 1px solid #ddd!important;
-    opacity: 0.3;
+    background: url(../images/sub_btn_page_bg_bg.png) no-repeat center;
+    left: auto;
+    right: 0px;
+    top: 20px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+   position: absolute; 
 }
 .prev-foo{
-    background: url(../images/ico-arrow-left.png) no-repeat center!important;
-    left: auto!important;
-    right: 10px!important;
-    top: 40px!important;
-    border: 1px solid #ddd!important;
-    opacity: 0.3;
+    background: url(../images/sub_btn_page_bg.png) no-repeat center;
+    left: auto;
+    right: 0px;
+    top: 45px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; 
+    position: absolute;
+
+
 }
 .swiper-button-next::after{
     display: none;
@@ -1476,6 +1533,9 @@ button {
         display: block;
         padding-left: 0;
     }
+    .footer_licensee span.Number{
+        padding-right: 15px;
+    }
     .foo_bott p, .foo_bott span{
         display: block;
         line-height: 1.5;
@@ -1508,14 +1568,17 @@ button {
         font-weight: 300;
         font-size: 12px;
     }
-    .customer_center .copy {
+    .customer_center .copy{
         font-size: 10px;
         color: #bbb;
     }
     .customer_center{
         padding-left: 10px;
     }
+    .copyright{
+        font-size: 13px;
 
+    }
     .foo_info_mo{
         display: flex;
         justify-content: space-around;

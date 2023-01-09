@@ -60,37 +60,61 @@ $(document).ready(function () {
     })
 
     //실시간 검색 순위
-    var count = $('.rank-list li').length++;
-    var height = $('.rank-list li').height();
 
-    function step(index) {
-        $('.rank-list ol').delay(2000).animate({
-            top: -height * index,
-        }, 1000, function () {
-            step((index + 1) % count);
-        });
-    }
+    var swiper = new Swiper(".rank_list", {
+        direction: 'vertical',   
+        loop: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
 
-    step(1);
+      var swiper = new Swiper(".notice", {
+        direction: 'vertical',   
+        loop: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
 
-    $(".list_close").click(function(){
-        $(".Goods_wrap").css("display",'none')
-    });
+      
+    // var count = $('.rank-list li').length++;
+    // var height = $('.rank-list li').height();
 
-    $(".btn_pause").on('slideChange', function (e) {
+    // function step(index) {
+    //     $('.rank-list ol').delay(2000).animate({
+    //         top: -height * index,
+    //     }, 1000, function () {
+    //         step((index + 1) % count);
+    //     });
+    // }
 
-        var sw = 0;
+    // step(1);
 
-        if (sw == 0) {
-            $('.btn_pause').addClass('on');
-            mySwiper.autoplay.stop();
-            sw = 1;
-        } else {
-            $('.btn_pause').removeClass('on');
-            mySwiper.autoplay.start();
-            sw = 0;
-        }
-    });
+    // $(".list_close").click(function(){
+    //     $(".Goods_wrap").css("display",'none')
+    // });
+
+    // $(".btn_pause").on('slideChange', function (e) {
+
+    //     var sw = 0;
+
+    //     if (sw == 0) {
+    //         $('.btn_pause').addClass('on');
+    //         mySwiper.autoplay.stop();
+    //         sw = 1;
+    //     } else {
+    //         $('.btn_pause').removeClass('on');
+    //         mySwiper.autoplay.start();
+    //         sw = 0;
+    //     }
+    // });
 
     //foo_bit js
     var swiper = new Swiper(".foo_swiper", {

@@ -41,7 +41,7 @@
 <body>
     <header class="header" id="header">
         <div class="goods_wrap">
-            <div class="goods_list w_m">
+            <div class="goods_list content">
                 <ul>
                     <li>
                         <a href="#">
@@ -63,62 +63,61 @@
         </div>
         <div class="area">
             <div class="gnb_in wrap_info">
-                <ul class="w_m">
+                <ul class="content">
                     <li><a href="#">로그인</a></li>
                     <li><a href="#">회원가입</a></li>
                     <li><a href="#">고객센터</a></li>
                 </ul>
             </div>
             <div class="gnb_in h_gnb_in">
-                <div class="w_m hea_wrap">
+                <div class="content hea_wrap">
                     <a class="btn btn-allmenu-open" href="#allmenu">
                         <i class="ico ico-allmenu"></i>
                         <span class="sr-only">전체메뉴 열기</span>
                     </a>
                     <div class="h_divide">
-                        <div class="le_logo">
-                            <a href="./index.html">
-                                <h1>
-                                    <img src="./images/header_logo.png" alt="하나투어">
-                                </h1>
-                            </a>
-                        </div>
-                        <div class="searchform_com">
-                            <form>
-                                <fieldset class="fld_search">
-                                    <legend class="blind">통합 검색어 입력폼</legend>
-                                    <div class="box_search deletable" style="position: relative;">
-                                        <input type="text" id="input_keyword" title="검색어" placeholder="검색어를 입력해주세요"
-                                            maxlength="30" value="검색어를 입력해주세요" class="input_keyword">
-                                        <!-- <span class="v-reset-input">✖</span> -->
-                                        <button type="button" class="search">
-                                            <span class="search_btn"></span>
-                                        </button>
-                                    </div>
-                                </fieldset>
-                            </form>
-                        </div>
-                        <div class="head_btn section">
-                            <div class="conten">
-                                <dl class="rank-list wrap_pinng">
-                                    <dt class="tooltiptext">Hot</dt>
-                                    <dd>
-                                        <ol>
-                                            <li><a href="#">캐나다</a></li>
-                                            <li><a href="#">일본</a></li>
-                                            <li><a href="#">다낭</a></li>
-                                            <li><a href="#">괌</a></li>
-                                            <li><a href="#">오사카</a></li>
-                                            <li><a href="#">싱카포르</a></li>
-                                            <li><a href="#">코타키나바루</a></li>
-                                            <li><a href="#">대만</a></li>
-                                            <li><a href="#">삿포로</a></li>
-                                            <li><a href="#">북해도</a></li>
-                                        </ol>
-                                    </dd>
-                                </dl>
+                        <div class="header_left">
+                            <div class="le_logo">
+                                <a href="./index.html">
+                                    <h1>
+                                        <img src="./images/header_logo.png" alt="하나투어">
+                                    </h1>
+                                </a>
                             </div>
-                            <div class="tooltip real_time">
+                            <div class="searchform_com">
+                                <form>
+                                    <fieldset class="fld_search">
+                                        <legend class="blind">통합 검색어 입력폼</legend>
+                                        <div class="box_search deletable" style="position: relative;">
+                                            <input type="text" id="input_keyword" title="검색어" placeholder="검색어를 입력해주세요"
+                                                maxlength="30" value="검색어를 입력해주세요" class="input_keyword">
+                                            <!-- <span class="v-reset-input">✖</span> -->
+                                            <button type="button" class="search">
+                                                <span class="search_btn"></span>
+                                            </button>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="head_btn section">
+                                <div class="conten">
+                                    <span class="tooltiptext">Hot</span>
+                                    <div class="swiper mySwiper rank_list wrap_pinng">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">캐나다</div>
+                                            <div class="swiper-slide">일본</div>
+                                            <div class="swiper-slide">다낭</div>
+                                            <div class="swiper-slide">괌</div>
+                                            <div class="swiper-slide">오사카</div>
+                                            <div class="swiper-slide">싱카포르</div>
+                                            <div class="swiper-slide">코다카나발루</div>
+                                            <div class="swiper-slide">대만</div>
+                                            <div class="swiper-slide">삿포로</div>
+                                            <div class="swiper-slide">북해도</div>
+                                        </div>
+                                        </dlv>
+                                    </div>
+                                    <!-- <div class="tooltip real_time">
                                 <div class="tooltiptext">
                                     <span><b>Hot</b>인기검색어</span>
                                     <ol>
@@ -134,167 +133,196 @@
                                         <li><a href="#">북해도</a></li>
                                     </ol>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="btn btn-global-search js-layer-open" href="">
-                        <i class="ico ico-search"></i>
-                        <span class="sr-only">통합검색 펼치기</span>
-                    </a>
-                    <div class="private_menu">
-                        <ul>
-                            <li><a href="#" class="my">마이메뉴</a></li>
-                            <li><a href="#" class="details">예약내역</a></li>
-                            <li><a href="#" class="steamed">찜</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="gnb_in  top_line">
-                <div class="menu_wrap">
-                    <div class="n_l">
-                        <div class="r_all_m">
-                            <span style="display: inline-block;"><i class="xi-bars"></i>전체메뉴</span>
-                            <div class="all_sam">
-                                <div class="sam_in">
-                                    <div class="sam_di">
-                                        <dl>
-                                            <dt>해외여행</dt>
-                                            <dd>해외여행 홈</dd>
-                                        </dl>
-                                    </div>
-                                    <div class="sam_di">
-                                        <dl>
-                                            <dt>제주/국내여행</dt>
-                                            <dd>제주/국내여행</dd>
-                                            <dd>제주렌터카</dd>
-                                            <dd>국내골프</dd>
-                                        </dl>
+                            </div> -->
+                                </div>
+                                <!-- 구 실시간 슬라이드 -->
 
-                                        <dl>
-                                            <dt>테마여행</dt>
-                                            <dd>허니문</dd>
-                                            <dd>해외골프</dd>
-                                            <dd>제우스</dd>
-                                            <dd>MICE</dd>
-                                        </dl>
-                                    </div>
-                                    <div class="sam_di">
-                                        <dl>
-                                            <dt>항공</dt>
-                                            <dd>항공예약</dd>
-                                        </dl>
 
-                                        <dl>
-                                            <dt>투어/입장권</dt>
-                                            <dd>투어/입장권 홈</dd>
-                                            <dd>전체 도시</dd>
-                                        </dl>
+                                <!-- <div class="head_btn">
+                            <div class="conten">
+                                <div class="swiper rank_list">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">캐나다</div>
+                                        <div class="swiper-slide">캐나다</div>
+                                        <div class="swiper-slide">캐나다</div>
+                                        <div class="swiper-slide">캐나다</div>
+                                        <div class="swiper-slide">캐나다</div>
+                                        <div class="swiper-slide">캐나다</div>
+                                        <div class="swiper-slide">캐나다</div>
+                                        <div class="swiper-slide">캐나다</div>
+                                        <div class="swiper-slide">캐나다</div>
                                     </div>
-                                    <div class="sam_di">
-                                        <dl>
-                                            <dt>호텔</dt>
-                                            <dd>해외호텔</dd>
-                                            <dd>국내숙박</dd>
-                                        </dl>
-
-                                        <dl>
-                                            <dt>혜택/이벤트</dt>
-                                            <dd>이벤트</dd>
-                                            <dd>할인/혜택</dd>
-                                            <dd>여행기획전</dd>
-                                        </dl>
-                                    </div>
-                                    <div class="sam_di service">
-                                        <dl>
-                                            <div class="sam_line">
-                                                <dl>
-                                                    <dt>연계서비스</dt>
-                                                    <dd>하나투어상품권</dd>
-                                                    <dd>포켓와이파이</dd>
-                                                    <dd>안심여행지원</dd>
-                                                </dl>
-                                                <dl>
-                                                    <dd>기업출장/단체</dd>
-                                                    <dd>하나투어 기프트카드</dd>
-                                                    <dd>하나투어비자센터</dd>
-                                                    <dd>여행자보험</dd>
-                                                </dl>
-                                            </div>
-                                        </dl>
-                                        <dl>
-                                            <dt>하나투어센렉션</dt>
-                                            <div class="sam_line">
-                                                <dl>
-                                                    <dd>하나LIVE</dd>
-                                                    <dd>마일리지 클럽</dd>
-                                                    <dd>하나Original</dd>
-                                                </dl>
-                                                <dl>
-                                                    <dd>하나팩2.0 (개런티 프로그램)</dd>
-                                                    <dd>Safety&Joy</dd>
-                                                    <dd>우리끼리</dd>
-                                                </dl>
-                                            </div>
-                                        </dl>
-                                    </div>
-                                    <!-- <a href="#" class="btn_close"><i class="xi-close close"></i></a> -->
-                                    <button type="button">
-                                        <span></span>
-                                    </button>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div> 
                                 </div>
                             </div>
+                        </div> -->
+
+
+
+
+                            </div>
+                            <a class="btn btn-global-search js-layer-open" href="">
+                                <i class="ico ico-search"></i>
+                                <span class="sr-only">통합검색 펼치기</span>
+                            </a>
                         </div>
-                        <nav class="l_bar">
+
+                        <div class="private_menu header_right">
                             <ul>
-                                <li>
-                                    <a href="#">해외여행</a>
-                                    <div class="in_sub_m">
-                                        <ul>
-                                            <li><a href="#">해외여행 홈</a></li>
-                                            <li><a href="#">동남아/대만/서남아</a></li>
-                                            <li><a href="#">괌/사이판/호주/뉴질랜드/피지</a></li>
-                                            <li><a href="#">유럽/아프리카</a></li>
-                                            <li><a href="#">미주/중남이/허와이</a></li>
-                                            <li><a href="#">일본</a></li>
-                                            <li><a href="#">중국/홍콩/몽골/중앙아시아</a></li>
-                                            <li><a href="#">지방출발</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">제주/국내여행</a>
-                                    <div class="in_sub_m">
-                                        <ul>
-                                            <li><a href="#">제주/국내여행</a></li>
-                                            <li><a href="#">제주도렌트카</a></li>
-                                            <li><a href="#">울릉도</a></li>
-                                            <li><a href="#">내나라여행</a></li>
-                                            <li><a href="#">국내골프</a></li>
-                                            <li><a href="#">단독여행문의</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li><a href="#">항공</a></li>
-                                <li><a href="#">호텔</a></li>
-                                <li><a href="./template.html">투어/입장권</a></li>
-                                <li><a href="#">허니문</a></li>
-                                <li><a href="#">골프</a></li>
-                                <li><a href="#">제우스</a></li>
-                                <li><a href="#">MICE</a></li>
-                                <li><a href="#">하나LIVE</a></li>
+                                <li><a href="#" class="my">마이메뉴</a></li>
+                                <li><a href="#" class="details">예약내역</a></li>
+                                <li><a href="#" class="steamed">찜</a></li>
                             </ul>
-                        </nav>
+                        </div>
                     </div>
-                    <div class="n_r">
-                        <ul>
-                            <li><a href="#">여행기획전</a></li>
-                            <li><a href="#">맞춤여행</a></li>
-                        </ul>
+                </div>
+                <div class="gnb_in  top_line">
+                    <div class="menu_wrap">
+                        <div class="n_l">
+                            <div class="r_all_m">
+                                <span style="display: inline-block;"><i class="xi-bars"></i>전체메뉴</span>
+                                <div class="all_sam">
+                                    <div class="sam_in">
+                                        <div class="sam_di">
+                                            <dl>
+                                                <dt>해외여행</dt>
+                                                <dd>해외여행 홈</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="sam_di">
+                                            <dl>
+                                                <dt>제주/국내여행</dt>
+                                                <dd>제주/국내여행</dd>
+                                                <dd>제주렌터카</dd>
+                                                <dd>국내골프</dd>
+                                            </dl>
+
+                                            <dl>
+                                                <dt>테마여행</dt>
+                                                <dd>허니문</dd>
+                                                <dd>해외골프</dd>
+                                                <dd>제우스</dd>
+                                                <dd>MICE</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="sam_di">
+                                            <dl>
+                                                <dt>항공</dt>
+                                                <dd>항공예약</dd>
+                                            </dl>
+
+                                            <dl>
+                                                <dt>투어/입장권</dt>
+                                                <dd>투어/입장권 홈</dd>
+                                                <dd>전체 도시</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="sam_di">
+                                            <dl>
+                                                <dt>호텔</dt>
+                                                <dd>해외호텔</dd>
+                                                <dd>국내숙박</dd>
+                                            </dl>
+
+                                            <dl>
+                                                <dt>혜택/이벤트</dt>
+                                                <dd>이벤트</dd>
+                                                <dd>할인/혜택</dd>
+                                                <dd>여행기획전</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="sam_di service">
+                                            <dl>
+                                                <div class="sam_line">
+                                                    <dl>
+                                                        <dt>연계서비스</dt>
+                                                        <dd>하나투어상품권</dd>
+                                                        <dd>포켓와이파이</dd>
+                                                        <dd>안심여행지원</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dd>기업출장/단체</dd>
+                                                        <dd>하나투어 기프트카드</dd>
+                                                        <dd>하나투어비자센터</dd>
+                                                        <dd>여행자보험</dd>
+                                                    </dl>
+                                                </div>
+                                            </dl>
+                                            <dl>
+                                                <dt>하나투어센렉션</dt>
+                                                <div class="sam_line">
+                                                    <dl>
+                                                        <dd>하나LIVE</dd>
+                                                        <dd>마일리지 클럽</dd>
+                                                        <dd>하나Original</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dd>하나팩2.0 (개런티 프로그램)</dd>
+                                                        <dd>Safety&Joy</dd>
+                                                        <dd>우리끼리</dd>
+                                                    </dl>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                        <!-- <a href="#" class="btn_close"><i class="xi-close close"></i></a> -->
+                                        <button type="button">
+                                            <span></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav class="l_bar">
+                                <ul>
+                                    <li>
+                                        <a href="#">해외여행</a>
+                                        <div class="in_sub_m">
+                                            <ul>
+                                                <li><a href="#">해외여행 홈</a></li>
+                                                <li><a href="#">동남아/대만/서남아</a></li>
+                                                <li><a href="#">괌/사이판/호주/뉴질랜드/피지</a></li>
+                                                <li><a href="#">유럽/아프리카</a></li>
+                                                <li><a href="#">미주/중남이/허와이</a></li>
+                                                <li><a href="#">일본</a></li>
+                                                <li><a href="#">중국/홍콩/몽골/중앙아시아</a></li>
+                                                <li><a href="#">지방출발</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">제주/국내여행</a>
+                                        <div class="in_sub_m">
+                                            <ul>
+                                                <li><a href="#">제주/국내여행</a></li>
+                                                <li><a href="#">제주도렌트카</a></li>
+                                                <li><a href="#">울릉도</a></li>
+                                                <li><a href="#">내나라여행</a></li>
+                                                <li><a href="#">국내골프</a></li>
+                                                <li><a href="#">단독여행문의</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">항공</a></li>
+                                    <li><a href="#">호텔</a></li>
+                                    <li><a href="./template.html">투어/입장권</a></li>
+                                    <li><a href="#">허니문</a></li>
+                                    <li><a href="#">골프</a></li>
+                                    <li><a href="#">제우스</a></li>
+                                    <li><a href="#">MICE</a></li>
+                                    <li><a href="#">하나LIVE</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="n_r">
+                            <ul>
+                                <li><a href="#">여행기획전</a></li>
+                                <li><a href="#">맞춤여행</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </header>
 
     <!-- 상담 로봇 -->
@@ -409,7 +437,7 @@
     <div class="w_m_wrap">
         <div class="visual_wrap">
             <div class="wrapper">
-                <div class="slide_in w_m">
+                <div class="slide_in content">
                     <div class="main_le">
                         <div class="top_input">
                             <h2>고객님,<br><span>어떤 여행을 꿈꾸시나요?</span></h2>
@@ -640,7 +668,7 @@
                             <div type="button" class="swiper-button-next"></div>
                             <div type="button" class="swiper-button-prev"></div>
                             <div type="button" class="swiper-pagination"></div>
-                                    <!-- <div class="btn">
+                            <!-- <div class="btn">
                                     <button class="Start">시작</button>
                                     <button class="Stop">정지</button>
                                 </div> -->
@@ -650,7 +678,7 @@
                 </div>
             </div>
         </div>
-        <div class="">
+        <div class="mb_wrap">
             <!-- 모바일 영역 -->
             <div class="package_wrap m">
                 <h5><span>패키지,</span>하나만 믿고!</h5>
@@ -778,8 +806,8 @@
         <div class="bt_p w_m_wrap">
 
             <section class="content">
-                <div class="w_m">
-                    <div class="best_inner">
+                <h5 class="inden_text">갑자기 찾아온 겨울, 지금 인기 최고 여행지!</h5>
+                <div class="best_inner">
                         <div class="best_tit">
                             <h4> 갑자기 찾아온 겨울, 지금 인기 최고 여행지!</h4>
                         </div>
@@ -789,7 +817,7 @@
                                     <img src="./images/best_travel01.jpg" alt="홋카이도 4일 #베스트셀러">
                                     <div class="offer_text">
                                         <strong class="offer_tit">홋카이도 4일 #베스트셀러 </strong>
-                                        <span>#인기 온천호텔 #미식여행 #핵심관광 </span>
+                                        <span style="display: inline-block;">#인기 온천호텔 #미식여행 #핵심관광 </span>
                                         <div class="price_group group01">
                                             <strong class="unit">
                                                 1,388,700<span>원~</span>
@@ -803,7 +831,7 @@
                                     <img src="./images/best_travel02.png" alt="코타키나발루 5~6일 #샹그릴라라사리아">
                                     <div class="offer_text">
                                         <strong class="offer_tit">코타키나발루 5~6일 #샹그릴라라사리아</strong>
-                                        <span>#아일랜드투어 #반딧불이투어 </span>
+                                        <span style="display: inline-block;">#아일랜드투어 #반딧불이투어 </span>
                                         <div class="price_group">
                                             <strong class="unit">
                                                 779,000<span>원~</span>
@@ -817,7 +845,7 @@
                                     <img src="./images/best_travel03.png" alt="하노이/하롱베이 5~6일 #가성비">
                                     <div class="offer_text">
                                         <strong class="offer_tit">하노이/하롱베이 5~6일 #가성비</strong>
-                                        <span>#실속있게 #핵심관광</span>
+                                        <span style="display: inline-block;">#실속있게 #핵심관광</span>
                                         <div class="price_group">
                                             <strong class="unit">
                                                 459,900<span>원~</span>
@@ -831,7 +859,7 @@
                                     <img src="./images/best_travel04.jpg" alt="이탈리아 일주 8,9일 #베스트셀러">
                                     <div class="offer_text">
                                         <strong class="offer_tit">이탈리아 일주 8,9일 #베스트셀러</strong>
-                                        <span>#로마 벤츠 밴투어 #베네치아 대운하 투어</span>
+                                        <span style="display: inline-block;">#로마 벤츠 밴투어 #베네치아 대운하 투어</span>
                                         <div class="price_group">
                                             <strong class="unit">
                                                 2,690,000<span>원~</span>
@@ -841,11 +869,11 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
                 </div>
             </section>
 
             <section class="content">
+                <h5 class="inden_text">마침내 특가<br>추운 겨울에도<br>여행 텐션 UP!!</h5>
                 <div class="inner_tab">
                     <div class="con_inner p_inner">
                         <div class="but_tit_wrap">
@@ -1084,9 +1112,10 @@
             </section>
 
             <section class="content">
+                <h5 class="inden_text">고객님만을 위한 추천여행</h5>
                 <!-- 고객님만을 위한 추천여행 -->
-                <div class="off_wrap">
-                    <div class="tr_off_inner w_m">
+
+                    <div class="tr_off_inner  best_inner">
                         <div class="best_tit">
                             <h4>고객님만을 위한 추천여행</h4>
                         </div>
@@ -1213,13 +1242,13 @@
                             <div type="button" class="swiper-button-prev"></div>
                             <div type="button" class="swiper-pagination"></div>
                         </div>
-                    </div>
-                </div>
+      
             </section>
 
             <section class="content">
-                <div class="travel_sug">
-                    <div class="w_m">
+                <h5 class="inden_text">하나 Original</h5>
+                <div class="travel_sug best_inner">
+                    <div class="content">
                         <div class="swiper mySwiper tr_sug">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -1352,8 +1381,9 @@
             </section>
 
             <section class="content">
+                <h5 class="inden_text">내나라 구석구석</h5>
                 <div class="Korea_travel">
-                    <div class="w_m">
+                    <div class="content">
                         <div class="main_tit">
                             <h4>내나라 구석구석</h4>
                         </div>
@@ -1415,8 +1445,9 @@
             </section>
 
             <section class="content">
+                <h5 class="inden_text">떠나자, 하나만 믿고!</h5>
                 <div class="submain">
-                    <div class="w_m">
+                    <div class="content">
                         <div class="main_tit">
                             <h4>떠나자, 하나만 믿고!</h4>
                         </div>
@@ -1481,9 +1512,10 @@
             </section>
 
             <section class="content">
+                <h5 class="inden_text">하나투어닷컴<br>고객센터</h5>
                 <div class="inder_wrpper">
                     <div class="inder_time">
-                        <div class="info_wrap w_m">
+                        <div class="info_wrap content">
                             <div class="info_item01">
                                 <h5>하나투어닷컴<br>고객센터</h5>
                                 <p>1577-1233</p>
@@ -1532,75 +1564,99 @@
     </div>
 
     <footer class="footer">
-        <div class="notice_bor w_m">
-            <div class="not">
-                <ul>
-                    <li>
-                        <h4><a href="#">공지사항</a></h4>
-                    </li>
-                    <li>
-                        <div class="no_notes">
-                            <ul>
-                                <li><a href="#">[하나LIVE] 22년 12월 7일 방송 이벤트 당첨자 안내 (찜카 10만 원권 이용권)</a></li>
-                                <li><a href="#">[하나LIVE] 22년 12월 7일 돌잡이 이벤트 당첨자 안내 (파리바게뜨 모바일 금액권 1만원권)</a></li>
-                                <li><a href="#">[하나LIVE] 22년 12월 7일 소통왕 이벤트 당첨자 안내 (스타벅스 기프티콘)</a></li>
-                                <li><a href="#">[해외항공] 상담 지연 안내</a></li>
-                                <li><a href="#">[하나LIVE] 22년 11월 30일 돌잡이 이벤트 당첨자 안내 (BHC 뿌링클+콜라1.25L)</a></li>
-                                <li><a href="#">[하나LIVE] 22년 11월 30일 소통왕 이벤트 당첨자 안내 (스타벅스 기프티콘)</a></li>
-                            </ul>
+
+
+        <div class="notice_bor">
+            <div class="content  area_notice">
+                <div class="not">
+                    <strong class="notice_text">공지</strong>
+                    <div class="swiper notice">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                 &lt;하나LIVE&gt; 22년 12월 7일 방송 이벤트 당첨자 안내 (찜카 10만 원권 이용권)
+                                </a> 
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    &lt;하나LIVE&gt; 22년 12월 7일 돌잡이 이벤트 당첨자 안내 (파리바게뜨 모바일 금액권 1만원권)
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                 &lt;하나LIVE&gt; 22년 12월 7일 소통왕 이벤트 당첨자 안내 (스타벅스 기프티콘)
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    &lt;해외항공&gt; 상담 지연 안내
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    &lt;하나LIVE&gt; 22년 11월 30일 돌잡이 이벤트 당첨자 안내 (BHC 뿌링클+콜라1.25L)
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    &lt;하나LIVE&gt; 22년 11월 30일 소통왕 이벤트 당첨자 안내 (스타벅스 기프티콘)
+                                </a>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <h4><a href="#">더보기</a></h4>
-                    </li>
-                </ul>
-            </div>
-            <!--notes-->
-            <!-- 하나투어 공지사항 -->
-            <div class="w_m notice_icon">
-                <div class="foo_sns_icon">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="./images/facebook.png" alt="페이스북">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/instagram.png" alt="인스타그램">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/naverblog.png" alt="네이버블로그">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/kakaoplus.png" alt="카카오페이지">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/youtube.png" alt="유튜브">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/kakaostory.png" alt="카카오스토리">
-                            </a>
-                        </li>
-                    </ul>
+                    </div>
+                    <a href="#" class="more">더보기</a>
                 </div>
+
+
+
+
+                <!--notes-->
+                <!-- 하나투어 공지사항 -->
+                <div class="content notice_icon">
+                    <div class="foo_sns_icon">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/facebook.png" alt="페이스북">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/instagram.png" alt="인스타그램">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/naverblog.png" alt="네이버블로그">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/kakaoplus.png" alt="카카오페이지">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/youtube.png" alt="유튜브">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/kakaostory.png" alt="카카오스토리">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 하나투어 sns -->
             </div>
-            <!-- 하나투어 sns -->
         </div>
         <div class="foo_info_mo">
             <a href="#">로그인</a>
             <a href="#">공지사항</a>
             <a href="#">고객센터</a>
         </div>
-        <div class="foo_bott w_m">
+        <div class="foo_bott content">
             <div class="fl_f">
                 <div class="fl">
                     <ul>
@@ -1614,18 +1670,19 @@
                     </ul>
                     <div class="foo_box">
                         <div class="footer_licensee">
-                            <a href="javascript:void(0);" class="hana_mb">
+                            <!-- <a href="javascript:void(0);" class="">
                                 <strong>(주)하나투어</strong>
                                 <i class="xi-angle-down-min"></i>
-                            </a>
-                            <span><strong class="hana">(주)하나투어</strong></span>
-                            <span>대표 : 송미선, 육경건&nbsp;</span>
+                            </a> -->
+                            <span style="padding-right: 15px;"><strong class="hana">(주)하나투어</strong></span>
+                            <span>대표 : 송미선</span>
                             <span>주소 : (03161) 서울특별시 종로구 인사동 5길 41</span>
                         </div>
                         <p class="footer_licensee">
-                            <span>사업자등록번호 : 102-81-39440</span>
+                            <span class="Number" style="padding-right: 15px;">사업자등록번호 : 102-81-39440</span>
                             <span>
-                                <a href="http://www.ftc.go.kr/www/bizCommList.do?key=232" target="_blank">사업자정보확인</a>
+                                <a href="http://www.ftc.go.kr/www/bizCommList.do?key=232" target="_blank"
+                                    class="busins_info">사업자정보확인</a>
                             </span>
                             <span>통신판매업신고번호 : 종로01-1806호</span>
                             <span>관광사업자 등록번호 : 제1993-000006호</span>
@@ -1634,28 +1691,33 @@
                             <span>개인정보 보호책임자 : 채철훈&nbsp;</span>
                             <span>영업보증보험 : 22억 1천만원 가입</span>
                             <span>팩스: 02-734-0392</span>
-                            <span>이메일 : <a href="mailto:15771233@hanatour.com">15771233@hanatour.com</a></span>
+                            <span>이메일 : <a href="mailto:15771233@hanatour.com"
+                                    class="busins_info">15771233@hanatour.com</a></span>
                         </p>
                         <p class="footer_licensee  footer_licensee_mb">
                             <span>
-                                <strong class="customer_center">
+                                <strong class="customer_center icon_phone">
                                     <!-- <img src="./images/ico-callcenter.png" alt="고객센터"> -->
-                                    <span>고객센터</span> 1577-1233 &nbsp;
+                                    <span class="icon">고객센터</span> 1577-1233 &nbsp;
                                 </strong>
                             </span>
-                            <strong class="customer_center">
-                                <span>해외항공권문의</span> 1899-1833
+                            <strong class="customer_center icon_phone">
+                                <span class="icon">해외항공권문의</span>
+                                1899-1833
                             </strong>
                             <span style="display:none;">
                                 <a class="js_btn_lypop">분쟁처리절차</a>
                             </span>
                         </p>
                         <div class="customer_center">
-                            <p class="guide_txt">※ 부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를 받습니다.
+                            <strong class="guide_txt">※ 부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를 받습니다.
                                 <br>※ 하나투어는 개별 항공권, 단품 및 일부 여행상품에 대하여 통신판매중개자로서 통신판매의 당사자가 아니며
                                 해당상품의 거래정보 및 거래등에 대해 책임을 지지 않습니다.
-                            </p>
-                            <p class="copy">COPYRIGHTⓒ HANATOUR SERVICE INC. ALL RIGHTS RESERVED</p>
+                            </strong>
+                            <span>
+                                <strong class="copyright" style="font-size: 12px;">COPYRIGHTⓒ HANATOUR SERVICE INC. ALL
+                                    RIGHTS RESERVED</strong>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -1669,8 +1731,8 @@
                 </div>
             </div>
         </div>
-        <div class="foo_slied w_m">
-            <div class="foo_bit">
+        <div class="foo_slied">
+            <div class="foo_bit content">
                 <div class="swiper foo_swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -1710,8 +1772,9 @@
                             <p><span>2018<br>문화체육관광부<br>문화예술후원 우수기관 인증</span></p>
                         </div>
                     </div>
-                    <div class="swiper-button-next next-foo foo_com"></div>
-                    <div class="swiper-button-prev prev-foo foo_com"></div>
+
+                    <div class="next-foo foo_com"></div>
+                    <div class="prev-foo foo_com"></div>
                 </div>
                 <div class="foo_bot_i">
                     <img src="./images/mark_01.png" alt="mark">

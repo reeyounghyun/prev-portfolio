@@ -700,8 +700,12 @@
     color: #000;
 }
 .best_tit{
-    margin: 80px auto 30px;
+    padding-bottom: 30px;
+} 
+.best_inner{
+    margin-top: 100px;
 }
+
 /* 갑자기 찾아온 겨율, 지금 인기 최고 여행지! css */
 .best_inner ul{
     display: flex;
@@ -723,6 +727,7 @@
 .best_inner ul li a{
     display: block;
 }
+
 .best_inner .offer_text .offer_tit{
     color: #111;
     font-weight: 600;
@@ -735,8 +740,8 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.best_inner .offer_text{
-
+.best_inner .offer_text .offer_tit span{
+    display: inline-block;
 }
 .best_inner .offer_text .unit{
     color: #111;
@@ -762,10 +767,8 @@
     margin: 100px auto 0 auto;
 }
 .inner_tab {
-    margin: 100px auto;
-    display: block;
-    width: 1200px;
-}
+    margin-top: 100px;
+} 
 .inner_tab .con_inner {
     position: relative;
 }
@@ -831,7 +834,7 @@
     margin-left: 24px;
     max-width: 278px;
     width: 100%;
-    height: 411px;
+    height: 412px;
 }
 .off_wrap .tr_off_inner .swiper-wrapper{
    
@@ -839,6 +842,7 @@
 
 .inner_tab .con_inner .content_wrap ul li .offer_text{
     padding: 0 18px 20px;
+    height: 202px;
 }
 .inner_tab .con_inner .content_wrap ul li a{
     display: block;
@@ -879,48 +883,48 @@
 }
 
 /* 고객님만을 위한 추천여행 */
-.off_wrap{
+/* .off_wrap{
     margin-bottom: 70px;
-}
-.off_wrap .tr_off_inner{
+} */
+.tr_off_inner{
     position: relative;
 }
-.off_wrap .tr_off_inner .item_wrap{
+ .tr_off_inner .item_wrap{
     position: relative;
     padding-right: 30px;
 }
-.off_wrap .tr_off_inner .off_slide a{
+.tr_off_inner .off_slide a{
     display: block;
 }
-.off_wrap .tr_off_inner .off_slide img{
+ .tr_off_inner .off_slide img{
     min-height: 210px;
     object-fit: cover;
     margin-bottom: 10px;
     width: 100%;
 }
-.off_wrap .tr_off_inner .off_slide .offer_text span{
+.tr_off_inner .off_slide .offer_text span{
     font-size: 13px;
     color: #6672a4;
     margin: 7.5px 0;
     display: inline-block;
 }
-.off_wrap .tr_off_inner .off_slide .offer_text p{
+ .tr_off_inner .off_slide .offer_text p{
     color: #111;
     font-weight: 600;
     font-size: 17px;
     line-height: 20px;
     display: block;
 }
-.off_wrap .tr_off_inner .off_slide .price_group{
+ .tr_off_inner .off_slide .price_group{
     margin-top: 18px;
 }
-.off_wrap .tr_off_inner .off_slide .price_group .unit span{
+ .tr_off_inner .off_slide .price_group .unit span{
     font-size: 17px;
     font-weight: 400;
     color: #111;
 }
 
-.off_wrap .tr_off_inner .off_slide button{
+ .tr_off_inner .off_slide button{
     opacity: 100%;
     border-radius: 30px;
     width: 50px;
@@ -931,7 +935,7 @@
     position: relative;
 }
 
-.off_wrap .tr_off_inner .off_slide .offer-next{
+ .tr_off_inner .off_slide .offer-next{
     background: url(../images/page_r2.png) no-repeat #fff;
     position: absolute;
     background-position: center;
@@ -950,7 +954,7 @@
     border-radius: 30px; */
 } 
 
-.off_wrap .tr_off_inner .off_slide .offer-prev{
+.tr_off_inner .off_slide .offer-prev{
     background: url(../images/page_l2.png) no-repeat #fff;
     position: absolute;
     background-position: center;
@@ -999,7 +1003,6 @@
     position: absolute;
     left: 642px;
     bottom: 0;
-    margin-top: 45px;
 } 
 .travel_sug .tr_sug ul li{ 
     /* position: relative;
@@ -1094,10 +1097,8 @@
         -webkit-box-align: center;
         -webkit-align-items: center;
         -ms-flex-align: center;
-    justify-content: space-around;
-        -webkit-box-pack: space-around;
-        -webkit-justify-content: space-around;
-        -ms-flex-pack: space-around;
+    justify-content: space-between;
+   
 }
 .Korea_travel ul li{
     display: flex;
@@ -1344,13 +1345,10 @@
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
-    justify-content: space-around;
-        -webkit-box-align: space-around;
-        -webkit-align-items: space-around;
-        -ms-flex-align: space-around;
+    justify-content: space-between;
     border-top: 2px solid #000;
     background-color: #fff;
-    padding: 40px 0;
+    padding: 40px;
 }
 .inder_time .info_wrap .info_item01 h5{
     font-size: 22px;
