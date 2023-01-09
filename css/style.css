@@ -707,27 +707,26 @@
 }
 
 /* 갑자기 찾아온 겨율, 지금 인기 최고 여행지! css */
-.best_inner ul{
+.best_inner>ul{
     display: flex;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
 }
-.best_inner ul li+li{
+.best_inner>ul li+li{
     flex: 1;
     margin-left: 24px;
 }
 /* .best_inner ul li:first-child{
     margin-left: 0;
 } */
-.best_inner ul li img{
+.best_inner>ul li img{
     height: 210px;
     width: 100%;
 }
-.best_inner ul li a{
+.best_inner>ul li a{
     display: block;
 }
-
 .best_inner .offer_text .offer_tit{
     color: #111;
     font-weight: 600;
@@ -836,10 +835,6 @@
     width: 100%;
     height: 412px;
 }
-.off_wrap .tr_off_inner .swiper-wrapper{
-   
-}
-
 .inner_tab .con_inner .content_wrap ul li .offer_text{
     padding: 0 18px 20px;
     height: 202px;
@@ -931,10 +926,8 @@
     height: 50px;
     border: 1px solid #000;
     box-sizing: border-box;
-
     position: relative;
 }
-
  .tr_off_inner .off_slide .offer-next{
     background: url(../images/page_r2.png) no-repeat #fff;
     position: absolute;
@@ -1444,7 +1437,6 @@
 }
 
 /* 미디어 쿼리 stert */
-
 @media screen and (max-width: 1025px){
     .w_m{
         width: auto;
@@ -1749,4 +1741,7 @@
         height: auto;
     }
 
+}
+@media screen and (max-width: ) {
+    
 }

@@ -359,7 +359,7 @@ button {
 .quick_menu.off{
     display: none;
 }
-/* .hea_wrap{
+.hea_wrap{
     display: flex;
         display: -webkit-box;
         display: -webkit-flex;
@@ -372,9 +372,11 @@ button {
         -webkit-box-align: space-between;
         -webkit-align-items: space-between;
         -ms-flex-align: space-between;
-
     max-width: 100%;
-} */
+    padding-bottom: 20px;
+}
+
+
 .gnb_in>.hea_wrap>.h_divide{
     display: flex;
         display: -webkit-box;
@@ -1169,6 +1171,7 @@ button {
 .foo_swiper{
     width: 100%;
     max-width: 702px;
+    padding-right: 20px;
 }
 .foo_swiper .swiper-wrapper .swiper-slide p{
     padding-left: 15px;
@@ -1393,10 +1396,14 @@ button {
     .right_fixed{
         display: none;
     }
+
+
     .h_gnb_in{
         height: auto;
         padding: 15px 0;
     }
+
+
     .wrap_info{
         display: none;
     }
@@ -1409,6 +1416,7 @@ button {
     .private_menu{
         display: none;
     }
+
     .hea_wrap a.btn{
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
@@ -1429,6 +1437,7 @@ button {
         transition-property: box-shadow;
         transition-property: box-shadow, -webkit-box-shadow;
     }
+    
     .ico-allmenu{
         background: url(../images/ico-allmenu.png);
         width: 23px;
