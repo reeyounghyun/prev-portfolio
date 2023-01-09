@@ -966,7 +966,6 @@
 /* 하나 Original */
 .travel_sug{
     background-color: rgb(252, 231, 200);
-    padding: 28px 0;
 }
 .travel_sug .tr_sug .trs{
     display: flex;
@@ -1002,7 +1001,6 @@
 .travel_sug .tr_sug ul{
     position: absolute;
     left: 642px;
-    bottom: 0;
 } 
 .travel_sug .tr_sug ul li{ 
     /* position: relative;
@@ -1010,7 +1008,6 @@
 }
 .travel_sug .trs .tr_text{
     margin-left: 53px;
-    flex: 1;
 }
 .travel_sug .trs .tr_text .item_title{
     font-family: 'hnt-font';
