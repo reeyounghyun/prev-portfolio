@@ -48,7 +48,6 @@
     display: inline-block;
 }
 
-
 /* index. style stert */
 .visual_wrap .wrapper {
     width: 100%;
@@ -364,16 +363,13 @@
     z-index: 100;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-
     display: none;
     transition: all 0.3s;
 }
-
 .package .le_box .bnt_le ul.btn_a.active{
     display: block;
     transition: all 0.5s;
 }
-
 .package .le_box .bnt_le ul li{
     padding-left: 15px;
     height: 40px;
@@ -456,7 +452,6 @@
     border: 1px solid #000;
     transition: all 0.3s;
 }
-
 /* 고객님, 어떤 여행을 꿈꾸시나요? 호텔 탭 */
 .th_le_input{
     color: #ccc;
@@ -471,7 +466,6 @@
     background-color: #fff;
 }
 .th_inner ul li{
-    vertical-align: top;
     border: 1px solid #fff;
     background-color: #fff;
     box-sizing: border-box;
@@ -527,7 +521,6 @@
     position: absolute;
     background: url(../images/spr_icn.png) no-repeat;
     background-position: -232px -81px;
-
     width: 16px;
     height: 16px;
     left: 1px;
@@ -536,18 +529,11 @@
 .hotel .cal::after{
     background-position: -135px -18px;
 }
-
 .hotel .Entity{
     display: inline-block;
     padding: 0 10px;
 }
-
-
 /* 슬라이드 시작*/
-.main_slider{
-    /* flex-basis: 65%;
-    width: 65px; */
-}
 .main_slider .swiper {
     height: 610px;
     max-width: 740px;
@@ -586,8 +572,7 @@
     left: 43px;
     z-index: 1;
     position: relative;
-    border:none;
-    
+    border:none; 
 }
 .main_slider .color_sli .swiper-pagination::before{
     content: "|";
@@ -610,7 +595,6 @@
     height: 14px;
     line-height: 14px;
     position: absolute;
-
     border: none;
 }
 .main_slider  .swiper-button-prev{
@@ -625,7 +609,6 @@
     height: 14px;
     line-height: 14px;
     position: absolute;
-
     border: none;
 }
 .btn button {
@@ -684,7 +667,6 @@
 .best_inner{
     margin-top: 100px;
 }
-
 /* 갑자기 찾아온 겨율, 지금 인기 최고 여행지! css */
 .best_inner>ul{
     display: flex;
@@ -739,7 +721,6 @@
     font-weight: 400;
     color: #111;
 }
-
 /* 마침내 특가 추운 겨울에도 여행 텐션 UP!! */
 .bt_p{
     margin: 100px auto 0 auto;
@@ -768,7 +749,6 @@
     font-family: 'hnt-font';
     margin-bottom: 40px;
 }
-
 /* 마침내 특가 버튼 */
 .inner_tab .con_inner .but_titsx{
     display: inline-flex;
@@ -793,7 +773,6 @@
     border-color: #252525!important;
     color: #fff!important;
 }
-
 /* 컨텐스 박스 */
 .bt_p .inner_tab .con_inner .tab-content{
     position: absolute;
@@ -843,7 +822,6 @@
     font-size: 14px;
     display: inline-block;
     line-height: 1.2;
-
 }
 .inner_tab .con_inner .content_wrap .price_group .unit{
     color: #111;
@@ -855,11 +833,7 @@
     font-weight: 400;
     color: #111;
 }
-
 /* 고객님만을 위한 추천여행 */
-/* .off_wrap{
-    margin-bottom: 70px;
-} */
 .tr_off_inner{
     position: relative;
 }
@@ -897,7 +871,6 @@
     font-weight: 400;
     color: #111;
 }
-
  .tr_off_inner .off_slide button{
     opacity: 100%;
     border-radius: 30px;
@@ -911,26 +884,13 @@
     background: url(../images/page_r2.png) no-repeat #fff;
     position: absolute;
     background-position: center;
-
     right: 0px;
     top: 113px;
-
-    /* background: url(../images/page_r2.png) no-repeat #fff;
-    position: absolute;
-    background-position: center;
-    right: 0px;
-    top: 113px;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #ccc;
-    border-radius: 30px; */
 } 
-
 .tr_off_inner .off_slide .offer-prev{
     background: url(../images/page_l2.png) no-repeat #fff;
     position: absolute;
     background-position: center;
-
     left: 0px;
     top: 113px;
 }
@@ -974,10 +934,6 @@
     position: absolute;
     left: 642px;
 } 
-.travel_sug .tr_sug ul li{ 
-    /* position: relative;
-    height: 102px; */
-}
 .travel_sug .trs .tr_text{
     margin-left: 53px;
 }
@@ -1064,7 +1020,6 @@
         -webkit-align-items: center;
         -ms-flex-align: center;
     justify-content: space-between;
-   
 }
 .Korea_travel ul li{
     display: flex;
@@ -1454,8 +1409,6 @@
     }
     .travel_sug .tr_sug .trs img{
         position: relative;
-        border: 1px solid #000;
-        box-sizing: border-box;
         border-radius: 30px;
         width: 100%;
     }
@@ -1619,11 +1572,9 @@
         width: 100%;
         height: auto;
     }
-
     .travel_sug .tr_sug .trs{
         position: relative;
     }
-
 }
 
 @media screen and (max-width: 768px){
@@ -1634,10 +1585,5 @@
         max-width: auto;
         width: 100%;
     }
-
-
-
-
-
 }
 @media screen and (max-width: 375px){}
