@@ -3,7 +3,7 @@
 .m{
     display: none;
 }
-@media (max-width:1025px) {
+@media (max-width:768px) {
     .m{
         display: block;
     }
