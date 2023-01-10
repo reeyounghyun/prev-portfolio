@@ -137,25 +137,52 @@ $(document).ready(function () {
             el: ".swiper-pagination",
             clickable: true,
         },
+        breakpoints:{
+            1920: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+              },
+            1280: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+            768:{
+                slidesPerView: 2,
+                spaceBetween: 15,
+              },
+            375:{
+                slidesPerView: 1,
+                spaceBetween: 5,
+              },
+        }
+
+
+
+
     });
 
     // 고객님만을 위한 추천여행js 
     var swiper = new Swiper(".off_slide", {
         spaceBetween: 10,
+        loop : true,   
         slidesPerView: 4,
         navigation: {
             nextEl: ".offer-next",
             prevEl: ".swiper-button-prev",
         },
-        breakpoints: {
-            990: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 30,
-            },
+        breakpoints:{
+            1280: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+              },
+            768:{
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+            375:{
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
         }
     });
 

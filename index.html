@@ -61,21 +61,22 @@
                 </button>
             </div>
         </div>
-        <div class="area">
-            <div class="gnb_in wrap_info">
-                <ul class="content">
+        <div class="area_wrap">
+            <div class="wrap_info content">
+                <ul>
                     <li><a href="#">로그인</a></li>
                     <li><a href="#">회원가입</a></li>
                     <li><a href="#">고객센터</a></li>
                 </ul>
             </div>
+
             <div class="gnb_in">
-                <div class="content hea_wrap">
-                    <a class="btn btn-allmenu-open" href="#allmenu">
+                <div class="gnb_in_wrap content">
+                    <a class="btn btn_allmenu mobile" href="#allmenu">
                         <i class="ico ico-allmenu"></i>
-                        <span class="sr-only">전체메뉴 열기</span>
+                        <span class="mb_menu_bg">전체메뉴 열기</span>
                     </a>
-                    <div class="h_divide">
+                    <div class="header_wrap">
                         <div class="header_left">
                             <div class="le_logo">
                                 <a href="./index.html">
@@ -99,47 +100,32 @@
                                     </fieldset>
                                 </form>
                             </div>
-                            <div class="head_btn section">
-                                <div class="conten">
-                                    <span class="tooltiptext">Hot</span>
-                                    <div class="swiper mySwiper rank_list wrap_pinng">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">캐나다</div>
-                                            <div class="swiper-slide">일본</div>
-                                            <div class="swiper-slide">다낭</div>
-                                            <div class="swiper-slide">괌</div>
-                                            <div class="swiper-slide">오사카</div>
-                                            <div class="swiper-slide">싱카포르</div>
-                                            <div class="swiper-slide">코다카나발루</div>
-                                            <div class="swiper-slide">대만</div>
-                                            <div class="swiper-slide">삿포로</div>
-                                            <div class="swiper-slide">북해도</div>
-                                        </div>
+                            <div class="head_btn section conten">
+                                <span class="tooltiptext">Hot</span>
+                                <div class="swiper rank_list wrap_pinng">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">캐나다</div>
+                                        <div class="swiper-slide">일본</div>
+                                        <div class="swiper-slide">다낭</div>
+                                        <div class="swiper-slide">괌</div>
+                                        <div class="swiper-slide">오사카</div>
+                                        <div class="swiper-slide">싱카포르</div>
+                                        <div class="swiper-slide">코다카나발루</div>
+                                        <div class="swiper-slide">대만</div>
+                                        <div class="swiper-slide">삿포로</div>
+                                        <div class="swiper-slide">북해도</div>
                                     </div>
-                                    <!-- <div class="tooltip real_time">
-                                <div class="tooltiptext">
-                                    <span><b>Hot</b>인기검색어</span>
-                                    <ol>
-                                        <li><a href="#">캐나다</a></li>
-                                        <li><a href="#">일본</a></li>
-                                        <li><a href="#">다낭</a></li>
-                                        <li><a href="#">괌</a></li>
-                                        <li><a href="#">오사카</a></li>
-                                        <li><a href="#">싱카포르</a></li>
-                                        <li><a href="#">코다카나발루</a></li>
-                                        <li><a href="#">대만</a></li>
-                                        <li><a href="#">삿포로</a></li>
-                                        <li><a href="#">북해도</a></li>
-                                    </ol>
-                                </div>
-                            </div> -->
-                                </div>
+                                </div>                           
                             </div>
+                        </div>
+
+                        <div class="search_wrap_mb">
                             <a class="btn btn-global-search js-layer-open" href="#">
-                                <i class="ico ico-search"></i>
-                                <span class="sr-only">통합검색 펼치기</span>
+                                <i class="ico ico_search"></i>
+                                <span class="mb_menu_bg">통합검색 펼치기</span>
                             </a>
                         </div>
+
                         <div class="private_menu header_right">
                             <ul>
                                 <li><a href="#" class="my">마이메뉴</a></li>
@@ -149,11 +135,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="gnb_in top_line">
-                    <div class="menu_wrap">
-                        <div class="n_l">
-                            <div class="r_all_m">
-                                <span style="display: inline-block;"><i class="xi-bars"></i>전체메뉴</span>
+                <div class="gnb">
+                    <div class="menu_wrap content">
+                        <div class="menu_left">
+                            <div class="right_all_menu">
+                                <span><i class="xi-bars"></i>전체메뉴</span>
                                 <div class="all_sam">
                                     <div class="sam_in">
                                         <div class="sam_di">
@@ -239,7 +225,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <nav class="l_bar">
+                            <nav class="left_bar">
                                 <ul>
                                     <li>
                                         <a href="#">해외여행</a>
@@ -280,7 +266,7 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="n_r">
+                        <div class="menu_right">
                             <ul>
                                 <li><a href="#">여행기획전</a></li>
                                 <li><a href="#">맞춤여행</a></li>
@@ -311,7 +297,7 @@
     <!-- 상담 로봇 끝 -->
 
     <!-- 모바일 메뉴_s -->
-    <div class="quick_menu m">
+    <div class="quick_menu mobile">
         <a href="javascript:void(0); m">
             <span>1</span>
             <span>2</span>
@@ -639,7 +625,7 @@
         
         <!-- 모바일 영역 -->
         <div class="mb_wrap">
-            <div class="package_wrap m">
+            <div class="package_wrap">
                 <h5><span>패키지,</span>하나만 믿고!</h5>
                 <ul>
                     <li>
@@ -686,7 +672,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="package_add m">
+            <div class="package_add">
                 <ul>
                     <li><a href="#">항공</a></li>
                     <li><a href="#">해외호텔</a></li>
@@ -696,7 +682,7 @@
                     <li><a href="#">투어/입장권</a></li>
                 </ul>
             </div>
-            <div class="sub_menu m">
+            <div class="sub_menu">
                 <ul>
                     <li>
                         <a href="#">
@@ -728,7 +714,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="service_menu m">
+            <div class="service_menu">
                 <ul>
                     <li><a href="#"><img src="./images/mk_bnr_009.jpg" alt="하나live 방속 특사 상품과 단독 혜택 미리보기"></a></li>
                     <li><a href="#"><img src="./images/mk_bnr_002.jpg" alt="타임세일 매주 월요일 2시 단 1주간 특가찬스"></a></li>
@@ -736,7 +722,7 @@
                     <li><a href="#"><img src="./images/mk_bnr_007.jpg" alt="개런티 프로그램 일정표에 없는 요금 지불 시 100%보상"></a></li>
                 </ul>
             </div>
-            <div class="time_wrap m">
+            <div class="time_wrap">
                 <div class="time_inner">
                     <img src="./images/ts_026.jpg" alt="최대67%할인, 최저가보장제! 하이원 뷰 업그레이드 객실 1박 15만원 대~">
                     <div class="timesale_box">
@@ -750,7 +736,7 @@
                                 <span class="cost01">450,000<em>원</em></span>
                             </p>
                         </div>
-                        <div class="timesale_btn">text
+                        <div class="timesale_btn">
                             <span class="timesale_wrap">
                                 <span class="day">3<span>일</span> </span>
                                 <span class="time">23:09:23</span>
@@ -1195,7 +1181,7 @@
                     </div>
                 </div>
             </section>
-            <section class="content">
+            <section class="">
                 <h5 class="inden_text">하나 Original</h5>
                 <div class="travel_sug best_inner">
                     <div class="content">

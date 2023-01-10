@@ -1,13 +1,5 @@
 @charset "utf-8";
 
-.m{
-    display: none;
-}
-@media (max-width:768px) {
-    .m{
-        display: block;
-    }
-}
 
 /* 공통 css */
 .main_tit{
@@ -52,12 +44,9 @@
     display: block;
     transition: all 0.3s;
 }
-
-
 .tab_2 .but_tits span{
     display: inline-block;
 }
-
 
 
 /* index. style stert */
@@ -77,7 +66,10 @@
     padding: 50px 0;
 }
 .slide_in .main_le{
-    width: 435px;
+    display: block;
+    max-width: 420px;
+    width: 100%;
+    margin-right: 15px;
 }
 .main_le .tab_2 .but_tit{
     border-bottom: none!important;
@@ -255,9 +247,7 @@
     min-width: initial;
     height: 42px;
     line-height: 42px;
-}
-
-/* 항공 왕복 css */
+}/* 항공 왕복 css */
 .slide_in .main_le .but_tit>a{
     padding-bottom: 10px;
     background-color: initial!important;
@@ -276,9 +266,6 @@
     color: #111!important;
     box-sizing: border-box;
     border-bottom: 1.5px solid #000;
-    
-
-
 } /* 패키지/항공/호텔 버튼 클릭했을 때 */
 
 .slide_in .main_le .tab-content {
@@ -558,12 +545,13 @@
 
 /* 슬라이드 시작*/
 .main_slider{
-    flex-basis: 65%;
-    width: 65px;
+    /* flex-basis: 65%;
+    width: 65px; */
 }
 .main_slider .swiper {
-    width: 740px;
     height: 610px;
+    max-width: 740px;
+    width: 100%
 }
 .main_slider .swiper-slide {
     width: 50%;
@@ -574,17 +562,8 @@
 
     /* Center slide text vertically */
     display: flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
     justify-content: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
     align-items: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
 }
 .main_slider .swiper-slide img {
     display: block;
@@ -1042,9 +1021,6 @@
 }
 .tr_sug .tr_text ul li .im_tea{
     display: flex;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
 }
 .tr_sug .tr_text ul li .tag_item{
    padding-left: 16px;
@@ -1437,26 +1413,44 @@
 }
 
 /* 미디어 쿼리 stert */
-@media screen and (max-width: 1025px){
+@media screen and (max-width: 1280px){
+    .bt_p{
+        margin:0;
+    }
     .w_m{
         width: auto;
         max-width: 100%;
     }
-    .travel_sug{
-        background-color: #fff;
+    .best_inner{
+        margin-top: 0;
+    }
+    .slide_in .main_le{
+        display: none;
+    }
+    .main_slider .swiper-slide{
+        background: inherit;
+        border-radius: 30px;
+    }
+    .main_slider .swiper-slide img{
+        border-radius: 30px;
+    }
+    .main_slider .swiper-slide{
+        height: auto;
+    }
+    .main_slider .swiper{
+        height: auto;
+    }
+    .visual_wrap .wrapper{
+        border-radius: 30px;
     }
     .travel_sug .swiper-slide{
        width: 100%;
     }
-    .travel_sug  .swiper-wrapper{
+    /* .travel_sug  .swiper-wrapper{
         margin-right: 20px;
-    }
+    } */
     .travel_sug .tr_sug .tr_text .tag{
         display: none;
-    }
-    .travel_sug .trs .tr_text .item_title{
-      
-        
     }
     .travel_sug .tr_sug .trs img{
         position: relative;
@@ -1466,13 +1460,16 @@
         width: 100%;
     }
     .travel_sug .trs .tr_text {
-        padding-left: 53px;
+        padding: 20px 30px;
         position: absolute;
         left: 0;
-        top: 30px;
-    }
-    .travel_sug .tr_text .Explan_tit{
-      
+        bottom: 0;
+        top: 0;
+        right: 0;
+        background: linear-gradient(180deg, rgba(255,255,255,10) 10%, rgba(255,255,255,0.1) 80%);
+        display: block;
+        margin-left: 0;
+        border-radius: 30px;
     }
     .travel_sug .tr_sug ul{
         display: none;
@@ -1486,134 +1483,19 @@
     .inder_wrpper{
         display: none;
     }
-
     .group01{
         margin-top: 40px;
     }
-
-    /* 패키지, 하나만 믿고! */
-    .package_wrap h5{
-        padding: 16px  26px 0;
-        margin: 0;
-        font-size: 14px;
-        font-weight: 700;
-        color: #111;
-        line-height: 1.5;
+    .tr_off_inner .item_wrap .swiper-slide{
+        border-radius: 16px;
+        box-shadow: 0 3px 13px 0 rgb(0 0 0 / 10%);
+        width: 33.3333%;
+        margin-bottom: 30px;
+        max-width: 300px;
     }
-    .package_wrap ul{
-        display: flex;
-        padding: 25px 0 10px 26px;
+    .tr_off_inner .off_slide img{
+        min-height: 230px;
     }
-    .package_wrap ul li{
-        width: 59px;
-        margin-left: 6px;
-        text-align: center;
-    }
-    .package_wrap ul li:first-child{
-        background: url(../images/m_p_img01_1.png) no-repeat;
-        width: 32px;
-        height: 32px;
-        background-position: center;
-        background-size: contain;
-    }
-    .package_wrap img{
-        width: 32px;
-        height: 32px;
-        display: block;
-        margin: 0 auto;
-    }
-    .package_wrap span{
-        color: #5e2bb8;
-        display: inline-block;
-        font-weight: 600;
-    }
-    .package_wrap ul li a span{
-        font-size: 11px;
-        color: #111;
-    }
-    .package_add{   
-        padding: 16px 0 0 16px;
-    }
-    .package_add ul{
-        display: flex;
-        flex-wrap: wrap;
-        border-radius: 30px
-    }
-    .package_add ul li{
-        width: calc(33.3333% - 5px);
-        text-align: center;
-        background-color: rgba(69,133,255,.08);
-        -webkit-tap-highlight-color: rgba(0,0,0,0);
-        min-height: 30px;
-        line-height: 30px;
-        border-left: 1px solid #fff;
-    }
-    .package_add ul li:nth-child(4),
-    .package_add ul li:nth-child(5),
-    .package_add ul li:nth-child(6){
-       border-top: 1px solid #fff;
-       box-sizing: border-box;
-    }
-    .package_add ul li a{ 
-        display: block;
-        padding: 5px 0;
-        font-size: 12px;
-        font-weight: 500;
-        color: #111;
-    }
-    .sub_menu{
-        margin-top: 15px;
-    }
-    .sub_menu ul{
-        display: flex;
-        padding-top: 10px;
-    }
-    .sub_menu ul li{
-        display: flex;
-        justify-content: center;
-        width: calc(33.3333% - 5px);
-        border-right: 1px solid #f8f8f8;
-        box-sizing: border-box;
-    }
-    .sub_menu ul li:last-child{
-        border-right: 0;
-    }
-    .sub_menu ul li a{
-        flex-direction: column;
-        display: flex;
-    }
-    .sub_menu ul li img{
-        width: 32px;
-        height: 32px;
-        margin: 0 auto;
-    }
-    .sub_menu .p_tit{
-        font-weight: 600;
-        font-size: 12px;
-        text-align: center;
-        padding-top: 5px;
-    }
-    .sub_menu .p_reface{
-        font-size: 10px;
-        color: #999;
-        text-align: center;
-        padding-top: 5px;
-    }
-    .service_menu ul{
-        display: flex;
-        padding-top: 10px;
-    }
-    .service_menu ul li{
-        border-radius: 20px;
-        margin: 10px;
-    }
-    .service_menu img{
-        width: 100%;
-        height: 100%;
-        -o-object-fit: cover;
-        object-fit: cover;
-    }
-  
     /* 갑자기 찾아온 겨울. 지금 인기최고 여행지_s */
     .best_tit {
         margin: 30px auto 30px;
@@ -1624,23 +1506,14 @@
         margin-left: 10px;
     }
     .best_inner ul li{
-        padding: 0;
-        margin-left: 0;
         border-radius: 16px;
         box-shadow: 0 3px 13px 0 rgb(0 0 0 / 10%);
-
-       max-width: 100%;
-       width: 100%;
-       margin-bottom: 30px;
+        width: 33.3333%;
+        margin-bottom: 30px;
+        max-width: 265px;
+        margin-left: 24px;
+        flex: 1;
     }
-
-
-    /* .best_inner ul li:nth-child(even){
-        max-width: 282px;
-        width: auto;
-    } */
-
-
     .best_inner ul li img {
         height: 210px;
         width: 100%;
@@ -1650,7 +1523,7 @@
     }
     .offer_text{
         margin-bottom:0;
-        padding: 0 15px;
+        padding:15px;
     }
     .inner_tab{
         display: none;
@@ -1662,13 +1535,15 @@
     .time_wrap{
         background-color: #f5f5f5;
     }
-    .time_inner{
-        max-width: 660px;
-        margin: 15px auto;
+    .time_inner {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 30px;
     }
     .time_inner img{
         border-radius: 30px;
         padding: 15px 0;
+        width: 100%;
     }
     .timesale_box h4{
         margin-bottom:5px;
@@ -1685,33 +1560,41 @@
         color: #999;
         font-size: 17px;
     }
+    .timesale_box>p{
+        padding: 5px 10px;
+        font-size: 15px;
+    }
     .timesale_Price{
         display: flex;
         padding: 0 10px;
     }
     .timesale_Price span{
-        font-size: 23px;
+        font-size: 20px;
         color: #ff299c;
+        font-weight: 600;
     }
     .timesale_Price p .cost{
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 700;
         color: #111;
     }
     .timesale_Price p .cost01{
-        font-size: 20px;
+        font-size: 16px;
         color: #888;
     }
     .timesale_btn{
         width: 100%;
-        padding: 6px 20px 7px 30px;
-        border-radius: 32px;
-        font-size: 21px;
+        padding: 12px;
+        border-radius: 30px;
+        font-size: 22px;
         background-color: #302f31;
         letter-spacing: -1px;
         color: #fff;
         text-align: center;
         margin-top: 15px;
+    }
+    .timesale_btn .timesale_wrap{
+        font-size: 14px;
     }
     .before_txt{
         margin: -3px 4px 0 0;
@@ -1722,16 +1605,12 @@
         vertical-align: middle;
         opacity: 0.7;
     }
-
     .best_inner ul{
-        flex-direction: column;
-        justify-content: center;
+        flex-wrap: wrap;
     }
-
     .Korea_travel ul{
         flex-direction: column;
     }
-
     .Korea_travel ul li{
         width:100%;
         margin-bottom: 30px;
@@ -1741,7 +1620,24 @@
         height: auto;
     }
 
+    .travel_sug .tr_sug .trs{
+        position: relative;
+    }
+
 }
-@media screen and (max-width: ) {
-    
+
+@media screen and (max-width: 768px){
+    .best_inner ul {
+        justify-content: center;
+    }
+    .tr_off_inner .item_wrap .swiper-slide{
+        max-width: auto;
+        width: 100%;
+    }
+
+
+
+
+
 }
+@media screen and (max-width: 375px){}
