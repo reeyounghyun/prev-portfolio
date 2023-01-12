@@ -153,7 +153,7 @@ button {
     color: #888;
     margin: 40px 10px 30px;
   }
-  .right_wrap .list_por_listwrap > .btn {
+  /* .right_wrap .list_por_listwrap > .btn {
     display: block;
   }
   .right_wrap .por_list > ul {
@@ -229,7 +229,7 @@ button {
   }
   .right_wrap .por_list > ul li .price span {
     font-size: 13px;
-  }
+  } */
 /* 상담로봇 css */
 
 /* banner_wrap stert */
