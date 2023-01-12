@@ -27,7 +27,7 @@ button {
     overflow: hidden;
 }
 /* 상담로봇 css */
-.right_fixed {
+.right_wrap {
     width: 120px;
     background-color: #fff;
     border: 1px solid #111;
@@ -37,7 +37,7 @@ button {
     right: 0;
     z-index: 100;
 }
- .right_fixed > a {
+ .right_wrap > a {
     display: block;
     background-color: #f3f3f3;
     text-align: center;
@@ -45,11 +45,11 @@ button {
     letter-spacing: -1px;
     color: #333;
   }
-.right_fixed .btn_recent_items {
+.right_wrap .por_btn {
     height: 45px;
     line-height: 42px;
   }
-.right_fixed .btn_recent_items:after {
+.right_wrap .por_btn:after {
     width: 12px;
     height: 8px;
     background-position: -80px -68px;
@@ -59,39 +59,35 @@ button {
     background-repeat: no-repeat;
     background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
   }
-.right_fixed .btn_recent_items.on:after {
+.right_wrap .por_btn.on:after {
     background-position: -94px -68px;
     display: inline-block;
     content: '';
     background-repeat: no-repeat;
     background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
   }
-.right_fixed .btn_go_top {
+.right_wrap .btn_go_top {
     height: 30px;
     line-height: 28px;
     border-top: 1px solid #ddd;
   }
-.right_fixed .btn_go_top:before {
+.right_wrap .btn_go_top:before {
     width: 10px;
     height: 6px;
     background-position: -107px -70px;
     margin-right: 7px;
     position: relative;
     top: -2px;
-
     display: inline-block;
     content: '';
     background-repeat: no-repeat;
     background-image: url(https://image.hanatour.com/usr/static/img2/pc/com/spr_com.png);
-  }
-  .right_fixed .chatting {
+  } 
+  .right_wrap .btn_go_top {
     position: relative;
   }
-  .right_fixed .chatting .btn_chatting {
+  .right_wrap .chet_cont .chat_btn {
     display: flex;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
     width: 100%;
     height: 110px;
     border: none;
@@ -100,12 +96,12 @@ button {
     justify-content: center;
     background: #fff;
   }
-  .right_fixed .chatting .btn_chatting .text {
+  .right_wrap .chet_cont .chat_btn .text {
     display: block;
     font-size: 13px;
     color: #111;
   }
-  .right_fixed .chatting .btn_chatting .text:before {
+  .right_wrap .chet_cont .chat_btn .text:before {
     content: '';
     display: block;
     width: 38px;
@@ -115,7 +111,7 @@ button {
     background: url(../images/ico-chatting.png) 50% 50% no-repeat;
     background-size: cover;
   }
-  .right_fixed .chatting .box_chatting {
+  .right_wrap .chet_cont .box_chatting {
     position: absolute;
     top: 0;
     left: 120px;
@@ -128,49 +124,49 @@ button {
     transition: left 0.5s, opacity 0.5s;
     overflow: hidden;
   }
-  .right_fixed .chatting .box_chatting iframe {
+  .right_wrap .chet_cont .chat_btn iframe {
     width: 100%;
     height: 600px;
   }
-  .right_fixed .chatting.active .btn_chatting .text {
+  .right_wrap .chet_cont.active .chat_btn .text {
     color: #5e2bb8;
   }
-  .right_fixed .chatting.active .btn_chatting .text:before {
+  .right_wrap .chet_cont.active .box_chatting .text:before {
     background-image: url('https://image.hanatour.com/usr/static/img/pc/com/ico-chatting-on.png');
   }
-  .right_fixed .chatting.active .box_chatting {
+  .right_wrap .chet_cont.active .box_chatting {
     left: -413px;
     opacity: 1;
   }
-  .right_fixed .list_wrap {
+  .right_wrap .por_list {
     width: 100px;
     margin: 10px auto 0;
     display: none;
   }
-  .right_fixed.on .list_wrap {
+  .right_wrap.on .por_list {
     display: block;
   }
-  .right_fixed .list_wrap > p {
+  .right_wrap .por_list > p {
     text-align: center;
     font-size: 13px;
     line-height: 20px;
     color: #888;
     margin: 40px 10px 30px;
   }
-  .right_fixed .list_wrap > .btn {
+  .right_wrap .list_por_listwrap > .btn {
     display: block;
   }
-  .right_fixed .list_wrap > ul {
+  .right_wrap .por_list > ul {
     margin: 5px auto 0;
   }
-  .right_fixed .list_wrap > ul li {
+  .right_wrap .por_list > ul li {
     padding: 10px 0;
     position: relative;
   }
-  .right_fixed .list_wrap > ul li + li {
+  .right_wrap .por_list > ul li + li {
     border-top: 1px solid #ddd;
   }
-  .right_fixed .list_wrap > ul li .cls {
+  .right_wrap .por_list > ul li .cls {
     position: absolute;
     top: 27px;
     right: 0;
@@ -178,7 +174,7 @@ button {
     height: 14px;
     font-size: 0;
   }
-  .right_fixed .list_wrap > ul li .cls:before {
+  .right_wrap .por_list > ul li .cls:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -186,29 +182,29 @@ button {
     height: 14px;
     background-position: -463px -94px;
   }
-  .right_fixed .list_wrap > ul li .date {
+  .right_wrap .por_list > ul li .date {
     line-height: 1;
     margin-bottom: 5px;
     font-size: 12px;
     color: #666;
   }
-  .right_fixed .list_wrap > ul li .img {
+  .right_wrap .por_list > ul li .img {
     position: relative;
     width: 100px;
     height: 60px;
   }
-  .right_fixed .list_wrap > ul li .img img {
+  .right_wrap .por_list > ul li .img img {
     width: 100px;
     height: 60px;
     line-height: 0;
   }
-  .right_fixed .list_wrap > ul li .img a {
+  .right_wrap .por_list > ul li .img a {
     display: block;
     width: 100px;
     height: 60px;
     line-height: 0;
   }
-  .right_fixed .list_wrap > ul li .img span {
+  .right_wrap .por_list > ul li .img span {
     display: none;
     width: 100px;
     height: 60px;
@@ -221,17 +217,17 @@ button {
     line-height: 18px;
     padding: 15px 5px 0;
   }
-  .right_fixed .list_wrap > ul li .img a:hover span {
+  .right_wrap .por_list > ul li .img a:hover span {
     display: block;
   }
-  .right_fixed .list_wrap > ul li .img a:before,
-  .right_fixed .list_wrap > ul li .img a:after {
+  .right_wrap .por_list > ul li .img a:before,
+  .right_wrap .por_list > ul li .img a:after {
     display: none !important;
   }
-  .right_fixed .list_wrap > ul li .price {
+  .right_wrap .por_list > ul li .price {
     font-size: 14px;
   }
-  .right_fixed .list_wrap > ul li .price span {
+  .right_wrap .por_list > ul li .price span {
     font-size: 13px;
   }
 /* 상담로봇 css */
@@ -327,7 +323,7 @@ button {
 }
 .wrap_info>ul>li>a{
     display: block;
-    font-size: 14px;
+    font-size: 12px;
 }
 .gnb_in .gnb_in_wrap{
     display: flex;
@@ -364,11 +360,11 @@ button {
 .header_wrap .header_left .searchform_com {
     width: 100%;
     max-width: 410px;
-    height: 44px;
     margin-left: 30px;
-    border-radius: 100px;
+    border-radius: 30px;
     border: 1px solid #333;
-    box-sizing: border-box;
+    padding: 2px;
+    display: inline-block;
 }
 .header_wrap .header_left .searchform_com .box_search {
     height: 44px;
@@ -376,15 +372,11 @@ button {
     overflow: hidden;
 }
 .header_wrap .header_left .searchform_com .input_keyword {
-    height: 40px;
-    margin: 0;
-    padding: 0;
-    border: 0;
     width: 334px;
-    float: left;
     line-height: 40px;
-    font-size: 15px;
     color: #bbb;
+    padding: 2px;
+    display: inline-block;
 }
 .header_wrap .header_left .searchform_com .input_keyword:focus{
     width: 310px;
@@ -440,7 +432,7 @@ button {
     width: 100%;
     display: block;
 }
-.section .tooltip .tooltiptext {
+.section .tooltip .tooltiptext{
     position: absolute;
     width: 168px;
     background-color: #fff;
@@ -449,7 +441,6 @@ button {
     border: 1px solid #333;
     z-index: 301;
     overflow: hidden;
-
     display: none;
     transform: all 0.3s;
 }
@@ -650,7 +641,7 @@ button {
     height: 57px;
 }
 .gnb_in .menu_wrap .menu_left .left_bar>ul>li + li{
-    margin-left: 15px;
+    margin-left: 20px;
 }
 .gnb_in .menu_wrap .menu_left .left_bar>ul>li>a{
     font-size: 15px;
@@ -929,6 +920,10 @@ button {
         border-radius: 20px;
         margin: 10px;
     }
+    .service_menu ul li a{
+        width: 100%;
+        display: block;
+    }
     .service_menu img{
         width: 100%;
         height: 100%;
@@ -1031,7 +1026,7 @@ button {
         color: rgb(32, 19, 19);
         font-weight: 600;
     }
-    .right_fixed{
+    .right_wrap{
         display: none;
     }
     .h_gnb_in{
@@ -1041,7 +1036,7 @@ button {
     .wrap_info{
         display: none;
     }
-    .searchform_com{
+    .header_wrap .header_left .searchform_com{
         display: none;   
     }
     .head_btn{
@@ -1083,6 +1078,9 @@ button {
 @media screen and (max-width: 768px){
     .banner_wrap{
         display: none;
+    }
+    .travel_sug .trs .tr_text{
+        max-width: 623px;
     }
 }
 @media screen and (max-width: 375px){
@@ -1339,13 +1337,20 @@ button {
     display: flex;
     align-items: center;
 }
+.foo_bot_i span + span{
+    margin-left: 20px;
+    display: inline-block;
+    width: 100%;
+}
+.foo_bot_i a{
+    width: 100%;
+    display: block;
+}
 .foo_bot_i img{
     max-width:50px;
     display: inline-block;
 }
-.foo_bot_i img + img{
-    margin-left: 20px;
-}
+
 .fo_bot_i p img{
     display: inline-block;
     font-size: 10px;

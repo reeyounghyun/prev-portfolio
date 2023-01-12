@@ -155,10 +155,6 @@ $(document).ready(function () {
                 spaceBetween: 5,
               },
         }
-
-
-
-
     });
 
     // 고객님만을 위한 추천여행js 
@@ -181,7 +177,7 @@ $(document).ready(function () {
               },
             375:{
                 slidesPerView: 1,
-                spaceBetween: 20,
+                spaceBetween: 10,
               },
         }
     });

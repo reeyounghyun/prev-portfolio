@@ -53,6 +53,9 @@
     width: 100%;
     background-color: #E2DAF2;
 }
+.visual_wrap{
+    overflow: hidden;
+}
 .w_m_wrap .visual_wrap .wrapper .slide_in{
     display: flex;
         display: -webkit-box;
@@ -113,7 +116,7 @@
     max-width: 149px;
     height: 52px;
     line-height: 52px;
-    color: #888;
+    color: #111;
     padding-left: 35px;
 }
 .air_inp .inp_box{
@@ -276,19 +279,22 @@
     line-height: 34px;
     color: #111;
     margin: 75px 0 35px;
+    font-weight: 400;
 }
-.package .le_input{
-    width: 330px;
-    height: 52px;
-    line-height: 52px;
-    color: #ccc;
-    border-radius: 4px;
-    border-color: #fff;
-    font-size: 17px;
-    border: 1px solid #cdcdcdcd;
-    padding: 0 15px;
-    background-color: #fff;
+.slide_in .main_le .top_input h2 span{
+    font-weight: 500;
+}
 
+.package .le_input{
+    max-width: 330px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #111;
+    font-size: 16px;
+    border: 1px solid #cdcdcdcd;
+    box-sizing: border-box;
+    padding: 0 15px;
 } /* 슬라이드 검색 버튼 */
 
 .package .le_box>ul>li {
@@ -394,14 +400,15 @@
 .package .le_box>ul>li:nth-child(2)>div{
     display: inline-block;
     vertical-align: top;
-    min-width: 161px;
-    min-height: 58px;
-    padding: 15px 0 0 80px;
+    min-width: 160px;
+    min-height: 55px;
     border: 1px solid #333;
     box-sizing: border-box;
     border-radius: 4px;
     font-size: 13px;
     opacity: .3;
+    position: relative;
+    margin-right: 8px;
 }
 .package .le_box>ul>li:nth-child(2)>div span i{
     background-position: 0 -26px;
@@ -418,15 +425,30 @@
     background-position: -42px -26px;
     background-image: url(https://image.hanatour.com/usr/static/img2/pc/man/spr_man.png);
 }
-.package .le_box ul li .Place01{
+.package .le_box ul li a{
+    display: block;
+    width: 100%;
+}
+.package .le_box ul li .Place01 span{
     background: url(../images/icon_es01.png) no-repeat;
     background-position: 15px 16px;
-    margin-right: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 16px 0 0 70px;
+    position: absolute;
+    left: 0;
+    top: 0px;
 }
-.package .le_box ul li .Place02{
+.package .le_box ul li .Place02 span{ 
     background: url(../images/icon_es02.png) no-repeat;
-    background-position: 15px 16px;
-    height: 40px;
+    background-position: 15px 15px;
+    width: 100%;
+    height: 100%;
+    padding: 16px 0 0 70px;
+    position: absolute;
+    left: 0;
+    top: 0px;
+  
 }
 .package .le_box button,
 .th_inner button{
@@ -454,7 +476,7 @@
 }
 /* 고객님, 어떤 여행을 꿈꾸시나요? 호텔 탭 */
 .th_le_input{
-    color: #ccc;
+    color: #111;
     width: 330px;
     height: 52px;
     line-height: 52px;
@@ -659,14 +681,15 @@
 /* 갑자기 찾아온 겨율, 지금 인기 최고 여행지! & 고객님만을 위한 추천여행 공통 css */
 .best_tit h4{
     font-size: 26px;
-    color: #000;
+    color: #333;
+    font-weight: 500;
 }
 .best_tit{
     padding-bottom: 30px;
 } 
 .best_inner{
     margin-top: 100px;
-}
+} 
 /* 갑자기 찾아온 겨율, 지금 인기 최고 여행지! css */
 .best_inner>ul{
     display: flex;
@@ -690,15 +713,18 @@
 }
 .best_inner .offer_text .offer_tit{
     color: #111;
-    font-weight: 600;
-    font-size: 17px;
+    font-weight: 500;
+    font-size: 16px;
     display: block;
-    margin-top: 10px;
-    padding-bottom: 5px;
+    margin: 10px 0;
     line-height: 1.2;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.best_inner .offer_text  span{
+    color: #333;
+    display: inline-block;
 }
 .best_inner .offer_text .offer_tit span{
     display: inline-block;
@@ -706,7 +732,7 @@
 .best_inner .offer_text .unit{
     color: #111;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 22px;
 }
 .best_inner .offer_text .price_group{
     margin-top: 18px;
@@ -717,7 +743,7 @@
     font-size: 22px;
 }
 .price_group .unit span{
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     color: #111;
 }
@@ -755,13 +781,13 @@
     flex-direction: column;
 }
 .bt_p .inner_tab .but_titsx button{
-    border: none; 
+    border: none;
     background-color: #fff;
     margin: 6px 0;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     border-radius: 30px;
-    padding: 7px 16px;
+    padding: 7px 20px;
     display: inline-block;
 }
 .bt_p .inner_tab .but_titsx button:last-child{
@@ -777,7 +803,7 @@
 .bt_p .inner_tab .con_inner .tab-content{
     position: absolute;
     top: 42px;
-    left: 275px;
+    left: 292px;
 }
 .inner_tab .con_inner .content_wrap ul{
     display: flex;
@@ -794,7 +820,7 @@
     height: 412px;
 }
 .inner_tab .con_inner .content_wrap ul li .offer_text{
-    padding: 0 18px 20px;
+    padding: 0 15px 10px;
     height: 202px;
 }
 .inner_tab .con_inner .content_wrap ul li a{
@@ -812,26 +838,36 @@
     padding: 15px 0;
 }
 .inner_tab .con_inner .content_wrap ul li .tit_hashtag{
-    font-size: 17px;   
+    font-size: 16px;   
     color: #111;
     display: block;
-    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .inner_tab .con_inner .content_wrap ul li .hashtag{
     color: #333;
     font-size: 14px;
     display: inline-block;
-    line-height: 1.2;
+    line-height: 1.4;
+
 }
+.inner_tab .con_inner .content_wrap .price_group {
+    margin-top: 18px;
+}
+
 .inner_tab .con_inner .content_wrap .price_group .unit{
     color: #111;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 22px;
 }
 .inner_tab .con_inner .content_wrap .price_group .unit span{
     font-size: 17px;
     font-weight: 400;
     color: #111;
+    padding: 0;
 }
 /* 고객님만을 위한 추천여행 */
 .tr_off_inner{
@@ -839,7 +875,8 @@
 }
  .tr_off_inner .item_wrap{
     position: relative;
-    padding-right: 30px;
+    padding: 0 25px;
+
 }
 .tr_off_inner .off_slide a{
     display: block;
@@ -858,10 +895,9 @@
 }
  .tr_off_inner .off_slide .offer_text p{
     color: #111;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 17px;
-    line-height: 20px;
-    display: block;
+    line-height: 1.5;
 }
  .tr_off_inner .off_slide .price_group{
     margin-top: 18px;
@@ -886,6 +922,10 @@
     background-position: center;
     right: 0px;
     top: 113px;
+    border: 1px solid #c3c3c3;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
 } 
 .tr_off_inner .off_slide .offer-prev{
     background: url(../images/page_l2.png) no-repeat #fff;
@@ -893,36 +933,39 @@
     background-position: center;
     left: 0px;
     top: 113px;
+    border: 1px solid #c3c3c3;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 /* 하나 Original */
+.travel_wrap{
+    margin-bottom: 100px;
+}
 .travel_sug{
     background-color: rgb(252, 231, 200);
 }
 .travel_sug .tr_sug .trs{
     display: flex;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
 }
 .travel_sug .trs .img{
     display: inline-block;
 }
-.travel_sug .tr_sug .tr_text .tag{
-    font-size: 15px;
-    font-weight: bold;
-    border-bottom: 3px solid #111;
-    padding: 0 0 8px;
-    margin-bottom: 18px;
+.travel_sug .trs  .tr_text{
     display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
 }
-.tr_sug .tr_text .item_title{
-    font-family: 'hnt-font';
-    font-size: 15px;
-    font-weight: 600;
-    color: #111;
-    line-height: 1;
-    margin-top: 7px;
+.travel_sug .tr_sug .tr_text .tag{
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(0 0 0 / 40%);
+    display: inline-block;
+    padding-bottom: 4px;
+    letter-spacing: -0.4px;
+    color: #000;
 }
 .tr_sug .tr_text .tag_title{
     color: #666;
@@ -932,26 +975,22 @@
 }
 .travel_sug .tr_sug ul{
     position: absolute;
-    left: 642px;
+    left: 0;
 } 
+.travel_sug .tr_sug ul li:nth-child(2){
+    display: inline-block;
+    margin-top: 18px;
+}
 .travel_sug .trs .tr_text{
     margin-left: 53px;
 }
-.travel_sug .trs .tr_text .item_title{
-    font-family: 'hnt-font';
-    font-size: 30px;
-    font-weight: 600;
-    color: #111;
-    font-weight: 400;
-    line-height: 1.5;
-}
 .travel_sug .tr_text .Explan_tit{
-    color: #666;
-    line-height: 25px;
-    margin-top: 25px;
+    color: #333;
+    line-height: 1.5;
     font-size: 14px;
+    letter-spacing: 0.25px;
 }
-.tr_sug{
+.travel_sug .tr_sug{
     position: relative;
     padding: 75px 0 65px;
 }
@@ -960,20 +999,20 @@
     left: 0;
 }
 .tr_sug .swiper-pagination-bullet{
-    background-color: #ddd;
-    width: 8px;
-    height: 8px;
-    display: inline-block;
-    opacity: 0.2;
-    border-radius: 8px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    transition: all 0.3s;
 }
 .tr_sug .swiper-pagination-bullet-active{
-    background-color: #333;
-    opacity: 1;
-    width: 16px;
-    height: 8px;
-    border-radius: 4px;
+    background-color: rgb(62 62 62 / 83%);
+    width: 29px;
+    height: 10px;
+    border-radius: 30px;
     margin: 0 4px;
+    border: none;
+    transition: all 0.5s;
 }
 .tr_sug .tr_text ul li .im_tea{
     display: flex;
@@ -982,16 +1021,16 @@
    padding-left: 16px;
 }
 .tr_sug .tr_text ul li .tag_item .s_item_title{
-    font-size: 15px;
+    font-size: 16px;
     color: #111;
-    line-height: 1;
+    line-height: 1.2;
     font-weight: 600;
 }
 .tr_sug .tr_text ul li .tag_item .item_text{
     font-size: 14px;
     color: #666;
-    line-height: 16px;
-    margin-top: 5px;
+    line-height: 1.2;
+    margin-top: 10px;
 }
 .tr_sug .tr_text ul li .tag_item .price_group strong{
     font-size: 15px;
@@ -1002,7 +1041,31 @@
     font-weight: 600;
 }
 
+.trs .tr_text .product_box .item_title{
+    font-family: 'hnt-font';
+    font-size: 32px;
+    color: #111;
+    font-weight: 400;
+    display: block;
+    margin: 15px 0;
+}
+.tr_02 .tr_text .product_box{
+    margin-top: 10px;
+    margin-bottom: 56px;
+}
+.tr_02 .tr_text .product_box .item_title{
+    line-height: 1.2;
+}
+.tr_01 .tr_text .product_box{
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+
 /* 내나라 구석구석 */
+.Korea_wrap{
+    margin-bottom: 100px!important;
+}
 .Korea_travel .main_tit h4{
     color: #333;
     font-size: 26px;
@@ -1088,9 +1151,13 @@
     background: url(https://image.hanatour.com/usr/manual/update/pc/main/info/011_bg.jpg) 50% 0px no-repeat;
     height: 749px;
     overflow: hidden;
-    margin: 100px auto 0;
+    display: flex;
+    align-items: center;
 }
-.submain .main_tit h4{
+.tit_inden{
+    margin-bottom: 30px;
+}
+.submain h4{
     color: #fff;
     font-size: 30px;
     line-height: 38px;
@@ -1099,13 +1166,7 @@
 }
 .submain .submain_inner ul{
     display: flex;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
     justify-content: center;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
     box-shadow: 0px 15px 15px 0px rgb(0 0 0 / 15%);
     height: 517px;
     background-color: #fff;
@@ -1149,15 +1210,19 @@
     font-size: 20px;
     line-height: 28px;
     font-weight: 600;
+    color: #111;
 }
 .video .vid_font{
     font-size: 15px;
     line-height: 22px;
     color: #666;
+    margin-bottom: 20px;
 }
 .vid_font .item_text{
-    font-size: 15px;
+    font-size: 14px;
     line-height: 22px;
+    color: #666;
+    font-weight: 400;
 }
 .vid_font .arrow_r{
     display: inline-block;
@@ -1166,35 +1231,22 @@
     line-height: 1;
 }
 .submain_inner ul li .get_a {
-    display: flex;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-    flex-direction: column;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-    justify-content: space-between;
-        -webkit-box-pack: space-betwee;
-        -webkit-justify-content: space-betwee;
-        -ms-flex-pack: space-betwee;
     height: 100%;
+    position: relative;
+}
+
+.submain_inner ul li .get_a .get{
+    margin-top: 25px;
 }
 .submain_inner ul li .get_a .get_tit{
     position: relative;
 }
-.submain_inner ul li .get_a .get_tit span{
-    font-size: 14px;
+.submain_inner ul li .get_a span{
     color: #fff;
-    line-height: 1;
-    letter-spacing: 0;
-    position: absolute;
-    top: 25px;
-    left: 30px;
-    right: 30px;
-}
-.submain_inner ul li .get_a .con_tit{
-    position: relative;
+    margin: 30px 0 0 20px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
 }
 .submain_inner ul li .get_a .con_tit::before{
     content: "";
@@ -1208,9 +1260,11 @@
 }
 .con_tit .tit_in{
     position: absolute;
-    bottom: 43px;
-    left: 30px;
-    right: 30px;
+    bottom: 0;
+    left: 0;
+    top: 60%;
+    width: 100%;
+    padding-left: 30px;
 }
 .con_tit .tit_in .item_title{
     font-size: 20px;
@@ -1219,49 +1273,101 @@
     color: #fff;
 }
 .con_tit .tit_in .item_text{
-    font-size: 15px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 1.5;
     color: #fff;
     margin-top: 10px;
 }
-.con_tit .tit_in  .arrow_r{
-    color: #fff;
+
+.submain_inner ul li .get_a .item_w{
+    display: inline-block;
+    margin: 30px 0 0 30px;
 }
-.submain_inner ul li:nth-child(3){
+
+/* 유튜브 stert */
+.submain_inner ul li:nth-child(1) .video .arrow_r{
+    position: relative;
+    color: #333;
+    font-size: 12px;
+}
+.submain_inner ul li:nth-child(1) .video .arrow_r::before{
+    content: "";
+    clear: both;
+    display: inline-block;
+    background: url(../images/spr_btn.png) no-repeat;
+    width: 7px;
+    height: 12px;
+    position: absolute;
+    right: -14px;
+    background-position: -30px 0;
+}
+.submain_inner ul li:nth-child(2) .get_a .arrow_r{
+    position: relative;
+    color: #fff;
+    padding-top: 32px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+}
+.submain_inner ul li:nth-child(2) .get_a .arrow_r::before{
+    content: "";
+    clear: both;
+    display: inline-block;
+    background: url(../images/spr_btn.png) no-repeat;
+    background-position: -30px -12px;
+    width: 7px;
+    height: 12px;
+    position: absolute;
+    right: -14px;
+}
+.submain_inner ul li.list_tree .get_a .arrow_r{
+    position: relative;
+    color: #333;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 12px;
+}
+.submain_inner ul li.list_tree .get_a .arrow_r::before{
+    content: "";
+    clear: both;
+    display: inline-block;
+    background: url(../images/spr_btn.png) no-repeat;
+    width: 7px;
+    height: 12px;
+    position: absolute;
+    right: -14px;
+    background-position: -30px 0;
+}
+.submain_inner ul li.list_tree .get_a .item_title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #111;
+}
+.submain_inner ul li.list_tree .get_a span{
+    color: #111;
+}
+.submain_inner ul li.list_tree .get_a .item_text{
+    color: #666;
+    line-height: 1.5;
+    margin: 15px 0;
+    font-size: 14px;
+}
+.submain_inner ul li.list_tree{
     width: 306px;
 }
-.submain_inner ul li .get_a .kim img{
+.submain_inner ul li.list_tree .get_a img{
     display: block;
     margin: 0 auto;
     border-radius: 50%;
     width: 220px;
     height: 220px;
 }
-.submain_inner ul li .get_a .item_w{
-    padding-left: 30px;
-    padding-bottom: 42px;
-}
-.submain_inner ul li:nth-child(3) .get_a .item_title,
-.submain_inner ul li:nth-child(3) .get_a span{
-    color: #111;
-}
-.submain_inner ul li:nth-child(3) .get_a .item_text{
-    color: #666;
-}
-.submain_inner ul li:nth-child(3) .get_a .item_text,
-.submain_inner ul li:nth-child(3) .get_a .arrow_r{
-    color: #333;
-}
-
 /* 하나투어닷컴 고객센터 */
-.inder_wrpper{
-    margin-bottom: 70px;
-}
-.inder_wrpper .inder_time{
+.inder_time{
     background: #f7f7f7;
     padding: 70px 0 54px;
 }
-.inder_wrpper .inder_time .info_wrap{
+ .inder_time .info_wrap{
     display: flex;
         display: -webkit-box;
         display: -webkit-flex;
@@ -1272,18 +1378,17 @@
     padding: 40px;
 }
 .inder_time .info_wrap .info_item01 h5{
-    font-size: 22px;
-    line-height: 27px;
-    color: #111;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #333;
     margin-bottom: 30px;
+    font-weight: 500;
 }  
 .inder_time .info_wrap .info_item01 p{
     font-size: 24px;
     color: #111;
-    line-height: 1;
-    margin-bottom: 14px;
-    display: block;
     margin-bottom: 30px;
+    font-weight: 600;
 }
 .inder_time .info_wrap .info_item01 span a{
     font-size: 14px;
@@ -1305,11 +1410,11 @@
         -ms-flex-direction: column;
 }
 .info_wrap .info_item02 strong{
-    font-size: 15px;
+    font-size: 14px;
     color: #111;
-    display: block;
-    line-height: 1;
-    margin-bottom: 3px;
+    display: inline-block;
+    line-height: 1.5;
+    margin-bottom: 5px;
 }
 .info_wrap .info_item02 span{
     margin: 6px 0 0;
@@ -1317,12 +1422,14 @@
     color: #666;
     display: block;
 }
+.info_wrap .info_item03 .counsel{
+    line-height: 1.5;
+}
 .info_wrap .info_item03 strong{
     font-size: 15px;
     color: #111;
     display: block;
-    line-height: 1;
-    margin-bottom: 3px;
+    line-height: 1.5;
 }
 .info_wrap .info_item03  span{
     margin: 6px 0 0;
@@ -1343,18 +1450,15 @@
     line-height: 1;
     color: #666;
 }
-.info_wrap .info_item04 ul li:nth-child(2){
-    margin-top: 30px;
-}
-.info_wrap .info_item04 ul li:nth-child(3){
-    margin-top: 18px;
+
+.info_wrap .info_item04 ul li + li{
+    margin-top: 12px;
 }
 .info_wrap .info_item04 ul li {
     font-size: 15px;
     color: #111;
     display: block;
-    line-height: 1;
-    margin-bottom: 3px;
+    line-height: 1.5;
 }
 .info_wrap .info_item04 ul li button{
     margin-top: 7px;
@@ -1378,6 +1482,9 @@
     }
     .best_inner{
         margin-top: 0;
+    }
+    .visual_wrap{
+       margin: 10px;
     }
     .slide_in .main_le{
         display: none;
@@ -1429,6 +1536,12 @@
     }
     .Korea_travel img{
         border-radius: 30px;
+        width: 500px;
+        height: 450px;
+    }
+    .Korea_travel ul li:nth-child(3) img {
+        width: 500px;
+        height: 450px;
     }
     .submain{
         display: none;
@@ -1481,10 +1594,7 @@
     .inner_tab{
         display: none;
     }
-    .Korea_travel ul li:nth-child(3) img {
-        width: 100%;
-        height: auto;
-    }
+
     .time_wrap{
         background-color: #f5f5f5;
     }
@@ -1565,12 +1675,7 @@
         flex-direction: column;
     }
     .Korea_travel ul li{
-        width:100%;
         margin-bottom: 30px;
-    }
-    .Korea_travel img{
-        width: 100%;
-        height: auto;
     }
     .travel_sug .tr_sug .trs{
         position: relative;
@@ -1585,5 +1690,37 @@
         max-width: auto;
         width: 100%;
     }
+    .Korea_travel ul li {
+        max-width: 300px;
+    }
+    .Korea_travel img{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        min-height: 255px;
+    }
+    .Korea_travel ul li:nth-child(3) img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+    .Korea_travel ul li:nth-child(3) .item_title{
+        font-size: 13px;
+    }
+
+    .inder_time{
+        display: none;
+    }
+  
 }
-@media screen and (max-width: 375px){}
+@media screen and (max-width: 375px){
+
+    .best_inner ul li{
+        width: 100%;
+        margin: 0 24px 24px 24px;
+        max-width: initial;
+    }
+    .best_tit {
+        margin: 0
+    }
+}
