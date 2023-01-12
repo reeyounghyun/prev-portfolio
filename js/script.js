@@ -169,7 +169,7 @@ $(document).ready(function () {
         breakpoints:{
             1280: {
                 slidesPerView: 4,
-                spaceBetween: 30,
+                spaceBetween: 15,
               },
             768:{
                 slidesPerView: 3,

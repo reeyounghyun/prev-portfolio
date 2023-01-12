@@ -6,6 +6,7 @@
     margin: 60px auto 35px;
 }
 
+
 /* 탭 버튼css */
 /* .but_tit button.acitve{
     transition: all 0.3s;
@@ -687,9 +688,9 @@
 .best_tit{
     padding-bottom: 30px;
 } 
-.best_inner{
+/* .best_inner{
     margin-top: 100px;
-} 
+}  */
 /* 갑자기 찾아온 겨율, 지금 인기 최고 여행지! css */
 .best_inner>ul{
     display: flex;
@@ -751,9 +752,9 @@
 .bt_p{
     margin: 100px auto 0 auto;
 }
-.inner_tab {
+/* .inner_tab {
     margin-top: 100px;
-} 
+}  */
 .inner_tab .con_inner {
     position: relative;
 }
@@ -875,8 +876,7 @@
 }
  .tr_off_inner .item_wrap{
     position: relative;
-    padding: 0 25px;
-
+    padding: 0 10px;
 }
 .tr_off_inner .off_slide a{
     display: block;
@@ -921,7 +921,7 @@
     position: absolute;
     background-position: center;
     right: 0px;
-    top: 113px;
+    top: 130px;
     border: 1px solid #c3c3c3;
     border-radius: 30px;
     width: 40px;
@@ -932,7 +932,7 @@
     position: absolute;
     background-position: center;
     left: 0px;
-    top: 113px;
+    top: 130px;
     border: 1px solid #c3c3c3;
     border-radius: 30px;
     width: 40px;
@@ -940,9 +940,9 @@
 }
 
 /* 하나 Original */
-.travel_wrap{
+/* .travel_wrap{
     margin-bottom: 100px;
-}
+} */
 .travel_sug{
     background-color: rgb(252, 231, 200);
 }
@@ -1063,9 +1063,9 @@
 
 
 /* 내나라 구석구석 */
-.Korea_wrap{
+/* .Korea_wrap{
     margin-bottom: 100px!important;
-}
+} */
 .Korea_travel .main_tit h4{
     color: #333;
     font-size: 26px;
@@ -1376,6 +1376,10 @@
     border-top: 2px solid #000;
     background-color: #fff;
     padding: 40px;
+
+    width: 1200px;
+    max-width:100%;
+    margin: 0 auto;
 }
 .inder_time .info_wrap .info_item01 h5{
     font-size: 20px;
