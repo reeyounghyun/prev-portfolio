@@ -751,9 +751,6 @@ button {
 }
 
 /* header 모바일 시작 점 */
-.m{
-    display: none;
-}
 .mobile{
     display:none;
 }
@@ -762,11 +759,11 @@ button {
  }
 
 @media screen and (max-width: 1280px){
-    .m{
-        display: block;
-    }
     .mobile{
         display: block;
+    }
+    .banner_wrap{
+        display: none;
     }
     .gnb_in .header_wrap .header_left{
         max-width: 100%;
@@ -779,17 +776,16 @@ button {
         padding: 15px 0;
     }
     .gnb_in_wrap .btn{
-        display: inline-flex;
-        align-items: center;
-        padding: 0 15px;
+        display: block;
+        padding: 0;
     }
-    .gnb_in_wrap .btn_allmenu{
-        background: url(../images/ico-allmenu.png);
-        width: 46px;
-        height: 36px;
-        line-height: 18px;
+    .btn_allmenu{
+        background: url(../images/ico-allmenu.png)no-repeat;
+        width: 17px;
+        height: 16px;
+        display: inline-block;
     }
-    .gnb_in_wrap .btn .mb_menu_bg{
+    .btn .mb_menu_bg{
         position: absolute;
         left: -9999px;
         width: 1px;
@@ -799,11 +795,11 @@ button {
         line-height: 0;
         overflow: hidden;
     }
-    .gnb_in_wrap .btn .ico_search{
+    .btn .ico_search{
         background: url(../images/ico_search.png);
-        width: 23px;
+        width: 18px;
         height: 18px;
-        line-height: 18px;
+        display: inline-block;
     }
 
     /* 모바일 추가 부분 */
@@ -1063,8 +1059,9 @@ button {
         white-space: nowrap;
         text-align: center;
     }
-    .btn-global-search{
-        padding: 0 15px;
+    .btn_search img{
+        width: 24px;
+        padding-top: 2px;
     }
     .ico-search{
         background: url(../images/ico-search.png);
@@ -1082,13 +1079,22 @@ button {
 }
 
 @media screen and (max-width: 768px){
-    .banner_wrap{
-        display: none;
-    }
+
     .travel_sug .trs .tr_text{
         max-width: 623px;
     }
+    .mb_nav_bottom{
+        position: absolute;
+        bottom: 0;
+        background: #fff;
+        width: 100%;
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
+
 @media screen and (max-width: 375px){
 
 }
@@ -1405,15 +1411,34 @@ button {
 .swiper-button-prev::after{
     display: none;
 }
-.btn-global-search{
-    display: none;
-}
 .foo_info_mo{
     display: none;
 }
 
 /* 미디어 쿼리_S */
 @media screen and (max-width: 1280px){ 
+    .content {
+        width: 1200px;
+        max-width: 100%;
+        margin: 0 auto 30px auto;
+    }
+    .fl_f{
+        padding: 0 15px;
+    }
+    .area_notice{
+        padding:0 15px;
+    }
+
+    .foo_bott .fr{
+        display: none;
+    }
+    .inder_time{
+        display: none;
+    }
+    .foo_slied{
+        display: none;
+    }
+
 }
 /*pc_max-width:1280px */
 
