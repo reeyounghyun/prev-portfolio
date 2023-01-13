@@ -174,7 +174,8 @@ input:focus {
 	outline: none;
 }
 
-
+* {box-sizing:border-box;}
+button {cursor: pointer;}
 body {
 	-webkit-text-size-adjust: none;
 	font-size: 14px;
@@ -189,6 +190,7 @@ ol,
 ul {
 	list-style: none;
 }
+
 
 a {
 	text-decoration: none;

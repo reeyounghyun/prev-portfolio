@@ -15,6 +15,29 @@ a{text-decoration:none !important; display:block;}
 strong{ display:block;}
 img{ border:0;}
 
+/* 공통 Style CSS */
+.content{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto 100px auto;
+    overflow: hidden;
+}
+.common_cont{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.indent_text{
+    text-indent: -9999px;
+    position: absolute;
+    width: 1px;
+    height: 0px;
+    overflow: hidden;
+}
+.mb_menu_bg{
+    display: none;
+}
+
 
 /* layout:start */
 

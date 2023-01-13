@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta data-n-head="ssr" http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,9 +40,8 @@
         document.write('<link rel="stylesheet" href="./css/common.css?'+rand+'">');
     </script>  -->
 </head>
-
-
 <body>
+    <!-- 헤더 시작 -->
     <header class="header" id="header">
         <div class="banner_wrap">
             <div class="common_cont banner_inner">
@@ -64,6 +62,7 @@
                 </button>
             </div>
         </div>
+
         <div class="area_wrap">
             <div class="wrap_info common_cont">
                 <ul>
@@ -78,7 +77,6 @@
                         <i class="ico ico-allmenu"></i>
                         <span class="mb_menu_bg">전체메뉴 열기</span>
                     </a>
-
                     <div class="header_wrap">
                         <div class="header_left">
                             <div class="le_logo">
@@ -91,7 +89,7 @@
                             <div class="searchform_com">
                                 <form>
                                     <fieldset class="fld_search">
-                                        <legend class="blind">통합 검색어 입력폼</legend>
+                                        <legend class="indent_text">통합 검색어 입력폼</legend>
                                         <div class="box_search deletable" style="position: relative;">
                                             <input type="text" id="input_keyword" title="검색어" placeholder="검색어를 입력해주세요"
                                                 maxlength="30" value="검색어를 입력해주세요" class="input_keyword">
@@ -133,10 +131,11 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="gnb">
                     <div class="menu_wrap common_cont">
                         <div class="menu_left">
-                            <div class="right_all_menu">
+                            <div class="all_menu">
                                 <span><img src="./images/ico-allmenu.png" alt="전체메뉴">전체메뉴</span>
                                 <div class="all_sam">
                                     <div class="sam_in">
@@ -274,8 +273,9 @@
             </div>
         </div>
     </header>
+    <!-- 헤더 끝 -->
 
-    <!-- 상담 로봇 -->
+    <!-- 상담 로봇 시작 -->
     <div class="right_wrap">
         <div class="chet_cont">
             <button type="button" class="chat_btn">
@@ -293,7 +293,7 @@
     </div>
     <!-- 상담 로봇 끝 -->
 
-    <!-- 모바일 메뉴_s -->
+    <!-- 모바일 메뉴 시작 -->
     <div class="quick_menu mobile">
         <a href="javascript:void(0); m">
             <span>1</span>
@@ -379,7 +379,7 @@
             </div>
         </div>
     </div>
-    <!-- 모바일 메뉴_e -->
+    <!-- 모바일 메뉴 끝 -->
 
     <!-- 컨텐츠 시작 -->
     <div class="w_m_wrap">
@@ -627,7 +627,7 @@
         <!-- 모바일 영역 -->
         <div class="mb_wrap">
             <div class="package_wrap hana_mb">
-                <h5><span>패키지,</span>하나만 믿고!</h5>
+                <h4><span>패키지,</span>하나만 믿고!</h4>
                 <ul>
                     <li>
                         <a href="#">
@@ -687,7 +687,7 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <div class="sub_menu_item"> 
+                            <div class="sub_menu_item">
                                 <img src="./images/ico_service_safety.png" alt="해외여행정보">
                                 <span class="p_tit">해외여행정보</span>
                                 <span class="p_reface">국가별 안내</span>
@@ -695,7 +695,7 @@
                         </a>
                     </li>
                     <li>
-                       <a href="#">
+                        <a href="#">
                             <div class="sub_menu_item">
                                 <img src="./images/ico_service_place.png" alt="플레이스">
                                 <span class="p_tit">플레이스</span>
@@ -704,7 +704,7 @@
                         </a>
                     </li>
                     <li>
-                       <a href="#">
+                        <a href="#">
                             <div class="sub_menu_item">
                                 <img src="./images/ico_service_planner.png" alt="플래너">
                                 <span class="p_tit">플래너</span>
@@ -735,7 +735,7 @@
                 <div class="time_inner">
                     <img src="./images/ts_026.jpg" alt="최대67%할인, 최저가보장제! 하이원 뷰 업그레이드 객실 1박 15만원 대~">
                     <div class="timesale_box">
-                        <h4>하이원 콘도</h4>
+                        <span class="timesale_item">하이원 콘도</span>
                         <p>&#35;최저가 보장제 &#35;객실 업그레이드 &#35;체크인 대기없음</p>
                         <div class="timesale_Price">
                             <span>65<em>%</em></span>
@@ -760,7 +760,7 @@
 
         <div class="bt_p w_m_wrap">
             <!-- 모바일 네비게이션 바 영역 -->
-            <div class="mobile mb_nav_bottom">
+            <!-- <div class="mobile mb_nav_bottom">
                 <div class="mb_menu">
                     <a class="btn btn_allmenu " href="#allmenu">
                         전체메뉴
@@ -778,15 +778,15 @@
                 <div class="shopping_basket">
                     <img src="./images/shopping_basket.png" alt="최근본/찜">
                 </div>
-            </div>
+            </div> -->
             <!-- 모바일 네이게이션 바 영역 -->
 
 
             <section class="content m_b">
-                <h5 class="indent_text">2023 새해의 안녕을 위해, 우리 여행 갈까</h5>
+                <h3 class="indent_text">2023 새해의 안녕을 위해, 우리 여행 갈까</h3>
                 <div class="best_inner">
                     <div class="best_tit">
-                        <h4>2023 새해의 안녕을 위해, 우리 여행 갈까</h4>
+                        <h3>2023 새해의 안녕을 위해, 우리 여행 갈까</h3>
                     </div>
                     <ul>
                         <li>
@@ -849,11 +849,11 @@
                 </div>
             </section>
             <section class="content m_b">
-                <h5 class="indent_text">마침내 특가<br>추운 겨울에도<br>여행 텐션 UP!!</h5>
+                <h3 class="indent_text">마침내 특가<br>추운 겨울에도<br>여행 텐션 UP!!</h3>
                 <div class="inner_tab">
                     <div class="con_inner p_inner">
                         <div class="but_tit_wrap">
-                            <h4>마침내 특가<br>추운 겨울에도<br>여행 텐션 UP!!</h4>
+                            <h3>마침내 특가<br>추운 겨울에도<br>여행 텐션 UP!!</h3>
                             <div class="but_titsx">
                                 <span>
                                     <button class="btn_primary tab-link play" data-tab="tab-1">여유있는
@@ -1090,10 +1090,10 @@
                 </div>
             </section>
             <section class="content m_b">
-                <h5 class="indent_text">고객님만을 위한 추천여행</h5>
+                <h3 class="indent_text">고객님만을 위한 추천여행</h3>
                 <div class="tr_off_inner best_inner">
                     <div class="best_tit">
-                        <h4>고객님만을 위한 추천여행</h4>
+                        <h3>고객님만을 위한 추천여행</h3>
                     </div>
                     <div class="swiper off_slide item_wrap">
                         <div class="swiper-wrapper">
@@ -1217,7 +1217,7 @@
                 </div>
             </section>
             <section class="travel_wrap">
-                <h5 class="indent_text">하나 Original</h5>
+                <h3 class="indent_text">하나 Original</h3>
                 <div class="travel_sug best_inner">
                     <div class="common_cont">
                         <div class="swiper mySwiper tr_sug">
@@ -1351,7 +1351,7 @@
                 </div>
             </section>
             <section class="mb_cont">
-                <h5 class="indent_text">슬라이드 배너</h5>
+                <h3 class="indent_text">슬라이드 배너</h3>
                 <div class="banner_slider_mb">
                     <div class="swiper bann_slider">
                         <div class="swiper-wrapper">
@@ -1361,17 +1361,17 @@
                             <div class="swiper-slide">
                                 <img src="./images/mf_bnr_1.jpg" alt="예비 신혼부부를 위한 여행 & 혼수 혜택 모음! 최고의 만남, 최선의 선택">
                             </div>
-                           
+
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
             <section class="content Korea_wrap m_b">
-                <h5 class="indent_text">내나라 구석구석</h5>
+                <h3 class="indent_text">내나라 구석구석</h3>
                 <div class="Korea_travel">
                     <div class="best_tit">
-                        <h4>내나라 구석구석</h4>
+                        <h3>내나라 구석구석</h3>
                     </div>
                     <ul>
                         <li>
@@ -1430,6 +1430,7 @@
             </section>
 
             <section class="mb_cont best_travel">
+                <h5 class="indent_text">베스트여행지</h5>
                 <div class="best_wrap">
                     <div class="best_item">
                         <a href="#" class="best_link">
@@ -1456,10 +1457,10 @@
 
             <!-- 추가상품 리스트 -->
             <section class="content m_b">
-                <h5 class="indent_text">2023 새해의 안녕을 위해, 우리 여행 갈까</h5>
+                <h3 class="indent_text">2023 새해의 안녕을 위해, 우리 여행 갈까</h3>
                 <div class="best_inner">
                     <div class="best_tit">
-                        <h4>2023 새해의 안녕을 위해, 우리 여행 갈까</h4>
+                        <h3>2023 새해의 안녕을 위해, 우리 여행 갈까</h3>
                     </div>
                     <ul>
                         <li>
@@ -1524,7 +1525,7 @@
             <!-- 추가상품 리스트 -->
 
             <section class="con m_b">
-                <h5 class="indent_text">떠나자, 하나만 믿고!</h5>
+                <h4 class="indent_text">떠나자, 하나만 믿고!</h4>
                 <div class="submain">
                     <div class="content">
                         <div class="tit_inden">
@@ -1552,7 +1553,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                
+
                                     <a href="#">
                                         <div class="get_a">
                                             <span class="same_tit">Get About</span>
@@ -1568,7 +1569,7 @@
                                             </div>
                                         </div>
                                     </a>
-                               
+
                                 </li>
                                 <li class="list_tree">
                                     <a href="#">
@@ -1594,11 +1595,11 @@
                 </div>
             </section>
             <section class="con">
-                <h5 class="indent_text">하나투어닷컴<br>고객센터</h5>
+                <h3 class="indent_text">하나투어닷컴<br>고객센터</h3>
                 <div class="inder_time">
                     <div class="info_wrap">
                         <div class="info_item01">
-                            <h5>하나투어닷컴<br>고객센터</h5>
+                            <span class="item_innner">하나투어닷컴<br>고객센터</span>
                             <p>1577-1233</p>
                             <span><a href="#">자주 찾는 질문<i class="xi-angle-right-min"></i></a></span>
                             <span><a href="#">ARS상담번호 안내<i class="xi-angle-right-min"></i></a></span>
@@ -1643,7 +1644,9 @@
             </section>
         </div>
     </div>
+    <!-- 컨탠츠 끝 -->
 
+    <!-- 푸터 시작 -->
     <footer class="footer">
         <div class="notice_bor">
             <div class=" common_cont area_notice">
@@ -1857,7 +1860,7 @@
                 </div>
             </div>
         </div>
-    </footer>   
+    </footer>
+    <!-- 푸터 끝 -->
 </body>
-
 </html>
