@@ -1015,6 +1015,10 @@
     margin-top: 10px;
     margin-bottom: 35px;
 }
+.tr_01 .tr_text .product_box:hover{
+    text-decoration: underline;
+    font-weight: 500;
+}
 
 /* 내나라 구석구석 */
 /* .Korea_wrap{
@@ -1242,7 +1246,8 @@
     height: 12px;
     position: absolute;
     right: -14px;
-    background-position: -30px 0;
+    background-position: -30px 4px;
+    padding: 15px 0;
 }
 /* 두번째 li */
 .submain_inner ul li:nth-child(2) .get_a .arrow_r{
@@ -1294,18 +1299,18 @@
     margin-top: 22px;
     display: inline-block;
     font-size: 12px;
-    padding-right: 16px;
+    padding-right: 12px;
 }
 .submain_inner ul li.list_tree .get_a .arrow_r::before{
     content: "";
     clear: both;
     display: inline-block;
     background: url(../images/spr_btn.png) no-repeat;
-    width: 7px;
+    width: 1px;
     height: 12px;
     position: absolute;
     right: 0;
-    background-position: -30px -1px;
+    background-position: -28px 0px;
     padding-right: 10px;
 }
 /* 하나투어닷컴 고객센터 */
