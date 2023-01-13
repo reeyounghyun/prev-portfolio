@@ -16,7 +16,6 @@ button {
     max-width: 100%;
     margin: 0 auto 100px auto;
 }
-
 .common_cont{
     width: 1200px;
     max-width: 100%;
@@ -32,6 +31,10 @@ button {
     height: 0px;
     overflow: hidden;
 }
+.mb_menu_bg{
+    display: none;
+}
+
 /* 상담로봇 css */
 .right_wrap {
     width: 120px;
@@ -1415,6 +1418,7 @@ button {
     display: none;
 }
 
+
 /* 미디어 쿼리_S */
 @media screen and (max-width: 1280px){ 
     .content {
@@ -1438,6 +1442,7 @@ button {
     .foo_slied{
         display: none;
     }
+    
 
 }
 /*pc_max-width:1280px */
