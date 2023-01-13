@@ -933,6 +933,13 @@
     position: absolute;
     left: 0;
 } 
+.travel_sug .tr_sug ul li{
+    transition: all 0.5s;
+}
+.travel_sug .tr_sug ul li:hover{
+    transform: translateX(10px);
+    transition: all 0.3s;
+}
 .travel_sug .tr_sug ul li:nth-child(2){
     display: inline-block;
     margin-top: 18px;
@@ -962,7 +969,7 @@
     transition: all 0.3s;
 }
 .tr_sug .swiper-pagination-bullet-active{
-    background-color: rgb(62 62 62 / 83%);
+    background-color: rgb(94 43 184 / 70%);
     width: 29px;
     height: 10px;
     border-radius: 30px;
@@ -1043,6 +1050,8 @@
 }
 .Korea_travel ul li a{
     display: block;
+    width: 100%;
+    height: 100%;
 }
 .Korea_travel .item_title{
     font-size: 17px;
@@ -1051,10 +1060,10 @@
     text-align: center;
     display: block;
 }
-.Korea_travel ul li:nth-child(3) .item_title{
+/* .Korea_travel ul li:nth-child(3) .item_title{
     font-size: 26px;
     font-weight: 600;
-}
+} */
 .Korea_travel .item_text{
     font-size: 13px;
     color: #666;
@@ -1132,6 +1141,12 @@
     right: 30px;
     letter-spacing: 0;
 } */
+.submain_inner ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .submain_inner ul li .video{
     width: 387px;
     height: 218px;
@@ -1147,6 +1162,17 @@
 .submain_inner ul li:nth-child(2){
     background: url(https://image.hanatour.com/usr/manual/update/pc/main/info/023_ga.png) 50% 0px no-repeat;
     height: 517px;
+    position: relative;
+}
+.submain_inner ul li:nth-child(2) .get_a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 322px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.4));
 }
 .video p.item_title{
     padding-bottom: 12px;
@@ -1173,7 +1199,10 @@
     line-height: 1;
 }
 .submain_inner ul li .get_a {
+    display: block;
+    width: 100%;
     height: 100%;
+
     position: relative;
 }
 /* .submain_inner ul li .get_a .get{
@@ -1190,22 +1219,21 @@
     font-weight: 400;
 } */
 .submain_inner ul li .get_a .con_tit::before{
-    content: "";
+    /* content: "";
     display: block;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 322px;
-    background: linear-gradient(transparent, rgba(0,0,0,0.4));
+    background: linear-gradient(transparent, rgba(0,0,0,0.4)); */
 }
-.con_tit .tit_in{
+.submain_inner ul li:nth-child(2) .con_tit .tit_in{
     position: absolute;
-    bottom: 0;
-    left: 0;
-    top: 60%;
-    width: 100%;
-    padding-left: 30px;
+    bottom: 50px;
+    z-index: 9999;
+    left: 30px;
+    display: block;
 }
 .con_tit .tit_in .item_title{
     font-size: 20px;
@@ -1227,9 +1255,10 @@
 /* 유튜브 stert */
 .submain_inner ul li span.same_tit{
     display: block;
-    width: 100%;
     padding: 25px 0 0 25px;
-    font-weight: 500;    
+    font-weight: 400;
+    font-size: 14px;
+    color: #111;   
 }
 /* 첫번째 li */
 .submain_inner ul li:nth-child(1) .video .arrow_r{
@@ -1478,15 +1507,36 @@
     .travel_sug .tr_sug ul{
         display: none;
     }
+    .Korea_travel ul li a .item_box{
+        padding: 20px 20px 40px 20px;
+    }
+    .Korea_travel .item_title{
+        text-align: left;
+        font-size: 16px;
+    }
+    .Korea_travel .item_text{
+        text-align: left;
+        font-size: 14px;
+    }
     .Korea_travel img{
-        border-radius: 30px;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        min-height: 370px;
+        object-fit: cover;
+        
+    }
+
+    .Korea_travel ul li:nth-child(3) img{
+        border-radius: 10px;
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+    }
+    /* .Korea_travel ul li:nth-child(3) img {
         width: 500px;
         height: 450px;
-    }
-    .Korea_travel ul li:nth-child(3) img {
-        width: 500px;
-        height: 450px;
-    }
+    } */
     .submain{
         display: none;
     }
@@ -1516,24 +1566,24 @@
         margin-left: 10px;
     }
     .best_inner ul li{
-        border-radius: 16px;
+        border-radius: 20px;
         box-shadow: 0 3px 13px 0 rgb(0 0 0 / 10%);
-        width: 33.3333%;
         margin-bottom: 30px;
-        max-width: 265px;
-        margin-left: 24px;
-        flex: 1;
     }
     .best_inner ul li img {
-        height: 210px;
+        height: 100%;
         width: 100%;
-        max-width: 100%;
-        overflow: hidden;
-        border-radius: 15px 15px 0 0;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    .best_inner>ul li+li{
+        margin-left: 0;
+    }
+    .best_inner .offer_text .offer_tit{
+        font-size: 18px;
     }
     .offer_text{
-        margin-bottom:0;
-        padding:15px;
+        padding: 20px 20px 40px 20px;
     }
     .inner_tab{
         display: none;
@@ -1612,18 +1662,91 @@
         vertical-align: middle;
         opacity: 0.7;
     }
-    .best_inner ul{
+    /* .best_inner ul{
         flex-wrap: wrap;
+    } */
+    .best_inner>ul{
+        flex-direction: column;
     }
     .Korea_travel ul{
         flex-direction: column;
     }
     .Korea_travel ul li{
         margin-bottom: 30px;
+        border-radius: 1.5rem;
+        box-shadow: 0 3px 13px 0 rgb(0 0 0 / 10%);
+        width: 100%;
     }
     .travel_sug .tr_sug .trs{
         position: relative;
     }
+
+    /* 베스트 여행지 시작 */
+    .best_travel{
+        padding: 0 15px;
+    }
+    .best_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .best_travel .best_item{
+        background: url(../images/best_travel_img01.jpg) no-repeat;
+        width: 240px;
+        height: 240px;
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .best_travel .best_item:nth-child(2){
+        background: url(../images/best_travel_img02.jpg) no-repeat;
+        background-size: cover;
+    }
+    .best_travel .best_item:nth-child(3){
+        background: url(../images/best_travel_img03.jpg) no-repeat;
+        background-size: cover;
+    }
+    .best_travel .best_item:nth-child(4){
+        background: url(../images/best_travel_img04.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    .best_travel .best_item + .best_item{
+        margin-left: 15px;
+    }
+    .best_travel .best_item .best_link{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    .best_travel .best_item .best_link::after{
+        content: "";
+        clear: both;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 30%);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 400;
+        border-radius: 20px;
+    }
+    .best_travel .best_item span{
+        color: #fff;
+        font-size: 22px;
+        font-weight: 600;
+        display: block;
+        padding: 20px 0 0 16px;
+        z-index: 500;
+        position: absolute;
+    }
+
+
+
+
+
+
 }
 
 @media screen and (max-width: 768px){
@@ -1634,23 +1757,19 @@
         max-width: auto;
         width: 100%;
     }
-    .Korea_travel ul li {
-        max-width: 300px;
-    }
-    .Korea_travel img{
+    /* .Korea_travel img{
         width: 100%;
-        max-width: 300px;
         height: auto;
         min-height: 255px;
-    }
-    .Korea_travel ul li:nth-child(3) img {
+    } */
+    /* .Korea_travel ul li:nth-child(3) img {
         width: 100%;
         max-width: 300px;
         height: auto;
-    }
-    .Korea_travel ul li:nth-child(3) .item_title{
+    } */
+    /* .Korea_travel ul li:nth-child(3) .item_title{
         font-size: 13px;
-    }
+    } */
 
     .inder_time{
         display: none;

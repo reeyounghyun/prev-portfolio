@@ -140,19 +140,19 @@ $(document).ready(function () {
         breakpoints:{
             1920: {
                 slidesPerView: 1,
-                spaceBetween: 30,
+                spaceBetween: 0,
               },
             1280: {
                 slidesPerView: 1,
-                spaceBetween: 10,
+                spaceBetween: 0,
               },
             768:{
                 slidesPerView: 2,
-                spaceBetween: 15,
+                spaceBetween: 0,
               },
             375:{
                 slidesPerView: 1,
-                spaceBetween: 5,
+                spaceBetween: 0,
               },
         }
     });
@@ -279,6 +279,20 @@ $(document).ready(function () {
       $(".prd_add_btn").removeClass("add");
     }); //indexsub_add button
 		
+
+    var swiper = new Swiper(".bann_slider", {
+        centeredSlides: true,
+        loop : true,
+        slidesPerView: 1,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
 
 
 });

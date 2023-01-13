@@ -24,7 +24,7 @@ button {
 .w_m_wrap{
     width: 100%;
 }
-.inden_text{
+.indent_text{
     text-indent: -9999px;
     position: absolute;
     width: 1px;
@@ -247,7 +247,6 @@ button {
 }
 .banner_wrap .banner_inner{
     position: relative;
-    max-height: 90px;
 }
 .banner_wrap .banner_inner ul{
     display: flex; 
@@ -257,6 +256,18 @@ button {
 .banner_wrap .banner_inner ul li.virt_elem{
     position: relative;
 }
+.banner_wrap .banner_inner ul li.virt_elem a{
+    height: 100%;
+    box-sizing: border-box;
+}
+/* .banner_wrap .banner_inner ul li.virt_elem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ */
+
+
 .banner_wrap .banner_inner ul li.virt_elem::after{
     content: "";
     clear: both;
@@ -761,12 +772,18 @@ button {
     display: none;
  }
 
+ .mb_cont{
+    display: none;
+ }
 @media screen and (max-width: 1280px){
     .mobile{
         display: block;
     }
     .banner_wrap{
         display: none;
+    }
+    .mb_cont{
+        display: block;
     }
     .gnb_in .header_wrap .header_left{
         max-width: 100%;
@@ -811,34 +828,54 @@ button {
         display: block;
      }
      .package_wrap h5{
-        padding: 16px  26px 0;
-        margin: 0;
-        font-size: 14px;
-        font-weight: 700;
+        padding: 0 0 20px 20px;
+        font-size: 24px;
+        font-weight: 500;
         color: #111;
-        line-height: 1.5;
     }
     .package_wrap ul{
         display: flex;
+        align-items: center;
         padding: 25px 0 10px 26px;
     }
     .package_wrap ul li{
-        width: 59px;
-        margin-left: 6px;
+        width: 60px;
         text-align: center;
+    }
+    .package_wrap ul li + li{
+        margin-left: 10px;
     }
     .package_wrap ul li:first-child{
         background: url(../images/m_p_img01_1.png) no-repeat;
-        width: 32px;
-        height: 32px;
-        background-position: center;
+        background-position: center top;
         background-size: contain;
     }
-    .package_wrap img{
-        width: 32px;
-        height: 32px;
+    .package_wrap ul li:nth-child(2){
+        position: relative;
+    }
+    .package_wrap ul li:nth-child(2)::after{
+        content: "스키시즌";
+        clear: both;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 56px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;  
+        background-color: #834fe0;
+        border-radius: 30px;
+        color: #fff;
+        box-shadow: 3px 1px 5px 0px rgb(0 0 0 / 62%);
+    }
+    .package_wrap ul li a{
         display: block;
-        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+    }
+    .package_wrap img{
+        width: 50px;
+        height: 50px
     }
     .package_wrap span{
         color: #5e2bb8;
@@ -846,8 +883,10 @@ button {
         font-weight: 600;
     }
     .package_wrap ul li a span{
-        font-size: 11px;
+        padding: 5px 0;
+        font-size: 14px;
         color: #111;
+        font-weight: 500;
     }
     .package_add{   
         padding: 16px 0 0 16px;
@@ -861,11 +900,29 @@ button {
         width: calc(33.3333% - 5px);
         text-align: center;
         background-color: rgba(69,133,255,.08);
-        -webkit-tap-highlight-color: rgba(0,0,0,0);
-        min-height: 30px;
-        line-height: 30px;
         border-left: 1px solid #fff;
     }
+
+    .package_add ul li:nth-child(3) a{
+        position: relative;
+    }
+    .package_add ul li:nth-child(3) a::after{
+        content: "온수풀";
+        clear: both;
+        position: absolute;
+        right: 77px;
+        top: 17px;
+        width: 54px;
+        height: 21px;
+        line-height: 21px;
+        font-size: 11px;
+        background-color: rgb(131 79 224 / 81%);
+        border-radius: 30px;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 0.8px;
+    }
+
     .package_add ul li:nth-child(4),
     .package_add ul li:nth-child(5),
     .package_add ul li:nth-child(6){
@@ -874,48 +931,50 @@ button {
     }
     .package_add ul li a{ 
         display: block;
-        padding: 5px 0;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 500;
         color: #111;
+        width: 100%;
+        padding: 20px 0;
     }
     .sub_menu{
         margin-top: 15px;
     }
     .sub_menu ul{
         display: flex;
-        padding-top: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
     }
     .sub_menu ul li{
         display: flex;
         justify-content: center;
-        width: calc(33.3333% - 5px);
+        width:33.3333%;
         border-right: 1px solid #f8f8f8;
         box-sizing: border-box;
     }
     .sub_menu ul li:last-child{
         border-right: 0;
     }
-    .sub_menu ul li a{
-        flex-direction: column;
+    .sub_menu ul li .sub_menu_item{
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .sub_menu ul li img{
-        width: 32px;
-        height: 32px;
-        margin: 0 auto;
+        width: 50px;
+        height: 50px;
     }
     .sub_menu .p_tit{
-        font-weight: 600;
-        font-size: 12px;
+        font-weight: 500;
+        font-size: 15px;
         text-align: center;
-        padding-top: 5px;
+        padding: 10px 0;
     }
     .sub_menu .p_reface{
-        font-size: 10px;
-        color: #999;
+        font-size: 13px;
+        color: #333;
         text-align: center;
-        padding-top: 5px;
     }
     .service_menu ul{
         display: flex;
@@ -1078,6 +1137,37 @@ button {
     }
     .gnb{
         display: none;
+    }
+
+    /* 슬라이드 배너 */
+    .bann_slider{
+        text-align: center;
+        position: relative;        
+    }
+    .bann_slider img{
+        width: 100%;
+    }
+
+    .bann_slider .swiper-pagination-bullet{
+        width: 10px;
+        height: 10px;
+        border: 1px solid #000;
+        box-sizing: border-box;
+        transition: all 0.3s;
+        bottom: 0;
+        background: #000;
+        border-radius: 30px;
+        left: 50%;
+        z-index: 9999;
+    }
+    .bann_slider .swiper-pagination-bullet-active{
+        background-color: rgb(94 43 184 / 70%);
+        width: 29px;
+        height: 10px;
+        border-radius: 30px;
+        margin: 0 4px;
+        border: none;
+        transition: all 0.5s;
     }
 }
 
