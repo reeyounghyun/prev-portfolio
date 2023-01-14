@@ -14,7 +14,9 @@
 .quick_menu.off{
     display: none;
 }
-
+.mb_gnb_in{
+    display: none;
+}
 /* 임시 저장 */
 
 
@@ -657,10 +659,10 @@
     .package_add ul li:nth-child(6){
         border-bottom-right-radius: 10px;
     }
-    .package_add ul li:nth-child(3){
+    .package_add ul li:nth-child(3) a{
         position: relative;
     }
-    .package_add ul li:nth-child(3)::before{
+    .package_add ul li:nth-child(3) a::after{
         content: "온수풀";
         clear: both;
         position: absolute;
@@ -933,6 +935,7 @@
     }
     .package_wrap h4 {
         font-size: 14px;
+        padding: 0 0 20px 10px;
     }
     .package_wrap ul {
         padding: 10px 0 10px 0px;
@@ -962,6 +965,9 @@
     .timesale_box p{
         font-size: 13px;
     }
+    .time_wrap .time_inner .timesale_box {
+        padding: 10px 0 10px 0;
+    }
     .time_wrap .time_inner .timesale_box .timesale_Price span {
         font-size: 14px;
     }
@@ -976,6 +982,9 @@
     }
     .time_wrap .time_inner .timesale_box .timesale_btn .timesale_wrap {
         font-size: 14px;
+    }
+    .offer_text {
+        padding: 10px 10px 20px 10px;
     }
     .best_tit {
         margin: 41px 0 20px 0;
@@ -1026,7 +1035,7 @@
         min-height: 190px;
     }
     .Korea_travel ul li a .item_box {
-        padding: 10px 20px 20px 20px;
+        padding: 10px 10px 20px 10px;
     }
     .Korea_travel ul li:nth-child(3) img{
         height: 190px;
@@ -1058,6 +1067,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .package_add ul li:nth-child(3) a::after{
+        display: none;
     }
 }
 
