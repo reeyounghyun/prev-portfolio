@@ -542,7 +542,8 @@
     }
     .mb_gnb_in .mb_right_btn span{
         display: inline-block;
-        padding: 5px 0;
+        padding: 8px 0 5px 0;
+        font-size: 12px;
     }
     .gnb_in_wrap .btn{
         display: block;
@@ -930,7 +931,7 @@
       margin: 0 auto!important;  
     }
     .mb_gnb_in .mb_left_logo {
-        max-width: 40px;
+        max-width: 30px;
         width: 100%;
     }
     .package_wrap h4 {
@@ -960,10 +961,11 @@
         font-size: 12px;
     }
     .timesale_box span.timesale_item {
-        font-size: 14px;
+        font-size: 18px;
+        font-weight: 600;
     }
     .timesale_box p{
-        font-size: 13px;
+        font-size: 14px;
     }
     .time_wrap .time_inner .timesale_box {
         padding: 10px 0 10px 0;
@@ -984,14 +986,38 @@
         font-size: 14px;
     }
     .offer_text {
-        padding: 10px 10px 20px 10px;
+        padding: 12px 15px 20px 15px;
+        position: relative;
+    }
+    .best_inner ul li .offer_text::after{
+        content: "HOTEL";
+        clear: both;
+        position: absolute;
+        left: 20px;
+        top: -16px;
+        background: #f49156;
+        color: #fff;
+        width: 81px;
+        height: 26px;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 26px;
+    }
+    .best_inner ul li:nth-child(2) .offer_text::after{
+        background:#887ec2;
+    }
+    .best_inner ul li:nth-child(3) .offer_text::after{
+        background:#2c93dd;
+    }
+    .best_inner ul li:nth-child(4) .offer_text::after{
+        background:#70a265;
     }
     .best_tit {
         margin: 41px 0 20px 0;
         padding: 10px 0;
     }
     .best_tit h3 {
-        font-size: 16px;
+        font-size: 19px;
         margin: 0;
     }
     .best_inner {
@@ -999,8 +1025,13 @@
         margin: 0 15px;
         padding: 0 10px;
     }
+    .banner_slider_mb{
+        margin: 0 15px;
+        padding: 0 10px;
+    }
     .best_inner .offer_text .offer_tit {
-        font-size: 15px;
+        font-size: 18px;
+        font-weight: 600;
     }
     .best_inner .offer_text .unit{
         font-size: 14px;
@@ -1012,7 +1043,7 @@
         font-size: 18px;
     }
     .travel_sug .tr_text .Explan_tit{
-        font-size: 12px;
+        font-size: 14px;
     }
     .travel_sug{
         background-color: #fff;
@@ -1028,7 +1059,9 @@
         padding: 0 10px;
     } 
     .Korea_travel .item_title{
-        font-size: 15px;
+        font-size: 18px;
+        padding: 0 0 5px 0;
+        font-weight: 600;
     }
     .Korea_travel img {
         height: 190px;
