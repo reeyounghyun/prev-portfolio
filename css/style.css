@@ -1018,16 +1018,30 @@
 }
 .travel_sug .tr_sug .trs{
     display: flex;
+
 }
-.travel_sug .trs .img{
+.travel_sug .trs a{
+    overflow: hidden;
+}
+.travel_sug .trs img{
     display: inline-block;
+    transition: all 0.5s;
+}
+.travel_sug .trs img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.travel_sug .trs img:hover .tr_text .product_box{
+    text-decoration: underline;
 }
 .travel_sug .trs  .tr_text{
     display: inline-block;
     width: 100%;
     max-width: 600px;
     position: relative;
+    margin-left: 53px;
 }
+
 .travel_sug .tr_sug .tr_text .tag{
     font-size: 12px;
     font-weight: bold;
@@ -1058,9 +1072,7 @@
     display: inline-block;
     margin-top: 18px;
 }
-.travel_sug .trs .tr_text{
-    margin-left: 53px;
-}
+
 .travel_sug .tr_text .Explan_tit{
     color: #333;
     line-height: 1.5;
@@ -1824,4 +1836,11 @@
     .best_tit {
         margin: 0
     }
+
+
+
+
+
+
+    
 }

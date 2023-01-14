@@ -514,8 +514,33 @@
         text-align: center;
         justify-content: center;
     }
-    .gnb_in .gnb_in_wrap{
-        padding: 15px 0;
+    .area_wrap .gnb_in .gnb_in_wrap{
+        display: none;
+    }
+
+    .mb_gnb_in{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 14px;
+    }
+    .mb_gnb_in .mb_left_logo{
+        max-width: 50px;
+        width:100%;
+    }
+    .mb_gnb_in .mb_right_btn a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .mb_gnb_in .mb_right_btn img{
+        max-width:25px;
+        width: 100%;
+    }
+    .mb_gnb_in .mb_right_btn span{
+        display: inline-block;
+        padding: 5px 0;
     }
     .gnb_in_wrap .btn{
         display: block;
@@ -899,7 +924,128 @@
 }
 
 @media screen and (max-width: 768px){
+    .content{
+      margin: 0 auto!important;  
+    }
+    .mb_gnb_in .mb_left_logo {
+        max-width: 40px;
+        width: 100%;
+    }
+    .package_wrap h4 {
+        font-size: 14px;
+    }
+    .package_wrap ul {
+        padding: 10px 0 10px 0px;
+    }
+    .package_wrap ul li a span {
+        font-size: 12px;
+    }
+    .package_wrap img {
+        width: 40px;
+        height: 40px;
+    }
+    .package_add ul {
+        justify-content: center;
+    }
+    .package_add ul li a {
+        font-size: 12px;
+    }
+    .service_wrap .p_tit {
+        font-size: 13px;
+    }
+    .service_wrap .p_reface {
+        font-size: 12px;
+    }
+    .timesale_box span.timesale_item {
+        font-size: 14px;
+    }
+    .timesale_box p{
+        font-size: 13px;
+    }
+    .time_wrap .time_inner .timesale_box .timesale_Price span {
+        font-size: 14px;
+    }
+    .time_wrap .time_inner .timesale_box .timesale_Price p .cost {
+        font-size: 14px;
+    }
+    .time_wrap .time_inner .timesale_box .timesale_Price p .cost01 {
+        font-size: 12px;
+    }
+    .time_wrap .time_inner .timesale_box .timesale_btn {
+        padding: 5px;
+    }
+    .time_wrap .time_inner .timesale_box .timesale_btn .timesale_wrap {
+        font-size: 14px;
+    }
+    .best_tit {
+        margin: 41px 0 20px 0;
+        padding: 10px 0;
+    }
+    .best_tit h3 {
+        font-size: 16px;
+        margin: 0;
+    }
+    .best_inner {
+        margin-top: 0;
+        margin: 0 15px;
+        padding: 0 10px;
+    }
+    .best_inner .offer_text .offer_tit {
+        font-size: 15px;
+    }
+    .best_inner .offer_text .unit{
+        font-size: 14px;
+    }
+    .tr_off_inner .off_slide .offer_text p {
+        font-size: 14px;
+    }
+    .trs .tr_text .product_box .item_title {
+        font-size: 18px;
+    }
+    .travel_sug .tr_text .Explan_tit{
+        font-size: 12px;
+    }
+    .travel_sug{
+        background-color: #fff;
+    }
+    .travel_sug .tr_sug{
+        padding: 0;
+    }
+    .travel_wrap{
+        margin-bottom: 40px;
+    }
+    .Korea_travel{
+        margin: 0 15px;
+        padding: 0 10px;
+    } 
+    .Korea_travel .item_title{
+        font-size: 15px;
+    }
+    .Korea_travel img {
+        height: 190px;
+        min-height: 190px;
+    }
+    .Korea_travel ul li a .item_box {
+        padding: 10px 20px 20px 20px;
+    }
+    .Korea_travel ul li:nth-child(3) img{
+        height: 190px;
+        min-height: 190px;
+    }
+    .best_wrap{
+        flex-direction: column;
+    }
+    .best_travel .best_item{
+        width: 100%;
+    }
+    .best_travel .best_item + .best_item{
+        margin-left: 0;
+        margin-top: 10px;
+    }
 
+    .best_inner ul li img{
+        height: 336px;
+    }
     .travel_sug .trs .tr_text{
         max-width: 623px;
     }
