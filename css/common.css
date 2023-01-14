@@ -1104,17 +1104,17 @@
         height: 190px;
         min-height: 190px;
     }
-    .best_wrap{
+    /* .best_wrap{
         flex-direction: column;
-    }
+    } */
     .best_travel .best_item{
         width: 100%;
     }
     .best_travel .best_item + .best_item{
-        margin-left: 0;
-        margin-top: 10px;
+        margin-top:10px;
+        margin-left:14px;
     }
-
+    
     .best_inner ul li img{
         height: 336px;
     }

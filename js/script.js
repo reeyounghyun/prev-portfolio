@@ -157,7 +157,7 @@ $(document).ready(function () {
         slidesPerView: 4,
         navigation: {
             nextEl: ".offer-next",
-            prevEl: ".swiper-button-prev",
+            prevEl: ".offer-prev",
         },
         breakpoints:{
             1280: {
@@ -165,12 +165,14 @@ $(document).ready(function () {
                 spaceBetween: 15,
               },
             768:{
-                slidesPerView: 3,
+                slidesPerView: 1,
                 spaceBetween: 20,
+                centeredSlides: true,
               },
             375:{
                 slidesPerView: 1,
                 spaceBetween: 10,
+                centeredSlides: true,
               },
         }
     });

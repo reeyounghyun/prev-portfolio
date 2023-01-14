@@ -1632,7 +1632,6 @@
         box-shadow: 0 3px 13px 0 rgb(0 0 0 / 10%);
         width: 33.3333%;
         margin-bottom: 30px;
-        max-width: 300px;
     }
     .tr_off_inner .off_slide img{
         min-height: 230px;
@@ -1765,6 +1764,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        overflow-x: scroll;
+        padding-bottom: 20px;
     }
     .best_travel .best_item{
         background: url(../images/best_travel_img01.jpg) no-repeat;
@@ -1772,6 +1773,7 @@
         height: 240px;
         background-size: cover;
         border-radius: 20px;
+        flex: 1 0 240px;
     }
     .best_travel .best_item:nth-child(2){
         background: url(../images/best_travel_img02.jpg) no-repeat;
