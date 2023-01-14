@@ -666,15 +666,16 @@
     .package_add ul li:nth-child(6){
         border-bottom-right-radius: 10px;
     }
-    .package_add ul li:nth-child(3) a{
+    .package_add ul li a span.bedge{
         position: relative;
+        display: inline-block;
     }
-    .package_add ul li:nth-child(3) a::after{
+    .package_add ul li a span.bedge::after{
         content: "온수풀";
         clear: both;
         position: absolute;
-        right: 77px;
-        top: 17px;
+        right: -62px;
+        top: -4px;
         width: 54px;
         height: 21px;
         line-height: 21px;
@@ -930,6 +931,26 @@
         border: none;
         transition: all 0.5s;
     }
+
+    .main_slider .swiper-button-next{
+        top: 48%;
+    }
+    .main_slider .swiper-button-prev{
+        top: 48%;
+    }
+
+    .mb_nav_bottom{
+        position: fixed;
+        bottom: 0;
+        background: #fff;
+        width: 100%;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 10000;
+        min-width:367px;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -1098,20 +1119,11 @@
         height: 336px;
     }
     .travel_sug .trs .tr_text{
-        max-width: 623px;
+        max-width: auto;
     }
-    .mb_nav_bottom{
-        position: fixed;
-        bottom: 0;
-        background: #fff;
-        width: 100%;
-        padding: 10px 15px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .package_add ul li:nth-child(3) a::after{
-        display: none;
+
+    .package_add ul li a span.bedge::after{
+        content: none;
     }
 }
 
@@ -1438,6 +1450,9 @@
 
 /* 미디어 쿼리_S */
 @media screen and (max-width: 1280px){ 
+    body {
+        min-width: 375px;
+    }
     .content {
         width: 1200px;
         max-width: 100%;

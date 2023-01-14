@@ -824,9 +824,9 @@
     color: #111;
 }
 /* 마침내 특가 추운 겨울에도 여행 텐션 UP!! */
-.bt_p{
+/* .bt_p{
     margin: 100px auto 0 auto;
-}
+} */
 /* .inner_tab {
     margin-top: 100px;
 }  */
@@ -1022,6 +1022,8 @@
 }
 .travel_sug .trs a{
     overflow: hidden;
+    flex: 1 1 auto;
+    width: 100%;
 }
 .travel_sug .trs img{
     display: inline-block;
@@ -1586,6 +1588,8 @@
         display: block;
         margin-left: 0;
         border-radius: 30px;
+        max-width: 100%;
+        width: 100%;
     }
     .travel_sug .tr_sug ul{
         display: none;

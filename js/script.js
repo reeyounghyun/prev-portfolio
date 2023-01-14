@@ -145,14 +145,7 @@ $(document).ready(function () {
             1280: {
                 slidesPerView: 1,
                 spaceBetween: 0,
-              },
-            768:{
-                slidesPerView: 2,
-                spaceBetween: 0,
-              },
-            375:{
-                slidesPerView: 1,
-                spaceBetween: 0,
+                centeredSlides: false,
               },
         }
     });
