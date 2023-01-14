@@ -549,11 +549,17 @@
         display: block;
         padding: 0;
     }
-    .btn_allmenu{
-        background: url(../images/ico-allmenu.png)no-repeat;
-        width: 17px;
-        height: 16px;
-        display: inline-block;
+    .mb_nav_bottom img{
+        display: block;
+        margin: 0 auto;
+        width: 24px;
+    } 
+    .mb_nav_bottom span{
+        display: block;
+        margin: 0 auto;
+        font-size: 12px;
+        color: #626262;
+        padding: 2px 0;
     }
     .btn .mb_menu_bg{
         position: absolute;
@@ -987,9 +993,12 @@
     }
     .offer_text {
         padding: 12px 15px 20px 15px;
+    }
+    .mb_offer_text {
+        padding: 12px 15px 20px 15px;
         position: relative;
     }
-    .best_inner ul li .offer_text::after{
+    .best_inner ul li .mb_offer_text::after{
         content: "HOTEL";
         clear: both;
         position: absolute;
@@ -1003,13 +1012,13 @@
         text-align: center;
         line-height: 26px;
     }
-    .best_inner ul li:nth-child(2) .offer_text::after{
+    .best_inner ul li:nth-child(2) .mb_offer_text::after{
         background:#887ec2;
     }
-    .best_inner ul li:nth-child(3) .offer_text::after{
+    .best_inner ul li:nth-child(3) .mb_offer_text::after{
         background:#2c93dd;
     }
-    .best_inner ul li:nth-child(4) .offer_text::after{
+    .best_inner ul li:nth-child(4) .mb_offer_text::after{
         background:#70a265;
     }
     .best_tit {
@@ -1092,14 +1101,14 @@
         max-width: 623px;
     }
     .mb_nav_bottom{
-        position: absolute;
+        position: fixed;
         bottom: 0;
         background: #fff;
         width: 100%;
         padding: 10px 15px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
     }
     .package_add ul li:nth-child(3) a::after{
         display: none;
