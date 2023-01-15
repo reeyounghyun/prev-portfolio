@@ -261,8 +261,10 @@
     display: block;
 }
 .menu_left .all_menu .all_sam.on{
-    display: none;
+    display: block;
 }
+
+
 .menu_left .all_menu .all_sam .sam_in{
     max-width: 1200px;
     margin: 0 auto;
@@ -527,8 +529,8 @@
         padding: 10px 14px;
     }
     .mb_gnb_in .mb_left_logo{
-        max-width: 50px;
-        width:100%;
+        max-width: none;
+        text-align: center
     }
     .mb_gnb_in .mb_right_btn{
         width: 50px;
@@ -968,10 +970,6 @@
         display: none;
     }
 
-    .mb_gnb_in .mb_left_logo {
-        max-width: none;
-        text-align: center;
-    }
     .package_wrap h4 {
         font-size: 16px;
         padding: 0 0 20px 10px;

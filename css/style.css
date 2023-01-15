@@ -1851,23 +1851,13 @@
     .Korea_travel ul li{
         padding: 0;
     }
-
-  
 }
 @media screen and (max-width: 375px){
     .best_inner ul li{
         width: 100%;
-        margin: 0 24px 24px 24px;
         max-width: initial;
     }
     .best_tit {
         margin: 0
     }
-
-
-
-
-
-
-    
 }
