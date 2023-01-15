@@ -5,15 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .flex-wrap{
+            display: flex;
+        }
+        .flex-item{
+            width: 100%;
+            max-width: 250px;
+            height: 250px;
+            background-color: red;
+            flex: 1 1 40%;
+        }
+
+        .flex-item1{
+            background-color: #000;
+        }
+        .flex-item2{
+            background-color: yellow;
+        }
+        .flex-item3{
+            background-color: green;
+        }
+        .flex-item4{
+            background-color: blue;
+        }
+        .flex-item5{
+            background-color: plum;
+        }
+
+        /* 두번째 flex 박스 */
+        .flex-box{
+            display: flex;
+        }
+        .flex-items{
+            width: 100%;
+            max-width: 250px;
+            height: 250px;
+            background-color: red;
+            flex: 1 1 100%;
+        }
+
+        /* 세번째 flex 박스 */
+        .flex-cont{
+            display: flex;
+        } 
+        .flex-itemx{
+            width: 100%;
+            max-width: 250px;
+            height: 250px;
+            background-color: red;
+            flex: 1 1 100%;
+        }
+
+
+    </style>
 </head>
 <body>
-    <div>
-    <a href="">test</a>
-    <a href="">test</a>
-    <a href="">test</a>
-    <a href="">test</a>
-    <a href="">test</a>
-    <button type="button">123123</button>
+    <div class="flex-wrap">
+        <div class="flex-item"></div>
+        <div class="flex-item flex-item1"></div>        
+        <div class="flex-item flex-item2"></div>
+        <div class="flex-item flex-item3"></div>        
+        <div class="flex-item flex-item4"></div>
+        <div class="flex-item flex-item5"></div>
+    </div>
+
+    <div class="flex-box">
+        <div class="flex-items"></div>
+        <div class="flex-items flex-item1"></div>        
+        <div class="flex-items flex-item2"></div>
+        <div class="flex-items flex-item3"></div>        
+        <div class="flex-items flex-item4"></div>
+        <div class="flex-items flex-item5"></div>
+    </div>
+
+    <div class="flex-cont">
+        <div class="flex-itemx"></div>
+        <div class="flex-itemx flex-item1"></div>        
+        <div class="flex-itemx flex-item2"></div>
+        <div class="flex-itemx flex-item3"></div>        
+        <div class="flex-itemx flex-item4"></div>
+        <div class="flex-itemx flex-item5"></div>
     </div>
 </body>
 </html>
