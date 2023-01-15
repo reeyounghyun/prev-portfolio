@@ -147,6 +147,11 @@ $(document).ready(function () {
                 spaceBetween: 0,
                 centeredSlides: false,
               },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                centeredSlides: false,
+              },
         }
     });
 
