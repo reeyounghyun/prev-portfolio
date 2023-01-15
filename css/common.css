@@ -530,20 +530,19 @@
         max-width: 50px;
         width:100%;
     }
+    .mb_gnb_in .mb_right_btn{
+        width: 50px;
+        opacity: 0.8;
+    }
     .mb_gnb_in .mb_right_btn a{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
-    .mb_gnb_in .mb_right_btn img{
-        max-width:25px;
-        width: 100%;
-    }
-    .mb_gnb_in .mb_right_btn span{
-        display: inline-block;
-        padding: 8px 0 5px 0;
-        font-size: 12px;
+    .mb_gnb_in .mb_right_btn button{
+        border: none;
+        background-color: #fff;
     }
     .gnb_in_wrap .btn{
         display: block;
@@ -742,8 +741,12 @@
     .hana_rules ul{
         display: flex;
         align-items:center;
-        justify-content: center;
         padding-top: 10px;
+        overflow-x: scroll;
+    }
+    .hana_rules ul li{
+        width: 100%;
+        flex: 1 0 240px;
     }
     .hana_rules ul li + li{
         margin-left: 15px;
@@ -944,7 +947,7 @@
         bottom: 0;
         background: #fff;
         width: 100%;
-        padding: 10px 15px;
+        padding: 12px 28px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -957,9 +960,17 @@
     .content{
       margin: 0 auto!important;  
     }
+    .footer_licensee span::before,
+    .foo_bott .fl ul li::before{
+        display: none;
+    }
+    .footer_item{
+        display: none;
+    }
+
     .mb_gnb_in .mb_left_logo {
-        max-width: 30px;
-        width: 100%;
+        max-width: none;
+        text-align: center;
     }
     .package_wrap h4 {
         font-size: 16px;
@@ -1539,10 +1550,10 @@
     .footer_licensee span.Number{
         padding-right: 15px;
     }
-    .foo_bott p, .foo_bott span{
+    /* .foo_bott p, .foo_bott span{
         display: block;
         line-height: 1.5;
-    }
+    } */
     .footer_licensee .hana{
         display: none;
     }

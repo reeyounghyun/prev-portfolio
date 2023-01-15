@@ -796,7 +796,6 @@
 }
 .best_inner .offer_text .offer_tit{
     color: #111;
-    font-weight: 500;
     font-size: 18px;
     display: block;
     margin: 10px 0;
@@ -1187,7 +1186,6 @@
 }
 .Korea_travel .item_title{
     font-size: 18px;
-    font-weight: 500;
     color: #111;
     text-align: center;
     display: block;
@@ -1646,9 +1644,11 @@
     }
 
     /* 갑자기 찾아온 겨울. 지금 인기최고 여행지_s */
+    .Korea_travel{
+        margin-top: 30px;
+    }
     .best_tit {
-        margin: 30px;
-        padding-bottom: 0;
+        padding: 10px 15px;
     }
     .best_tit h4 {
         display: none;
@@ -1659,6 +1659,7 @@
         border-radius: 20px;
         box-shadow: 0 3px 13px 0 rgb(0 0 0 / 10%);
         margin-bottom: 30px;
+        padding: 15px;
     }
     .best_inner ul li img {
         height: 100%;
@@ -1759,6 +1760,7 @@
         border-radius: 1.5rem;
         box-shadow: 0 3px 13px 0 rgb(0 0 0 / 10%);
         width: 100%;
+        padding: 15px;
     }
     .travel_sug .tr_sug .trs{
         position: relative;
@@ -1839,6 +1841,17 @@
     .inder_time{
         display: none;
     }
+    .tr_off_inner .off_slide .offer-next,
+    .tr_off_inner .off_slide .offer-prev{
+        display: none;
+    }
+    .best_inner ul li{
+        padding: 0;
+    }
+    .Korea_travel ul li{
+        padding: 0;
+    }
+
   
 }
 @media screen and (max-width: 375px){
