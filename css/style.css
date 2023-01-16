@@ -1,5 +1,72 @@
 @charset "utf-8";
 
+/* 타이포 css stert*/
+.main_tit_xl{
+    font-size: 26px;
+    line-height: 34px;
+    color: #111;
+    margin: 75px 0 35px;
+    font-weight: 400;
+}
+.main_tit_xl span{
+    font-weight: 500;
+}
+.main_tit_lg{
+    font-size: 25px;
+    color: #333;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.tit_box>h3.main_tit_lg {
+    color: #fff;
+    font-size: 30px;
+    line-height: 38px;
+    font-family: 'hnt-font';
+    font-weight: 400;
+    padding-bottom: 0;
+}
+.main_tit_sm{
+    text-indent: -9999px;
+    position: absolute;
+    width: 1px;
+    height: 0px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1280px){
+    .main_tit_lg{
+        padding: 15px 22px 15px 22px;
+    }
+    .package_wrap h4.main_tit_md{
+        padding: 0 0 20px 20px;
+        font-size: 24px;
+        font-weight: 500;
+        color: #111;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main_tit_lg{
+        margin: 41px 0 20px 0;
+        padding: 10px 0;
+    }
+    .package_wrap h4.main_tit_md {
+        font-size: 16px;
+        padding: 0 0 20px 10px;
+    }
+}
+@media screen and (max-width: 375px){
+    .main_tit_lg{
+        margin: 0
+    }
+
+}
+/* 타이포 css end*/
+
+
+
+
+
 /* 상담로봇 css */
 .right_wrap {
     width: 120px;
@@ -376,16 +443,7 @@
     width: 330px;
     overflow: hidden;
 } 
-.slide_in .main_le .top_input h2{
-    font-size: 26px;
-    line-height: 34px;
-    color: #111;
-    margin: 75px 0 35px;
-    font-weight: 400;
-}
-.slide_in .main_le .top_input h2 span{
-    font-weight: 500;
-}
+
 .package .le_input{
     max-width: 330px;
     width: 100%;
@@ -767,14 +825,6 @@
 }/* 슬라이드 재생&정지버튼*/
 
 /* 갑자기 찾아온 겨율, 지금 인기 최고 여행지! & 고객님만을 위한 추천여행 공통 css */
-.best_tit h3{
-    font-size: 25px;
-    color: #333;
-    font-weight: 600
-}
-.best_tit{
-    padding-bottom: 30px;
-} 
 
 /* 갑자기 찾아온 겨율, 지금 인기 최고 여행지! css */
 .best_inner>ul{
@@ -1169,13 +1219,6 @@
 
 
 /* 내나라 구석구석 */
-.Korea_travel .main_tit h4{
-    color: #333;
-    font-size: 26px;
-    color: #000;
-    display: inline-block;
-    line-height: 1;
-}
 .Korea_travel ul{
     display: flex;
     align-items: center;
@@ -1206,7 +1249,7 @@
 }
 .Korea_travel img{
     display: block;
-    border-radius: 50% 50% 0 0;
+    border-radius: 50%;
     width: 190px;
     height: 190px;
     margin: 0 auto 18px;
@@ -1240,15 +1283,8 @@
     display: flex;
     align-items: center;
 }
-.tit_inden{
+.tit_box{
     margin-bottom: 30px;
-}
-.submain h4{
-    color: #fff;
-    font-size: 30px;
-    line-height: 38px;
-    font-family: 'hnt-font';
-    font-weight: 400;
 }
 .submain .submain_inner ul{
     display: flex;
@@ -1654,9 +1690,8 @@
     .Korea_travel{
         margin-top: 30px;
     }
-    .best_tit {
-        padding: 15px 22px 15px 22px;
-    }
+
+
     .best_tit h4 {
         display: none;
         font-size: 18px;
@@ -1867,7 +1902,5 @@
         width: 100%;
         max-width: initial;
     }
-    .best_tit {
-        margin: 0
-    }
+
 }

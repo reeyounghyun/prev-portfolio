@@ -587,12 +587,7 @@
      .mb_wrap{
         display: block;
      }
-     .package_wrap h4{
-        padding: 0 0 20px 20px;
-        font-size: 24px;
-        font-weight: 500;
-        color: #111;
-    }
+
     .package_wrap ul{
         display: flex;
         align-items: center;
@@ -977,11 +972,6 @@
     .footer_item{
         display: none;
     }
-
-    .package_wrap h4 {
-        font-size: 16px;
-        padding: 0 0 20px 10px;
-    }
     .package_wrap ul {
         padding: 10px 0 10px 0px;
     }
@@ -1059,14 +1049,7 @@
     .best_inner ul li:nth-child(4) .mb_offer_text::after{
         background:#70a265;
     }
-    .best_tit {
-        margin: 41px 0 20px 0;
-        padding: 10px 0;
-    }
-    .best_tit h3 {
-        font-size: 19px;
-        margin: 0;
-    }
+
     .best_inner {
         margin-top: 0;
         margin: 0 15px;
