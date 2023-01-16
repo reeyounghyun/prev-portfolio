@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,17 @@
     <title>하나투어 웹퍼블리싱 가이드</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="./css/guide_style.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- <link rel="stylesheet" href="./js/script.js"> -->
+
     <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sunburst"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <!-- 스와이퍼 플러그인-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 </head>
+
 <body>
     <h1>하나투어 웹퍼블리싱 가이드</h1>
     <h1><a href="./index.html">메인페이지 이동</a></h1>
@@ -16,7 +26,7 @@
         <div class="guide-lnb">
             <h2 class="lnb-title">퍼블리싱 메뉴</h2>
             <ul class="lnb-list">
-                <li><a href="#">타이포</a></li>
+                <li><a href="#">테스트1</a></li>
                 <li><a href="#">테스트2</a></li>
                 <li><a href="#">테스트3</a></li>
                 <li><a href="#">테스트4</a></li>
@@ -32,54 +42,543 @@
                     <span class="main_tit_xl">h2.main_tit_xl 고객님어떤 여행을 꿈꾸시나요?</span>
                     <span class="main_tit_lg">h3.main_tit_lg 고객님어떤 여행을 꿈꾸시나요?</span>
                     <span class="main_tit_md">h4.main_tit_md 고객님어떤 여행을 꿈꾸시나요?</span>
-                </div> 
+                </div>
 
                 <div class="guide-content">
                     <!-- 구글 Prettify -->
                     <pre class="prettyprint lang-html">
                         &lt;h2 class="main_tit_xl"&gt;문단테스트&lt;/h2&gt; <br>
                         &lt;h3 class="main_tit_lg"&gt;문단테스트&lt;/h2&gt; <br>
-                        &lt;h4 class="package_wrap h4.main_tit_md"&gt;문단테스트&lt;/h2&gt; <br>
-                        &lt;h2 class="main_tit_sm"&gt;문단테스트&lt;/h2&gt
+                        &lt;h4 class="main_tit_md"&gt;문단테스트&lt;/h2&gt; <br>
                     </pre>
                 </div>
+            </div>
+            <div class="guide-item">
+                <div class="guide-title">
+                    <h2 class="title">슬라이드</h2>
+                </div>
+                <div class="guide-result">
+                    <div class="w_m_wrap">
+                        <div class="wrapper">
+                            <!-- 전체를 묶은 div -->
+                            <div class="main_slider">
+                                    <div class="swiper color_sli">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="./images/slide01.jpg"
+                                                        alt="막강한 할인 혜택 블랙 프라이데이 #스페셜 상품부터 쿠폰까지 #특가로 떠나는 여행">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="./images/slide02.jpg"
+                                                        alt="하나LIVE 1주년 페스티벌 총 300만원 이벤트와 방송 특가 매주 수요일 오후8시! 방송 상품 구매 만해도 참여 완료!">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="./images/slide03.jpg"
+                                                        alt="여행의 시작과 끝, Always 방콕 언제가도 새로운 매력을 발견하는 곳">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="./images/slide04.jpg"
+                                                        alt="찬바람이 반가운 여행 겨울엔 일본 사전예약할인, 모일수록 할인 가족여행지원금,명물 화과자까지">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="./images/slide05.jpg"
+                                                        alt="할인+혜택 추가! 신년 할인특가 해외항공권&해외패키지특가 20만원대 부터~">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="./images/slide06.jpg"
+                                                        alt="더 가까워진 겨울 여행 지방 출발 해외 여행 #부산,대구,무안,양양,제주,청주 출발 #인천까지 갈 시간 없으니까">
+                                                </a>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img src="./images/slide07.jpg"
+                                                        alt="미리 준비하는 신년여행 2023 새해 설 연휴 연휴기간 좌석확부! 시즌 인기 추천상품 PICK!">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                            </div>
+                            <!-- 메인 슬라이드-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>          
+                var swiper = new Swiper(".color_sli", {
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    loop: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "fraction",
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+    
+                });
+            </script>
+
+            <div class="guide-content">
+                <!-- 구글 Prettify -->
+                <pre class="prettyprint lang-html">
+                    &lt;div class="main_slider"&gt;
+                        &lt;div class="swiper color_sli"&gt;
+                            &lt;div class="swiper-wrapper"&gt;
+                                &lt;div class="swiper-slide"&gt;
+                                    &lt;a href="#"&gt;
+                                        &lt;img src="./images/slide01.jpg"
+                                            alt="막강한 할인 혜택 블랙 프라이데이 #스페셜 상품부터 쿠폰까지 #특가로 떠나는 여행"&gt;
+                                    &lt;&#47;a&gt;
+                                &lt;&#47;div&gt;
+                                &lt;div class="swiper-slide"&gt;
+                                    &lt;a href="#"&gt;
+                                        &lt;img src="./images/slide02.jpg"
+                                            alt="하나LIVE 1주년 페스티벌 총 300만원 이벤트와 방송 특가 매주 수요일 오후8시! 방송 상품 구매 만해도 참여 완료!"&gt;
+                                    &lt;&#47;a&gt;
+                                &lt;&#47;div&gt;
+                                &lt;div class="swiper-slide"&gt;
+                                    &lt;a href="#"&gt;
+                                        &lt;img src="./images/slide03.jpg"
+                                            alt="여행의 시작과 끝, Always 방콕 언제가도 새로운 매력을 발견하는 곳"&gt;
+                                    &lt;&#47;a&gt;
+                                &lt;&#47;div&gt;
+                                &lt;div class="swiper-slide"&gt;
+                                    &lt;a href="#"&gt;
+                                        &lt;img src="./images/slide04.jpg"
+                                            alt="찬바람이 반가운 여행 겨울엔 일본 사전예약할인, 모일수록 할인 가족여행지원금,명물 화과자까지"&gt;
+                                        &lt;&#47;a&gt;
+                                &lt;&#47;div&gt;
+                                &lt;div class="swiper-slide"&gt;
+                                    &lt;a href="#"&gt;
+                                        &lt;img src="./images/slide05.jpg"
+                                            alt="할인+혜택 추가! 신년 할인특가 해외항공권&해외패키지특가 20만원대 부터~"&gt;
+                                    &lt;&#47;a&gt;
+                                &lt;&#47;div&gt;
+                                &lt;div class="swiper-slide"&gt;
+                                    &lt;a href="#"&gt;
+                                        &lt;img src="./images/slide06.jpg"
+                                            alt="더 가까워진 겨울 여행 지방 출발 해외 여행 #부산,대구,무안,양양,제주,청주 출발 #인천까지 갈 시간 없으니까"&gt;
+                                    &lt;&#47;a&gt;
+                                &lt;&#47;div&gt;
+                                &lt;div class="swiper-slide"&gt;
+                                    &lt;a href="#"&gt;
+                                        &lt;img src="./images/slide07.jpg"
+                                            alt="미리 준비하는 신년여행 2023 새해 설 연휴 연휴기간 좌석확부! 시즌 인기 추천상품 PICK!"&gt;
+                                    &lt;&#47;a&gt;
+                                &lt;&#47;div&gt;
+                            &lt;&#47;div&gt;
+                            &lt;div class="swiper-button-next"&gt;&lt;&#47;div&gt;
+                            &lt;div class="swiper-button-prev"&gt;&lt;&#47;div&gt;
+                            &lt;div class="swiper-pagination"&gt;&lt;&#47;div&gt;
+                        &lt;&#47;div&gt;
+                    &lt;&#47;div&gt;
+                </pre>
             </div>
 
             <div class="guide-item">
                 <div class="guide-title">
                     <h2 class="title">문단 테스트</h2>
                 </div>
+                <div class="guide-result">
+                    <div class="main_le">
+                        <div class="top_input">
+                            <div class="but_tit">
+                                <a class="btn_primary tab-link acitve" data-tab="tab-10">패키지</a>
+                                <a class="btn_primary tab-link" data-tab="tab-20">항공</a>
+                                <a class="btn_primary tab-link" data-tab="tab-30">호텔</a>
+                            </div>
+                        </div>
+                        <!-- 탭 버튼 -->
+                        <div id="tab-10" class="tab_content package acitve">
+                            <input class="le_input" type="search" placeholder="어디로 떠나세요?">
+                            <div class="le_box">
+                                <ul>
+                                    <li>
+                                        <div class="bnt_le">
+                                            <span> <i></i> 인천/김포 출발</span>
+                                            <ul class="btn_a">
+                                                <li>서울(인천/김포)</li>
+                                                <li>부산</li>
+                                                <li>대구</li>
+                                                <li>청주</li>
+                                                <li>광주(무안)</li>
+                                                <li>제주</li>
+                                                <li>양양</li>
+                                                <li>강원</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bnt_ri">
+                                            <span><i></i> 여행시작일 선택</span>
+                                            <!-- <div class="datepicker-here" data-language='ko'></div> -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="Place01">
+                                            <a href="#">
+                                                <span>항공권은<br>있어요</span>
+                                            </a>
+                                        </div>
+                                        <div class="Place02">
+                                            <a href="#">
+                                                <span>우리끼리만<br>여행할래요</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button type="button">패키지 검색</button>
+                            </div>
+                        </div>
+                        <!-- 패키지 탭 -->
+                        <div id="tab-20" class="tab_content">
+                            <div class="tab_2">
+                                <div class="but_tits">
+                                    <span>
+                                        <button class="btn_primary tab-link acitve" data-tab="tab-50">왕복</button>
+                                    </span>
+                                    <span>
+                                        <button class="btn_primary tab-link" data-tab="tab-51">편도</button>
+                                    </span>
+                                    <span>
+                                        <button class="btn_primary tab-link" data-tab="tab-52">다구간</button>
+                                    </span>
+                                </div>
+                                <div id="tab-50" class="tits_cons acitve">
+                                    <div class="air_inp">
+                                        <div class="inp_box">
+                                            <i></i>
+                                            <input type="text" title="SEL 인천/김포" placeholder="SEL 인천/김포">
+                                        </div>
+                                        <img src="./images/spr_air.png" alt="왕복">
+                    
+                                        <div class="inp_box">
+                                            <i></i>
+                                            <input type="text" title="도착지" placeholder="도착지">
+                                        </div>
+                                    </div>
+                                    <div class="air_day">
+                                        <div class="bowl bowl_m">
+                                            <a href="#" class="set ok">
+                                                <span class="icn cal">12.23(금)</span>
+                                            </a>
+                                        </div>
+                                        <div class="bowl">
+                                            <a href="#" class="set ok">
+                                                <span class="icn cal">12.27(화)</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="th_inner">
+                                        <ul>
+                                            <li class="flight">
+                                                <div class="hotel">
+                                                    <a href="#select_person_htl" class="btn full js_show">
+                                                        <!-- <i class="xi-user-o"></i> -->
+                                                        <span class="icn member">객실1</span>
+                                                        <span class="rod"></span>
+                                                        <span class="divider_dot">성인 2명</span>
+                                                    </a>
+                                                </div>
+                                                <span>
+                                                    <button type="button">직항</button>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <button type="button">항공권 검색</button>
+                                    </div>
+                                </div>
+                                <!-- 왕복 탭  -->
+                                <div id="tab-51" class="tits_cons">
+                                    <div class="air_inp air_inp_i">
+                                        <div class="inp_box">
+                                            <i></i>
+                                            <input type="text" title="SEL 인천/김포" placeholder="SEL 인천/김포">
+                                        </div>
+                                        <img src="./images/spr_air01.png" alt="인천/김포">
+                    
+                                        <div class="inp_box">
+                                            <i></i>
+                                            <input type="text" title="도착지" placeholder="도착지">
+                                        </div>
+                                    </div>
+                                    <div class="air_day air_day_i">
+                                        <div class="bowl_m">
+                                            <a href="#" class="set ok">
+                                                <span class="icn cal">12.23(금)</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="th_inner">
+                                        <ul>
+                                            <li class="flight">
+                                                <div class="hotel">
+                                                    <a href="#select_person_htl" class="btn full js_show">
+                                                        <span class="icn member">객실1</span>
+                                                        <span class="rod"></span>
+                                                        <span class="divider_dot">성인 2명</span>
+                                                    </a>
+                                                </div>
+                                                <span>
+                                                    <button type="button">직항</button>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <button type="button">항공권 검색</button>
+                                    </div>
+                                </div>
+                                <!-- 편도 탭  -->
+                                <div id="tab-52" class="tits_con">
+                                    <a href="https://www.hanatour.com/mma/smn/EX00000021?itnrTypeCd=MD"></a>
+                                </div>
+                                <!-- 다구간 탭  -->
+                            </div>
+                        </div>
+                        <div id="tab-30" class="tab_content">
+                            <input class="th_le_input" type="search" placeholder="어디로 떠나세요?">
+                            <div class="th_inner">
+                                <ul>
+                                    <li>
+                                        <div class="hotel">
+                                            <a href="#select_tripstartdate2" class="btn full js_show">
+                                                <span class="icn cal ok">2022.12.20</span>
+                                                <span class="Entity">∼</span>
+                                                <span class="icn cal ok">
+                                                    2022.12.21</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hotel">
+                                            <a href="#select_person_htl" class="btn full js_show">
+                                                <!-- <i class="xi-user-o"></i> -->
+                                                <span class="icn member">객실1</span>
+                                                <span class="rod"></span>
+                                                <span class="divider_dot">성인 2명</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="main_but">
+                                    <button type="button">숙소 검색</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 항공 탭 -->
+                    </div>
+                </div>
                 <div class="guide-content">
                     <!-- 구글 Prettify -->
                     <pre class="prettyprint lang-html">
-                        &lt;h2 class="title"&gt;문단테스트&lt;/h2&gt;
+                        &lt;div class="main_le"&gt;
+                            &lt;div class="top_input"&gt;
+                                &lt;div class="but_tit"&gt;
+                                    &lt;a class="btn_primary tab-link acitve" data-tab="tab-10"&gt;패키지&lt;&#47;a&gt;
+                                    &lt;a class="btn_primary tab-link" data-tab="tab-20"&gt;항공&lt;&#47;a&gt;
+                                    &lt;a class="btn_primary tab-link" data-tab="tab-30"&gt;호텔&lt;&#47;a&gt;
+                                &lt;&#47;div&gt;
+                            &lt;&#47;div&gt;
+                            &lt;div id="tab-10" class="tab_content package acitve">
+                                &lt;input class="le_input" type="search" placeholder="어디로 떠나세요?"&gt;
+                                &lt;div class="le_box"&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;
+                                            &lt;div class="bnt_le"&gt;
+                                                &lt;span&gt; &lt;i&gt;&lt;&#47;i&gt;인천&#47;김포 출발&lt;&#47;span&gt;
+                                                    &lt;ul class="btn_a"&gt;
+                                                        &lt;li&gt;서울(인천&#47;김포)&lt;&#47;li&gt;
+                                                        &lt;li&gt;부산&lt;&#47;li&gt;
+                                                        &lt;li&gt;대구&lt;&#47;li&gt;
+                                                        &lt;li&gt;청주&lt;&#47;li&gt;
+                                                        &lt;li&gt;광주(무안)&lt;&#47;li&gt;
+                                                        &lt;li&gt;제주&lt;&#47;li&gt;
+                                                        &lt;li&gt;양양&lt;&#47;li&gt;
+                                                        &lt;li&gt;강원&lt;&#47;li&gt;
+                                                    &lt;&#47;ul&gt;
+                                                &lt;&#47;div&gt;
+                                            &lt;div class="bnt_ri"&gt;
+                                                &lt;span&gt;&lt;i&gt;&lt;&#47;i&gt;여행시작일 선택&lt;&#47;span&gt;
+                                            &lt;&#47;div&gt;
+                                        &lt;&#47;li&gt;
+                                        &lt;li&gt;
+                                            &lt;div class="Place01"&gt;
+                                                &lt;a href="#"&gt;
+                                                    &lt;span&gt;항공권은있어요&lt;&#47;span&gt;
+                                                &lt;&#47;a&gt;
+                                            &lt;&#47;div&gt;
+                                            &lt;div class="Place02"&gt;
+                                                &lt;a href="#"&gt;
+                                                    &lt;span&gt;우리끼리만여행할래요&lt;&#47;span&gt;
+                                                &lt;&#47;a&gt;
+                                            &lt;&#47;div&gt;
+                                        &lt;&#47;li&gt;
+                                    &lt;&#47;ul&gt;
+                                    &lt;div class="main_but"&gt;                                    
+                                        &lt;button type="button"&gt; 패키지 검색 &lt;&#47;button&gt;
+                                    &lt;/div&gt;
+                                &lt;&#47;div&gt;
+                            &lt;&#47;div&gt;
+                            &lt;div id="tab-20" class="tab_content"&gt;
+                                &lt;div class="tab_2"&gt;
+                                    &lt;div class="but_tits"&gt;
+                                        &lt;span&gt;
+                                            &lt;button class="btn_primary tab-link acitve" data-tab="tab-50"&gt;왕복&lt;&#47;button&gt;
+                                        &lt;&#47;span&gt;
+                                        &lt;span&gt;
+                                            &lt;button class="btn_primary tab-link" data-tab="tab-51"&gt;편도&lt;&#47;button&gt;
+                                        &lt;&#47;span&gt;
+                                        &lt;span&gt;
+                                            &lt;button class="btn_primary tab-link" data-tab="tab-52"&gt;다구간&lt;&#47;button&gt;
+                                        &lt;&#47;span&gt;
+                                    &lt;&#47;div&gt;
+                                    &lt;div id="tab-50" class="tits_cons acitve"&gt;
+                                        &lt;div class="air_inp"&gt;
+                                            &lt;div class="inp_box"&gt;
+                                                &lt;i&gt;&lt;&#47;i&gt;
+                                                &lt;input type="text" title="SEL 인천&#47;김포" placeholder="SEL 인천&#47;김포"&gt;
+                                            &lt;&#47;div&gt;
+                                            &lt;img src=".&#47;images&#47;spr_air.png" alt="왕복"&gt;
+                                            &lt;div class="inp_box"&gt; &lt;i&gt;&lt;&#47;i&gt; &lt;input type="text" title="도착지" placeholder="도착지"&gt;&lt;&#47;div&gt;
+                                        &lt;&#47;div&gt;
+                                        &lt;div class="air_day"&gt;
+                                            &lt;div class="bowl bowl_m"&gt;
+                                                &lt;a href="#" class="set ok"&gt;
+                                                    &lt;span class="icn cal"&gt;12.23(금)&lt;&#47;span&gt;
+                                                &lt;&#47;a&gt;
+                                            &lt;&#47;div&gt;
+                                            &lt;div class="bowl"&gt;
+                                                &lt;a href="#" class="set ok"&gt;
+                                                    &lt;span class="icn cal"&gt;12.27(화)&lt;&#47;span&gt;
+                                                &lt;&#47;a&gt;
+                                            &lt;&#47;div&gt;
+                                        &lt;&#47;div&gt;
+                                        &lt;div class="th_inner"&gt;
+                                            &lt;ul&gt;
+                                                &lt;li class="flight"&gt;
+                                                    &lt;div class="hotel"&gt;
+                                                        &lt;a href="#select_person_htl" class="btn full js_show"&gt;
+                                                            &lt;span class="icn member"&gt;객실1&lt;&#47;span&gt;
+                                                            &lt;span class="rod"&gt;&lt;&#47;span&gt;
+                                                            &lt;span class="divider_dot"&gt;성인 2명&lt;&#47;span&gt;
+                                                        &lt;&#47;a&gt;
+                                                    &lt;&#47;div&gt;
+                                                    &lt;span&gt;
+                                                        &lt;button type="button"&gt;직항&lt;&#47;button&gt;
+                                                    &lt;&#47;span&gt;
+                                                &lt;&#47;li&gt;
+                                            &lt;&#47;ul&gt;
+                                            &lt;button type="button"&gt;항공권 검색&lt;&#47;button&gt;
+                                        &lt;&#47;div&gt;
+                                    &lt;&#47;div&gt;
+                                    &lt;div id="tab-51" class="tits_cons"&gt;
+                                        &lt;div class="air_inp air_inp_i"&gt;
+                                            &lt;div class="inp_box"&gt;
+                                                &lt;i&gt;&lt;&#47;i&gt;
+                                                &lt;input type="text" title="SEL 인천&#47;김포" placeholder="SEL 인천&#47;김포"&gt;
+                                            &lt;&#47;div&gt;
+                                            &lt;img src="./images/spr_air01.png" alt="인천/김포"&gt;
+                                            &lt;div class="inp_box"&gt;
+                                                &lt;i&gt;&lt;&#47;i&gt;
+                                                &lt;input type="text" title="도착지" placeholder="도착지"&gt;
+                                            &lt;&#47;div&gt;
+                                        &lt;&#47;div&gt;
+                                        &lt;div class="air_day air_day_i"&gt;
+                                            &lt;div class="bowl_m"&gt;
+                                                &lt;a href="#" class="set ok"&gt;
+                                                    &lt;span class="icn cal"&gt;12.23(금)&lt;&#47;span&gt;
+                                                &lt;&#47;a&gt;
+                                            &lt;&#47;div&gt;
+                                        &lt;&#47;div&gt;
+                                        &lt;div class="th_inner"&gt;
+                                            &lt;ul&gt;
+                                                &lt;li class="flight"&gt;
+                                                    &lt;div class="hotel"&gt;
+                                                        &lt;a href="#select_person_htl" class="btn full js_show"&gt;
+                                                            &lt;span class="icn member"&gt;객실1&lt;&#47;span&gt;
+                                                            &lt;span class="rod"&gt;&lt;&#47;span&gt;
+                                                            &lt;span class="divider_dot"&gt;성인 2명&lt;&#47;span&gt;
+                                                        &lt;&#47;a&gt;
+                                                    &lt;&#47;div&gt;
+                                                    &lt;span&gt;
+                                                        &lt;button type="button"&gt;직항&lt;&#47;button&gt;
+                                                    &lt;&#47;span&gt;
+                                                &lt;&#47;li&gt;
+                                            &lt;&#47;ul&gt;
+                                            &lt;button type="button"&gt;항공권 검색&lt;&#47;button&gt;
+                                        &lt;&#47;div&gt;
+                                    &lt;&#47;div&gt;
+                                    &lt;div id="tab-52" class="tits_con"&gt;
+                                        &lt;a href="https://www.hanatour.com/mma/smn/EX00000021?itnrTypeCd=MD"&gt;&lt;&#47;a&gt;
+                                    &lt;&#47;div&gt;
+                                &lt;&#47;div&gt;
+                            &lt;&#47;div&gt;
+                            &lt;div id="tab-30" class="tab_content"&gt;
+                                &lt;input class="th_le_input" type="search" placeholder="어디로 떠나세요?"&gt;
+                                &lt;div class="th_inner"&gt;
+                                    &lt;ul&gt;
+                                        &lt;li&gt;
+                                            &lt;div class="hotel"&gt;
+                                                &lt;a href="#select_tripstartdate2" class="btn full js_show"&gt;
+                                                    &lt;span class="icn cal ok"&gt;2022.12.20&lt;&#47;span&gt;
+                                                    &lt;span class="Entity"&gt;∼&lt;&#47;span&gt;
+                                                    &lt;span class="icn cal ok"&gt;2022.12.21&lt;&#47;span&gt;
+                                                &lt;&#47;a&gt;
+                                            &lt;&#47;div&gt;
+                                        &lt;&#47;li&gt;
+                                        &lt;li&gt;
+                                            &lt;div class="hotel"&gt;
+                                                &lt;a href="#select_person_htl" class="btn full js_show"&gt;
+                                                    &lt;span class="icn member"&gt;객실1&lt;&#47;span&gt;
+                                                    &lt;span class="rod"&gt;&lt;&#47;span&gt;
+                                                    &lt;span class="divider_dot"&gt;성인 2명&lt;&#47;span&gt;
+                                                &lt;&#47;a&gt;
+                                            &lt;&#47;div&gt;
+                                        &lt;&#47;li&gt;
+                                    &lt;&#47;ul&gt;
+                                    &lt;button type="button"&gt;숙소 검색&lt;&#47;button&gt;
+                                &lt;&#47;div&gt;
+                            &lt;&#47;div&gt;
+                        &lt;&#47;diV&gt;
                     </pre>
                 </div>
             </div>
+            <script>
+                $('.but_tit a').click(function () {
+                    var tab_id = $(this).attr('data-tab');
+                    $('.but_tit a').removeClass('acitve');
+                    $('.tab_content').removeClass('acitve');
+                    $(this).addClass('acitve');
+                    $("#" + tab_id).addClass('acitve');
+                });
 
-            <div class="guide-item">
-                <div class="guide-title">
-                    <h2 class="title">문단 테스트</h2>
-                </div>
-                <div class="guide-content">
-                    <!-- 구글 Prettify -->
-                    <pre class="prettyprint lang-html">
-                        &lt;h2 class="title"&gt;문단테스트&lt;/h2&gt;
-                    </pre>
-                </div>
-            </div>
-
-            <div class="guide-item">
-                <div class="guide-title">
-                    <h2 class="title">문단 테스트</h2>
-                </div>
-                <div class="guide-content">
-                    <!-- 구글 Prettify -->
-                    <pre class="prettyprint lang-html">
-                        &lt;h2 class="title"&gt;문단테스트&lt;/h2&gt;
-                    </pre>
-                </div>
-            </div>
+                $('.but_tits span button').click(function () {
+                    var tab_id = $(this).attr('data-tab');
+                    $('.but_tits span button').removeClass('acitve');
+                    $('.tits_cons').removeClass('acitve');
+                    $(this).addClass('acitve');
+                    $("#" + tab_id).addClass('acitve');
+                });
+                //왕복 편도 다구간 탭 버튼
+            </script>
 
             <div class="guide-item">
                 <div class="guide-title">
@@ -191,4 +690,5 @@
         </div>
     </div>
 </body>
+
 </html>

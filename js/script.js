@@ -83,7 +83,6 @@ $(document).ready(function () {
         },
       });
 
-      
     // var count = $('.rank-list li').length++;
     // var height = $('.rank-list li').height();
 
@@ -237,7 +236,6 @@ $(document).ready(function () {
     })
 
     $(".hea_wrap a.btn .ico").click(function(){
-       
        if($(".quick_menu").hasClass("off")) {
         $(".quick_menu").removeClass("off");
         $("this").removeClass("off");
@@ -248,7 +246,6 @@ $(document).ready(function () {
 
     });
     //모바일 햄버거 메뉴
-
 
     $(".quick_menu>a").click(function(){
         $(".quick_menu").toggleClass("acitve");
@@ -273,6 +270,7 @@ $(document).ready(function () {
       $(this).addClass("add");
       $(".prd_remove_btn").removeClass("add");
    });
+   
    $(".prd_remove_btn").click(function(){   
       $(".prdItemList ul li").removeClass('add');
       $(this).addClass("add");

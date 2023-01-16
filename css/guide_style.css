@@ -61,22 +61,38 @@ h1 {
     text-align: center;
 }
 .title{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
+    color: #000;
 }
-.guide-height span + span{
+.guide-height span{
     display: block;
-    margin-top: 20px;
+    margin: 10px 0 0 0;
     padding: 5px 0;
 }
 .guide-result{
     border: 1px solid #ccc;
     box-sizing: border-box;
     padding: 20px;
-    margin-left: 35px;
+    width: 95%;
+    margin: 0 auto;
     border-radius: 10px;
+/* 
+    background: url(../images/guide_bg.png);
+    background-repeat: repeat; */
+
 }
+.prettyprint.lang-html {
+    line-height: 1.4;
+}
+.prettyprint.lang-html span:first-child.pln {
+    display: none;
+}
+.prettyprint.lang-html br +span.pln {
+    display: none;
+}
+
 
 /* 타이틀 style stert */
 .main_tit_xl{
@@ -95,3 +111,7 @@ h1 {
     color: #111;
 }
 /* 타이틀 style end */
+
+.main_slider .swiper{
+    margin-left: 0;
+}

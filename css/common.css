@@ -682,7 +682,6 @@
         background-color: rgb(131 79 224 / 81%);
         border-radius: 30px;
         color: #fff;
-        font-weight: 400;
         letter-spacing: 0.8px;
     }
     .package_add ul li a{ 
@@ -1164,7 +1163,7 @@
 .notice{
     height: 30px;
 }
-.notice .swiper-wrapper .swiper-slide{
+.notice .swiper-wrapper .swiper-slide a{
     overflow: hidden;
     width: 90%;
     white-space: nowrap;
