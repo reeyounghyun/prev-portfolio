@@ -3,14 +3,12 @@
 body {
     min-width: 900px;
 }
-
-span:first-child.pln {
+/* span:first-child.pln {
     display: none;
-}
+} */
 .pln +.tag {
     margin-right: 5px;
 }
-
 .guide-wrap {
     display: flex;
 }
@@ -22,26 +20,21 @@ span:first-child.pln {
     width: 200px;
     padding-right: 30px;
 }
-
 .guide-wrap .guide-lnb .lnb-title {
     font-size: 24px;
     text-align: center;
 }
-
 .guide-wrap .guide-lnb {
     margin-left: 20px;
 }
-
 .guide-wrap .guide-lnb .lnb-list{
     margin-top: 20px;
 }
-
 .guide-wrap .guide-lnb .lnb-list li {
     height: 40px;
     line-height: 40px;
     text-align: center;
 }
-
 .guide-wrap .guide-lnb .lnb-list li + li {
     margin-top: 10px;
 }
@@ -56,7 +49,6 @@ span:first-child.pln {
     position: relative;
     z-index: 5;
 }
-
 h1 {
     position: fixed;
     display: block;
@@ -68,4 +60,38 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
+.title{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.guide-height span + span{
+    display: block;
+    margin-top: 20px;
+    padding: 5px 0;
+}
+.guide-result{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-left: 35px;
+    border-radius: 10px;
+}
 
+/* 타이틀 style stert */
+.main_tit_xl{
+    font-size: 26px;
+    color: #111;
+    font-weight: 700;
+}
+.main_tit_lg{
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+}
+.main_tit_md{
+    font-size: 22px;
+    font-weight: 500;
+    color: #111;
+}
+/* 타이틀 style end */

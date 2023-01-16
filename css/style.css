@@ -6,13 +6,13 @@
     line-height: 34px;
     color: #111;
     margin: 75px 0 35px;
-    font-weight: 400;
+    font-weight: 700;
 }
 .main_tit_xl span{
-    font-weight: 500;
+    color: #000;
 }
 .main_tit_lg{
-    font-size: 25px;
+    font-size: 24px;
     color: #333;
     font-weight: 600;
     padding-bottom: 30px;
@@ -39,7 +39,7 @@
     }
     .package_wrap h4.main_tit_md{
         padding: 0 0 20px 20px;
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 500;
         color: #111;
     }
@@ -241,6 +241,7 @@
 }
 .visual_wrap{
     overflow: hidden;
+    margin-bottom: 100px;
 }
 .w_m_wrap .visual_wrap .wrapper .slide_in{
     display: flex;
@@ -1215,8 +1216,6 @@
     text-decoration: underline;
     font-weight: 500;
 }
-
-
 
 /* 내나라 구석구석 */
 .Korea_travel ul{
