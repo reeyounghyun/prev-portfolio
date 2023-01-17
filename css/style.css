@@ -1858,3 +1858,550 @@
         max-width: initial;
     }
 }
+
+
+.card-container {
+    width: 100%;
+}
+
+.card-container .calendar-container {
+    width: 330px;
+}
+
+.card-container .calendar-container thead {
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.card-container > div {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+}
+.card-container > div .content-left {
+-webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+-ms-flex-item-align: end;
+    align-self: flex-end;
+}
+.card-container > div .content-right {
+-webkit-box-flex: 0;
+    -ms-flex: 0 0 480px;
+        flex: 0 0 480px;
+margin: 0 -15px;
+}
+.card-container > div .inner-top .content-left {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: end;
+    -ms-flex-align: end;
+        align-items: flex-end;
+}
+.card-container .profile-area {
+position: relative;
+width: 242px;
+height: 79px;
+}
+.card-container .profile-area:before {
+content: "";
+position: absolute;
+right: 20px;
+top: 50%;
+width: 16px;
+height: 16px;
+-webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+background: url(../images/ico-chevron-right-gray-md@2x.png);
+background-size: 16px;
+}
+.card-container .profile-area .profile-img {
+display: inline-block;
+width: 38px;
+height: 38px;
+padding-top: 7px;
+margin-right: 10px;
+text-align: center;
+border-radius: 8px;
+background-color: var(--primary-bg-color);
+vertical-align: middle;
+}
+.card-container .profile-area .profile-img svg {
+fill: var(--primary-color);
+-webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+}
+.card-container .profile-area .profile-detail {
+display: inline-block;
+vertical-align: middle;
+}
+.card-container .profile-area .profile-detail strong {
+display: block;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: -0.03em;
+color: #32363C;
+font-family: "Nunito Sans", "Spoqa Han Sans Neo", "Noto Sans KR", "Noto Sans CJK KR", "malgun gothic", sans-serif, Tahoma;
+}
+.card-container .profile-area .profile-detail .title {
+display: block;
+font-style: normal;
+font-size: 14px;
+color: #A4ACB7;
+line-height: 16.8px;
+}
+.card-container .card-lg.menu-tree {
+width: 208px;
+padding: 12px 15px;
+}
+.card-container .card-btn-group {
+margin-right: 30px;
+}
+.card-container .card-toolbar {
+display: inline-block;
+vertical-align: bottom;
+margin: 15px;
+}
+.card-container .card-lg {
+display: inline-block;
+margin: 15px;
+padding: 20px 20px;
+background-color: #fff;
+border-radius: 12px;
+-webkit-box-shadow: 0px 6px 20px rgba(50, 54, 60, 0.1);
+        box-shadow: 0px 6px 20px rgba(50, 54, 60, 0.1);
+vertical-align: bottom;
+}
+.card-container .card-lg .card-header {
+line-height: 1.2;
+margin-bottom: 20px;
+}
+.card-container .card-lg .card-title {
+font-size: 22px;
+background: none;
+color: #32363C;
+}
+.card-container .card-calendar {
+display: inline-flex;
+position: relative;
+margin: 15px;
+padding: 20px;
+border-radius: 12px;
+-webkit-box-shadow: 0px 6px 20px rgba(50, 54, 60, 0.1);
+        box-shadow: 0px 6px 20px rgba(50, 54, 60, 0.1);
+background-color: #fff;
+}
+.card-container .card-calendar #tableCalendarTitle {
+margin-bottom: 12px;
+}
+.card-container .card-calendar #tableCalendarTitle td {
+font-size: 20px;
+text-align: center;
+}
+.card-container .card-calendar #tableCalendarTitle td a {
+position: relative;
+font-size: inherit;
+font-weight: bold;
+vertical-align: middle;
+color: #32363C;
+}
+.card-container .card-calendar #tableCalendarTitle td a:hover {
+border-radius: 16px;
+background-color: #F4F7FB;
+}
+.card-container .card-calendar #tableCalendar tr th {
+    text-align: center;
+padding: 6px 0;
+}
+.card-container .card-calendar #tableCalendar tr td {
+padding: 6px 0;
+text-align: center;
+}
+.card-container .card-calendar #tableCalendar tr td a {
+z-index: 100;
+position: relative;
+}
+.card-container .card-calendar #tableCalendar tr td a:hover::before {
+content: "";
+position: absolute;
+top: calc(50% - 18px);
+left: calc(50% - 18px);
+width: 36px;
+height: 36px;
+border-radius: 18px;
+z-index: -1;
+background-color: #E9EEF4;
+}
+.card-container .card-calendar .text-red {
+color: #FF4D6D;
+}
+.card-container .card-calendar .other-day {
+opacity: 0.5;
+}
+.card-container .card-calendar .today {
+color: var(--primary-color);
+-webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+}
+.card-container .card-calendar .today::before {
+content: "";
+position: absolute;
+top: calc(50% - 18px);
+left: calc(50% - 18px);
+width: 36px;
+height: 36px;
+border-radius: 18px;
+z-index: -1;
+background-color: var(--primary-bg-color);
+-webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+}
+.card-container .card-calendar .prev,
+.card-container .card-calendar .next {
+display: inline-block;
+width: 32px;
+height: 32px;
+line-height: 32px;
+border: 0;
+padding: 0;
+background: url(../images/ico-md-chevron-left-darkgray@2x.png) no-repeat center center;
+background-size: 32px auto;
+text-indent: -9999px;
+text-align: left;
+overflow: hidden;
+}
+.card-container .card-calendar .prev:hover::before,
+.card-container .card-calendar .next:hover::before {
+content: "";
+position: absolute;
+top: calc(50% - 16px);
+left: calc(50% - 16px);
+width: 32px;
+height: 32px;
+border-radius: 16px;
+z-index: -1;
+background-color: #E9EEF4;
+}
+.card-container .card-calendar .prev {
+background-position: right center;
+}
+.card-container .card-calendar .next {
+background-image: url(../images/ico-md-chevron-right-darkgray@2x.png);
+background-position: left center;
+}
+.card-container .card-calendar .btn-closed {
+position: absolute;
+top: 0;
+right: 0;
+width: 32px;
+height: 32px;
+background: url(../images/ico-md-close-gray@2x.png) center center no-repeat;
+background-size: 16px;
+text-indent: -9999px;
+}
+.card-container .card-calendar .btn-closed:hover {
+width: 32px;
+height: 32px;
+border-radius: 16px;
+background-color: #F4F7FB;
+}
+.card-container .tab-menu {
+margin: 15px;
+}
+.card-container .tab-list {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+height: 40px;
+background-color: #fff;
+border-radius: 12px;
+-webkit-box-shadow: 0px 6px 20px rgba(50, 54, 60, 0.1);
+        box-shadow: 0px 6px 20px rgba(50, 54, 60, 0.1);
+}
+.card-container .tab-list li {
+-webkit-box-flex: 1;
+    -ms-flex: 1;
+        flex: 1;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+border-radius: 12px;
+}
+.card-container .tab-list li.on {
+background-color: var(--primary-color);
+-webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+}
+.card-container .tab-list li.on a {
+color: #fff;
+}
+.card-container .tab-list li a {
+color: #7B838C;
+height: 100%;
+}
+.card-container .form-control {
+background-color: #fff;
+border: 1px solid #DCDCE1;
+}
+.card-container .form-datepicker {
+width: 154px;
+}
+.card-container .form-search {
+width: 100%;
+padding-left: 30px;
+background: url(../images/ico-search-gray-md.png) 10px center no-repeat;
+background-size: 16px 16px;
+}
+.card-container .site-menu {
+border-radius: 12px;
+max-height: 200px;
+overflow: auto;
+}
+.nav-mode-2 .card-container .site-menu {
+max-height: none;
+}
+.card-container .site-list {
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+}
+.card-container .site-list a {
+display: block;
+padding: 10px 8px;
+border-radius: 4px;
+font-size: 15px;
+}
+.card-container .site-list > li {
+position: relative;
+}
+.card-container .site-list > li:before {
+content: "";
+position: absolute;
+top: 14px;
+left: 0;
+width: 8px;
+height: 8px;
+background: url(../images/ico-caret-right-darkgray-xs.png) no-repeat;
+background-size: 8px;
+}
+.card-container .site-list > li.on:before {
+-webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+}
+.card-container .site-list ul {
+margin-left: 12px;
+}
+.card-container .site-list > li > a {
+padding-left: 30px;
+margin-left: 13px;
+background: url(../images/ico-file-gray-md@2x.png) 4px center no-repeat;
+background-size: 16px 16px;
+}
+.card-container .site-list > li > a:hover {
+border-radius: 8px;
+background-color: hsl(213deg, 43%, 97%);
+color: var(--primary-color);
+}
+.card-container .site-list > li > ul > li a {
+position: relative;
+padding-left: 51px;
+background: url(../images/ico-page-gray-md@2x.png) 26px center no-repeat;
+background-size: 16px 16px;
+}
+.card-container .site-list > li > ul > li a:hover {
+border-radius: 8px;
+background-color: hsl(213deg, 43%, 97%);
+color: var(--primary-color);
+}
+.card-container .chart-area {
+width: 200px;
+height: 100px;
+}
+.card-container .form-group {
+width: 169px;
+padding: 8px;
+}
+.card-container .form-group .check-item {
+position: relative;
+display: block;
+width: 100%;
+}
+.card-container .form-group .check-item [type=radio] + label {
+width: 100%;
+padding: 10px 13px;
+font-weight: 500;
+}
+.card-container .form-group .check-item [type=radio] + label:before {
+position: absolute;
+right: 12px;
+top: 50%;
+margin: 0;
+-webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+}
+.card-container .form-group .check-item:hover {
+border-radius: 10px;
+background-color: #F4F7FB;
+}
+.card-container .form-group .check-item + .check-item {
+margin-left: 0;
+}
+.card-container .form-date-group {
+padding: 24px 28px;
+}
+.card-container .form-date-group dl {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+width: 100%;
+}
+.card-container .form-date-group dl dt {
+-ms-flex-item-align: center;
+    align-self: center;
+width: 70px;
+font-size: 16px;
+font-weight: bold;
+}
+.card-container .form-date-group dl dd {
+-ms-flex-item-align: center;
+    align-self: center;
+width: calc(100% - 70px);
+}
+.card-container .form-date-group dl + dl {
+margin-top: 12px;
+}
+.card-container .form-date-group .flex-group {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+}
+.card-container .form-date-group .flex-group .datepicker {
+width: 154px;
+}
+.card-container .form-date-group .btn-group {
+margin: 20px 0 0;
+}
+.card-container .form-date-group .btn-group .btn {
+padding: 0 12px;
+height: 36px;
+}
+.card-container .form-date-group .btn-group .btn + .btn {
+margin-left: 4px;
+}
+.card-container .form-date-group .form-control {
+border-radius: 6px;
+}
+.card-container .form-date-group .form-control:focus {
+border-color: var(--primary-color);
+}
+.card-container .theme-setting {
+width: 221px;
+}
+.card-container .theme-setting .theme-group {
+margin: -12px -7px;
+}
+.card-container .theme-setting .theme-group ul {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.card-container .theme-setting .theme-group ul li {
+-ms-flex-item-align: center;
+    align-self: center;
+}
+.card-container .theme-setting .btn-theme {
+position: relative;
+width: 38px;
+height: 38px;
+margin: 12px;
+background-color: currentColor;
+text-indent: -9999px;
+font-size: 0;
+border-radius: 19px;
+}
+.card-container .theme-setting .btn-theme span {
+position: absolute;
+top: 0;
+left: 0;
+display: block;
+width: 38px;
+height: 38px;
+background-color: inherit;
+border-radius: 19px;
+z-index: 100;
+}
+.card-container .theme-setting .btn-theme.red {
+background-color: hsl(349deg, 75%, 54%);
+}
+.card-container .theme-setting .btn-theme.yellow {
+background-color: hsl(43deg, 98%, 52%);
+}
+.card-container .theme-setting .btn-theme.orange {
+background-color: hsl(29deg, 100%, 50%);
+}
+.card-container .theme-setting .btn-theme.green {
+background-color: hsl(162deg, 100%, 37%);
+}
+.card-container .theme-setting .btn-theme.blue {
+background-color: hsl(226deg, 100%, 59%);
+}
+.card-container .theme-setting .btn-theme.indigo {
+background-color: hsl(226deg, 73%, 31%);
+}
+.card-container .theme-setting .btn-theme.purple {
+background-color: hsl(263deg, 94%, 60%);
+}
+.card-container .theme-setting .btn-theme.pink {
+background-color: hsl(333deg, 90%, 61%);
+}
+.card-container .theme-setting .btn-theme.black {
+background-color: hsl(0deg, 0%, 0%);
+}
+.card-container .theme-setting .btn-theme.active {
+width: 32px;
+height: 32px;
+margin: 15px;
+-webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.7);
+        box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.7);
+}
+.card-container .theme-setting .btn-theme.active span {
+width: 32px;
+height: 32px;
+}
+.card-container .theme-setting .btn-theme.active:before {
+content: "";
+position: absolute;
+top: calc(50% - 6px);
+left: calc(50% - 6px);
+height: 12px;
+width: 12px;
+background: linear-gradient(240deg, #FF9548, #FF523A, #F72773, #A127FF, #6035FD, #567BFF, #4FA8FB, #00B493);
+border-radius: 12px;
+-webkit-animation: animatedgradient 5s alternate infinite;
+        animation: animatedgradient 5s alternate infinite;
+background-size: 250% 250%;
+z-index: 200;
+}
+.card-container .theme-setting .btn-theme.active:after {
+content: "";
+position: absolute;
+top: -3px;
+left: -3px;
+height: 38px;
+width: 38px;
+background: linear-gradient(240deg, #FF9548, #FF523A, #F72773, #A127FF, #6035FD, #567BFF, #4FA8FB, #00B493);
+border-radius: 38px;
+-webkit-animation: animatedgradient 5s alternate infinite;
+        animation: animatedgradient 5s alternate infinite;
+background-size: 300% 300%;
+}
