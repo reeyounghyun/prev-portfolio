@@ -6,6 +6,15 @@ body {
 /* span:first-child.pln {
     display: none;
 } */
+.prettyprint.lang-html {
+    line-height: 1.4;
+}
+.prettyprint.lang-html span:first-child.pln {
+    display: none;
+}
+.prettyprint.lang-html br +span.pln {
+    display: none;
+}
 .pln +.tag {
     margin-right: 5px;
 }
@@ -83,15 +92,33 @@ h1 {
     background-repeat: repeat; */
 
 }
-.prettyprint.lang-html {
-    line-height: 1.4;
+
+/* 프로젝트 환경 표 stert */
+thead{
+    height: 40px;
+    line-height: 40px;
+    background: #ccc;
+    color: #333;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
 }
-.prettyprint.lang-html span:first-child.pln {
-    display: none;
+tr>th{
+    font-weight: 600;
+    font-size: 16px;
 }
-.prettyprint.lang-html br +span.pln {
-    display: none;
+td{
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    border-right: 1px solid #ccc;
 }
+
+tr + tr{
+    border-bottom: 1px solid #ccc;
+}
+
+
 
 
 /* 타이틀 style stert */
