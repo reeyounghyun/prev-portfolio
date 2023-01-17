@@ -237,7 +237,7 @@
     margin-right: 15px;  
     font-size: 16px;
 }
-.intro_bg .intro_a{}
+.intro_bg .intro_a,
 .intro_bg .intro_a span.in_ti{
     border: 3px solid #f3786c;
     color: #f3786c;
@@ -481,7 +481,6 @@ ul.menu_sub li a::after{
     border-radius: 15px;
     text-align: center;
     padding: 2px 5px; 
-    float: left;
     color: #fff;
     margin: 10px 0;
     padding: 2px 15px; 
@@ -594,9 +593,6 @@ ul.menu_sub li a::after{
     }
     .intro_a{
         display: none;
-    }
-    .intro_bg .intro_a h4{
-        /* font-size: 15px; */
     }
     .intro_bg .intro_a a{
         font-size: 14px;

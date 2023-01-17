@@ -24,7 +24,7 @@
     font-family: 'hnt-font'; 
     padding-bottom: 0;
 }
-.main_tit_sm{
+.blind{
     text-indent: -9999px;
     position: absolute;
     width: 1px;
@@ -61,9 +61,6 @@
 
 }
 /* 타이포 css end*/
-
-
-
 
 
 /* 상담로봇 css */
@@ -623,7 +620,6 @@
     padding: 15px;
     background-color: #fff;
     color: #111;
-   
 }
 .th_inner ul li{
     height: 50px;
@@ -990,11 +986,9 @@
 .tr_off_inner .off_slide .image{
     margin-bottom: 10px;
 }
-
  .tr_off_inner .off_slide img{
     min-height: 210px;
     object-fit: cover;
-   
     width: 100%;
 }
 .tr_off_inner .off_slide .offer_text span{
@@ -1056,7 +1050,6 @@
 }
 .travel_sug .tr_sug .trs{
     display: flex;
-
 }
 .travel_sug .trs a{
     overflow: hidden;
@@ -1074,11 +1067,6 @@
 /* .travel_sug .trs img:hover .tr_text .product_box{
     text-decoration: underline;
 } */
-
-
-
-
-
 .travel_sug .trs  .tr_text{
     display: inline-block;
     width: 100%;
@@ -1086,7 +1074,6 @@
     position: relative;
     margin-left: 53px;
 }
-
 .travel_sug .tr_sug .tr_text .tag{
     font-size: 12px;
     font-weight: bold;
@@ -1116,7 +1103,6 @@
     display: inline-block;
     margin-top: 18px;
 }
-
 .travel_sug .tr_text .Explan_tit{
     color: #333;
     line-height: 1.5;

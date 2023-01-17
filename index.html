@@ -84,12 +84,12 @@
                                     <h1>
                                         <img src="./images/header_logo.png" alt="하나투어">
                                     </h1>
-                                </a>
+                                </a>s
                             </div>
                             <div class="searchform_com">
                                 <form>
                                     <fieldset class="fld_search">
-                                        <legend class="main_tit_sm">통합 검색어 입력폼</legend>
+                                        <legend class="blind">통합 검색어 입력폼</legend>
                                         <div class="box_search deletable" style="position: relative;">
                                             <input type="text" id="input_keyword" title="검색어" placeholder="검색어를 입력해주세요"
                                                 maxlength="30" value="검색어를 입력해주세요" class="input_keyword">
@@ -221,7 +221,7 @@
                                 <ul>
                                     <li class="on">
                                         <a href="#">해외여행</a>
-                                        <div class="in_sub_m on">
+                                        <div class="in_sub_m">
                                             <ul>
                                                 <li><a href="#">해외여행 홈</a></li>
                                                 <li><a href="#">동남아/대만/서남아</a></li>
@@ -315,6 +315,64 @@
             </div>
         </div>
         <!-- 모바일 네비게이션 바 영역 -->
+
+
+            <!-- 달력 테스트 영역 시작-->
+            <div class="calendar_wrap">
+                <div class="calendar_item">
+                    <div class="calendar_title">
+                        <h2>달력</h2>
+                    </div>
+                </div>
+                <div class="calendar_contnet">
+                    <div class="date-wrap">
+                        <div class="date-month">
+                            <span id="month-this">2022.05</span>
+                            <div class="button_wrap">
+                                <button type="button" id="month-prev" class="month-move" data-ym="2022-04-01"> < </button>
+                                <button type="button" id="month-next" class="month-move" data-ym="2022-06-01"> > </button>
+                            </div>
+                        </div>
+                        <!-- 2012년 5월 제목 부분 -->
+                        <div class="date-month">
+                            <div class="">
+                                <th>일</th>
+                                <th>월</th>
+                                <th>화</th>
+                                <th>수</th>
+                                <th>목</th>
+                                <th>금</th>
+                                <th>토</th>
+                            </div>
+                            <div class="tbl-month">
+                                <div class="">
+                                    <td class="sun"><a>1</a></td>
+                                    <td class=""><a href="/news/schedule?date=2022-05-02">2</a></td>
+                                    <td class=""><a>3</a></td>
+                                    <td class=""><a>4</a></td>
+                                    <td class="today"><a>5</a></td>
+                                    <td class=""><a>6</a></td>
+                                    <td class="sat"><a>7</a></td>
+                                </div>
+                                <!-- 행 반복 -->
+                                <div class="">
+                                    <td class="sun"><a>29</a></td>
+                                    <td class=""><a>30</a></td>
+                                    <td class=""><a>31</a></td>
+                                    <td class=""><a></a></td>
+                                    <td class=""><a></a></td>
+                                    <td class=""><a></a></td>
+                                    <td class="sat"></a></td>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 달력 내용부분 -->
+                    </div> 
+                </div>
+            </div>
+            <!-- 달력 테스트 영역 끝 -->
+
+
 
         <!-- 컨탠츠 시작 -->
         <div class="bt_p w_m_wrap">
@@ -901,7 +959,7 @@
                     </div>
                 </section>
                 <section class="content m_b">
-                    <h5 class="main_tit_sm">마침내 특가<br>추운 겨울에도<br>여행 텐션 UP!!</h5>
+                    <h5 class="blind">마침내 특가<br>추운 겨울에도<br>여행 텐션 UP!!</h5>
                     <div class="inner_tab">
                         <div class="con_inner p_inner">
                             <div class="but_tit_wrap">
@@ -1220,7 +1278,7 @@
                     </div>
                 </section>
                 <section class="travel_wrap">
-                    <h5 class="main_tit_sm">하나 Original</h5>
+                    <h5 class="blind">하나 Original</h5>
                     <div class="travel_sug best_inner">
                         <div class="common_cont">
                             <div class="swiper mySwiper tr_sug">
@@ -1354,7 +1412,7 @@
                     </div>
                 </section>
                 <section class="mb_cont">
-                    <h5 class="main_tit_sm">슬라이드 배너</h5>
+                    <h5 class="blind">슬라이드 배너</h5>
                     <div class="banner_slider_mb">
                         <div class="swiper bann_slider">
                             <div class="swiper-wrapper">
@@ -1429,7 +1487,7 @@
                     </div>
                 </section>
                 <section class="best_travel mb_cont">
-                    <h5 class="main_tit_sm">베스트여행지</h5>
+                    <h5 class="blind">베스트여행지</h5>
                     <div class="best_wrap">
                         <div class="best_item">
                             <a href="#" class="best_link">
@@ -1519,7 +1577,7 @@
                 </section>
                 <!-- 추가상품 리스트 -->
                 <section class="con m_b">
-                    <h5 class="main_tit_sm">떠나자, 하나만 믿고!</h5>
+                    <h5 class="blind">떠나자, 하나만 믿고!</h5>
                     <div class="submain">
                         <div class="content">
                             <div class="tit_box">
@@ -1589,7 +1647,7 @@
                     </div>
                 </section>
                 <section class="con">
-                    <h5 class="main_tit_sm">하나투어닷컴<br>고객센터</h5>
+                    <h5 class="blind">하나투어닷컴<br>고객센터</h5>
                     <div class="inder_time">
                         <div class="info_wrap">
                             <div class="info_item01">
