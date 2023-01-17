@@ -2016,15 +2016,15 @@ background-color: #F4F7FB;
 }
 .card-container .card-calendar #tableCalendar tr th {
     text-align: center;
-padding: 6px 0;
+    padding: 6px 0;
 }
 .card-container .card-calendar #tableCalendar tr td {
-padding: 6px 0;
-text-align: center;
+    padding: 6px 0;
+    text-align: center;
 }
 .card-container .card-calendar #tableCalendar tr td a {
-z-index: 100;
-position: relative;
+    z-index: 100;
+    position: relative;
 }
 .card-container .card-calendar #tableCalendar tr td a:hover::before {
 content: "";
@@ -2039,6 +2039,9 @@ background-color: #E9EEF4;
 }
 .card-container .card-calendar .text-red {
 color: #FF4D6D;
+}
+.card-container .card-calendar .text-navy{
+    color: navy;
 }
 .card-container .card-calendar .other-day {
 opacity: 0.5;
@@ -2091,7 +2094,7 @@ background-color: #E9EEF4;
 background-position: right center;
 }
 .card-container .card-calendar .next {
-background-image: url(../images/ico-md-chevron-right-darkgray@2x.png);
+background-image: url(../images/sub_btn_page_bg_bg);
 background-position: left center;
 }
 .card-container .card-calendar .btn-closed {
@@ -2100,7 +2103,7 @@ top: 0;
 right: 0;
 width: 32px;
 height: 32px;
-background: url(../images/ico-md-close-gray@2x.png) center center no-repeat;
+background: url(../images/ico-alllmenu_close.png) center center no-repeat;
 background-size: 16px;
 text-indent: -9999px;
 }

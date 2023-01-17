@@ -284,20 +284,21 @@ function btnClick_event() {
     });
 
     // 모바일 메뉴 취소버튼
-    $(".quick_menu>a").click(function(){
+    $(".mb_right_btn>img").click(function(){
         $(".quick_menu").toggleClass("acitve");
     });
     
-    // $(".quick_menu>a").click(function(){
-    //     if($(".quick_menu").hasClass("acitve")) {
-    //      $(".quick_menu").removeClass("acitve");
-    //      $("this").removeClass("acitve");
-    //      }else{
-    //          $(".quick_menu").addClass("acitve");
-    //          $(this).addClass("acitve");
-    //      }
+    $(".quick_menu>a").click(function(){
+        if($(".quick_menu").hasClass("acitve")) {
+         $(".quick_menu").removeClass("acitve");
+         $("this").removeClass("acitve");
+         }else{
+             $(".quick_menu").addClass("acitve");
+             $(this).addClass("acitve");
+         }
 
-    //  });
+     });
+
 
     // all_menu 버튼 이벤트
     $('.all_menu .btn_all_menu').click(function(){
