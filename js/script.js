@@ -288,7 +288,6 @@ function btnClick_event() {
         $(".quick_menu").toggleClass("acitve");
     });
     
-
     // $(".quick_menu>a").click(function(){
     //     if($(".quick_menu").hasClass("acitve")) {
     //      $(".quick_menu").removeClass("acitve");
@@ -300,6 +299,13 @@ function btnClick_event() {
 
     //  });
 
+    // all_menu 버튼 이벤트
+    $('.all_menu .btn_all_menu').click(function(){
+        $(this).siblings('.all_sam').toggleClass('on')
+    })
+    $('.all_menu .all_sam .btn_close').click(function(){
+        $(this).closest('.all_sam').removeClass('on')
+    })
 }
 
 // 함수 이름 정해주세요

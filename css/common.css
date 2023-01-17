@@ -175,7 +175,7 @@
     background: url(../images/ico_search.png) no-repeat;
     background-position: center;
 }
-.menu_wrap .menu_left .all_menu .sam_in button span{
+.menu_wrap .menu_left .all_menu .sam_in .btn_close span{
     width: 25px;
     height: 25px;
     line-height: 23px;
@@ -246,7 +246,7 @@
 }
 .menu_left .all_menu .all_sam {
     position: absolute;
-    top: 170px;
+    top: 178px;
     right: 0;
     left: 0;
     background-color: #fff;
@@ -256,9 +256,6 @@
     box-sizing: border-box;
     z-index: 300;
     display: none;
-}
-.menu_left .all_menu .all_sam.off{
-    display: block;
 }
 .menu_left .all_menu .all_sam.on{
     display: block;
@@ -302,13 +299,14 @@
     border-right: 1px solid #ddd;
     box-sizing: border-box;
 }
-.gnb .menu_wrap .menu_left .all_menu>span{
-    display: inline-flex;
+.gnb .menu_wrap .menu_left .all_menu>.btn_all_menu{
+    display: flex;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
     font-size: 15px;  
 }
-.gnb .menu_wrap .menu_left .all_menu span i{
+.gnb .menu_wrap .menu_left .all_menu .btn_all_menu i{
     padding-right:10px;
     font-size: 20px;
 }
