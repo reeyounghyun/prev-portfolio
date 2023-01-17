@@ -384,7 +384,7 @@
     height: 57px;
 }
 .gnb_in .menu_wrap .menu_left .left_bar>ul>li + li{
-    margin-left: 20px;
+    padding-left: 20px;
 }
 .gnb_in .menu_wrap .menu_left .left_bar>ul>li>a{
     font-size: 15px;
@@ -403,7 +403,7 @@
 
 .menu_left .left_bar ul li .in_sub_m{
     position: absolute;
-    top: 262px;
+    top: 179px;
     margin: 0;
     z-index: 19;
     left: 0;
@@ -413,6 +413,11 @@
     box-sizing: border-box;
     display: none; 
 }
+
+.menu_left .left_bar ul li .in_sub_m.on {
+    display: block;
+}
+
 .menu_left .left_bar ul li .in_sub_m>ul{
     width: 990px;
     margin: 0 auto;
@@ -431,6 +436,7 @@
     line-height: 46px;
     display: block;
     font-size: 14px;
+    white-space: nowrap;
 }
 .menu_left .left_bar>ul>li>.in_sub_m>ul>li>a:hover{
     border-bottom: 2.5px solid #5e2bb8;

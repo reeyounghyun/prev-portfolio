@@ -6,6 +6,7 @@ $(document).ready(function () {
     banner_close_event() // 상단 배너 닫기 이벤트
     tab_event() // 탭 메뉴 이벤트
     btnClick_event () // 클릭 이벤트
+    menu_hover_event() // 메뉴 호버 이벤트
 });
 
 // 슬라이드 이벤트
@@ -366,4 +367,20 @@ function redundancy_event() {
 //         sw = 0;
 //     }
 // });
+}
+
+// 메뉴 호버 이벤트
+function menu_hover_event() {
+    $('.menu_wrap .left_bar>ul>li').on('mouseover' ,function(){
+        $('.menu_wrap .left_bar>ul>li>.in_sub_m').removeClass('on')
+        $('.menu_wrap .left_bar>ul>li').removeClass('active')
+        $(this).children('.in_sub_m').addClass('on')
+        $('.menu_wrap .left_bar>ul>li').addClass('on')
+    })
+    $('.gnb_in_wrap , .all_menu , .menu_right').on('mouseover',function(){
+        $('.menu_wrap .left_bar>ul>li>.in_sub_m').removeClass('on')
+    })
+    $('.menu_wrap .in_sub_m').on('mouseout',function(){
+        $('.menu_wrap .left_bar>ul>li>.in_sub_m').removeClass('on')
+    })
 }
