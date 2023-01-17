@@ -4,7 +4,18 @@
 /* 임시저장 */
 /* 전체메뉴 */
 
+/* 헤더영역 */
+.header {
+    position: relative;
+    z-index: 300;
+}
 /* 전체메뉴 */
+
+/* 메인 컨텐츠 영역 */
+.cont_wrap {
+    position: relative;
+    z-index: 200;
+}
 
 
 /* 모바일 메뉴 */
@@ -231,6 +242,7 @@
 
 /* 전체메뉴 팝업창 stert */
 .gnb{
+    position: relative;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #111;
     box-sizing: border-box; 
@@ -311,6 +323,7 @@
     font-size: 20px;
 }
 .gnb .menu_wrap .menu_left .left_bar{
+    /* position: relative; */
     overflow: hidden;
     width: 100%;
     display: block
@@ -401,7 +414,7 @@
 
 .left_bar ul li .in_sub_m{
     position: absolute;
-    top: 179px;
+    top: 58px;
     margin: 0;
     z-index: 19;
     left: 0;

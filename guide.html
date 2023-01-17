@@ -10,16 +10,24 @@
     <link rel="stylesheet" href="./css/guide_style.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/common.css">
-
-    <!-- <link rel="stylesheet" href="./js/script.js"> -->
-
-    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sunburst"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
-    <!-- 스와이퍼 플러그인-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-
-
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sunburst"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.menu_wrap .left_bar>ul>li').on('mouseover' ,function(){
+                $('.menu_wrap .left_bar>ul>li>.in_sub_m').removeClass('on')  //.in_sub_m on 클레스 제거
+                $('.menu_wrap .left_bar>ul>li').removeClass('active')  //.left_bar ul li active 클래스 제거
+                $(this).children('.in_sub_m').addClass('on') //
+                $('.menu_wrap .left_bar>ul>li').addClass('on')
+            })
+            $('.menu_wrap .left_bar>ul>li').on('mouseout',function(){
+                $('.menu_wrap .left_bar>ul>li>.in_sub_m').removeClass('on')
+            })
+        })
+    </script>
 </head>
 
 <body>
@@ -196,49 +204,52 @@
                     </div>
                     <div class="guide-result">
                         <div class="gnb">
-                            <nav class="left_bar">
-                                <ul>
-                                    <li>
-                                        <a href="#">메뉴1</a>
-                                        <div class="in_sub_m">
-                                            <ul>
-                                                <li><a href="#">서브1</a></li>
-                                                <li><a href="#">서브2</a></li>
-                                                <li><a href="#">서브3</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="#">메뉴2</a>
-                                        <div class="in_sub_m">
-                                            <ul>
-                                                <li><a href="#">서브4</a></li>
-                                                <li><a href="#">서브5</a></li>
-                                                <li><a href="#">서브6</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li><a href="#">메뉴3</a></li>
-                                </ul>
-                            </nav>
+                            <div class="menu_wrap common_cont">
+                                <div class="menu_left">
+                                    <nav class="left_bar">
+                                        <ul>
+                                            <li>
+                                                <a href="#">해외여행</a>
+                                                <div class="in_sub_m">
+                                                    <ul>
+                                                        <li><a href="#">해외여행 홈</a></li>
+                                                        <li><a href="#">동남아/대만/서남아</a></li>
+                                                        <li><a href="#">괌/사이판/호주/뉴질랜드/피지</a></li>
+                                                        <li><a href="#">유럽/아프리카</a></li>
+                                                        <li><a href="#">미주/중남이/허와이</a></li>
+                                                        <li><a href="#">일본</a></li>
+                                                        <li><a href="#">중국/홍콩/몽골/중앙아시아</a></li>
+                                                        <li><a href="#">지방출발</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#">제주/국내여행</a>
+                                                <div class="in_sub_m">
+                                                    <ul>
+                                                        <li><a href="#">제주/국내여행</a></li>
+                                                        <li><a href="#">제주도렌트카</a></li>
+                                                        <li><a href="#">울릉도</a></li>
+                                                        <li><a href="#">내나라여행</a></li>
+                                                        <li><a href="#">국내골프</a></li>
+                                                        <li><a href="#">단독여행문의</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="#">항공</a></li>
+                                            <li><a href="#">호텔</a></li>
+                                            <li><a href="./template.html">투어/입장권</a></li>
+                                            <li><a href="#">허니문</a></li>
+                                            <li><a href="#">골프</a></li>
+                                            <li><a href="#">제우스</a></li>
+                                            <li><a href="#">MICE</a></li>
+                                            <li><a href="#">하나LIVE</a></li>
+                                            <li><a href="./guide.html">가이드</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
                         </div>
-
-                        <script>
-                            function menu_hover_event() {
-                                $('.menu_wrap .left_bar>ul>li').on('mouseover' ,function(){
-                                    $('.menu_wrap .left_bar>ul>li>.in_sub_m').removeClass('on')
-                                    $('.menu_wrap .left_bar>ul>li').removeClass('active')
-                                    $(this).children('.in_sub_m').addClass('on')
-                                    $('.menu_wrap .left_bar>ul>li').addClass('on')
-                                })
-                                $('.gnb_in_wrap , .all_menu , .menu_right').on('mouseover',function(){
-                                    $('.menu_wrap .left_bar>ul>li>.in_sub_m').removeClass('on')
-                                })
-                                $('.menu_wrap .in_sub_m').on('mouseout',function(){
-                                    $('.menu_wrap .left_bar>ul>li>.in_sub_m').removeClass('on')
-                                })
-                            }
-                        </script>
                     </div>
                     <div class="guide-content">
                         <!-- 구글 Prettify -->
