@@ -1,7 +1,55 @@
 $(document).ready(function () {
 
-     // alert("클릭해주셔서 감사합니다^^");
+    var swiper = new Swiper(".color_slide", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop:true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
 
+    });
+
+    $('.Start').on('click', function() {
+        swiper.autoplay.stop();
+    });
+    $('.Stop').on('click', function() {
+        swiper.autoplay.start();
+    });
+
+    swiper.on('slideChange', function(e) {
+        if (swiper.activeIndex == "0") {
+            $(".wrapper").css("background-color", "#E2DAF2");
+        } else if (swiper.activeIndex == "1") {
+            $(".wrapper").css("background-color", "#E4EFD0");
+        } else if (swiper.activeIndex == "2") {
+            $(".wrapper").css("background-color", "#F1E6CC");
+        } else if (swiper.activeIndex == "3") {
+            $(".wrapper").css("background-color", "#D5EAFD");
+        } else if (swiper.activeIndex == "4") {
+            $(".wrapper").css("background-color", "#E2DAF2");
+        } else if (swiper.activeIndex == "5") {
+            $(".wrapper").css("background-color", "#E4EFD0");
+        } else {
+            $(".wrapper").css("background-color", "#F1E6CC");
+        }
+
+    });
+
+
+});
+// 메인 상단 슬라이드
+
+$(document).ready(function(){
     $(".bnt_le").click(function () {
         if ($(".btn_a").hasClass("active")) {
             $(".btn_a").removeClass("active");
@@ -12,30 +60,103 @@ $(document).ready(function () {
         }
     })
 
-    //인천/김포 출발 셀렉트 박스
-
     $('.bnt_le').click(function(){
         $('.bnt_le').css({"border": "1px solid #5e2bb8"});
     });
-    // 인천/김포 출발 셀렉트 박스 
 
-    $(".aside>ul>li>a").click(function(){
-        $(".aside ul li a .menu_sub").addClass('onfoo');
-        $(this).addClass("onfoo");
-        $(".")
+}); //인천/김포 출발 셀렉트 박스
+
+$(document).ready(function(){
+
+    // $(".aside>ul>li>a").click(function(){
+    //     $(".aside ul li a .menu_sub").addClass('onfoo');
+    //     $(this).addClass("onfoo");
+    //     $(".")
+    // });
+});
+
+
+$(document).ready(function(){
+    var swiper = new Swiper(".rank_list", {
+        direction: 'vertical',   
+        loop: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+    });
+}); //실시간 검색 순위
+
+
+$(document).ready(function(){
+    var swiper = new Swiper(".notice", {
+        direction: 'vertical',   
+        loop: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+    });
+}); //공지사항
+
+
+$(document).ready(function(){
+
+});
+
+
+$(document).ready(function(){
+    var swiper = new Swiper(".footer_swiper", {
+        slidesPerView:3,
+        slidesPerGroup:3,
+        loop: true,
+        navigation: {
+            nextEl: ".next-footer",
+            prevEl: ".prev-footer",
+        },
     });
 
-    $(".prd_add_btn").click(function(){
-        $(".prdItemList ul li").addClass('add');
-        $(this).addClass("add");
-        $(".prd_remove_btn").removeClass("add");
-    });
+}); //foo_bit js footer 슬라이드
 
-    $(".prd_remove_btn").click(function(){   
-        $(".prdItemList ul li").removeClass('add');
-        $(this).addClass("add");
-        $(".prd_add_btn").removeClass("add");
-    }); //indexsub_add button
+
+$(document).ready(function(){
+    $(".list_close").click(function(){
+        $(".banner_wrap").css("display",'none')
+    });
+}); // 상단 배너 x버튼
+
+
+
+
+
+
+
+$(document).ready(function () {
+
+     // alert("클릭해주셔서 감사합니다^^");
+
+
+
+
+
+
+
+    // $(".prd_add_btn").click(function(){
+    //     $(".prdItemList ul li").addClass('add');
+    //     $(this).addClass("add");
+    //     $(".prd_remove_btn").removeClass("add");
+    // });
+
+    // $(".prd_remove_btn").click(function(){   
+    //     $(".prdItemList ul li").removeClass('add');
+    //     $(this).addClass("add");
+    //     $(".prd_add_btn").removeClass("add");
+    // }); 
+    //indexsub_add button
 
     // $(".gnb_in .menu_wrap .n_l .r_all_m").click(function () {
     //     if ($(".n_l .r_all_m .all_sam").hasClass("off")) {
@@ -49,39 +170,20 @@ $(document).ready(function () {
 
     // 메뉴
 
-    $(".btn_close").click(function () {
-        if ($(".n_l .r_all_m .all_sam").hasClass("on")) {
-            $(".n_l .r_all_m .all_sam").removeClass("on");
-            $("this").removeClass("on");
-        } else {
-            $(".n_l .r_all_m .all_sam").addClass("off");
-            $(this).addClass("off");
-        }
-    })
+    // $(".btn_close").click(function () {
+    //     if ($(".n_l .r_all_m .all_sam").hasClass("on")) {
+    //         $(".n_l .r_all_m .all_sam").removeClass("on");
+    //         $("this").removeClass("on");
+    //     } else {
+    //         $(".n_l .r_all_m .all_sam").addClass("off");
+    //         $(this).addClass("off");
+    //     }
+    // })
 
-    //실시간 검색 순위
 
-    var swiper = new Swiper(".rank_list", {
-        direction: 'vertical',   
-        loop: true,
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-      });
 
-      var swiper = new Swiper(".notice", {
-        direction: 'vertical',   
-        loop: true,
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-      });
+
+
 
     // var count = $('.rank-list li').length++;
     // var height = $('.rank-list li').height();
@@ -96,10 +198,7 @@ $(document).ready(function () {
 
     // step(1);
 
-    $(".list_close").click(function(){
-        $(".banner_wrap").css("display",'none')
-    });
-
+ 
     // $(".btn_pause").on('slideChange', function (e) {
 
     //     var sw = 0;
@@ -115,19 +214,7 @@ $(document).ready(function () {
     //     }
     // });
 
-    //foo_bit js
-    var swiper = new Swiper(".foo_swiper", {
-        // centeredSlides: true,
-        slidesPerView: 3,
-        // spaceBetween: 5,
-        slidesPerGroup: 3,
-        loop: true,
-        navigation: {
-            nextEl: ".next-foo",
-            prevEl: ".prev-foo",
-        },
-    });
-
+ 
     //travel_sug js
     var swiper = new Swiper(".tr_sug", {
         centeredSlides: true,

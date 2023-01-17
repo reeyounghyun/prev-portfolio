@@ -719,7 +719,7 @@
     object-fit: cover;
     max-width: none;
 }
-.main_slider  .color_sli .swiper-pagination{
+.main_slider  .color_slide .swiper-pagination{
     padding: 10px 0 10px 15px;
     background: rgb(17 17 17 / 47%);
     border-radius: 30px;
@@ -736,7 +736,7 @@
     position: relative;
     border:none; 
 }
-.main_slider .color_sli .swiper-pagination::before{
+.main_slider .color_slide .swiper-pagination::before{
     content: "|";
     clear: both;
     display: inline-block;
@@ -748,30 +748,23 @@
 .main_slider .swiper-button-next{
     background: url(../images/page_r2_h.png);
     background-repeat: no-repeat;
-    top: 50%;
-    right: auto!important;
-    left: 0!important;
+    bottom: 0;
+    left: 0;
     transform: translate(141px, 255px);
-    z-index: 119;
     width: 16px;
-    height: 14px;
-    line-height: 14px;
+    height: 16px;
     position: absolute;
-    border: none;
 }
 .main_slider  .swiper-button-prev{
     background: url(../images/page_l2_h.png);
     background-repeat: no-repeat;
-    right: auto;
-    left: 0;
-    top: 50%;
+    left:0;  
+    bottom: 0;
     transform: translate(107px, 255px);
     z-index: 119;
     width: 16px;
-    height: 14px;
-    line-height: 14px;
+    height: 19px;
     position: absolute;
-    border: none;
 }
 .btn button {
     overflow: hidden;
