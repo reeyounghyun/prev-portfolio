@@ -69,12 +69,12 @@ h1 {
     font-weight: bold;
     text-align: center;
 }
-.title{
+/* .title{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
     color: #000;
-}
+} */
 .guide-height span{
     display: block;
     margin: 10px 0 0 0;
@@ -92,29 +92,47 @@ h1 {
     background-repeat: repeat; */
 
 }
+.project_title,
+.title{
+    color: rgb(94 43 184);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    width: 95%;
+    margin: 0 auto;
+}
 
 /* 프로젝트 환경 표 stert */
+.project_settings{
+    margin-bottom: 20px;
+}
+table{
+    width: 95%;
+    margin: 0 auto;
+}
 thead{
-    height: 40px;
-    line-height: 40px;
+    height: 30px;
+    line-height: 30px;
     background: #ccc;
     color: #333;
     border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
     box-sizing: border-box;
 }
 tr>th{
     font-weight: 600;
     font-size: 16px;
+    text-align: left;
+    padding: 10px;
 }
 td{
-    height: 40px;
-    line-height: 40px;
+    height: 25px;
+    line-height: 25px;
     font-size: 15px;
     border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 10px;
 }
-
-tr + tr{
+tr{
     border-bottom: 1px solid #ccc;
 }
 
