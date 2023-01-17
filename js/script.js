@@ -1,5 +1,16 @@
 $(document).ready(function () {
+    // 이벤트 함수 정리
+    Swiper_event () // 슬라이드 이벤트
+    selectBox () // 셀렉트 박스 이벤트
+    // aside_event () // 사이드바 이벤트
+    banner_close_event() // 상단 배너 닫기 이벤트
+    tab_event() // 탭 메뉴 이벤트
+    btnClick_event () // 클릭 이벤트
+});
 
+// 슬라이드 이벤트
+function Swiper_event () {
+    // 비쥬얼 슬라이드
     var swiper = new Swiper(".color_slide", {
         spaceBetween: 30,
         centeredSlides: true,
@@ -18,14 +29,7 @@ $(document).ready(function () {
         },
 
     });
-
-    $('.Start').on('click', function() {
-        swiper.autoplay.stop();
-    });
-    $('.Stop').on('click', function() {
-        swiper.autoplay.start();
-    });
-
+    // 비쥬얼 슬라이드 배경
     swiper.on('slideChange', function(e) {
         if (swiper.activeIndex == "0") {
             $(".wrapper").css("background-color", "#E2DAF2");
@@ -44,53 +48,27 @@ $(document).ready(function () {
         }
 
     });
-
-
-});
-// 메인 상단 슬라이드
-
-$(document).ready(function(){
-    $(".bnt_le").click(function () {
-        if ($(".btn_a").hasClass("active")) {
-            $(".btn_a").removeClass("active");
-            $("this").removeClass("active");
-        } else {
-            $(".btn_a").addClass("active");
-            $(this).addClass("active");
-        }
-    })
-
-    $('.bnt_le').click(function(){
-        $('.bnt_le').css({"border": "1px solid #5e2bb8"});
+    // 비쥬얼 슬라이드 컨트롤러
+    $('.Start').on('click', function() {
+        swiper.autoplay.stop();
+    });
+    $('.Stop').on('click', function() {
+        swiper.autoplay.start();
     });
 
-}); //인천/김포 출발 셀렉트 박스
-
-$(document).ready(function(){
-
-    // $(".aside>ul>li>a").click(function(){
-    //     $(".aside ul li a .menu_sub").addClass('onfoo');
-    //     $(this).addClass("onfoo");
-    //     $(".")
-    // });
-});
-
-
-$(document).ready(function(){
+    // 실시간 검색 순위
     var swiper = new Swiper(".rank_list", {
         direction: 'vertical',   
         loop: true,
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
+            delay: 2500,
+            disableOnInteraction: false,
         },
     });
-}); //실시간 검색 순위
 
-
-$(document).ready(function(){
+    // 공지사항
     var swiper = new Swiper(".notice", {
         direction: 'vertical',   
         loop: true,
@@ -101,15 +79,8 @@ $(document).ready(function(){
           disableOnInteraction: false,
         },
     });
-}); //공지사항
 
-
-$(document).ready(function(){
-
-});
-
-
-$(document).ready(function(){
+    // footer 슬라이드
     var swiper = new Swiper(".footer_swiper", {
         slidesPerView:3,
         slidesPerGroup:3,
@@ -120,101 +91,6 @@ $(document).ready(function(){
         },
     });
 
-}); //foo_bit js footer 슬라이드
-
-
-$(document).ready(function(){
-    $(".list_close").click(function(){
-        $(".banner_wrap").css("display",'none')
-    });
-}); // 상단 배너 x버튼
-
-
-
-
-
-
-
-$(document).ready(function () {
-
-     // alert("클릭해주셔서 감사합니다^^");
-
-
-
-
-
-
-
-    // $(".prd_add_btn").click(function(){
-    //     $(".prdItemList ul li").addClass('add');
-    //     $(this).addClass("add");
-    //     $(".prd_remove_btn").removeClass("add");
-    // });
-
-    // $(".prd_remove_btn").click(function(){   
-    //     $(".prdItemList ul li").removeClass('add');
-    //     $(this).addClass("add");
-    //     $(".prd_add_btn").removeClass("add");
-    // }); 
-    //indexsub_add button
-
-    // $(".gnb_in .menu_wrap .n_l .r_all_m").click(function () {
-    //     if ($(".n_l .r_all_m .all_sam").hasClass("off")) {
-    //         $(".n_l .r_all_m .all_sam").removeClass("off");
-    //         $("this").removeClass("off");
-    //     } else {
-    //         $(".n_l .r_all_m .all_sam").addClass("off");
-    //         $(this).addClass("off");
-    //     }
-    // })
-
-    // 메뉴
-
-    // $(".btn_close").click(function () {
-    //     if ($(".n_l .r_all_m .all_sam").hasClass("on")) {
-    //         $(".n_l .r_all_m .all_sam").removeClass("on");
-    //         $("this").removeClass("on");
-    //     } else {
-    //         $(".n_l .r_all_m .all_sam").addClass("off");
-    //         $(this).addClass("off");
-    //     }
-    // })
-
-
-
-
-
-
-    // var count = $('.rank-list li').length++;
-    // var height = $('.rank-list li').height();
-
-    // function step(index) {
-    //     $('.rank-list ol').delay(2000).animate({
-    //         top: -height * index,
-    //     }, 1000, function () {
-    //         step((index + 1) % count);
-    //     });
-    // }
-
-    // step(1);
-
- 
-    // $(".btn_pause").on('slideChange', function (e) {
-
-    //     var sw = 0;
-
-    //     if (sw == 0) {
-    //         $('.btn_pause').addClass('on');
-    //         mySwiper.autoplay.stop();
-    //         sw = 1;
-    //     } else {
-    //         $('.btn_pause').removeClass('on');
-    //         mySwiper.autoplay.start();
-    //         sw = 0;
-    //     }
-    // });
-
- 
     //travel_sug js
     var swiper = new Swiper(".tr_sug", {
         centeredSlides: true,
@@ -227,17 +103,17 @@ $(document).ready(function () {
             1920: {
                 slidesPerView: 1,
                 spaceBetween: 0,
-              },
+                },
             1280: {
                 slidesPerView: 1,
                 spaceBetween: 0,
                 centeredSlides: false,
-              },
+                },
             768: {
                 slidesPerView: 1,
                 spaceBetween: 30,
                 centeredSlides: false,
-              },
+                },
         }
     });
 
@@ -254,20 +130,75 @@ $(document).ready(function () {
             1280: {
                 slidesPerView: 4,
                 spaceBetween: 15,
-              },
+                },
             768:{
                 slidesPerView: 1,
                 spaceBetween: 20,
                 centeredSlides: true,
-              },
+                },
             375:{
                 slidesPerView: 1,
                 spaceBetween: 10,
                 centeredSlides: true,
-              },
+                },
         }
     });
 
+    // 모바일 bann_slider
+    var swiper = new Swiper(".bann_slider", {
+        centeredSlides: true,
+        loop : true,
+        slidesPerView: 1,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+}
+
+// 셀렉트 박스 이벤트
+function selectBox() {
+    //인천/김포 출발 셀렉트 박스
+    $(".bnt_le").click(function () {
+        if ($(".btn_a").hasClass("active")) {
+            $(".btn_a").removeClass("active");
+            $("this").removeClass("active");
+        } else {
+            $(".btn_a").addClass("active");
+            $(this).addClass("active");
+        }
+    })
+
+    $('.bnt_le').click(function(){
+        $('.bnt_le').css({"border": "1px solid #5e2bb8"});
+    });
+}
+
+// 사이드바 이벤트
+function aside_event() {
+
+    // $(".aside>ul>li>a").click(function(){
+    //     $(".aside ul li a .menu_sub").addClass('onfoo');
+    //     $(this).addClass("onfoo");
+    //     $(".")
+    // });
+}
+
+// 상단 배너 닫기 이벤트
+function banner_close_event() {
+    // 상단 배너 닫기 이벤트
+    $(".list_close").click(function(){
+        $(".banner_wrap").css("display",'none')
+    });
+}
+
+// 탭 메뉴 이벤트
+function tab_event() {
+    // 패키지 항공 호텔 탭 버튼
     $('.but_tit a').click(function () {
         var tab_id = $(this).attr('data-tab');
         $('.but_tit a').removeClass('acitve');
@@ -275,8 +206,8 @@ $(document).ready(function () {
         $(this).addClass('acitve');
         $("#" + tab_id).addClass('acitve');
     });
-    //패키지 항공 호텔 탭 버튼
 
+    // 왕복 편도 다구간 탭 버튼
     $('.but_tits span button').click(function () {
         var tab_id = $(this).attr('data-tab');
         $('.but_tits span button').removeClass('acitve');
@@ -284,8 +215,8 @@ $(document).ready(function () {
         $(this).addClass('acitve');
         $("#" + tab_id).addClass('acitve');
     });
-    //왕복 편도 다구간 탭 버튼
 
+    // 마침내 특가
     $('.but_titsx span button').click(function () {
         var tab_id = $(this).attr('data-tab');
         $('.but_titsx span button').removeClass('play');
@@ -293,8 +224,12 @@ $(document).ready(function () {
         $(this).addClass('play');
         $("#" + tab_id).addClass('play');
     });
-    //마침내 특가
+}
 
+// 클릭 이벤트
+function btnClick_event() {
+
+    // 이벤트 확인필요
     $(".prd_add_btn").click(function () {
         if ($(this).hasClass("add")) {
             $(".prd_add_btn").removeClass("add");
@@ -311,6 +246,19 @@ $(document).ready(function () {
         }
     })
 
+    $(".prd_add_btn").click(function(){
+        $(".prdItemList ul li").addClass('add');
+      $(this).addClass("add");
+      $(".prd_remove_btn").removeClass("add");
+   });
+
+    //indexsub_add button
+    $(".prd_remove_btn").click(function(){   
+        $(".prdItemList ul li").removeClass('add');
+        $(this).addClass("add");
+        $(".prd_add_btn").removeClass("add");
+    }); 
+
     // footer 하나투어
     $(".hana_mb").click(function () {
         if ($(".fl .footer_licensee span").hasClass("on")) {
@@ -322,6 +270,7 @@ $(document).ready(function () {
         }
     })
 
+    // 모바일 햄버거 메뉴
     $(".hea_wrap a.btn .ico").click(function(){
        if($(".quick_menu").hasClass("off")) {
         $(".quick_menu").removeClass("off");
@@ -332,15 +281,13 @@ $(document).ready(function () {
         }
 
     });
-    //모바일 햄버거 메뉴
 
+    // 모바일 메뉴 취소버튼
     $(".quick_menu>a").click(function(){
         $(".quick_menu").toggleClass("acitve");
     });
-
-    //모바일 메뉴 취소버튼
-
     
+
     // $(".quick_menu>a").click(function(){
     //     if($(".quick_menu").hasClass("acitve")) {
     //      $(".quick_menu").removeClass("acitve");
@@ -352,32 +299,71 @@ $(document).ready(function () {
 
     //  });
 
-    $(".prd_add_btn").click(function(){
-        $(".prdItemList ul li").addClass('add');
-      $(this).addClass("add");
-      $(".prd_remove_btn").removeClass("add");
-   });
-   
-   $(".prd_remove_btn").click(function(){   
-      $(".prdItemList ul li").removeClass('add');
-      $(this).addClass("add");
-      $(".prd_add_btn").removeClass("add");
-    }); //indexsub_add button
-		
+}
 
-    var swiper = new Swiper(".bann_slider", {
-        centeredSlides: true,
-        loop : true,
-        slidesPerView: 1,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: true,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
+// 함수 이름 정해주세요
+function redundancy_event() {
+    // $(".prd_add_btn").click(function(){
+//     $(".prdItemList ul li").addClass('add');
+//     $(this).addClass("add");
+//     $(".prd_remove_btn").removeClass("add");
+// });
+
+// $(".prd_remove_btn").click(function(){   
+//     $(".prdItemList ul li").removeClass('add');
+//     $(this).addClass("add");
+//     $(".prd_add_btn").removeClass("add");
+// }); 
+//indexsub_add button
+
+// $(".gnb_in .menu_wrap .n_l .r_all_m").click(function () {
+//     if ($(".n_l .r_all_m .all_sam").hasClass("off")) {
+//         $(".n_l .r_all_m .all_sam").removeClass("off");
+//         $("this").removeClass("off");
+//     } else {
+//         $(".n_l .r_all_m .all_sam").addClass("off");
+//         $(this).addClass("off");
+//     }
+// })
+
+// 메뉴
+
+// $(".btn_close").click(function () {
+//     if ($(".n_l .r_all_m .all_sam").hasClass("on")) {
+//         $(".n_l .r_all_m .all_sam").removeClass("on");
+//         $("this").removeClass("on");
+//     } else {
+//         $(".n_l .r_all_m .all_sam").addClass("off");
+//         $(this).addClass("off");
+//     }
+// })
+
+// var count = $('.rank-list li').length++;
+// var height = $('.rank-list li').height();
+
+// function step(index) {
+//     $('.rank-list ol').delay(2000).animate({
+//         top: -height * index,
+//     }, 1000, function () {
+//         step((index + 1) % count);
+//     });
+// }
+
+// step(1);
 
 
-});
+// $(".btn_pause").on('slideChange', function (e) {
+
+//     var sw = 0;
+
+//     if (sw == 0) {
+//         $('.btn_pause').addClass('on');
+//         mySwiper.autoplay.stop();
+//         sw = 1;
+//     } else {
+//         $('.btn_pause').removeClass('on');
+//         mySwiper.autoplay.start();
+//         sw = 0;
+//     }
+// });
+}
