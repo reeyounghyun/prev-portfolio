@@ -100,11 +100,28 @@ h1 {
     padding: 10px;
     width: 95%;
     margin: 0 auto;
+
+    position: relative;
+}
+
+.project_title::before,
+.title::before{
+    position: absolute;
+    content: "";
+    clear: both;
+    left: 0;
+    top: 6px;
+    width: 4px;
+    height: 25px;
+    background-color: rgb(77 19 178 / 86%);
 }
 
 /* 프로젝트 환경 표 stert */
 .project_settings{
     margin-bottom: 20px;
+}
+.guide-item{
+    margin-bottom: 30px;
 }
 table{
     width: 95%;
@@ -136,9 +153,6 @@ tr{
     border-bottom: 1px solid #ccc;
 }
 
-
-
-
 /* 타이틀 style stert */
 .main_tit_xl{
     font-size: 26px;
@@ -159,4 +173,9 @@ tr{
 
 .main_slider .swiper{
     margin-left: 0;
+}
+
+/* 탭 메뉴 */
+.guide_input{
+    margin-top: 0;
 }

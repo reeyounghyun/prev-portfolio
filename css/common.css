@@ -283,7 +283,7 @@
     padding-left: 0!important;
 }
 
-.gnb .menu_wrap .menu_left .left_bar ul{
+.left_bar ul{
     display: flex;
 }
 .gnb .menu_wrap .menu_left .all_menu{
@@ -371,35 +371,35 @@
 .menu_left .all_menu .all_sam dl>dd:first-child{
     margin-top: 10px;
 }
-.gnb_in .menu_wrap .menu_left .left_bar>ul>li:first-child{
+.left_bar>ul>li:first-child{
     padding: 0 7.5px;
     padding-left: 26px;
 }
-.gnb_in .menu_wrap .menu_left .left_bar>ul>li{
+.left_bar>ul>li{
     font-size: 15px;
     color: #111;
     line-height: 56px;
     height: 57px;
 }
-.gnb_in .menu_wrap .menu_left .left_bar>ul>li + li{
+.left_bar>ul>li + li{
     padding-left: 20px;
 }
-.gnb_in .menu_wrap .menu_left .left_bar>ul>li>a{
+.left_bar>ul>li>a{
     font-size: 15px;
     color: #111;
     float: left;
     line-height: 56px;
     height: 57px;
 }
-.gnb_in .menu_wrap .menu_left .left_bar>ul>li:hover>a{
+.left_bar>ul>li:hover>a{
     border-bottom: 2.5px solid #5e2bb8;
     box-sizing: border-box;
 }
-.menu_left .left_bar ul li:hover .in_sub_m{
+.left_bar ul li:hover .in_sub_m{
     display: none;
 }/* 최종 block 으로 변경하기 */
 
-.menu_left .left_bar ul li .in_sub_m{
+.left_bar ul li .in_sub_m{
     position: absolute;
     top: 179px;
     margin: 0;
@@ -412,31 +412,31 @@
     display: none; 
 }
 
-.menu_left .left_bar ul li .in_sub_m.on {
+.left_bar ul li .in_sub_m.on {
     display: block;
 }
 
-.menu_left .left_bar ul li .in_sub_m>ul{
+.left_bar ul li .in_sub_m>ul{
     width: 990px;
     margin: 0 auto;
     padding-left: 44px;
 }
-.menu_left .left_bar ul li .in_sub_m>ul>li:first-child{
+.left_bar ul li .in_sub_m>ul>li:first-child{
     padding-left:0;
 }
-.menu_left .left_bar ul li .in_sub_m>ul>li{
+.left_bar ul li .in_sub_m>ul>li{
     height: 48px;
     line-height: 48px; 
     padding-left: 25px;
 }
-.menu_left .left_bar>ul>li>.in_sub_m>ul>li>a{
+.left_bar>ul>li>.in_sub_m>ul>li>a{
     height: 48px;
     line-height: 46px;
     display: block;
     font-size: 14px;
     white-space: nowrap;
 }
-.menu_left .left_bar>ul>li>.in_sub_m>ul>li>a:hover{
+.left_bar>ul>li>.in_sub_m>ul>li>a:hover{
     border-bottom: 2.5px solid #5e2bb8;
     box-sizing: border-box;
 }

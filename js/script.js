@@ -378,9 +378,9 @@ function redundancy_event() {
 // 메뉴 호버 이벤트
 function menu_hover_event() {
     $('.menu_wrap .left_bar>ul>li').on('mouseover' ,function(){
-        $('.menu_wrap .left_bar>ul>li>.in_sub_m').removeClass('on')
-        $('.menu_wrap .left_bar>ul>li').removeClass('active')
-        $(this).children('.in_sub_m').addClass('on')
+        $('.menu_wrap .left_bar>ul>li>.in_sub_m').removeClass('on')  //.in_sub_m on 클레스 제거
+        $('.menu_wrap .left_bar>ul>li').removeClass('active')  //.left_bar ul li active 클래스 제거
+        $(this).children('.in_sub_m').addClass('on') //
         $('.menu_wrap .left_bar>ul>li').addClass('on')
     })
     $('.gnb_in_wrap , .all_menu , .menu_right').on('mouseover',function(){

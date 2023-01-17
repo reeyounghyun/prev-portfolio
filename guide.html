@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="./css/guide_style.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
 
     <!-- <link rel="stylesheet" href="./js/script.js"> -->
 
@@ -77,13 +78,12 @@
                             </tr>
                             <tr>
                                 <th>해상도 기준&#47;디자인 너비</th>
-                                <td>1920px&#47;1280px</td>
+                                <td>1920px&#47;1200px</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-
             <div class="project_settings">
                 <h2 class="project_title">프로젝트 파일&#47;규칙</h2>
                 <div class="table_area">
@@ -155,14 +155,12 @@
                     </table>
                 </div>
             </div>
-
-
             <div class="markup_guide">
                 <div class="guide-item">
                     <div class="guide-title">
                         <h2 class="title">레이아웃구조</h2>
                     </div>
-                    <div class="guide-result"></div>
+                    <!-- <div class="guide-result"></div> -->
                     <div class="guide-content">
                         <pre class="prettyprint lang-html">
                             &lt;body&gt;
@@ -173,7 +171,6 @@
                         </pre>
                     </div>
                 </div>
-
                 <div class="guide-item">
                     <div class="guide-title">
                         <h2 class="title">본문 타이틀</h2>
@@ -189,6 +186,84 @@
                             &lt;h2 class="main_tit_xl"&gt;문단테스트&lt;/h2&gt; <br>
                             &lt;h3 class="main_tit_lg"&gt;문단테스트&lt;/h2&gt; <br>
                             &lt;h4 class="main_tit_md"&gt;문단테스트&lt;/h2&gt; <br>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="guide-item">
+                    <div class="guide-title">
+                        <h2 class="title">메뉴</h2>
+                    </div>
+                    <div class="guide-result">
+                        <div class="gnb">
+                            <div class="menu_wrap common_cont">
+                                <div class="menu_left">
+                                    <nav class="left_bar">
+                                        <ul>
+                                            <li class="on">
+                                                <a href="#">해외여행</a>
+                                                <div class="in_sub_m">
+                                                    <ul>
+                                                        <li><a href="#">해외여행 홈</a></li>
+                                                        <li><a href="#">동남아/대만/서남아</a></li>
+                                                        <li><a href="#">괌/사이판/호주/뉴질랜드/피지</a></li>
+                                                        <li><a href="#">유럽/아프리카</a></li>
+                                                        <li><a href="#">미주/중남이/허와이</a></li>
+                                                        <li><a href="#">일본</a></li>
+                                                        <li><a href="#">중국/홍콩/몽골/중앙아시아</a></li>
+                                                        <li><a href="#">지방출발</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="on">
+                                                <a href="#">제주/국내여행</a>
+                                                <div class="in_sub_m">
+                                                    <ul>
+                                                        <li><a href="#">제주/국내여행</a></li>
+                                                        <li><a href="#">제주도렌트카</a></li>
+                                                        <li><a href="#">울릉도</a></li>
+                                                        <li><a href="#">내나라여행</a></li>
+                                                        <li><a href="#">국내골프</a></li>
+                                                        <li><a href="#">단독여행문의</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="on"><a href="#">항공</a></li>
+                                            <li class="on"><a href="#">호텔</a></li>
+                                            <li class="on"><a href="./template.html">투어/입장권</a></li>
+                                            <li class="on"><a href="#">허니문</a></li>
+                                            <li class="on"><a href="#">골프</a></li>
+                                            <li class="on"><a href="#">제우스</a></li>
+                                            <li class="on"><a href="#">MICE</a></li>
+                                            <li class="on"><a href="#">하나LIVE</a></li>
+                                            <li class="on"><a href="./guide.html">가이드</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            function menu_hover_event() {
+                                $('.menu_wrap .left_bar>ul>li').on('mouseover' ,function(){
+                                    $('.menu_wrap .left_bar>ul>li>.in_sub_m').removeClass('on')
+                                    $('.menu_wrap .left_bar>ul>li').removeClass('active')
+                                    $(this).children('.in_sub_m').addClass('on')
+                                    $('.menu_wrap .left_bar>ul>li').addClass('on')
+                                })
+                                $('.gnb_in_wrap , .all_menu , .menu_right').on('mouseover',function(){
+                                    $('.menu_wrap .left_bar>ul>li>.in_sub_m').removeClass('on')
+                                })
+                                $('.menu_wrap .in_sub_m').on('mouseout',function(){
+                                    $('.menu_wrap .left_bar>ul>li>.in_sub_m').removeClass('on')
+                                })
+                            }
+                        </script>
+                    </div>
+                    <div class="guide-content">
+                        <!-- 구글 Prettify -->
+                        <pre class="prettyprint lang-html">
+                            &lt;h2 class="title"&gt;문단테스트&lt;/h2&gt;
                         </pre>
                     </div>
                 </div>
@@ -221,7 +296,7 @@
                                     </div>
                                 </div>
                             </div>
-                        <script>          
+                        <script>      
                             var swiper = new Swiper(".color_slide", {
                                 spaceBetween: 30,
                                 centeredSlides: true,
@@ -240,8 +315,9 @@
                                 },
                 
                             });
+
                         </script>
-                    </div>
+                    </div>   
                     <div class="guide-content">
                         <!-- 구글 Prettify -->
                         <pre class="prettyprint lang-html">
@@ -289,14 +365,14 @@
                         </pre>
                     </div>
                 </div>
-
                 <div class="guide-item">
                     <div class="guide-title">
                         <h2 class="title">탭 메뉴</h2>
                     </div>
                     <div class="guide-result">
                         <div class="main_le">
-                            <div class="top_input">
+                            <div class="top_input guide_input">
+                                <h2 class="main_tit_xl">고객님,<br><span>어떤 여행을 꿈꾸시나요?</span></h2>
                                 <div class="but_tit">
                                     <a class="btn_primary tab-link acitve" data-tab="tab-10">탭메뉴1</a>
                                     <a class="btn_primary tab-link" data-tab="tab-20">탭메뉴2</a>
@@ -358,10 +434,27 @@
                                     &lt;p&gt;내용3&lt;&#47;p&gt;
                                 &lt;&#47;div&gt;
                             &lt;&#47;diV&gt;
-                        </pre>
-                    </div>
-                </div>
+
+                            &lt;script&gt; 
+                                    $&#40;'.but_tit a'&#41; .click&#40;function &#40;&#41;  &#123;  
+                                            var tab_id = $&#40;this&#41; .attr&#40; 'data-tab'&#41; ;
+                                            $&#40; '.but_tit a'&#41; .removeClass&#40; 'acitve'&#41; ;
+                                            $&#40; '.tab_content'&#41;.removeClass&#40; 'acitve'&#41;;
+                                            $&#40; this&#41;.addClass&#40; 'acitve'&#41;;
+                                            $&#40; "#" + tab_id&#41; .addClass&#40; 'acitve'&#41; ;
+                                    &#125;&#41;;
                 
+                                    $&#40; '.but_tits span button'&#41; .click&#40; function &#40; &#41;  &#123;
+                                            var tab_id = $&#40; this&#41; .attr&#40; 'data-tab'&#41; ;
+                                            $&#40; '.but_tits span button'&#41; .removeClass&#40; 'acitve'&#41; ;
+                                            $&#40; '.tits_cons'&#41; .removeClass&#40; 'acitve'&#41; ;
+                                            $&#40; this&#41; .addClass&#40; 'acitve'&#41; ;
+                                            $&#40; "#" + tab_id&#41; .addClass&#40; 'acitve'&#41; ;
+                                    &#125;&#41;
+                            &lt;&#47;script&gt; 
+                        </pre>
+                    </div>
+                </div>
                 <div class="guide-item">
                     <div class="guide-title">
                         <h2 class="title">문단 테스트</h2>
@@ -374,6 +467,7 @@
                     </div>
                 </div>
 
+                <!-- 수정전 -->
                 <div class="guide-item">
                     <div class="guide-title">
                         <h2 class="title">문단 테스트</h2>
@@ -385,19 +479,6 @@
                         </pre>
                     </div>
                 </div>
-
-                <div class="guide-item">
-                    <div class="guide-title">
-                        <h2 class="title">문단 테스트</h2>
-                    </div>
-                    <div class="guide-content">
-                        <!-- 구글 Prettify -->
-                        <pre class="prettyprint lang-html">
-                            &lt;h2 class="title"&gt;문단테스트&lt;/h2&gt;
-                        </pre>
-                    </div>
-                </div>
-
                 <div class="guide-item">
                     <div class="guide-title">
                         <h2 class="title">문단 테스트</h2>
