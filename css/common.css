@@ -795,20 +795,31 @@
         height: 37px;
         width: 27px;
     } 
-    .quick_menu>a>span{
-        width: 1px;
+    .mobile_close {
+        position: relative;
+    }
+    .mobile_close a {
+        display: block;
+        height: 40px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .mobile_close a span{
+        width: 2px;
         height: 22px;
-        background: #000;
+        background: #7d7d7d;
         display: inline-block;
         position: absolute;
         z-index: 3000;
         text-indent: -9999px;
         display: block;
+        right: 30px;
+        top: 10px;
     }
-    .quick_menu>a>span:nth-child(1){
+    .mobile_close a span:nth-child(1){
         transform: rotate(43deg);
     }
-    .quick_menu>a>span:nth-child(2){
+    .mobile_close a span:nth-child(2){
         transform: rotate(316deg);
     }
     .quick_inner{
@@ -821,10 +832,10 @@
         bottom: 0;
         width: 100%;
         transition-duration: 0.3s;
+        overflow-x: scroll;
     }
     .mobile_menu_list{
-        overflow-y: scroll;
-        padding-bottom: 300px;
+        padding-bottom: 80px;
     }
     .list_wrap{
         background-color: #f0f0f0;
@@ -862,6 +873,7 @@
     .m_menu ul{
         display: flex;
         align-items: center;
+        padding-top: 30px;
     }
     .m_menu ul li{
         flex: 1 1 auto;
@@ -904,6 +916,8 @@
     }
     .category_wrap ul li a{
         color: #111;
+        font-size: 15px;
+        font-weight: 500;
     }
     .category_wrap1 ul li{
         height: 40px;
@@ -992,15 +1006,26 @@
 
 
     /* footer_wrap stert */
+    .footer_wrap{
+        background: #ffff;
+        margin-top: 5px;
+    }
+    
     .category_footer ul{
         display: flex;
         padding: 20px;
     }
     .category_footer ul li{
         flex: 1 1 auto;
-        border: 1px solid #000;
-        box-sizing: border-box;
+        border-top:1px solid #ccc;
+        border-left:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+        padding: 8px 0;
     }
+    .category_footer ul li:last-child {
+        border-right:1px solid #ccc;
+      }
+
     .category_footer ul li a{
         display: block;
         text-align: center;
