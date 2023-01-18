@@ -288,7 +288,7 @@ function btnClick_event() {
         $(".quick_menu").toggleClass("acitve");
     });
     
-    $(".quick_menu>a").click(function(){
+    $(".quick_menu .mobile_close").click(function(){
         if($(".quick_menu").hasClass("acitve")) {
          $(".quick_menu").removeClass("acitve");
          $("this").removeClass("acitve");
