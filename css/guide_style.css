@@ -6,22 +6,22 @@ body {
 /* span:first-child.pln {
     display: none;
 } */
-.prettyprint.lang-html {
+.prettyprint.lang_html {
     line-height: 1.4;
 }
-.prettyprint.lang-html span:first-child.pln {
+.prettyprint.lang_html span:first-child.pln {
     display: none;
 }
-.prettyprint.lang-html br +span.pln {
+.prettyprint.lang_html br +span.pln {
     display: none;
 }
 .pln +.tag {
     margin-right: 5px;
 }
-.guide-wrap {
+.guide_wrap {
     display: flex;
 }
-.guide-wrap .guide-lnb {
+.guide_wrap .guide_lnb{
     top: 125px;
     flex:0 0 200px;
     position: fixed;
@@ -29,29 +29,29 @@ body {
     width: 200px;
     padding-right: 30px;
 }
-.guide-wrap .guide-lnb .lnb-title {
+.guide_wrap .guide_lnb .lnb_title {
     font-size: 24px;
     text-align: center;
 }
-.guide-wrap .guide-lnb {
+.guide_wrap .guide_lnb{
     margin-left: 20px;
 }
-.guide-wrap .guide-lnb .lnb-list{
+.guide_wrap .guide_lnb .lnb_list{
     margin-top: 20px;
 }
-.guide-wrap .guide-lnb .lnb-list li {
+.guide_wrap .guide_lnb .lnb_list li {
     height: 40px;
     line-height: 40px;
     text-align: center;
 }
-.guide-wrap .guide-lnb .lnb-list li + li {
+.guide_wrap .guide_lnb .lnb_list li + li {
     margin-top: 10px;
 }
 
-.guide-wrap .guide-lnb .lnb-list li a {
+.guide_wrap .guide_lnb .lnb_list li a {
     font-size: 20px;
 }
-.guide-wrap .guide-area {
+.guide_wrap .guide_area {
     flex: 1 1 auto;
     padding-left: 225px;
     padding-top:125px;
@@ -75,12 +75,12 @@ h1 {
     margin-bottom: 15px;
     color: #000;
 } */
-.guide-height span{
+.guide_height span{
     display: block;
     margin: 10px 0 0 0;
     padding: 5px 0;
 }
-.guide-result{
+.guide_result{
     border: 1px solid #ccc;
     box-sizing: border-box;
     padding: 20px;

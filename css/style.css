@@ -297,6 +297,8 @@
 .inp_box{
     position: relative;
     display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 .inp_box i{
     position: absolute;
@@ -321,12 +323,19 @@
     padding-top: 6px;
 }
 .air_day{
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     border-color: #fff;
-    position: relative;
+      height: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #111;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: relative; 
 }
-.air_day .bowl,
+/* .air_day .bowl,
 .air_day .bowl_m{
     height: 42px;
     line-height: 42px;
@@ -336,8 +345,10 @@
     margin-right: 0;
     margin-left: 27px;
     max-width: 149px;
-}
-.air_day .bowl_m{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+} */
+/* .air_day .bowl_m{
     margin-left: 0;
     margin-right: 5px;
 }
@@ -352,8 +363,8 @@
     display: block;
     width: 265px;
     height: 42px;
-}
-.air_day .bowl a::before,
+} */
+/* .air_day .bowl a::before,
 .air_day .bowl_m a::before{
     content: "";
     position: absolute;
@@ -371,7 +382,7 @@
     padding-left: 47px;
     color: #111;
     display: inline-block;
-}
+} */
 .th_inner{
     margin-top: 10px;
 }
@@ -391,7 +402,19 @@
     width: 100%;
     height: 50px;
     padding-left: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
 }
+.card_area1{
+    display: none;
+}
+.card_area1.off{
+    display: block;
+    position: absolute;
+    width: 410px
+}
+
 .flight .hotel a{
     display: block;
     width: 100%;
@@ -425,6 +448,10 @@
     background-color: #000 ;
     border:1px solid #000;
     transition: all 0.3s;
+}
+.main_but_th{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 .main_but_th>button{
     background: #fff;
@@ -474,6 +501,7 @@
 }
 .le_box ul li>div{
     display: inline-block;
+    position: relative;
 }
 .le_box>ul>li:nth-child(1){
     display: flex;
@@ -497,7 +525,10 @@
     margin-top: 10px;
     padding-left: 12px;
     border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
+
 .bnt_le span,
 .bnt_ri span{
     display: flex;
@@ -625,21 +656,22 @@
     height: 50px;
     margin-top: 10px;
     border-radius: 5px;
-    border: 1px solid #fff;
     background-color: #fff;
     color: #111;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
  .hotel{
     width: 100%;
     height: 100%;
     display: block;
+    position: relative;
 } 
 .hotel a{
    width: 100%;
     height: 100%;
     display: block;
 } 
-
 .hotel a i{
     display: inline-block;
     font-size: 15px;
@@ -1859,22 +1891,52 @@
     }
 }
 
+/* 기능추거 */
+.card_area{
+    position: absolute;
+    width: 370px;
+    margin: 0 auto;
+    left: 0;
+    top: 45px;
+    display: none;
+}
+.bnt_ri.on .card_area{
+   display: block;
+}
 
-.card-container {
+/* 닫기버튼 */
+/* .card_area .btn_closed {
+    display: block;
+} */
+
+.card_area.off{
+    display: none;
+}
+
+
+.tableCalendar{
     width: 100%;
 }
-
-.card-container .calendar-container {
-    width: 330px;
+.card_container {
+    width: 410px;
 }
-
-.card-container .calendar-container thead {
+.card_container .calendar_container {
+    width: 370px;
+}
+.card_container .calendar_container thead {
     border-right: 1px solid #ccc;
     border-top: 1px solid #ccc;
     border-left: 1px solid #ccc;
+    height: 30px;
+    line-height: 30px;
+    background: #ccc;
+    color: #333;
+    box-sizing: border-box;
 }
-
-.card-container > div {
+.card_container .calendar_container  tr{
+    border-bottom: 1px solid #ccc;
+}
+.card_container > div {
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
@@ -1882,20 +1944,20 @@ display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
 }
-.card-container > div .content-left {
+.card_container > div .content_left {
 -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
         flex: 1 1 auto;
 -ms-flex-item-align: end;
     align-self: flex-end;
 }
-.card-container > div .content-right {
+.card_container > div .content_right {
 -webkit-box-flex: 0;
     -ms-flex: 0 0 480px;
         flex: 0 0 480px;
 margin: 0 -15px;
 }
-.card-container > div .inner-top .content-left {
+.card_container > div .inner_top .content_left {
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
@@ -1903,12 +1965,12 @@ display: flex;
     -ms-flex-align: end;
         align-items: flex-end;
 }
-.card-container .profile-area {
+.card_container .profile_area {
 position: relative;
 width: 242px;
 height: 79px;
 }
-.card-container .profile-area:before {
+.card_container .profile_area:before {
 content: "";
 position: absolute;
 right: 20px;
@@ -1920,7 +1982,7 @@ height: 16px;
 background: url(../images/ico-chevron-right-gray-md@2x.png);
 background-size: 16px;
 }
-.card-container .profile-area .profile-img {
+.card_container .profile_area .profile_img {
 display: inline-block;
 width: 38px;
 height: 38px;
@@ -1931,16 +1993,16 @@ border-radius: 8px;
 background-color: var(--primary-bg-color);
 vertical-align: middle;
 }
-.card-container .profile-area .profile-img svg {
+.card_container .profile_area .profile_img svg {
 fill: var(--primary-color);
 -webkit-transition-duration: 0.5s;
         transition-duration: 0.5s;
 }
-.card-container .profile-area .profile-detail {
+.card_container .profile_area .profile_detail {
 display: inline-block;
 vertical-align: middle;
 }
-.card-container .profile-area .profile-detail strong {
+.card_container .profile_area .profile_detail strong {
 display: block;
 font-size: 20px;
 line-height: 24px;
@@ -1948,26 +2010,26 @@ letter-spacing: -0.03em;
 color: #32363C;
 font-family: "Nunito Sans", "Spoqa Han Sans Neo", "Noto Sans KR", "Noto Sans CJK KR", "malgun gothic", sans-serif, Tahoma;
 }
-.card-container .profile-area .profile-detail .title {
+.card_container .profile_area .profile_detail .title {
 display: block;
 font-style: normal;
 font-size: 14px;
 color: #A4ACB7;
 line-height: 16.8px;
 }
-.card-container .card-lg.menu-tree {
+.card_container .card_lg.menu_tree {
 width: 208px;
 padding: 12px 15px;
 }
-.card-container .card-btn-group {
+.card_container .card_btn_group {
 margin-right: 30px;
 }
-.card-container .card-toolbar {
+.card_container .card_toolbar {
 display: inline-block;
 vertical-align: bottom;
 margin: 15px;
 }
-.card-container .card-lg {
+.card_container .card_lg {
 display: inline-block;
 margin: 15px;
 padding: 20px 20px;
@@ -1977,56 +2039,61 @@ border-radius: 12px;
         box-shadow: 0px 6px 20px rgba(50, 54, 60, 0.1);
 vertical-align: bottom;
 }
-.card-container .card-lg .card-header {
+.card_container .card_lg .card_header {
 line-height: 1.2;
 margin-bottom: 20px;
 }
-.card-container .card-lg .card-title {
+.card_container .card_lg .card_title {
 font-size: 22px;
 background: none;
 color: #32363C;
 }
-.card-container .card-calendar {
+.card_container .card_calendar {
 display: inline-flex;
 position: relative;
-margin: 15px;
 padding: 20px;
 border-radius: 12px;
 -webkit-box-shadow: 0px 6px 20px rgba(50, 54, 60, 0.1);
         box-shadow: 0px 6px 20px rgba(50, 54, 60, 0.1);
 background-color: #fff;
+z-index: 100;
 }
-.card-container .card-calendar #tableCalendarTitle {
+.card_container .card_calendar #tableCalendarTitle {
 margin-bottom: 12px;
 }
-.card-container .card-calendar #tableCalendarTitle td {
+.card_container .card_calendar #tableCalendarTitle td {
 font-size: 20px;
 text-align: center;
 }
-.card-container .card-calendar #tableCalendarTitle td a {
+.card_container .card_calendar #tableCalendarTitle td a {
 position: relative;
 font-size: inherit;
 font-weight: bold;
 vertical-align: middle;
 color: #32363C;
 }
-.card-container .card-calendar #tableCalendarTitle td a:hover {
+.card_container .card_calendar #tableCalendarTitle td a:hover {
 border-radius: 16px;
 background-color: #F4F7FB;
 }
-.card-container .card-calendar #tableCalendar tr th {
+.card_container .card_calendar #tableCalendar tr th {
     text-align: center;
     padding: 6px 0;
 }
-.card-container .card-calendar #tableCalendar tr td {
+.card_container .card_calendar #tableCalendar tr td {
     padding: 6px 0;
     text-align: center;
+    height: 25px;
+    line-height: 25px;
+    font-size: 15px;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
 }
-.card-container .card-calendar #tableCalendar tr td a {
+.card_container .card_calendar #tableCalendar tr td a {
     z-index: 100;
     position: relative;
 }
-.card-container .card-calendar #tableCalendar tr td a:hover::before {
+.card_container .card_calendar #tableCalendar tr td a:hover::before {
 content: "";
 position: absolute;
 top: calc(50% - 18px);
@@ -2037,21 +2104,21 @@ border-radius: 18px;
 z-index: -1;
 background-color: #E9EEF4;
 }
-.card-container .card-calendar .text-red {
+.card_container .card_calendar .text_red {
 color: #FF4D6D;
 }
-.card-container .card-calendar .text-navy{
+.card_container .card_calendar .text_navy{
     color: navy;
 }
-.card-container .card-calendar .other-day {
+.card_container .card_calendar .other_day {
 opacity: 0.5;
 }
-.card-container .card-calendar .today {
+.card_container .card_calendar .today {
 color: var(--primary-color);
 -webkit-transition-duration: 0.5s;
         transition-duration: 0.5s;
 }
-.card-container .card-calendar .today::before {
+.card_container .card_calendar .today::before {
 content: "";
 position: absolute;
 top: calc(50% - 18px);
@@ -2064,8 +2131,8 @@ background-color: var(--primary-bg-color);
 -webkit-transition-duration: 0.5s;
         transition-duration: 0.5s;
 }
-.card-container .card-calendar .prev,
-.card-container .card-calendar .next {
+.card_container .card_calendar .prev,
+.card_container .card_calendar .next {
 display: inline-block;
 width: 32px;
 height: 32px;
@@ -2078,8 +2145,8 @@ text-indent: -9999px;
 text-align: left;
 overflow: hidden;
 }
-.card-container .card-calendar .prev:hover::before,
-.card-container .card-calendar .next:hover::before {
+.card_container .card_calendar .prev:hover::before,
+.card_container .card_calendar .next:hover::before {
 content: "";
 position: absolute;
 top: calc(50% - 16px);
@@ -2090,14 +2157,14 @@ border-radius: 16px;
 z-index: -1;
 background-color: #E9EEF4;
 }
-.card-container .card-calendar .prev {
+.card_container .card_calendar .prev {
 background-position: right center;
 }
-.card-container .card-calendar .next {
+.card_container .card_calendar .next {
 background-image: url(../images/sub_btn_page_bg_bg);
 background-position: left center;
 }
-.card-container .card-calendar .btn-closed {
+.card_container .card_calendar .btn_closed {
 position: absolute;
 top: 0;
 right: 0;
@@ -2106,17 +2173,21 @@ height: 32px;
 background: url(../images/ico-alllmenu_close.png) center center no-repeat;
 background-size: 16px;
 text-indent: -9999px;
+
 }
-.card-container .card-calendar .btn-closed:hover {
+
+
+
+.card_container .card_calendar .btn_closed:hover {
 width: 32px;
 height: 32px;
 border-radius: 16px;
 background-color: #F4F7FB;
 }
-.card-container .tab-menu {
+.card_container .tab_menu {
 margin: 15px;
 }
-.card-container .tab-list {
+.card_container .tab_list {
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
@@ -2126,7 +2197,7 @@ border-radius: 12px;
 -webkit-box-shadow: 0px 6px 20px rgba(50, 54, 60, 0.1);
         box-shadow: 0px 6px 20px rgba(50, 54, 60, 0.1);
 }
-.card-container .tab-list li {
+.card_container .tab_list li {
 -webkit-box-flex: 1;
     -ms-flex: 1;
         flex: 1;
@@ -2135,54 +2206,54 @@ border-radius: 12px;
         align-items: center;
 border-radius: 12px;
 }
-.card-container .tab-list li.on {
+.card_container .tab_list li.on {
 background-color: var(--primary-color);
 -webkit-transition-duration: 0.5s;
         transition-duration: 0.5s;
 }
-.card-container .tab-list li.on a {
+.card_container .tab_list li.on a {
 color: #fff;
 }
-.card-container .tab-list li a {
+.card_container .tab_list li a {
 color: #7B838C;
 height: 100%;
 }
-.card-container .form-control {
+.card_container .form_control {
 background-color: #fff;
 border: 1px solid #DCDCE1;
 }
-.card-container .form-datepicker {
+.card_container .form_datepicker {
 width: 154px;
 }
-.card-container .form-search {
+.card_container .form_search {
 width: 100%;
 padding-left: 30px;
 background: url(../images/ico-search-gray-md.png) 10px center no-repeat;
 background-size: 16px 16px;
 }
-.card-container .site-menu {
+.card_container .site_menu {
 border-radius: 12px;
 max-height: 200px;
 overflow: auto;
 }
-.nav-mode-2 .card-container .site-menu {
+.nav_mode_2 .card_container .site_menu {
 max-height: none;
 }
-.card-container .site-list {
+.card_container .site_list {
 font-weight: 500;
 font-size: 13px;
 line-height: 16px;
 }
-.card-container .site-list a {
+.card_container .site_list a {
 display: block;
 padding: 10px 8px;
 border-radius: 4px;
 font-size: 15px;
 }
-.card-container .site-list > li {
+.card_container .site_list > li {
 position: relative;
 }
-.card-container .site-list > li:before {
+.card_container .site_list > li:before {
 content: "";
 position: absolute;
 top: 14px;
@@ -2192,54 +2263,54 @@ height: 8px;
 background: url(../images/ico-caret-right-darkgray-xs.png) no-repeat;
 background-size: 8px;
 }
-.card-container .site-list > li.on:before {
+.card_container .site_list > li.on:before {
 -webkit-transform: rotate(90deg);
         transform: rotate(90deg);
 }
-.card-container .site-list ul {
+.card_container .site_list ul {
 margin-left: 12px;
 }
-.card-container .site-list > li > a {
+.card_container .site_list > li > a {
 padding-left: 30px;
 margin-left: 13px;
 background: url(../images/ico-file-gray-md@2x.png) 4px center no-repeat;
 background-size: 16px 16px;
 }
-.card-container .site-list > li > a:hover {
+.card_container .site_list > li > a:hover {
 border-radius: 8px;
 background-color: hsl(213deg, 43%, 97%);
 color: var(--primary-color);
 }
-.card-container .site-list > li > ul > li a {
+.card_container .site_list > li > ul > li a {
 position: relative;
 padding-left: 51px;
 background: url(../images/ico-page-gray-md@2x.png) 26px center no-repeat;
-background-size: 16px 16px;
+background_size: 16px 16px;
 }
-.card-container .site-list > li > ul > li a:hover {
+.card_container .site_list > li > ul > li a:hover {
 border-radius: 8px;
 background-color: hsl(213deg, 43%, 97%);
 color: var(--primary-color);
 }
-.card-container .chart-area {
+.card_container .chart_area {
 width: 200px;
 height: 100px;
 }
-.card-container .form-group {
+.card_container .form_group {
 width: 169px;
 padding: 8px;
 }
-.card-container .form-group .check-item {
+.card_container .form_group .check_item {
 position: relative;
 display: block;
 width: 100%;
 }
-.card-container .form-group .check-item [type=radio] + label {
+.card_container .form_group .check_item [type=radio] + label {
 width: 100%;
 padding: 10px 13px;
 font-weight: 500;
 }
-.card-container .form-group .check-item [type=radio] + label:before {
+.card_container .form_group .check_item [type=radio] + label:before {
 position: absolute;
 right: 12px;
 top: 50%;
@@ -2247,38 +2318,38 @@ margin: 0;
 -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
 }
-.card-container .form-group .check-item:hover {
+.card_container .form_group .check_item:hover {
 border-radius: 10px;
 background-color: #F4F7FB;
 }
-.card-container .form-group .check-item + .check-item {
+.card_container .form_group .check_item + .check_item {
 margin-left: 0;
 }
-.card-container .form-date-group {
+.card_container .form_date_group {
 padding: 24px 28px;
 }
-.card-container .form-date-group dl {
+.card_container .form_date-group dl {
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
 width: 100%;
 }
-.card-container .form-date-group dl dt {
+.card_container .form_date_group dl dt {
 -ms-flex-item-align: center;
     align-self: center;
 width: 70px;
 font-size: 16px;
 font-weight: bold;
 }
-.card-container .form-date-group dl dd {
+.card_container .form_date_group dl dd {
 -ms-flex-item-align: center;
     align-self: center;
 width: calc(100% - 70px);
 }
-.card-container .form-date-group dl + dl {
+.card_container .form_date_group dl + dl {
 margin-top: 12px;
 }
-.card-container .form-date-group .flex-group {
+.card_container .form_date_group .flex_group {
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
@@ -2286,43 +2357,43 @@ display: flex;
     -ms-flex-align: center;
         align-items: center;
 }
-.card-container .form-date-group .flex-group .datepicker {
+.card_container .form_date_group .flex_group .datepicker {
 width: 154px;
 }
-.card-container .form-date-group .btn-group {
+.card_container .form_date_group .btn_group {
 margin: 20px 0 0;
 }
-.card-container .form-date-group .btn-group .btn {
+.card_container .form_date_group .btn_group .btn {
 padding: 0 12px;
 height: 36px;
 }
-.card-container .form-date-group .btn-group .btn + .btn {
+.card_container .form_date_group .btn_group .btn + .btn {
 margin-left: 4px;
 }
-.card-container .form-date-group .form-control {
+.card_container .form_date_group .form_control {
 border-radius: 6px;
 }
-.card-container .form-date-group .form-control:focus {
+.card_container .form_date_group .form_control:focus {
 border-color: var(--primary-color);
 }
-.card-container .theme-setting {
+.card_container .theme_setting {
 width: 221px;
 }
-.card-container .theme-setting .theme-group {
+.card_container .theme_setting .theme_group {
 margin: -12px -7px;
 }
-.card-container .theme-setting .theme-group ul {
+.card_container .theme_setting .theme_group ul {
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
 -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
-.card-container .theme-setting .theme-group ul li {
+.card_container .theme_setting .theme_group ul li {
 -ms-flex-item-align: center;
     align-self: center;
 }
-.card-container .theme-setting .btn-theme {
+.card_container .theme_setting .btn_theme {
 position: relative;
 width: 38px;
 height: 38px;
@@ -2332,7 +2403,7 @@ text-indent: -9999px;
 font-size: 0;
 border-radius: 19px;
 }
-.card-container .theme-setting .btn-theme span {
+.card_container .theme_setting .btn_theme span {
 position: absolute;
 top: 0;
 left: 0;
@@ -2343,45 +2414,45 @@ background-color: inherit;
 border-radius: 19px;
 z-index: 100;
 }
-.card-container .theme-setting .btn-theme.red {
+.card_container .theme_setting .btn_theme.red {
 background-color: hsl(349deg, 75%, 54%);
 }
-.card-container .theme-setting .btn-theme.yellow {
+.card_container .theme_setting .btn_theme.yellow {
 background-color: hsl(43deg, 98%, 52%);
 }
-.card-container .theme-setting .btn-theme.orange {
+.card_container .theme_setting .btn_theme.orange {
 background-color: hsl(29deg, 100%, 50%);
 }
-.card-container .theme-setting .btn-theme.green {
+.card_container .theme_setting .btn_theme.green {
 background-color: hsl(162deg, 100%, 37%);
 }
-.card-container .theme-setting .btn-theme.blue {
+.card_container .theme_setting .btn_theme.blue {
 background-color: hsl(226deg, 100%, 59%);
 }
-.card-container .theme-setting .btn-theme.indigo {
+.card_container .theme_setting .btn_theme.indigo {
 background-color: hsl(226deg, 73%, 31%);
 }
-.card-container .theme-setting .btn-theme.purple {
+.card_container .theme_setting .btn_theme.purple {
 background-color: hsl(263deg, 94%, 60%);
 }
-.card-container .theme-setting .btn-theme.pink {
+.card_container .theme_setting .btn_theme.pink {
 background-color: hsl(333deg, 90%, 61%);
 }
-.card-container .theme-setting .btn-theme.black {
+.card_container .theme_setting .btn_theme.black {
 background-color: hsl(0deg, 0%, 0%);
 }
-.card-container .theme-setting .btn-theme.active {
+.card_container .theme_setting .btn_theme.active {
 width: 32px;
 height: 32px;
 margin: 15px;
 -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.7);
         box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.7);
 }
-.card-container .theme-setting .btn-theme.active span {
+.card_container .theme_setting .btn_theme.active span {
 width: 32px;
 height: 32px;
 }
-.card-container .theme-setting .btn-theme.active:before {
+.card_container .theme_setting .btn_theme.active:before {
 content: "";
 position: absolute;
 top: calc(50% - 6px);
@@ -2395,7 +2466,7 @@ border-radius: 12px;
 background-size: 250% 250%;
 z-index: 200;
 }
-.card-container .theme-setting .btn-theme.active:after {
+.card_container .theme_setting .btn_theme.active:after {
 content: "";
 position: absolute;
 top: -3px;

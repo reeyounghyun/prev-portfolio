@@ -37,740 +37,1022 @@
 </head>
 
 <body>
+    <!-- 헤더 시작 -->
     <header class="header" id="header">
-        <!-- <div class="goods_wrap">
-            <div class="goods_list w_m">
+        <div class="banner_wrap">
+            <div class="common_cont banner_inner">
                 <ul>
-                    <li>
+                    <li class="virt_elem">
                         <a href="#">
                             <img src="./images/pc_top_2.jpg" alt="구매고객 대상 럭키드로우 EVENT 해외항공권 예약하고 200만원 받자!">
                         </a>
                     </li>
-                    <li><span></span></li>
                     <li>
                         <a href="#">
                             <img src="./images/pc_top_2_42.jpg" alt="가성비 패키지, 월요일 오후2시! 동유럽 타임세일 199만원대~">
                         </a>
                     </li>
                 </ul>
-                <a href="#" class="list_close"><i class="xi-close"></i></a>
+                <button type="button" class="list_close">
+                    <span></span>
+                </button>
             </div>
-        </div> -->
-        <div class="gnb">
-            <div class="gnb_in wrap_info">
-                <ul class="w_m">
+        </div>
+
+        <div class="area_wrap">
+            <div class="wrap_info common_cont">
+                <ul>
                     <li><a href="#">로그인</a></li>
                     <li><a href="#">회원가입</a></li>
-                    <li><a href="#">고객센터1</a></li>
+                    <li><a href="#">고객센터</a></li>
                 </ul>
             </div>
-            <div class="gnb_in h_gnb_in">
-                <div class="w_m hea_wrap">
-                    <a class="btn btn-allmenu-open" href="#allmenu">
+            <div class="gnb_in">
+                <div class="gnb_in_wrap common_cont">
+                    <a href="#">
                         <i class="ico ico-allmenu"></i>
-                        <span class="sr-only">전체메뉴 열기</span>
+                        <span class="mb_menu_bg">전체메뉴 열기</span>
                     </a>
-                    <div class="h_divide">
-                        <div class="le_logo">
-                            <a href="./index.html">
-                                <h1>
-                                    <img src="./images/header_logo.png" alt="하나투어">
-                                </h1>
-                            </a>
-                        </div>
-                        <div class="searchform_com">
-                            <form>
-                                <fieldset class="fld_search">
-                                    <!-- <legend class="blind">통합 검색어 입력폼</legend> -->
-                                    <div class="box_search deletable" style="position: relative;">
-                                        <input type="text" id="input_keyword" title="검색어" placeholder="검색어를 입력해주세요"
-                                            maxlength="30" value="검색어를 입력해주세요" class="input_keyword">
-                                        <!-- <span class="v-reset-input">✖</span> -->
-                                        <button type="button" class="search">
-                                            <span class="search_btn"></span>
-                                        </button>
-                                    </div>
-                                </fieldset>
-                            </form>
-                        </div>
-                        <div class="head_btn section">
-                            <div class="conten">
-                                <dl class="rank-list wrap_pinng">
-                                    <dt class="tooltiptext">Hot</dt>
-                                    <dd>
-                                        <ol>
-                                            <li><a href="#">캐나다</a></li>
-                                            <li><a href="#">일본</a></li>
-                                            <li><a href="#">다낭</a></li>
-                                            <li><a href="#">괌</a></li>
-                                            <li><a href="#">오사카</a></li>
-                                            <li><a href="#">싱카포르</a></li>
-                                            <li><a href="#">코다카나발루</a></li>
-                                            <li><a href="#">대만</a></li>
-                                            <li><a href="#">삿포로</a></li>
-                                            <li><a href="#">북해도</a></li>
-                                        </ol>
-                                    </dd>
-                                </dl>
+                    <div class="header_wrap">
+                        <div class="header_left">
+                            <div class="le_logo">
+                                <a href="./index.html">
+                                    <h1>
+                                        <img src="./images/header_logo.png" alt="하나투어">
+                                    </h1>
+                                </a>
                             </div>
-                            <div class="tooltip real_time">
-                                <div class="tooltiptext">
-                                    <span><b>Hot</b>인기검색어</span>
-                                    <ol>
-                                        <li><a href="#">캐나다</a></li>
-                                        <li><a href="#">일본</a></li>
-                                        <li><a href="#">다낭</a></li>
-                                        <li><a href="#">괌</a></li>
-                                        <li><a href="#">오사카</a></li>
-                                        <li><a href="#">싱카포르</a></li>
-                                        <li><a href="#">코다카나발루</a></li>
-                                        <li><a href="#">대만</a></li>
-                                        <li><a href="#">삿포로</a></li>
-                                        <li><a href="#">북해도</a></li>
-                                    </ol>
+                            <div class="searchform_com">
+                                <form>
+                                    <fieldset class="fld_search">
+                                        <legend class="blind">통합 검색어 입력폼</legend>
+                                        <div class="box_search deletable" style="position: relative;">
+                                            <input type="text" id="input_keyword" title="검색어" placeholder="검색어를 입력해주세요"
+                                                maxlength="30" value="검색어를 입력해주세요" class="input_keyword">
+                                            <!-- <span class="v-reset-input">✖</span> -->
+                                            <button type="button" class="search">
+                                                <span class="search_btn"></span>
+                                            </button>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="head_btn section conten">
+                                <span class="tooltiptext">Hot</span>
+                                <div class="swiper rank_list wrap_pinng">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">캐나다</div>
+                                        <div class="swiper-slide">일본</div>
+                                        <div class="swiper-slide">다낭</div>
+                                        <div class="swiper-slide">괌</div>
+                                        <div class="swiper-slide">오사카</div>
+                                        <div class="swiper-slide">싱가포르</div>
+                                        <div class="swiper-slide">코타카나발루</div>
+                                        <div class="swiper-slide">대만</div>
+                                        <div class="swiper-slide">삿포로</div>
+                                        <div class="swiper-slide">북해도</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <a class="btn btn-global-search js-layer-open" href="">
-                        <i class="ico ico-search"></i>
-                        <span class="sr-only">통합검색 펼치기</span>
-                    </a>
-                    <div class="private_menu">
-                        <ul>
-                            <li class="my"><a href="#">마이메뉴</a></li>
-                            <li class="details"><a href="#">예약내역</a></li>
-                            <li class="steamed"><a href="#">찜</a></li>
-                        </ul>
+                        <div class="private_menu header_right">
+                            <ul>
+                                <li><a href="#" class="my">마이메뉴</a></li>
+                                <li><a href="#" class="details">예약내역</a></li>
+                                <li><a href="#" class="steamed">찜</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="gnb_in  top_line">
-                <div class="gnb_wrap">
-                    <div class="n_l ">
-                        <div class="r_all_m">
-                            <span style="display: inline-block;"><i class="xi-bars"></i>전체메뉴</span>
-                            <div class="all_sam">
-                                <div class="sam_in">
-                                    <div class="sam_di">
-                                        <dt>해외여행</dt>
-                                        <dl>
-                                            <dd>해외여행 홈</dd>
-                                        </dl>
-                                    </div>
-                                    <div class="sam_di">
-                                        <dt>제주/국내여행</dt>
-                                        <dl>
-                                            <dd>제주/국내여행</dd>
-                                            <dd>제주렌터카</dd>
-                                            <dd>국내골프</dd>
-                                        </dl>
-                                        <dt>테마여행</dt>
-                                        <dl>
-                                            <dd>허니문</dd>
-                                            <dd>해외골프</dd>
-                                            <dd>제우스</dd>
-                                            <dd>MICE</dd>
-                                        </dl>
-                                    </div>
-                                    <div class="sam_di">
-                                        <dt>항공</dt>
-                                        <dl>
-                                            <dd>항공예약</dd>
-                                        </dl>
-                                        <dt>투어/입장권</dt>
-                                        <dl>
-                                            <dd>투어/입장권 홈</dd>
-                                            <dd>전체 도시</dd>
-                                        </dl>
-                                    </div>
-                                    <div class="sam_di">
-                                        <dt>호텔</dt>
-                                        <dl>
-                                            <dd>해외호텔</dd>
-                                            <dd>국내숙박</dd>
-                                        </dl>
-                                        <dt>혜택/이벤트</dt>
-                                        <dl>
-                                            <dd>이벤트</dd>
-                                            <dd>할인/혜택</dd>
-                                            <dd>여행기획전</dd>
-                                        </dl>
-                                    </div>
-                                    <div class="sam_di service">
-                                        <dl>
-                                            <dt>연계서비스</dt>
+                <div class="gnb">
+                    <div class="menu_wrap common_cont">
+                        <div class="menu_left">
+                            <div class="all_menu">
+                                <a href="#none;" class="btn_all_menu"><img src="./images/ico-allmenu.png"
+                                        alt="전체메뉴">전체메뉴</a>
+                                <div class="all_sam">
+                                    <div class="sam_in">
+                                        <div class="sam_di">
+                                            <dl>
+                                                <dt>해외여행</dt>
+                                                <dd>해외여행 홈</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="sam_di">
+                                            <dl>
+                                                <dt>제주/국내여행</dt>
+                                                <dd>제주/국내여행</dd>
+                                                <dd>제주렌터카</dd>
+                                                <dd>국내골프</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>테마여행</dt>
+                                                <dd>허니문</dd>
+                                                <dd>해외골프</dd>
+                                                <dd>제우스</dd>
+                                                <dd>MICE</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="sam_di">
+                                            <dl>
+                                                <dt>항공</dt>
+                                                <dd>항공예약</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>투어/입장권</dt>
+                                                <dd>투어/입장권 홈</dd>
+                                                <dd>전체 도시</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="sam_di">
+                                            <dl>
+                                                <dt>호텔</dt>
+                                                <dd>해외호텔</dd>
+                                                <dd>국내숙박</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>혜택/이벤트</dt>
+                                                <dd>이벤트</dd>
+                                                <dd>할인/혜택</dd>
+                                                <dd>여행기획전</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="sam_di service">
                                             <div class="sam_line">
                                                 <dl>
+                                                    <dt>연계서비스</dt>
                                                     <dd>하나투어상품권</dd>
                                                     <dd>포켓와이파이</dd>
                                                     <dd>안심여행지원</dd>
                                                 </dl>
                                                 <dl>
+                                                    <dt></dt>
                                                     <dd>기업출장/단체</dd>
                                                     <dd>하나투어 기프트카드</dd>
                                                     <dd>하나투어비자센터</dd>
                                                     <dd>여행자보험</dd>
                                                 </dl>
                                             </div>
-                                        </dl>
-                                        <dl>
-                                            <dt>하나투어센렉션</dt>
                                             <div class="sam_line">
                                                 <dl>
+                                                    <dt>하나투어센렉션</dt>
                                                     <dd>하나LIVE</dd>
                                                     <dd>마일리지 클럽</dd>
                                                     <dd>하나Original</dd>
                                                 </dl>
                                                 <dl>
+                                                    <dt></dt>
                                                     <dd>하나팩2.0 (개런티 프로그램)</dd>
-                                                    <dd>Safety&Joy</dd>
+                                                    <dd>Safety&amp;Joy</dd>
                                                     <dd>우리끼리</dd>
                                                 </dl>
                                             </div>
-                                        </dl>
+                                        </div>
+                                        <button type="button" class="btn_close">
+                                            <span></span>
+                                        </button>
                                     </div>
-                                    <a href="#" class="btn_close"><i class="xi-close close"></i></a>
                                 </div>
                             </div>
+                            <nav class="left_bar">
+                                <ul>
+                                    <li class="on">
+                                        <a href="#">해외여행</a>
+                                        <div class="in_sub_m">
+                                            <ul>
+                                                <li><a href="#">해외여행 홈</a></li>
+                                                <li><a href="#">동남아/대만/서남아</a></li>
+                                                <li><a href="#">괌/사이판/호주/뉴질랜드/피지</a></li>
+                                                <li><a href="#">유럽/아프리카</a></li>
+                                                <li><a href="#">미주/중남이/허와이</a></li>
+                                                <li><a href="#">일본</a></li>
+                                                <li><a href="#">중국/홍콩/몽골/중앙아시아</a></li>
+                                                <li><a href="#">지방출발</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">제주/국내여행</a>
+                                        <div class="in_sub_m">
+                                            <ul>
+                                                <li><a href="#">제주/국내여행</a></li>
+                                                <li><a href="#">제주도렌트카</a></li>
+                                                <li><a href="#">울릉도</a></li>
+                                                <li><a href="#">내나라여행</a></li>
+                                                <li><a href="#">국내골프</a></li>
+                                                <li><a href="#">단독여행문의</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">항공</a></li>
+                                    <li><a href="#">호텔</a></li>
+                                    <li><a href="./template.html">투어/입장권</a></li>
+                                    <li><a href="#">허니문</a></li>
+                                    <li><a href="#">골프</a></li>
+                                    <li><a href="#">제우스</a></li>
+                                    <li><a href="#">MICE</a></li>
+                                    <li><a href="#">하나LIVE</a></li>
+                                    <li><a href="./guide.html">가이드</a></li>
+                                </ul>
+                            </nav>
                         </div>
-                        <div class="l_bar">
+                        <div class="menu_right">
                             <ul>
-                                <li>
-                                    <a href="#">해외여행</a>
-                                    <div class="in_sub_m">
-                                        <ul>
-                                            <li><a href="#">해외여행 홈</a></li>
-                                            <li><a href="#">동남아/대만/서남아</a></li>
-                                            <li><a href="#">괌/사이판/호주/뉴질랜드/피지</a></li>
-                                            <li><a href="#">유럽/아프리카</a></li>
-                                            <li><a href="#">미주/중남이/허와이</a></li>
-                                            <li><a href="#">일본</a></li>
-                                            <li><a href="#">중국/홍콩/몽골/중앙아시아</a></li>
-                                            <li><a href="#">지방출발</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">제주/국내여행</a>
-                                    <div class="in_sub_m">
-                                        <ul>
-                                            <li><a href="#">제주/국내여행</a></li>
-                                            <li><a href="#">제주도렌트카</a></li>
-                                            <li><a href="#">울릉도</a></li>
-                                            <li><a href="#">내나라여행</a></li>
-                                            <li><a href="#">국내골프</a></li>
-                                            <li><a href="#">단독여행문의</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li><a href="#">항공</a></li>
-                                <li><a href="#">호텔</a></li>
-                                <li><a href="./template.html">투어/입장권</a></li>
-                                <li><a href="#">허니문</a></li>
-                                <li><a href="#">골프</a></li>
-                                <li><a href="#">제우스</a></li>
-                                <li><a href="#">MICE</a></li>
-                                <li><a href="#">하나LIVE</a></li>
+                                <li><a href="#">여행기획전</a></li>
+                                <li><a href="#">맞춤여행</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="n_r">
-                        <ul>
-                            <li><a href="#">여행기획전</a></li>
-                            <li><a href="#">맞춤여행</a></li>
-                        </ul>
+                </div>
+                <div class="mb_gnb_in">
+                    <div class="mb_left_logo">
+                        <a href="#">
+                            <h1>
+                                <img src="./images/header_logo.png" alt="하나투어로고">
+                            </h1>
+                        </a>
+                    </div>
+                    <div class="mb_right_btn">
+                        <img src="./images/mb_icon.png" alt="전체메뉴">
                     </div>
                 </div>
             </div>
         </div>
     </header>
+    <!-- 헤더 끝 -->
 
-    <div class="contents">
-        <div class="titi_wrap">
-            <div class="tit_font">
-                <div class="dim"></div>
-                <h2>오사카</h2>
+    <div class="cont_wrap">
+        <!-- 모바일 네비게이션 바 영역 -->
+        <div class="mobile mb_nav_bottom">
+            <div class="mb_menu">
+                <a class="btn btn_allmenu " href="#allmenu">
+                    <img src="./images/ico-allmenu.png" alt="전체메뉴">
+                    <span>전체메뉴</span>
+                </a>
             </div>
-            <div class="sub_link">
-                <div class="link_inner">
-                    <span>인근여행도시</span>
-                    <ul>
-                        <li><a href="#">고베</a></li>
-                        <li><a href="#">교토</a></li>
-                        <li><a href="#">나라</a></li>
-                    </ul>
-                </div>
+            <div class="search_wrap_mb">
+                <a class="btn btn_search mobile" href="#">
+                    <img src="./images/search_mb.png" alt="검색">
+                    <span class="mb_menu_bg">통합검색 펼치기</span>
+                    <span>검색</span>
+                </a>
+            </div>
+            <div class="my_page">
+                <a href="#">
+                    <img src="./images/my_page.png" alt="마이페이지">
+                    <span>마이페이지</span>
+                </a>
+            </div>
+            <div class="shopping_basket">
+                <a href="#">
+                    <img src="./images/ico-haeder-choice.png" alt="최근본/찜">
+                    <span>최근본/찜</span>
+                </a>
             </div>
         </div>
-        <div class="wiw_cont">
-            <nav class="nav">
-                <ul>
-                    <li><a href="#">전체</a></li>
-                    <li><a href="#">투어&#47;체험&#47;액티비티</a></li>
-                    <li><a href="#">입장권&#47;교통패스&#47;시즌권</a></li>
-                    <li><a href="#">USIM&#47;편의서비스</a></li>
-                </ul>
-            </nav>
-            <!--hanatour theme -->
-            <div class="hanatour">
-                <div class="hama_tit">
-                    <h3>HANATOUR THEME</h3>
-                    <P>지금 가장 핫한 하나투어의 테마를 소개합니다!</P>
-                    <button type="button">전체보기 <i class="xi-angle-right-min"></i></button>
+        <!-- 모바일 네비게이션 바 영역 -->
+        <!-- 컨탠츠 시작 -->
+        <div class="bt_p w_m_wrap">
+            <!-- 상담 로봇 시작 -->
+            <div class="right_wrap">
+                <div class="chet_cont">
+                    <button type="button" class="chat_btn">
+                        <span class="text">채팅상담</span>
+                    </button>
+                    <!-- <div class="box_chatting">
+                            <iframe></iframe>
+                        </div>  -->
                 </div>
+                <a href="#" class="por_btn">최근 본 상품(<em>0</em>)</a>
+                <div class="por_list">
+                    <p>최근 본 상품이 없습니다.</p>
+                </div>
+                <a href="#" class="btn_go_top">TOP</a>
+            </div>
+            <!-- 상담 로봇 끝 -->
 
-                <div class="intro">
-                    <div class="intro_bg">
-                        <div class="intro_a">
-                            <span class="in_ti">HANATOUR THEME</span>
-                            <h4>오만가지 매력✨ <br> 오사카 자유여행! <br> 미리 준비하세요!🙊</h4>
-                            <a href="#">MORE</a>
-                        </div>
-                        <div class="in_img">
-                            <img src="./images/best_travel02.png" alt="코타키나발루 5~6일 #샹그릴라라사리아">
-                            <div class="offer_text">
-                                <p>[무료배송][오사카] 난카이 라피트<br> 특급열차 편도/왕복권 #간사이공항</p>
-                                <div class="price_group">
-                                    <strong class="prices">
-                                        10,000<span>원~</span>
-                                    </strong>
+            <!-- 모바일 메뉴 시작 -->
+            <div class="quick_menu mobile">
+                <div class="mobile_close">
+                    <a href="javascript:void(0); m">
+                        <span>1</span>
+                        <span>2</span>
+                    </a>
+                </div>
+                <div class="quick_inner">
+                    <div class="m_menu">
+                        <ul>
+                            <li><a href="#wrap01" class="actvie">패키지여행</a></li>
+                            <li><a href="#wrap02">자유여행</a></li>
+                            <li><a href="#wrap03">추천서비스</a></li>
+                            <li><a href="#wrap03">인기플레이스</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile_menu_list">
+                        <div class="list_wrap">
+                            <div id="wrap01" class="list_item1 menu_item1">
+                                <div class="menu_innner">
+                                    <div class="cate_titel">
+                                        <span>패키지여행</span>
+                                    </div>
+                                    <div class="category_wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="text_wrap">
+                                                        <div class="cate_img">
+                                                            <img src="./images/m_p_img01.png" alt="헤외여행">
+                                                        </div>
+                                                        <span class="cate_text">헤외여행</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="text_wrap">
+                                                        <div class="cate_img">
+                                                            <img src="./images/m_p_img02.png" alt="제주">
+                                                        </div>
+                                                        <span class="cate_text cate_icon">제주/국내</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="text_wrap">
+                                                        <div class="cate_img">
+                                                            <img src="./images/m_p_img03.png" alt="골프">
+                                                        </div>
+                                                        <span class="cate_text">골프</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="text_wrap">
+                                                        <div class="cate_img">
+                                                            <img src="./images/m_p_img04.png" alt="허니문">
+                                                        </div>
+                                                        <span class="cate_text cate_icon cate_icon1">허니문</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="text_wrap">
+                                                        <div class="cate_img">
+                                                            <img src="./images/m_p_img05.png" alt="지방출발">
+                                                        </div>
+                                                        <span class="cate_text">지방출발</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="text_wrap">
+                                                        <div class="cate_img">
+                                                            <img src="./images/m_p_img06.png" alt="제우스">
+                                                        </div>
+                                                        <span class="cate_text">제우스</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="text_wrap">
+                                                        <div class="cate_img">
+                                                            <img src="./images/m_p_img07.png" alt="우리끼리">
+                                                        </div>
+                                                        <span class="cate_text">우리끼리</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="in_img in_img_b">
-                            <img src="./images/best_travel02.png" alt="코타키나발루 5~6일 #샹그릴라라사리아">
-                            <div class="offer_text">
-                                <p>[오사카]일본 유니버셜 스튜디오 재펜 입장권#이티켓#E티켓#QR코드</p>
-                                <div class="price_group">
-                                    <strong class="prices">
-                                        84,400<span>원~</span>
-                                    </strong>
+                            <div id="wrap02" class="list_item2 menu_item2">
+                                <div class="menu_innner">
+                                    <div class="cate_titel">
+                                        <span>자유여행</span>
+                                    </div>
+                                    <div class="category_wrap category_wrap1">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="cate_text">항공</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="cate_text">해외호텔</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="cate_text cate_icon cate_icon3">국내숙박</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="cate_text">에어/투어텔</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="cate_text">투어/입장권</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="cate_text">렌터카</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="in_img in_img_b">
-                            <img src="./images/best_travel02.png" alt="코타키나발루 5~6일 #샹그릴라라사리아">
-                            <div class="offer_text">
-                                <p>[간사이]일본 오사카 주유패스(1일권/2일권)</p>
-                                <div class="price_group">
-                                    <strong class="prices">
-                                        25,900<span>원~</span>
-                                    </strong>
+                            <div id="wrap03" class="list_item3 menu_item3 category_wrap2">
+                                <div class="menu_innner">
+                                    <div class="cate_titel">
+                                        <span>추천서비스</span>
+                                    </div>
+                                    <div class="category_wrap">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <strong class="wrap03_titel">플래너</strong>
+                                                    <span class="wrap03_item">여행 계획의 시작! 이런 일정은 어떠세요?</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong class="wrap03_titel">플레이스</strong>
+                                                    <span class="wrap03_item">내가 떠날 여행지 정보 알아볼까?</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong class="wrap03_titel">하나LIVE</strong>
+                                                    <span class="wrap03_item"> 방송 중에만 쏟아지는 특가&amp;혜택 찬스!</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong class="wrap03_titel">Safety&amp;Joy</strong>
+                                                    <span class="wrap03_item">출발부터 도착까지 하나투어 안심여행과 함께!</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong class="wrap03_titel">하나팩 2.0</strong>
+                                                    <span class="wrap03_item">처음부터 끝까지 온전히 여행 하나에 집중</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <strong class="wrap03_titel">개런티 프로그램</strong>
+                                                    <span class="wrap03_item">일정표에 없는 요금 지불 시 100% 보상</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="in_img">
-                            <img src="./images/best_travel02.png" alt="코타키나발루 5~6일 #샹그릴라라사리아">
-                            <div class="offer_text">
-                                <p>[간사이/오사카] 하루카 특급열차 <br> 편도 성인권 (간사이공항->교토)...</p>
-                                <span>#아일랜드투어 #반딧불이투어 </span>
-                                <div class="price_group">
-                                    <strong class="prices">
-                                        17,500<span>원~</span>
-                                    </strong>
+
+                            <div id="wrap04" class="list_item4 menu_item4">
+                                <div class="menu_innner">
+                                    <div class="cate_titel">
+                                        <span>인기플레이스</span>
+                                    </div>
+                                    <div class="category_wrap category_wrap3">
+                                        <ul>
+                                            <li>
+                                                <div class="text_wrap1">
+                                                    <a href="#">
+                                                        <div class="item4_images">
+                                                            <img src="./images/item4_1.jpg" alt="오사카">
+                                                        </div>
+                                                        <div class="item4_titel">
+                                                            <span class="item4_text">오사카</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="text_wrap">
+                                                    <a href="#">
+                                                        <div class="item4_images">
+                                                            <img src="./images/item4_2.jpg" alt="도쿄">
+                                                        </div>
+                                                        <div class="item4_titel">
+                                                            <span class="item4_text">도쿄</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="text_wrap">
+                                                    <a href="#">
+                                                        <div class="item4_images">
+                                                            <img src="./images/item4_3.jpg" alt="후쿠오카">
+                                                        </div>
+                                                        <div class="item4_titel">
+                                                            <span class="item4_text">후쿠오카</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="text_wrap">
+                                                    <a href="#">
+                                                        <div class="item4_images">
+                                                            <img src="./images/item4_4.jpg" alt="다낭">
+                                                        </div>
+                                                        <div class="item4_titel">
+                                                            <span class="item4_text">다낭</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="in_img">
-                            <img src="./images/best_travel02.png" alt="코타키나발루 5~6일 #샹그릴라라사리아">
-                            <div class="offer_text ">
-                                <p>[오사카]소라니와 온천 OSAKA BAY TOWER</p>
-                                <div class="price_group">
-                                    <strong class="prices">
-                                        22,600<span>원~</span>
-                                    </strong>
+
+                            <div class="list_item5 menu_item5">
+                                <div class="menu_innner">
+                                    <div class="cate_titel">
+                                        <span>혜택/이벤트</span>
+                                    </div>
+                                    <div class="category_wrap category_wrap2 ">
+                                        <ul>
+                                            <li><a href="#"><span>항인혜택</span></a></li>
+                                            <li><a href="#"><span>여행기획전</span></a></li>
+                                            <li><a href="#"><span>마일리지클럽</span></a></li>
+                                            <li><a href="#"><span>이벤트</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu_footer menu_item6">
+                                <div class="menu_innner">
+                                    <div class="cate_titel">
+                                        <span>연계서비스</span>
+                                    </div>
+                                    <div class="category_wrap category_wrap2 ">
+                                        <ul>
+                                            <li><a href="#"><span>하나투어 상품권</span></a></li>
+                                            <li><a href="#"><span>하나투어 기프트카드</span></a></li>
+                                            <li><a href="#"><span>포켓와이파이</span></a></li>
+                                            <li><a href="#"><span>해외여행자보험</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="footer_wrap">
+                                    <footer class="category_footer">
+                                        <ul>
+                                            <li><a href="#"><span>고객센터</span></a></li>
+                                            <li><a href="#"><span>자주묻는질문</span></a></li>
+                                            <li><a href="#"><span>공지사항</span></a></li>
+                                        </ul>
+                                    </footer>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <!-- 모바일 메뉴 끝 -->
 
-        <div class="wis_cons">
-            <aside class="aside">
-                <div class="a_top">
-                    <span>CATEGORY</span>
+            <!-- 컨텐츠 시작 -->
+
+            <div class="titi_wrap">
+                <div class="tit_font">
+                    <div class="dim"></div>
+                    <h2>오사카</h2>
                 </div>
-                <span></span>
-                <ul>
-                    <li><a href="#">전체</a></li>
-                    <li>
-                        <a href="javascript:void(0);" class="onfoo">투어/체험/엑티비티</a>
-                        <ul class="menu_sub">
-                            <li><a href="#">전체</a></li>
-                            <li><a href="#">호핑&데이크루즈</a></li>
-                            <li><a href="#">버스투어&#47;기차투어</a></li>
+                <div class="sub_link">
+                    <div class="link_inner">
+                        <span>인근여행도시</span>
+                        <ul>
+                            <li><a href="#">고베</a></li>
+                            <li><a href="#">교토</a></li>
+                            <li><a href="#">나라</a></li>
                         </ul>
-                    </li>
-                    <li><a href="#">입장권&#47;교통패스&#47;시즌권</a></li>
-                    <li><a href="#">USIM&#47;편의서비스 </a></li>
-                </ul>
-            </aside>
-            <div class="aside_con">
-                <div class="content">
-                    <div class="warp_box_pro">
-                        <div class="paren">
-                            <h3>전체(89)</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="sub_head_wrap">
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">전체</a></li>
+                        <li><a href="#">투어&#47;체험&#47;액티비티</a></li>
+                        <li><a href="#">입장권&#47;교통패스&#47;시즌권</a></li>
+                        <li><a href="#">USIM&#47;편의서비스</a></li>
+                    </ul>
+                </nav>
+      
+                <div class="hanatour">
+                    <div class="hana_tit">
+                        <h3>HANATOUR THEME</h3>
+                        <P>지금 가장 핫한 하나투어의 테마를 소개합니다!</P>
+                        <div class="sub_hane_btn">
+                            <button type="button">전체보기 <i class="xi-angle-right-min"></i></button>
                         </div>
-                        <div class="range_product">
+                    </div>
+
+                    <div class="intro">
+                        <div class="intro_bg">
+                            <div class="intro_a">
+                                <div class="intro_titel">
+                                    <span class="sub_title_xl">HANATOUR THEME</span>
+                                </div>
+                                <h4>오만가지 매력✨ <br> 오사카 자유여행! <br> 미리 준비하세요!🙊</h4>
+                                <div class="sub_btn_xl">
+                                    <a href="#">MORE</a>
+                                </div>
+                            </div>
+                            <div class="in_img  sub_img_wrap">
+                                <img src="./images/best_travel02.png" alt="코타키나발루 5~6일 #샹그릴라라사리아" class="sub_img">
+                                <div class="offer_text">
+                                    <p>[무료배송][오사카] 난카이 라피트<br> 특급열차 편도/왕복권 #간사이공항</p>
+                                    <div class="price_group">
+                                        <strong class="prices">
+                                            10,000<span>원~</span>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="in_img  sub_comm_area   sub_img_wrap1">
+                                <img src="./images/best_travel02.png" alt="코타키나발루 5~6일 #샹그릴라라사리아" >
+                                <div class="offer_text">
+                                    <p>[오사카]일본 유니버셜 스튜디오 재펜 입장권#이티켓#E티켓#QR코드</p>
+                                    <div class="price_group">
+                                        <strong class="prices">
+                                            84,400<span>원~</span>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="in_img  sub_comm_area sub_img_wrap1">
+                                <img src="./images/best_travel02.png" alt="코타키나발루 5~6일 #샹그릴라라사리아">
+                                <div class="offer_text">
+                                    <p>[간사이]일본 오사카 주유패스(1일권/2일권)</p>
+                                    <div class="price_group">
+                                        <strong class="prices">
+                                            25,900<span>원~</span>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="in_img sub_comm_area">
+                                <img src="./images/best_travel02.png" alt="코타키나발루 5~6일 #샹그릴라라사리아">
+                                <div class="offer_text">
+                                    <p>[간사이/오사카] 하루카 특급열차 <br> 편도 성인권 (간사이공항->교토)...</p>
+                                    <span>#아일랜드투어 #반딧불이투어 </span>
+                                    <div class="price_group">
+                                        <strong class="prices">
+                                            17,500<span>원~</span>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="in_img sub_comm_area">
+                                <img src="./images/best_travel02.png" alt="코타키나발루 5~6일 #샹그릴라라사리아">
+                                <div class="offer_text ">
+                                    <p>[오사카]소라니와 온천 OSAKA BAY TOWER</p>
+                                    <div class="price_group">
+                                        <strong class="prices">
+                                            22,600<span>원~</span>
+                                        </strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="sub_cont_wrap">
+                <aside class="sub_aside">
+                    <div class="a_top">
+                        <span>CATEGORY</span>
+                    </div>
+                    <span></span>
+                    <ul>
+                        <li><a href="#">전체</a></li>
+                        <li>
+                            <a href="javascript:void(0);" class="onfoo">투어/체험/엑티비티</a>
+                            <ul class="menu_sub">
+                                <li><a href="#">전체</a></li>
+                                <li><a href="#">호핑&데이크루즈</a></li>
+                                <li><a href="#">버스투어&#47;기차투어</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">입장권&#47;교통패스&#47;시즌권</a></li>
+                        <li><a href="#">USIM&#47;편의서비스 </a></li>
+                    </ul>
+                </aside>
+                <div class="aside_con">
+                    <div class="content">
+                        <div class="warp_box_pro">
+                            <div class="paren">
+                                <h3>전체(89)</h3>
+                            </div>
+                            <div class="range_product">
+                                <ul>
+                                    <li>
+                                        <select name="list">
+                                            <option value="Recommended order">추천순</option>
+                                            <option value="new product order">신상품순</option>
+                                            <option value="low price">낮은가격순</option>
+                                            <option value="high price">높은가격순</option>
+                                        </select>
+                                    </li>
+                                    <!-- <li>
+                                        <select name="each">
+                                            <option value="80 each">80개씩</option>
+                                            <option value="100 each">100개씩</option>
+                                            <option value="150 each">150개씩</option>
+                                        </select>
+                                    </li> -->
+                                    <li class="add_remove">
+                                        <button class="prd_add_btn">
+                                            <!-- <img src="../coding/images/add.jpg" alt="버튼" class="add_img"> -->
+                                        </button>
+                                        <button class="prd_remove_btn add">
+                                            <!--<img src="../coding/images/remove_on.jpg" alt="버튼">-->
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="prdItemList">
                             <ul>
                                 <li>
-                                    <select name="list">
-                                        <option value="Recommended order">추천순</option>
-                                        <option value="new product order">신상품순</option>
-                                        <option value="low price">낮은가격순</option>
-                                        <option value="high price">높은가격순</option>
-                                    </select>
+                                    <div class="prdItem">
+                                        <img src="./images/best_travel01.jpg" alt="오렌지" class="prd_img">
+                                    </div>
+                                    <div class="wral_p">
+                                        <div class="prd_text">
+                                            <p class="prdview">[무료배송][오사카]난카이 라피트 특급 <br> 열차 편도/왕복권 #간사이곻항</p>
+                                            <p class="prdnene">2023년0월10일부터 사용가능</p>
+                                        </div>
+                                        <!-- <div class="prd_pay">
+                                            <span>10,000  원  </span>
+                                        </div> -->
+
+                                        <span class="price"><strong>100,000</strong>원~</span>
+
+
+
+                                        <div class="prdinfo">
+                                            <p>
+                                                <span class="info_lan">구매 1천 <i class="xi-arrow-up"></i> </span>
+                                                <span class="info_wen">조회 4만 <i class="xi-arrow-down"></i> </span>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </li>
-                                <!-- <li>
-                                    <select name="each">
-                                        <option value="80 each">80개씩</option>
-                                        <option value="100 each">100개씩</option>
-                                        <option value="150 each">150개씩</option>
-                                    </select>
-                                </li> -->
-                                <li class="add_remove">
-                                    <button class="prd_add_btn">
-                                        <!-- <img src="../coding/images/add.jpg" alt="버튼" class="add_img"> -->
-                                    </button>
-                                    <button class="prd_remove_btn add">
-                                        <!--<img src="../coding/images/remove_on.jpg" alt="버튼">-->
-                                    </button>
+                                <li>
+                                    <div class="prdItem">
+                                        <img src="./images/best_travel01.jpg" alt="오렌지" class="prd_img">
+                                    </div>
+                                    <div class="wral_p">
+                                        <div class="prd_text">
+                                            <p class="prdview">[무료배송][오사카]난카이 라피트 특급 <br> 열차 편도/왕복권 #간사이곻항</p>
+                                            <p class="prdnene">2023년0월10일부터 사용가능</p>
+                                        </div>
+                                        <!-- <div class="prd_pay">
+                                            <span>10,000  원  </span>
+                                        </div> -->
+
+                                        <span class="price"><strong>100,000</strong>원~</span>
+
+
+
+                                        <div class="prdinfo">
+                                            <p>
+                                                <span class="info_lan">구매 1천 <i class="xi-arrow-up"></i> </span>
+                                                <span class="info_wen">조회 4만 <i class="xi-arrow-down"></i> </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prdItem">
+                                        <img src="./images/best_travel01.jpg" alt="오렌지" class="prd_img">
+                                    </div>
+                                    <div class="wral_p">
+                                        <div class="prd_text">
+                                            <p class="prdview">[무료배송][오사카]난카이 라피트 특급 <br> 열차 편도/왕복권 #간사이곻항</p>
+                                            <p class="prdnene">2023년0월10일부터 사용가능</p>
+                                        </div>
+                                        <!-- <div class="prd_pay">
+                                            <span>10,000  원  </span>
+                                        </div> -->
+
+                                        <span class="price"><strong>100,000</strong>원~</span>
+
+
+
+                                        <div class="prdinfo">
+                                            <p>
+                                                <span class="info_lan">구매 1천 <i class="xi-arrow-up"></i> </span>
+                                                <span class="info_wen">조회 4만 <i class="xi-arrow-down"></i> </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prdItem">
+                                        <img src="./images/best_travel01.jpg" alt="오렌지" class="prd_img">
+                                    </div>
+                                    <div class="wral_p">
+                                        <div class="prd_text">
+                                            <p class="prdview">[무료배송][오사카]난카이 라피트 특급 <br> 열차 편도/왕복권 #간사이곻항</p>
+                                            <p class="prdnene">2023년0월10일부터 사용가능</p>
+                                        </div>
+                                        <!-- <div class="prd_pay">
+                                            <span>10,000  원  </span>
+                                        </div> -->
+
+                                        <span class="price"><strong>100,000</strong>원~</span>
+
+
+
+                                        <div class="prdinfo">
+                                            <p>
+                                                <span class="info_lan">구매 1천 <i class="xi-arrow-up"></i> </span>
+                                                <span class="info_wen">조회 4만 <i class="xi-arrow-down"></i> </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prdItem">
+                                        <img src="./images/best_travel01.jpg" alt="오렌지" class="prd_img">
+                                    </div>
+                                    <div class="wral_p">
+                                        <div class="prd_text">
+                                            <p class="prdview">[무료배송][오사카]난카이 라피트 특급 <br> 열차 편도/왕복권 #간사이곻항</p>
+                                            <p class="prdnene">2023년0월10일부터 사용가능</p>
+                                        </div>
+                                        <!-- <div class="prd_pay">
+                                            <span>10,000  원  </span>
+                                        </div> -->
+
+                                        <span class="price"><strong>100,000</strong>원~</span>
+
+
+
+                                        <div class="prdinfo">
+                                            <p>
+                                                <span class="info_lan">구매 1천 <i class="xi-arrow-up"></i> </span>
+                                                <span class="info_wen">조회 4만 <i class="xi-arrow-down"></i> </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prdItem">
+                                        <img src="./images/best_travel01.jpg" alt="오렌지" class="prd_img">
+                                    </div>
+                                    <div class="wral_p">
+                                        <div class="prd_text">
+                                            <p class="prdview">[무료배송][오사카]난카이 라피트 특급 <br> 열차 편도/왕복권 #간사이곻항</p>
+                                            <p class="prdnene">2023년0월10일부터 사용가능</p>
+                                        </div>
+                                        <!-- <div class="prd_pay">
+                                            <span>10,000  원  </span>
+                                        </div> -->
+
+                                        <span class="price"><strong>100,000</strong>원~</span>
+                                        <div class="prdinfo">
+                                            <p>
+                                                <span class="info_lan">구매 1천 <i class="xi-arrow-up"></i> </span>
+                                                <span class="info_wen">조회 4만 <i class="xi-arrow-down"></i> </span>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
+                        <div class="ec-base-paginate">
+                            <a href="./index.php" class="sub_btn_page_bg">
+                                <img data-brackets-id="911" src="./images/ico-arrow-left.png" alt="다음패이지">
+                            </a>
+                            <ol data-brackets-id="912">
+                                <li class="xans-record-"><a href="?cate_no=69&amp;page=1" class="this">1</a></li>
+                                <li class="xans-record-"><a href="?cate_no=69&amp;page=2" class="other">2</a></li>
+                                <li class="xans-record-"><a href="?cate_no=69&amp;page=3" class="other">3</a></li>
+                            </ol>
+                            <a href="./index.php" class="sub_btn_page_bg_bg">
+                                <img src="./images/ico-arrow-right.png" alt="다음패이지" class="sub_btn_page_bg">
+                            </a>
+                        </div>
                     </div>
-                    <div class="prdItemList">
+                </div>
+            </div>
+
+        </div>
+        <!-- 컨탠츠 끝 -->
+    </div>
+
+    <!-- 푸터 시작 -->
+    <footer class="footer">
+        <div class="notice_bor">
+            <div class="common_cont area_notice">
+                <div class="notice_area">
+                    <strong class="notice_title">공지</strong>
+                    <div class="swiper notice">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    &lt;하나LIVE&gt; 22년 12월 7일 방송 이벤트 당첨자 안내 (찜카 10만 원권 이용권)
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    &lt;하나LIVE&gt; 22년 12월 7일 돌잡이 이벤트 당첨자 안내 (파리바게뜨 모바일 금액권 1만원권)
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    &lt;하나LIVE&gt; 22년 12월 7일 소통왕 이벤트 당첨자 안내 (스타벅스 기프티콘)
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    &lt;해외항공&gt; 상담 지연 안내
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    &lt;하나LIVE&gt; 22년 11월 30일 돌잡이 이벤트 당첨자 안내 (BHC 뿌링클+콜라1.25L)
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    &lt;하나LIVE&gt; 22년 11월 30일 소통왕 이벤트 당첨자 안내 (스타벅스 기프티콘)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="more">더보기</a>
+                </div>
+                <!--notes-->
+                <!-- 하나투어 공지사항 -->
+                <div class="common_cont notice_icon">
+                    <div class="foo_sns_icon">
                         <ul>
                             <li>
-                                <div class="prdItem">
-                                    <span>
-                                        <img src="./images/best_travel01.jpg" alt="오렌지">
-                                    </span>
-                                </div>
-                                <div class="wral_p">
-                                    <div class="prd_text">
-                                        <p class="prdview">[무료배송][오사카]난카이 라피트 특급 <br> 열차 편도/왕복권 #간사이곻항</p>
-                                        <p class="prdnene">2023년0월10일부터 사용가능</p>
-                                        <p class="prdbarnd pc_sub">별점</p>
-                                    </div>
-                                    <div class="prd_w">
-                                        <span>10,000원</span>
-                                    </div>
-                                    <div class="prdinfo">
-                                        <p>
-                                            <span class="info_lan">구매 1천 <i class="xi-arrow-up"></i> </span>
-                                            <span class="info_wen">조회 4만 <i class="xi-arrow-down"></i> </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="prdItem">
-                                    <span>
-                                        <img src="./images/best_travel01.jpg" alt="오렌지">
-                                    </span>
-                                </div>
-                                <div class="wral_p">
-                                    <div class="prd_text">
-                                        <p class="prdview">[무료배송][오사카]난카이 라피트 특급 <br> 열차 편도/왕복권 #간사이곻항</p>
-                                        <p class="prdnene">2023년0월10일부터 사용가능</p>
-                                        <p class="prdbarnd pc_sub">별점</p>
-                                    </div>
-                                    <div class="prd_w">
-                                        <span>10,000원</span>
-                                    </div>
-                                    <div class="prdinfo">
-                                        <p>
-                                            <span class="info_lan">구매 1천 <i class="xi-arrow-up"></i> </span>
-                                            <span class="info_wen">조회 4만 <i class="xi-arrow-down"></i> </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="prdItem">
-                                    <span>
-                                        <img src="./images/best_travel01.jpg" alt="오렌지">
-                                    </span>
-                                </div>
-                                <div class="wral_p">
-                                    <div class="prd_text">
-                                        <p class="prdview">[무료배송][오사카]난카이 라피트 특급 <br> 열차 편도/왕복권 #간사이곻항</p>
-                                        <p class="prdnene">2023년0월10일부터 사용가능</p>
-                                        <p class="prdbarnd pc_sub">별점</p>
-                                    </div>
-                                    <div class="prd_w">
-                                        <span>10,000원</span>
-                                    </div>
-                                    <div class="prdinfo">
-                                        <p>
-                                            <span class="info_lan">구매 1천 <i class="xi-arrow-up"></i> </span>
-                                            <span class="info_wen">조회 4만 <i class="xi-arrow-down"></i> </span>
-                                        </p>
-                                    </div>
-                                </div>
+                                <a href="#">
+                                    <img src="./images/facebook.png" alt="페이스북">
+                                </a>
                             </li>
                             <li>
-                                <div class="prdItem">
-                                    <span>
-                                        <img src="./images/best_travel01.jpg" alt="오렌지">
-                                    </span>
-                                </div>
-                                <div class="wral_p">
-                                    <div class="prd_text">
-                                        <p class="prdview">[무료배송][오사카]난카이 라피트 특급 <br> 열차 편도/왕복권 #간사이곻항</p>
-                                        <p class="prdnene">2023년0월10일부터 사용가능</p>
-                                        <p class="prdbarnd pc_sub">별점</p>
-                                    </div>
-                                    <div class="prd_w">
-                                        <span>10,000원</span>
-                                    </div>
-                                    <div class="prdinfo">
-                                        <p>
-                                            <span class="info_lan">구매 1천 <i class="xi-arrow-up"></i> </span>
-                                            <span class="info_wen">조회 4만 <i class="xi-arrow-down"></i> </span>
-                                        </p>
-                                    </div>
-                                </div>
+                                <a href="#">
+                                    <img src="./images/instagram.png" alt="인스타그램">
+                                </a>
                             </li>
                             <li>
-                                <div class="prdItem">
-                                    <span>
-                                        <img src="./images/best_travel01.jpg" alt="오렌지">
-                                    </span>
-                                </div>
-                                <div class="wral_p">
-                                    <div class="prd_text">
-                                        <p class="prdview">[무료배송][오사카]난카이 라피트 특급 <br> 열차 편도/왕복권 #간사이곻항</p>
-                                        <p class="prdnene">2023년0월10일부터 사용가능</p>
-                                        <p class="prdbarnd pc_sub">별점</p>
-                                    </div>
-                                    <div class="prd_w">
-                                        <span>10,000원</span>
-                                    </div>
-                                    <div class="prdinfo">
-                                        <p>
-                                            <span class="info_lan">구매 1천 <i class="xi-arrow-up"></i> </span>
-                                            <span class="info_wen">조회 4만 <i class="xi-arrow-down"></i> </span>
-                                        </p>
-                                    </div>
-                                </div>
+                                <a href="#">
+                                    <img src="./images/naverblog.png" alt="네이버블로그">
+                                </a>
                             </li>
                             <li>
-                                <div class="prdItem">
-                                    <span>
-                                        <img src="./images/best_travel01.jpg" alt="오렌지">
-                                    </span>
-                                </div>
-                                <div class="wral_p">
-                                    <div class="prd_text">
-                                        <p class="prdview">[무료배송][오사카]난카이 라피트 특급 <br> 열차 편도/왕복권 #간사이곻항</p>
-                                        <p class="prdnene">2023년0월10일부터 사용가능</p>
-                                        <p class="prdbarnd pc_sub">별점</p>
-                                    </div>
-                                    <div class="prd_w">
-                                        <span>10,000원</span>
-                                    </div>
-                                    <div class="prdinfo">
-                                        <p>
-                                            <span class="info_lan">구매 1천 <i class="xi-arrow-up"></i> </span>
-                                            <span class="info_wen">조회 4만 <i class="xi-arrow-down"></i> </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="prdItem">
-                                    <span>
-                                        <img src="./images/best_travel01.jpg" alt="오렌지">
-                                    </span>
-                                </div>
-                                <div class="wral_p">
-                                    <div class="prd_text">
-                                        <p class="prdview">[무료배송][오사카]난카이 라피트 특급 <br> 열차 편도/왕복권 #간사이곻항</p>
-                                        <p class="prdnene">2023년0월10일부터 사용가능</p>
-                                        <p class="prdbarnd pc_sub">별점</p>
-                                    </div>
-                                    <div class="prd_w">
-                                        <span>10,000원</span>
-                                    </div>
-                                    <div class="prdinfo">
-                                        <p>
-                                            <span class="info_lan">구매 1천 <i class="xi-arrow-up"></i> </span>
-                                            <span class="info_wen">조회 4만 <i class="xi-arrow-down"></i> </span>
-                                        </p>
-                                    </div>
-                                </div>
+                                <a href="#">
+                                    <img src="./images/kakaoplus.png" alt="카카오페이지">
+                                </a>
                             </li>
                             <li>
-                                <div class="prdItem">
-                                    <span>
-                                        <img src="./images/best_travel01.jpg" alt="오렌지">
-                                    </span>
-                                </div>
-                                <div class="wral_p">
-                                    <div class="prd_text">
-                                        <p class="prdview">[무료배송][오사카]난카이 라피트 특급 <br> 열차 편도/왕복권 #간사이곻항</p>
-                                        <p class="prdnene">2023년0월10일부터 사용가능</p>
-                                        <p class="prdbarnd pc_sub">별점</p>
-                                    </div>
-                                    <div class="prd_w">
-                                        <span>10,000원</span>
-                                    </div>
-                                    <div class="prdinfo">
-                                        <p>
-                                            <span class="info_lan">구매 1천 <i class="xi-arrow-up"></i> </span>
-                                            <span class="info_wen">조회 4만 <i class="xi-arrow-down"></i> </span>
-                                        </p>
-                                    </div>
-                                </div>
+                                <a href="#">
+                                    <img src="./images/youtube.png" alt="유튜브">
+                                </a>
                             </li>
                             <li>
-                                <div class="prdItem">
-                                    <span>
-                                        <img src="./images/best_travel01.jpg" alt="오렌지">
-                                    </span>
-                                </div>
-                                <div class="wral_p">
-                                    <div class="prd_text">
-                                        <p class="prdview">[무료배송][오사카]난카이 라피트 특급 <br> 열차 편도/왕복권 #간사이곻항</p>
-                                        <p class="prdnene">2023년0월10일부터 사용가능</p>
-                                        <p class="prdbarnd pc_sub">별점</p>
-                                    </div>
-                                    <div class="prd_w">
-                                        <span>10,000원</span>
-                                    </div>
-                                    <div class="prdinfo">
-                                        <p>
-                                            <span class="info_lan">구매 1천 <i class="xi-arrow-up"></i> </span>
-                                            <span class="info_wen">조회 4만 <i class="xi-arrow-down"></i> </span>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="prdItem">
-                                    <span>
-                                        <img src="./images/best_travel01.jpg" alt="오렌지">
-                                    </span>
-                                </div>
-                                <div class="wral_p">
-                                    <div class="prd_text">
-                                        <p class="prdview">[무료배송][오사카]난카이 라피트 특급 <br> 열차 편도/왕복권 #간사이곻항</p>
-                                        <p class="prdnene">2023년0월10일부터 사용가능</p>
-                                        <p class="prdbarnd pc_sub">별점</p>
-                                    </div>
-                                    <div class="prd_w">
-                                        <span>10,000원</span>
-                                    </div>
-                                    <div class="prdinfo">
-                                        <p>
-                                            <span class="info_lan">구매 1천 <i class="xi-arrow-up"></i> </span>
-                                            <span class="info_wen">조회 4만 <i class="xi-arrow-down"></i> </span>
-                                        </p>
-                                    </div>
-                                </div>
+                                <a href="#">
+                                    <img src="./images/kakaostory.png" alt="카카오스토리">
+                                </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="ec-base-paginate">
-                        <a href="./index.php" class="sub_btn_page_bg">
-                            <img data-brackets-id="911" src="./images/ico-arrow-left.png" alt="다음패이지">
-                        </a>
-                        <ol data-brackets-id="912">
-                            <li class="xans-record-"><a href="?cate_no=69&amp;page=1" class="this">1</a></li>
-                            <li class="xans-record-"><a href="?cate_no=69&amp;page=2" class="other">2</a></li>
-                            <li class="xans-record-"><a href="?cate_no=69&amp;page=3" class="other">3</a></li>
-                        </ol>
-                        <a href="./index.php" class="sub_btn_page_bg_bg">
-                            <img src="./images/ico-arrow-right.png" alt="다음패이지" class="sub_btn_page_bg">
-                        </a>
-                    </div>
                 </div>
+                <!-- 하나투어 sns -->
             </div>
         </div>
-    </div>
-
-    <footer class="footer">
-        <div class="notice_bor w_m">
-            <!-- <div class="not">
-                <ul>
-                    <li>
-                        <h4><a href="#">공지사항</a></h4>
-                    </li>
-                    <li>
-                        <div class="no_notes">
-                            <ul>
-                                <li><a href="#">[하나LIVE] 22년 12월 7일 방송 이벤트 당첨자 안내 (찜카 10만 원권 이용권)</a></li>
-                                <li><a href="#">[하나LIVE] 22년 12월 7일 돌잡이 이벤트 당첨자 안내 (파리바게뜨 모바일 금액권 1만원권)</a>
-                                </li>
-                                <li><a href="#">[하나LIVE] 22년 12월 7일 소통왕 이벤트 당첨자 안내 (스타벅스 기프티콘)</a></li>
-                                <li><a href="#">[해외항공] 상담 지연 안내</a></li>
-                                <li><a href="#">[하나LIVE] 22년 11월 30일 돌잡이 이벤트 당첨자 안내 (BHC 뿌링클+콜라1.25L)</a>
-                                </li>
-                                <li><a href="#">[하나LIVE] 22년 11월 30일 소통왕 이벤트 당첨자 안내 (스타벅스 기프티콘)</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <h4><a href="#">더보기</a></h4>
-                    </li>
-                </ul>
-            </div> -->
-            <!--notes-->
-            <!-- 하나투어 공지사항 -->
-            <div class="w_m notice_icon notice_tem">
-                <div class="foo_sns_icon">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="./images/facebook.png" alt="페이스북">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/instagram.png" alt="인스타그램">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/naverblog.png" alt="네이버블로그">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/kakaoplus.png" alt="카카오페이지">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/youtube.png" alt="유튜브">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/kakaostory.png" alt="카카오스토리">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 하나투어 sns -->
-        </div>
-        <div class="foo_info_mo">
+        <div class="footer_menu">
             <a href="#">로그인</a>
             <a href="#">공지사항</a>
             <a href="#">고객센터</a>
         </div>
-        <div class="foo_bott w_m">
-            <div class="fl_f">
-                <div class="fl">
+        <div class="footer_Inform_wrap">
+            <div class="footer_box">
+                <div class="footer_item_left">
                     <ul>
                         <li><a href="#">회사소개</a></li>
                         <li><a href="#">이용약관</a></li>
@@ -780,66 +1062,72 @@
                         <li><a href="#">마케팅제휴</a></li>
                         <li><a href="#">공식인증예약센터 검색</a></li>
                     </ul>
-                    <div>
+                    <div class="footer_content">
                         <div class="footer_licensee">
-                            <a href="javascript:void(0);" class="hana_mb">
+                            <!-- <a href="javascript:void(0);" class="">
                                 <strong>(주)하나투어</strong>
                                 <i class="xi-angle-down-min"></i>
-                            </a>
+                            </a> -->
                             <span><strong class="hana">(주)하나투어</strong></span>
-                            <span>대표 : 송미선, 육경건&nbsp;</span>
+                            <span class="bar">대표 : 송미선</span>
                             <span>주소 : (03161) 서울특별시 종로구 인사동 5길 41</span>
                         </div>
                         <p class="footer_licensee">
-                            <span>사업자등록번호 : 102-81-39440</span>
+                            <span class="Number">사업자등록번호 : 102-81-39440</span>
                             <span>
-                                <a href="http://www.ftc.go.kr/www/bizCommList.do?key=232" target="_blank">사업자정보확인</a>
+                                <a href="http://www.ftc.go.kr/www/bizCommList.do?key=232" target="_blank"
+                                    class="busins_info">사업자정보확인</a>
                             </span>
                             <span>통신판매업신고번호 : 종로01-1806호</span>
                             <span>관광사업자 등록번호 : 제1993-000006호</span>
                         </p>
-                        <p class="footer_licensee">
+                        <p class="footer_licensee  footer_item">
                             <span>개인정보 보호책임자 : 채철훈&nbsp;</span>
                             <span>영업보증보험 : 22억 1천만원 가입</span>
                             <span>팩스: 02-734-0392</span>
-                            <span>이메일 : <a href="mailto:15771233@hanatour.com">15771233@hanatour.com</a></span>
+                            <span>이메일 : <a href="mailto:15771233@hanatour.com"
+                                    class="busins_info">15771233@hanatour.com</a></span>
                         </p>
                         <p class="footer_licensee  footer_licensee_mb">
                             <span>
-                                <strong class="customer_center">
+                                <strong class="customer_center icon_phone">
                                     <!-- <img src="./images/ico-callcenter.png" alt="고객센터"> -->
-                                    <span>고객센터</span> 1577-1233&nbsp;
+                                    <span class="icon">고객센터</span> 1577-1233 &nbsp;
                                 </strong>
                             </span>
-                            <strong class="customer_center">
-                                <span>해외항공권문의</span> 1899-1833
+                            <strong class="customer_center icon_phone">
+                                <span class="icon">해외항공권문의</span>
+                                1899-1833
                             </strong>
                             <span style="display:none;">
                                 <a class="js_btn_lypop">분쟁처리절차</a>
                             </span>
                         </p>
                         <div class="customer_center">
-                            <p class="guide_txt">※ 부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를 받습니다.
+                            <strong class="guide_txt">※ 부득이한 사정에 의해 여행일정이 변경되는 경우 사전 동의를 받습니다.
                                 <br>※ 하나투어는 개별 항공권, 단품 및 일부 여행상품에 대하여 통신판매중개자로서 통신판매의 당사자가 아니며
                                 해당상품의 거래정보 및 거래등에 대해 책임을 지지 않습니다.
-                            </p>
-                            <p class="copy">COPYRIGHTⓒ HANATOUR SERVICE INC. ALL RIGHTS RESERVED</p>
+                            </strong>
+                            <span>
+                                <strong class="copyright" style="font-size: 12px;">COPYRIGHTⓒ HANATOUR SERVICE INC. ALL
+                                    RIGHTS RESERVED</strong>
+                            </span>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="fr">
+                <div class="footer_item_right">
                     <span>하나은행 구매안전 서비스</span>
                     <p>
                         고객님은 안전거래를 위해 현금으로 결제시<br>(주)하나투어에서 가입한
                         하나은행으로<br>구매안전서비스를 이용하실 수 있습니다.
                     </p>
                     <a href="#">서비스 가입사실 확인</a>
-                </div> -->
+                </div>
             </div>
         </div>
-        <div class="foo_slied w_m">
-            <div class="foo_bit">
-                <div class="swiper foo_swiper">
+        <div class="footer_slide">
+            <div class="footer_slide_box">
+                <div class="swiper footer_swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="./images/award-logo-01.png" alt="대한민국100대 브랜드">
@@ -878,17 +1166,18 @@
                             <p><span>2018<br>문화체육관광부<br>문화예술후원 우수기관 인증</span></p>
                         </div>
                     </div>
-                    <div class="swiper-button-next next-foo foo_com"></div>
-                    <div class="swiper-button-prev prev-foo foo_com"></div>
+                    <div class="next-footer foo_com"></div>
+                    <div class="prev-footer foo_com"></div>
                 </div>
-                <div class="foo_bot_i">
-                    <img src="./images/mark_01.png" alt="mark">
-                    <img src="./images/mark_02.png" alt="mark">
-                    <img src="./images/mark_03.png" alt="mark">
+                <div class="footer_box_item">
+                    <span><a href="#"><img src="./images/mark_01.png" alt="mark"></a></span>
+                    <span><a href="#"><img src="./images/mark_02.png" alt="mark"></a></span>
+                    <span><a href="#"><img src="./images/mark_03.png" alt="mark"></a></span>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- 푸터 끝 -->
 </body>
 
 </html>

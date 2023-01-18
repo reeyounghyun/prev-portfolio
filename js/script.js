@@ -230,6 +230,58 @@ function tab_event() {
 // 클릭 이벤트
 function btnClick_event() {
 
+    //bnt_ri button
+    $(".bnt_ri").click(function () {
+        if ($(this).hasClass("on")) {
+            $(".card_area").removeClass("on");
+            $(this).removeClass("on");
+        } else {
+            $(".card_area").addClass("on");
+            $(this).addClass("on");
+        }
+
+        if ($(this).hasClass("on")) {
+            $(".card_area").removeClass("on");
+        } else {
+            $(".card_area").addClass("on");
+        }
+    })
+
+    //닫기 버튼
+    $(".btn_closed").click(function(){   
+        $(".card_area").removeClass('off');
+        $(this).addClass("off");
+        $(".card_area").removeClass("off");
+    }); 
+
+
+    //bnt_ri button
+    $(".hotel").click(function () {
+        if ($(this).hasClass("off")) {
+            $(".card_area1").removeClass("off");
+            $(this).removeClass("off");
+        } else {
+            $(".card_area1").addClass("off");
+            $(this).addClass("off");
+        }
+
+        if ($(this).hasClass("off")) {
+            $(".card_area1").removeClass("off");
+        } else {
+            $(".card_area1").addClass("off");
+        }
+    })
+
+    //닫기 버튼
+    $(".btn_closed").click(function(){   
+        $(".card_area1").removeClass('off');
+        $(this).addClass("off");
+        $(".card_area1").removeClass("off");
+    }); 
+    
+
+    
+
     // 이벤트 확인필요
     $(".prd_add_btn").click(function () {
         if ($(this).hasClass("add")) {
