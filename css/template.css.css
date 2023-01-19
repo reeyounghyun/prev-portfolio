@@ -46,11 +46,14 @@
 }
 .titi_wrap .tit_font h2{
     color: #fff;
-    font-size: 60px;
+    font-size: 65px;
     display: block;
     text-align: center;
     font-weight: 600;
     z-index: 2;
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 10px;
 }
 .titi_wrap .sub_link{
     display: flex;
@@ -68,11 +71,11 @@
     z-index: 500;
 }
 .titi_wrap .sub_link span{
-    font-size: 14px;
+    font-size: 15px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 400;
     display: inline-block;
-    padding: 15px;
+    padding: 10px;
 }
 .titi_wrap .sub_link ul{
     display: flex;
@@ -87,13 +90,12 @@
 }
 .titi_wrap .sub_link ul li a{
     text-align: center;
-    min-width: auto;
-    height: 40px;
+    height: 30px;
     padding: 0 20px;
-    line-height: 40px;
+    line-height: 30px;
     color: #333;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 500;
 }
 .link_inner{
     display: flex;
@@ -138,7 +140,15 @@
     font-size: 15px;
     font-weight: 700;
     color: #666;
+} 
+
+
+.sub_bg_wrap{
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
 }
+
 /* HANATOUR THEME stert */
 .hanatour{
     padding: 110px 0;
@@ -171,105 +181,72 @@
     display: block;
     margin: 0 auto;
 }
-
-.intro{
-    display: flex;
-    width:100%;
-    margin: 0 auto;
-}
-.intro_bg{
+/* 상품 레이아웃 */
+.case_clo-4{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    margin: 0 auto;
     margin-top: 50px;
-    max-width: 1280px;
 }
-.intro_bg>div{
-    margin: 0 15px;
+.case_clo-4>div{
+    flex: 1 0 0%;
 }
-.intro .in_img{
+.box_wrea{
+    margin-top: 10px;
+}
+.box_wrea>div{
+    flex: 2 0 0%;
+}
+/* 상품 레이아웃 */
+
+
+/* 상품 스타일 */
+
+.sub_btn_xl{
+    margin-top: 20px;
+}
+.sub_box_item_title h4{
+    margin-top: 17px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.sub_box_item_title a{
+    display: inline-block;
+    font-size: 15px;
+    color: #111;
+    font-weight: 500;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #000;
+} 
+
+.intro_titel{
+    display: block;
+}
+.sub_title_xl{
+    display: inline-block;
+    color: #f06c5e;
+    border: 1px solid #f06c5e;
+    border-radius: 20px;
+    padding: 6px 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+
+.sub_box_item{
     background-color: #fff;
-    max-width: 277px;
     width:100%;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     margin: 0 15px 30px;
     box-shadow: 0 2px 24px rgb(0 0 0 / 10%);
 }
-.intro .in_img img{
+.sub_box_item img{
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     width: 100%;
-}
-.intro .in_img_b{
-    width: 100%;
-    max-width: 584px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 2;
-    background: transparent;
-    box-shadow: none;
-}
-.intro .in_img_b .offer_text{
-    padding: 0!important;
-    position: absolute;
-    bottom: 50px;
-    left: 18px;
-    color: #fff;  
-}
-.intro .in_img_b img{
-    max-width: 584px;
-    width: 100%;
-    height: 327px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-}
-.intro .in_img .offer_text{
-    font-size: 16px;
-    font-weight: 700;
-    padding: 19px 25px 21px;
-    overflow: hidden;
-}
-.in_img .offer_text .price_group{
-    color: #f06c5e;
-    font-weight: 700;
-    margin-right: 15px;  
-}
-.in_img .offer_text .price_group .prices{
-    color: #f06c5e;
-    font-weight: 700;
-    margin-right: 15px;  
-    font-size: 16px;
-}
-.intro_titel{
-    border: 3px solid #f3786c;
-    border-radius: 20px;
-    box-sizing: border-box;
-    display: inline-block;
-    
-}
-.intro_titel span{
-    display: inline-block;
-    padding: 5px 14px;
-    font-weight: 700;
-    color: #f3786c;
-}
-.intro_bg .intro_a h4{
-    margin-top: 17px;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 1.4;
-}
-.intro_bg .intro_a a{
-    display: inline-block;
-    font-size: 24px;
-    color: #999;
-    font-weight: 700;
-
-    padding-bottom: 3px;
-    border-bottom: 5px solid #999;
-    margin-top: 10px;
 }
 .sub_cont_wrap{
     width: 100%;
@@ -312,9 +289,6 @@
 .sub_aside ul li.active a{
     color: #f06c5e;
 }
-/* .aside ul li:first-child a{
-    color: #f06c5e;
-} */
 .sub_aside>ul>li>a{
     display: block;
     padding: 14px 0;
@@ -381,7 +355,6 @@ ul.menu_sub li a::after{
 .range_product ul li{
     float: left;
 }
-
 .range_product ul li select{
     width: 178px;
     max-width: 100%;
@@ -394,10 +367,24 @@ ul.menu_sub li a::after{
     border: none;
     margin: 0 5px;
 }
-
 .range_product ul li.add_remove{
     margin-left: 10px;
 }
+
+
+/* 상품 텍스트 스타일 */
+
+/* 상품 텍스트 스타일 */
+.sub_product_area{
+    padding: 20px 20px 30px 20px;
+}
+
+.product_titel{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
 
 /*button*/
 .prd_add_btn {
@@ -439,11 +426,6 @@ ul.menu_sub li a::after{
     display: inline-block;
     margin-right: 10px;
 }
-
-/* .prdItemList ul li .prdItem span{
-    display: inline-block;
-} */
-
 .prd_img{
     width: 100%;
     border-top-left-radius: 20px;
@@ -455,7 +437,6 @@ ul.menu_sub li a::after{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-
 .prdItemList ul li .wral_p{
     background-color: #fff;
     width: 100%;
@@ -505,9 +486,16 @@ ul.menu_sub li a::after{
     font-weight: 400;
     display: inline-block;
 }
+.price_group{
+    margin-top: 15px;
+}
+.price_group .prices{
+    color: #f06c5e;
+    font-weight: 600;
+    font-size: 18px;
+}
+
 /* 상품 금액부분 끝 */
-
-
 .prdItemList ul li .prdinfo {
     max-width: 100%;
     width: 18%;
@@ -596,29 +584,29 @@ ul.menu_sub li a::after{
 }
 
 @media screen and (max-width:1205px){
-    .intro .in_img_b{
+    .sub_container .sub_box_item_b{
         display: none
     }
-    .intro_bg .intro_a {
+    .sub_box_item_title {
         width: 100%;
         margin-bottom: 30px;
     }
-    .intro_bg .intro_a{
+    .sub_box_item_title{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .intro_bg .intro_a span.in_ti{
+    .sub_box_item_title span.in_ti{
         display: none;
     }
-    .intro_bg .intro_a h4 {
+    .sub_container_bg .sub_box_item_title h4 {
         font-size: 15px;
     }
-    .intro_bg .intro_a a{
+    .sub_container_bg .sub_box_item_title a{
         font-size: 14px;
         border-bottom: 2px solid #999;
     }
-    .intro_bg .intro_a h4 br{
+    .sub_container_bg .sub_box_item_title h4 br{
         display: none;
     }
 
@@ -628,30 +616,30 @@ ul.menu_sub li a::after{
     .sub_head_wrap nav ul{
         width: auto;
     }
-    .intro_bg{
+    .sub_container_bg{
         width: auto;
         justify-content: center;
     }
-    .intro_bg .intro_a span.in_ti{
+    .sub_container_bg .sub_box_item_title span.in_ti{
         display: none;
     }
-    .intro_bg .intro_a a{
+    .sub_container_bg .sub_box_item_title a{
         font-size: 12px;
     }
-    .intro_a{
+    .sub_box_item_title{
         display: none;
     }
-    .intro_bg .intro_a h4{
+    .sub_container_bg .sub_box_item_title h4{
         /* font-size: 15px; */
     }
-    .intro_bg .intro_a a{
+    .sub_container_bg .sub_box_item_title a{
         font-size: 14px;
         border-bottom: 2px solid #999;
     }
-    .intro .in_img_b{
+    .sub_container .sub_box_item_b{
        display: none;
     }
-    .intro .in_img{
+    .sub_container .sub_box_item{
         max-width: 100%;
     }
     .sub_aside{

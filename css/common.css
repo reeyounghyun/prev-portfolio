@@ -195,7 +195,11 @@
     background: url(../images/ico-alllmenu_close.png) no-repeat;
 }
 .menu_wrap .menu_left .all_menu button{
-    top: 20px;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 30px;
 }
 /* 검색창 end */
 
@@ -258,7 +262,7 @@
 }
 .menu_left .all_menu .all_sam {
     position: absolute;
-    top: 178px;
+    top: 50px;
     right: 0;
     left: 0;
     background-color: #fff;
@@ -354,16 +358,14 @@
     margin-bottom: 40px;
 }
 .sam_line>dl{
-    margin-bottom: 0;
+    width: 171px;
 }
 .all_sam .sam_di .sam_line{
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
 }
 .menu_left .all_menu .all_sam dl{
-    margin-bottom: 50px;
-    min-height: 100px;
+    height: 200px;
 }
 .menu_left .all_menu .all_sam dt{
     font-size: 17px;
