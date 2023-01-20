@@ -141,14 +141,11 @@
     font-weight: 700;
     color: #666;
 } 
-
-
 .sub_bg_wrap{
     max-width: 1280px;
     margin: 0 auto;
     width: 100%;
 }
-
 /* HANATOUR THEME stert */
 .hanatour{
     padding: 110px 0;
@@ -218,7 +215,6 @@
     padding-bottom: 3px;
     border-bottom: 3px solid #000;
 } 
-
 .intro_titel{
     display: block;
 }
@@ -231,10 +227,6 @@
     font-size: 15px;
     font-weight: 500;
 }
-
-
-
-
 .sub_box_item{
     background-color: #fff;
     width:100%;
