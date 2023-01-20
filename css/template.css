@@ -140,6 +140,9 @@
 .hanatour{
     background-color: #f7f7f7;
 }
+.hana_area{
+    padding: 100px 0;
+}
 .hanatour .hama_tit h3{
     font-size: 40px;
     color: #f06c5e;
@@ -162,15 +165,8 @@
     border: none;
 }
 .intro{
-    display: flex;
-    width:100%;
-    margin: 0 auto;
-}
-.intro_bg{
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 50px;
     max-width: 1280px;
+    margin: 50px auto;
 }
 .intro .in_img{
     background-color: #fff;
@@ -226,7 +222,7 @@
     margin-right: 15px;  
     font-size: 16px;
 }
-.intro_bg .intro_a span.in_ti{
+.intro_a span.in_ti{
     border: 3px solid #f3786c;
     color: #f3786c;
     font-weight: 700;
@@ -235,13 +231,17 @@
     padding: 5px 14px;
 }
 
-.intro_bg .intro_a h4{
-    margin-top: 17px;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 1.4;
+.intro_samil_titel{
+    margin-top: 16px;
 }
-.intro_bg .intro_a a{
+.intro_samil_titel h4{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+
+.intro_a a{
     display: inline-block;
     font-size: 24px;
     color: #999;
@@ -533,26 +533,26 @@ ul.menu_sub li a::after{
     .intro .in_img_b{
         display: none
     }
-    .intro_bg .intro_a {
+    .intro_a {
         width: 100%;
         margin-bottom: 30px;
     }
-    .intro_bg .intro_a{
+    .intro_a{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .intro_bg .intro_a span.in_ti{
+    .intro_a span.in_ti{
         display: none;
     }
-    .intro_bg .intro_a h4 {
+     .intro_a h4 {
         font-size: 15px;
     }
-    .intro_bg .intro_a a{
+    .intro_a a{
         font-size: 14px;
         border-bottom: 2px solid #999;
     }
-    .intro_bg .intro_a h4 br{
+    .intro_a h4 br{
         display: none;
     }
 
@@ -562,20 +562,16 @@ ul.menu_sub li a::after{
     .wiw_cont nav ul{
         width: auto;
     }
-    .intro_bg{
-        width: auto;
-        justify-content: center;
-    }
-    .intro_bg .intro_a span.in_ti{
+    .intro_a span.in_ti{
         display: none;
     }
-    .intro_bg .intro_a a{
+     .intro_a a{
         font-size: 12px;
     }
     .intro_a{
         display: none;
     }
-    .intro_bg .intro_a a{
+    .intro_a a{
         font-size: 14px;
         border-bottom: 2px solid #999;
     }
@@ -723,6 +719,15 @@ ul.menu_sub li a::after{
     max-width: 1200px;
     margin: 0 auto;
 }
+.sub_head_wrap nav ul li{
+    flex: 1 0 100px;
+}
+.sub_head_wrap nav ul li a{
+    text-align: center;
+    font-size: 17px;
+    color: #333;
+    font-weight: 500;
+}
 .sub_comm_area nav ul li{
     position: relative;
     display: inline-block;
@@ -746,48 +751,35 @@ ul.menu_sub li a::after{
     font-weight: 700;
     color: #666;
 } 
-/* .sub_bg_wrap{
-    max-width: 1280px;
-    margin: 0 auto;
-    width: 100%;
-} */
+
 /* HANATOUR THEME stert */
-/* .hanatour{
-    padding: 110px 0;
-    background-color: #f7f7f7;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-} */
 .hanatour .hana_tit h3{
+    padding: 15px;
     font-size: 40px;
     color: #f06c5e;
     font-weight: 700;
     text-align: center;
 }
 .hanatour .hana_tit p{
-    margin: 8px;
     color: #666;
     text-align: center;
 }
 .sub_hane_btn{
     margin: 10px;
     display: block;
+    text-align: center;
 }
 .sub_hane_btn button{
     background: none;
     border: none;
-    text-align: center;
-    font-size: 13px;
+    font-size: 15px;
     color: #666;
-    font-weight: 400;
-    display: block;
-    margin: 0 auto;
+    padding: 10px;
 }
 /* 상품 레이아웃 */
 .case_clo-4{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
 }
 .case_clo-4>div{
     flex: 1 0 0%;
@@ -862,23 +854,14 @@ ul.menu_sub li a::after{
 }
 .sub_aside .a_top{
     position: relative;
-    font-size: 16px;
     border-bottom: 1px solid #999;
     display: block;
-    text-align: center;
-    margin: 10px;
-    padding: 12px;
 }
 .sub_aside .a_top span{
     font-weight: 700;
     display: block;
     padding: 10px;
 }
-/* .aside_con{
-    width: 100%;
-    max-width: 842px;
-    margin-left: 90px;
-} */
 .sub_aside>ul>li{
     box-sizing: border-box;
     border-top: 1px solid #e5e5e5;
@@ -1518,7 +1501,7 @@ ul.menu_sub li a::after{
     margin-right: 15px;  
     font-size: 16px;
 }
-.intro_bg .intro_a span.in_ti{
+.intro_a span.in_ti{
     border: 3px solid #f3786c;
     color: #f3786c;
     font-weight: 700;
@@ -1785,26 +1768,26 @@ ul.menu_sub li a::after{
     .intro .in_img_b{
         display: none
     }
-    .intro_bg .intro_a {
+    .intro_a {
         width: 100%;
         margin-bottom: 30px;
     }
-    .intro_bg .intro_a{
+    .intro_a{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .intro_bg .intro_a span.in_ti{
+    .intro_a span.in_ti{
         display: none;
     }
-    .intro_bg .intro_a h4 {
+     .intro_a h4 {
         font-size: 15px;
     }
-    .intro_bg .intro_a a{
+     .intro_a a{
         font-size: 14px;
         border-bottom: 2px solid #999;
     }
-    .intro_bg .intro_a h4 br{
+     .intro_a h4 br{
         display: none;
     }
 
@@ -1814,20 +1797,16 @@ ul.menu_sub li a::after{
     .wiw_cont nav ul{
         width: auto;
     }
-    .intro_bg{
-        width: auto;
-        justify-content: center;
-    }
-    .intro_bg .intro_a span.in_ti{
+    .intro_a span.in_ti{
         display: none;
     }
-    .intro_bg .intro_a a{
+    .intro_a a{
         font-size: 12px;
     }
     .intro_a{
         display: none;
     }
-    .intro_bg .intro_a a{
+    .intro_a a{
         font-size: 14px;
         border-bottom: 2px solid #999;
     }
