@@ -49,6 +49,8 @@ function Swiper_event () {
         }
 
     });
+
+    
     // 비쥬얼 슬라이드 컨트롤러
     $('.Start').on('click', function() {
         swiper.autoplay.stop();
