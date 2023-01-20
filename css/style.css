@@ -334,54 +334,6 @@
     box-sizing: border-box;
     position: relative; 
 }
-/* .air_day .bowl,
-.air_day .bowl_m{
-    height: 42px;
-    line-height: 42px;
-    margin-top: 10px;
-    flex: 1;
-    position: relative;
-    margin-right: 0;
-    margin-left: 27px;
-    max-width: 149px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-} */
-/* .air_day .bowl_m{
-    margin-left: 0;
-    margin-right: 5px;
-}
-.air_day .bowl a{
-    background: #fff;
-    display: block;
-    width: 149px;
-    height: 42px;
-}
-.air_day_i .bowl_m a{
-    background: #fff;
-    display: block;
-    width: 265px;
-    height: 42px;
-} */
-/* .air_day .bowl a::before,
-.air_day .bowl_m a::before{
-    content: "";
-    position: absolute;
-    clear: both;
-    background: url(../images/spr_icn.png) no-repeat -155px 0;
-    left: 17px;
-    top: 15px;
-    display: inline-block;
-    vertical-align: middle;
-    width: 14px;
-    height: 14px;
-}
-.air_day .bowl span,
-.air_day .bowl_m span{
-    padding-left: 47px;
-    color: #111;
-    display: inline-block;
-} */
 .th_inner{
     margin-top: 10px;
 }
@@ -503,9 +455,6 @@
     align-items: center;
     /* border: 1px solid #fff; */
 }
-/* .le_box>ul>li + li{
-    margin-left: 5px;
-} */
 .bnt_le{
     position: relative;
     margin-right: 10px;
@@ -523,7 +472,6 @@
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-
 .bnt_le span,
 .bnt_ri span{
     display: flex;
@@ -888,12 +836,6 @@
     color: #111;
 }
 /* 마침내 특가 추운 겨울에도 여행 텐션 UP!! */
-/* .bt_p{
-    margin: 100px auto 0 auto;
-} */
-/* .inner_tab {
-    margin-top: 100px;
-}  */
 .inner_tab .con_inner {
     position: relative;
 }
@@ -1092,9 +1034,6 @@
     transform: scale(1.1);
     transition: all 0.5s;
 }
-/* .travel_sug .trs img:hover .tr_text .product_box{
-    text-decoration: underline;
-} */
 .travel_sug .trs  .tr_text{
     display: inline-block;
     width: 100%;
@@ -1372,7 +1311,6 @@
     color: #fff;
     margin-top: 10px;
 }
-
 .submain_inner ul li .get_a .item_w{
     margin: 30px 0 0 30px;
 }
