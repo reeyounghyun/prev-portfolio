@@ -2221,7 +2221,7 @@ color: var(--primary-color);
 position: relative;
 padding-left: 51px;
 background: url(../images/ico-page-gray-md@2x.png) 26px center no-repeat;
-background_size: 16px 16px;
+background-size: 16px 16px;
 }
 .card_container .site_list > li > ul > li a:hover {
 border-radius: 8px;

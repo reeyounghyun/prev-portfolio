@@ -39,6 +39,7 @@
         document.write('<link rel="stylesheet" href="./css/common.css?'+rand+'">');
     </script>  -->
 </head>
+
 <body>
     <!-- 헤더 시작 -->
     <header class="header" id="header">
@@ -634,13 +635,13 @@
             <!-- 컨텐츠 시작 -->
 
             <div class="titi_wrap">
-                <div class="tit_font">
-                    <div class="dim"></div>
+                <div class="titel_arem">
+                    <div class="titel_bg"></div>
                     <h2>오사카</h2>
                 </div>
                 <div class="sub_link">
                     <div class="link_inner">
-                        <span>인근여행도시</span>
+                        <span class="inner_font">인근여행도시</span>
                         <ul>
                             <li><a href="#">고베</a></li>
                             <li><a href="#">교토</a></li>
@@ -658,23 +659,22 @@
                         <li><a href="#">USIM&#47;편의서비스</a></li>
                     </ul>
                 </nav>
-
                 <div class="hanatour">
                     <div class="hana_area">
                         <div class="hana_tit">
-                            <h3>HANATOUR THEME</h3>
-                            <P>지금 가장 핫한 하나투어의 테마를 소개합니다!</P>
+                            <h3 class="tit_subject">HANATOUR THEME</h3>
+                            <P class="subtitle">지금 가장 핫한 하나투어의 테마를 소개합니다!</P>
                             <div class="sub_hane_btn">
                                 <button type="button">전체보기 <i class="xi-angle-right-min"></i></button>
                             </div>
                         </div>
-                        <div class="intro sub_container">
+                        <div class=" sub_container">
                             <div class="case_clo-4">
                                 <div class="intro_a sub_box_item_title">
                                     <div class="intro_titel">
                                         <span class="sub_title_xl">HANATOUR THEME</span>
                                     </div>
-                                    <div class="intro_samil_titel">   
+                                    <div class="intro_samil_titel">
                                         <h4>오만가지 매력<br>오사카 자유여행!<br>미리 준비하세요!</h4>
                                     </div>
                                     <div class="sub_btn_xl">
@@ -702,7 +702,7 @@
                                             </strong>
                                         </div>
                                     </div>
-                                </div> 
+                                </div>
                                 <div class="sub_comm_area sub_box_item">
                                     <img src="./images/best_travel02.png" alt="코타키나발루 5~6일 #샹그릴라라사리아">
                                     <div class="sub_product_area">
@@ -726,7 +726,7 @@
                                             </strong>
                                         </div>
                                     </div>
-                                </div> 
+                                </div>
                                 <div class="sub_comm_area sub_box_item">
                                     <img src="./images/best_travel02.png" alt="코타키나발루 5~6일 #샹그릴라라사리아">
                                     <div class="sub_product_area">
@@ -777,26 +777,22 @@
                 <div class="aside_con">
                     <div class="content">
                         <div class="warp_box_pro">
-                            <div class="paren_wwrap">
+                            <div class="paren_wrap">
                                 <div class="paren">
                                     전체<span class="paren_num">&#40;89&#41;</span>
                                 </div>
                             </div>
                             <div class="range_product">
-                               <select name="list">
+                                <select name="list">
                                     <option value="Recommended order">추천순</option>
                                     <option value="new product order">신상품순</option>
                                     <option value="low price">낮은가격순</option>
                                     <option value="high price">높은가격순</option>
                                 </select>
-                             </div>
+                            </div>
                             <div class="range_line_out">
-                                <button class="prd_add_btn">
-                                    <!-- <img src="../coding/images/add.jpg" alt="버튼" class="add_img"> -->
-                                </button>
-                                <button class="prd_remove_btn add">
-                                    <!--<img src="../coding/images/remove_on.jpg" alt="버튼">-->
-                                </button>
+                                <button class="prd_add_btn"></button>
+                                <button class="prd_remove_btn add"></button>
                             </div>
                         </div>
                         <div class="prdItemList">
@@ -821,23 +817,24 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="ec-base-paginate">
-                            <a href="./index.php" class="sub_btn_page_bg">
-                                <img data-brackets-id="911" src="./images/ico-arrow-left.png" alt="다음패이지">
-                            </a>
-                            <ol data-brackets-id="912">
-                                <li class="xans-record-"><a href="?cate_no=69&amp;page=1" class="this">1</a></li>
-                                <li class="xans-record-"><a href="?cate_no=69&amp;page=2" class="other">2</a></li>
-                                <li class="xans-record-"><a href="?cate_no=69&amp;page=3" class="other">3</a></li>
-                            </ol>
-                            <a href="./index.php" class="sub_btn_page_bg_bg">
+                        <div class="base_paginate  paginate">
+                            <div class="sub_prev">
+                                <img src="./images/ico-arrow-left.png" alt="이전패이지">
+                            </div>
+                            <div class="paginate_list">
+                                <ol>
+                                    <li class="xans-record"><a href="?cate_no=69&amp;page=1" class="this">1</a></li>
+                                    <li class="xans-record"><a href="?cate_no=69&amp;page=2" class="other">2</a></li>
+                                    <li class="xans-record"><a href="?cate_no=69&amp;page=3" class="other">3</a></li>
+                                </ol>
+                            </div>
+                            <div class="sub_next">
                                 <img src="./images/ico-arrow-right.png" alt="다음패이지" class="sub_btn_page_bg">
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
         <!-- 컨탠츠 끝 -->
     </div>
