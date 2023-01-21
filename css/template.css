@@ -334,37 +334,35 @@ ul.menu_sub li a::after{
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #999;
-    padding-bottom: 20px;
+    padding: 0 10px 20px 10px;
 }
-.warp_box_pro .paren h3{
+.paren_wwrap{
     display: block;
-    font-size: 12px;
-    font-weight: 400;
-}
-.range_product{
-    overflow: hidden;
-    padding-top: 10px;
+    width: 100%;
     margin-right: 10px;
 }
-.range_product ul li{
-    float: left;
+.range_product{
+    flex: 1 0 200px;
 }
-.range_product ul li select{
-    width: 178px;
-    max-width: 100%;
-    padding: 8px 0;
-    border-radius: 10px;
-    padding: 8px 5px 8px 8px;
-    border: 1px solid #ccc;
+
+.paren{
+    font-size: 18px;
+    color: #111;
 }
-.range_product ul li.add_remove button{
-    border: none;
+.paren_num{
+    font-size: 15px;
+    font-weight: 500;
+    color: #f06c5e;
+    padding-left: 2px;
 }
+
 /*button*/
-.prd_add_btn {
-    width: 25px;
-    height: 25px;
-    background: url(../../images/add.jpg);
+.range_line_out{
+    flex: 1 0 65px;
+    text-align: center;
+}
+.range_line_out button{
+    border: none;
 }
 .prd_add_btn.add {
     background: url(../../images/add_on.jpg) no-repeat;
@@ -374,7 +372,7 @@ ul.menu_sub li a::after{
     height: 25px;
     background: url(../../images/remove.jpg);
 }
-.prd_remove_btn.add {
+.prd_remove_btn {
     background: url(../../images/remove_on.jpg)no-repeat;
 }
 .prdItemList ul{
@@ -392,10 +390,6 @@ ul.menu_sub li a::after{
     box-shadow: 0 2px 24px rgb(0 0 0 / 10%);
     margin-bottom: 30px;
 }
-.prdItemList ul li .prdItem {
-    max-width: 277px;
-    width: 100%;
-}
 .prdItemList ul li .prdItem span{
     display: inline-block;
 }
@@ -404,33 +398,6 @@ ul.menu_sub li a::after{
     display: block;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-}
-.prdItemList ul li p{
-    font-size: 16px;
-    font-weight: 700;
-    color: #111;
-    line-height: 1.5;
-}
-.prdItemList ul li .wral_p{
-    background-color: #fff;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.prdItemList ul li .prd_text{
-    width: calc(100% - 277px);
-    position: relative;
-    padding: 0 10px;
-    text-overflow: ellipsis;
-    white-space: normal;
-    overflow: hidden;
-    font-weight: 700;
-}
-.prdItemList ul li .prd_text p.prdnene{
-    margin-top: 5px;
-    font-size: 12px;
-    color: #666;
 }
 .prdItemList ul li .prd_w{
     max-width: 100%;
@@ -442,19 +409,6 @@ ul.menu_sub li a::after{
     color: #f06c5e;
     font-weight: 700;
     font-size: 15px;
-}
-.prdItemList ul li .prdinfo {
-    max-width: 100%;
-    width: 18%;
-}
-.prdItemList ul li .prdinfo p{
-    display: block;
-}
-.prdItemList ul li .prdinfo span{
-    color: #666;
-    display:block;
-    text-align: center;
-    font-size: 12px;
 }
 .prdItemList ul li .prd_text p.prdbarnd{
     font-size: 12px;
@@ -558,59 +512,7 @@ ul.menu_sub li a::after{
 
 }/* max-width:1205px */
 
-@media screen and (max-width:1025px){
-    .wiw_cont nav ul{
-        width: auto;
-    }
-    .intro_a span.in_ti{
-        display: none;
-    }
-     .intro_a a{
-        font-size: 12px;
-    }
-    .intro_a{
-        display: none;
-    }
-    .intro_a a{
-        font-size: 14px;
-        border-bottom: 2px solid #999;
-    }
-    .intro .in_img_b{
-       display: none;
-    }
-    .intro .in_img{
-        max-width: 100%;
-    }
-    .aside{
-        display: none;
-    }
-    .aside_con{
-        margin-left: 0;
-    }
-    .range_product ul li select{
-        max-width:178px;
-        width: auto;
-        font-size: 12px;
-    }
-    .prdItemList ul li .prd_text{
-        width: 100%;
-        flex-basis: 70%;
-    }
-    .prdItemList ul li .prdinfo{
-        display: none;
-    }
-    .prdItemList ul li .prd_w{
-        margin-right: 10px;
-        width: 100%;
-        flex-basis: 20%;
-        text-align: center;
-    }
-    .prdItemList ul li p{
-        font-size: 15px;
-    }
-}/* max-width:1025px */
-
-@media screen and (max-width:656px){
+/* @media screen and (max-width:656px){
     .range_product ul li.add_remove{
         display: none;
     }
@@ -682,16 +584,13 @@ ul.menu_sub li a::after{
         white-space: nowrap;
         overflow: hidden;
     }
-    .prdItemList ul li .prd_text{
-        padding: 0;
-    }
     .prdItemList ul li .prd_text p.prdbarnd{
         display: none;
     }
     .prdItemList ul li .prd_text p.prdnene{
         font-size: 10px;
-    }
-}/* max-width:656px */
+    } */
+/* }/max-width:656px */ */
 
 
 @media screen and (max-width:1280px){
@@ -842,7 +741,6 @@ ul.menu_sub li a::after{
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    /* justify-content: center; */
     margin-top: 50px;
 }
 .sub_aside{
@@ -858,23 +756,42 @@ ul.menu_sub li a::after{
     display: block;
 }
 .sub_aside .a_top span{
-    font-weight: 700;
-    display: block;
-    padding: 10px;
+    color: #f06c5e;
+    font-weight: 500;
+    display: inline-block;
+    padding: 5px 5px 10px 5px;
+    font-size: 16px;
 }
 .sub_aside>ul>li{
     box-sizing: border-box;
     border-top: 1px solid #e5e5e5;
+    padding: 14px 5px;
 }
 .sub_aside ul li.active a{
     color: #f06c5e;
 }
+.sub_aside ul li:hover a{
+    color: #f06c5e;
+    font-weight: 500;
+}
 .sub_aside>ul>li>a{
-    display: block;
-    padding: 14px 0;
-    z-index: 10;
-    white-space: normal;
-    line-height: 1.4;
+   font-size: 15px;
+}
+
+.sub_aside>ul>li>a.on{
+    position: relative;
+}
+
+.sub_aside>ul>li>a.on::after{
+    content: "";
+    clear: both;
+    position: absolute;
+    width: 21px;
+    height: 22px;
+    right: 0;
+    background: url(../images/spr_com.png) no-repeat;
+    background-position: -458px -182px;
+    opacity: 0.5;
 }
 ul.menu_sub{
     background-color: #f7f7f7;
@@ -910,45 +827,22 @@ ul.menu_sub li a::after{
 .sub_aside ul li a .menu_sub{
     display: none;
 }
-/* .warp_box_pro{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #999;
-    margin-bottom: 20px;
-    padding: 10px 0;
-} */
-/* .warp_box_pro .paren h3{
-    display: block;
-    font-size: 12px;
-    font-weight: 400;
-} */
-/* .range_product{
-    overflow: hidden;
-    padding-top: 10px;
-    margin-right: 10px;
-} */
 .range_product ul{
     display: flex;
     align-items: center;
 }
-/* .range_product ul li{
-    float: left;
-} */
-.range_product ul li select{
-    width: 178px;
-    max-width: 100%;
-    padding: 8px 0;
-    border-radius: 10px;
-    padding: 8px 5px 8px 8px;
-    border: 1px solid #ccc;
-}
-.range_product ul li.add_remove button{
+.range_product .add_remove button{
     border: none;
-    margin: 0 5px;
+    padding: 5px;
+    margin-right: 4px;
 }
-.range_product ul li.add_remove{
-    margin-left: 10px;
+.range_product .add_remove button:nth-child(2){
+    margin-right: 0;
+}
+.range_product .add_remove{
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -967,11 +861,6 @@ ul.menu_sub li a::after{
 
 
 /*button*/
-.prd_add_btn {
-    width: 25px;
-    height: 25px;
-    background: url(../../images/add.jpg);
-}
 .prd_add_btn.add {
     background: url(../../images/add_on.jpg) no-repeat;
 }
@@ -985,9 +874,6 @@ ul.menu_sub li a::after{
 }
 .prdItemList {
     padding: 10px;
-}
-.prdItemList ul{
-    margin: 20px 0; 
 }
 .prdItemList>ul>li{
     display: flex;
@@ -1023,47 +909,28 @@ ul.menu_sub li a::after{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-}
-.prdItemList ul li .prd_text{
-    width: calc(100% - 277px);
-    position: relative;
     margin: 10px;
-    text-overflow: ellipsis;
-    white-space: normal;
-    overflow: hidden;
-    font-weight: 700;
 }
 .prdview{
-    font-size: 14px;
-    line-height: 1.5;
-    padding: 10px 0;
+    padding-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 600;
 }
-.prdnene{
-    padding: 5px 0;
-    font-size: 12px;
-    color: #666;
-    font-weight: 400;
-}
-
 /* 상품 금액부분 시작 */
 .price{
-    width: 20%;
-    max-width: 100px;
     text-align: center;
+    flex: 1 0 100px;
 } 
 .price strong{
     display: inline-block;
-    text-align: center;
     color: #f06c5e;
-    font-weight: 700;
-    font-size: 18px;
-    margin-right: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    padding-right: 5px;
 }
 .price span{
-    color: #000;
-    font-size: 12px;
-    font-weight: 400;
+    color: #111;
     display: inline-block;
 }
 .price_group{
@@ -1077,17 +944,8 @@ ul.menu_sub li a::after{
 
 /* 상품 금액부분 끝 */
 .prdItemList ul li .prdinfo {
-    max-width: 100%;
-    width: 18%;
-}
-.prdItemList ul li .prdinfo p{
-    display: block;
-}
-.prdItemList ul li .prdinfo span{
-    color: #666;
-    display:block;
+    flex: 1 0 100px;
     text-align: center;
-    font-size: 12px;
 }
 .prdItemList ul li .prd_text p.prdbarnd{
     font-size: 12px;
@@ -1192,6 +1050,9 @@ ul.menu_sub li a::after{
 }/* max-width:1205px */
 
 @media screen and (max-width:1280px){
+    .hana_area{
+        padding: 50px 0 0 0;
+    }
     .sub_head_wrap nav ul{
         width: auto;
     }
@@ -1215,8 +1076,8 @@ ul.menu_sub li a::after{
     .sub_container .sub_box_item_b{
        display: none;
     }
-    .sub_container .sub_box_item{
-        max-width: 100%;
+    .case_clo-4>div{
+        flex: 1 0 50%;
     }
     .sub_aside{
         display: none;
@@ -1228,15 +1089,6 @@ ul.menu_sub li a::after{
         max-width:178px;
         width: auto;
         font-size: 12px;
-    }
-    .prdItemList ul li .prd_text{
-        width: 100%;
-        max-width: 360px;
-    }
-
-    .price {
-        max-width: 86px;
-        width: 100%;
     }
     .price strong{
         font-size: 16px;
@@ -1266,7 +1118,7 @@ ul.menu_sub li a::after{
         padding: 20px;
     }
 
-    .range_product ul li.add_remove{
+    .range_product .add_remove{
         display: none;
     }
     .titi_wrap .tit_font h2{
@@ -1292,14 +1144,17 @@ ul.menu_sub li a::after{
     .sub_head_wrap nav ul li {
         display: block;
         width: 100%;
-        padding: 10px;
         border-bottom: 1px solid #efefef;
         box-sizing: border-box;
-        margin-bottom: 5px;
-        margin-left: 15px;  
+        margin-bottom: 5px; 
+        flex: inherit;
     }
     .hanatour .hana_tit h3{
         font-size: 30px;
+    }
+    .sub_head_wrap nav ul li a{
+        padding: 10px;
+        font-size: 13px;
     }
     .hanatour .hana_tit p{
         font-size: 12px;
@@ -1316,24 +1171,10 @@ ul.menu_sub li a::after{
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
     }
-    .prdItemList ul li .wral_p{
-        flex-direction: column;
-        padding: 20px 10px 30px 10px;
-        align-items: initial;
-    }
-    .prdItemList ul li .prd_text{
-        max-width: inherit;
-        width: 100%;
-        margin: 0;
-    }
     .prdItemList ul li .prd_w{
         text-align: left;
         margin-right: 0;
         margin-top: 10px;
-    }
-    .sub_head_wrap nav ul li a{
-        font-size: 12px;
-        padding-left: 10px;
     }
     .prdItemList ul li .prdItem span{
         display: block;
@@ -1344,9 +1185,6 @@ ul.menu_sub li a::after{
         white-space: nowrap;
         overflow: hidden;
         padding: 5px 0;
-    }
-    .prdItemList ul li .prd_text{
-        padding: 0;
     }
     .prdItemList ul li .prd_text p.prdbarnd{
         display: none;
@@ -1362,12 +1200,6 @@ ul.menu_sub li a::after{
         margin-top: 0;
     }
 
-    .price {
-        max-width: inherit;
-        width: 100%;
-        text-align: left;
-        margin-top: 10px;
-    }
 
 }/* max-width:656px */
 
@@ -1584,18 +1416,18 @@ ul.menu_sub li a::after{
 .aside ul li a .menu_sub{
     display: none;
 }
-.range_product ul li select{
+
+.range_product select{
     width: 178px;
     max-width: 100%;
-    padding: 8px 0;
     border-radius: 10px;
     padding: 8px 5px 8px 8px;
     border: 1px solid #ccc;
 }
-.range_product ul li.add_remove button{
+/*button*/
+.add_remove button{
     border: none;
 }
-/*button*/
 .prd_add_btn {
     width: 25px;
     height: 25px;
@@ -1612,9 +1444,6 @@ ul.menu_sub li a::after{
 .prd_remove_btn.add {
     background: url(../../images/remove_on.jpg)no-repeat;
 }
-.prdItemList ul{
-    margin-top: 20px;
-}
 .prdItemList>ul>li{
     display: flex;
     justify-content: space-between;
@@ -1627,10 +1456,6 @@ ul.menu_sub li a::after{
     box-shadow: 0 2px 24px rgb(0 0 0 / 10%);
     margin-bottom: 30px;
 }
-.prdItemList ul li .prdItem {
-    max-width: 277px;
-    width: 100%;
-}
 .prdItemList ul li .prdItem span{
     display: inline-block;
 }
@@ -1640,31 +1465,14 @@ ul.menu_sub li a::after{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-.prdItemList ul li p{
-    font-size: 16px;
-    font-weight: 700;
-    color: #111;
-    line-height: 1.5;
-}
-.prdItemList ul li .wral_p{
-    background-color: #fff;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 .prdItemList ul li .prd_text{
-    width: calc(100% - 277px);
     position: relative;
-    padding: 0 10px;
     text-overflow: ellipsis;
     white-space: normal;
     overflow: hidden;
-    font-weight: 700;
+    flex: 1 0 302px;
 }
 .prdItemList ul li .prd_text p.prdnene{
-    margin-top: 5px;
-    font-size: 12px;
     color: #666;
 }
 .prdItemList ul li .prd_w{
@@ -1678,18 +1486,15 @@ ul.menu_sub li a::after{
     font-weight: 700;
     font-size: 15px;
 }
-.prdItemList ul li .prdinfo {
-    max-width: 100%;
-    width: 18%;
-}
 .prdItemList ul li .prdinfo p{
     display: block;
 }
 .prdItemList ul li .prdinfo span{
-    color: #666;
-    display:block;
-    text-align: center;
-    font-size: 12px;
+    color: #333;
+    display: inline-block;
+}
+.prdItemList ul li .prdinfo span + span{
+    padding-top: 5px;
 }
 .prdItemList ul li .prd_text p.prdbarnd{
     font-size: 12px;
@@ -1772,11 +1577,6 @@ ul.menu_sub li a::after{
         width: 100%;
         margin-bottom: 30px;
     }
-    .intro_a{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
     .intro_a span.in_ti{
         display: none;
     }
@@ -1793,59 +1593,7 @@ ul.menu_sub li a::after{
 
 }/* max-width:1205px */
 
-@media screen and (max-width:1025px){
-    .wiw_cont nav ul{
-        width: auto;
-    }
-    .intro_a span.in_ti{
-        display: none;
-    }
-    .intro_a a{
-        font-size: 12px;
-    }
-    .intro_a{
-        display: none;
-    }
-    .intro_a a{
-        font-size: 14px;
-        border-bottom: 2px solid #999;
-    }
-    .intro .in_img_b{
-       display: none;
-    }
-    .intro .in_img{
-        max-width: 100%;
-    }
-    .aside{
-        display: none;
-    }
-    .aside_con{
-        margin-left: 0;
-    }
-    .range_product ul li select{
-        max-width:178px;
-        width: auto;
-        font-size: 12px;
-    }
-    .prdItemList ul li .prd_text{
-        width: 100%;
-        flex-basis: 70%;
-    }
-    .prdItemList ul li .prdinfo{
-        display: none;
-    }
-    .prdItemList ul li .prd_w{
-        margin-right: 10px;
-        width: 100%;
-        flex-basis: 20%;
-        text-align: center;
-    }
-    .prdItemList ul li p{
-        font-size: 15px;
-    }
-}/* max-width:1025px */
-
-@media screen and (max-width:656px){
+@media screen and (max-width:768px){
     .range_product ul li.add_remove{
         display: none;
     }
@@ -1897,6 +1645,7 @@ ul.menu_sub li a::after{
     .prdItemList ul li .wral_p{
         flex-direction: column;
         padding: 10px 5px 10px 5px;
+        align-items: initial;
     }
     .prdItemList ul li .prd_w{
         text-align: left;
@@ -1917,14 +1666,23 @@ ul.menu_sub li a::after{
         white-space: nowrap;
         overflow: hidden;
     }
-    .prdItemList ul li .prd_text{
-        padding: 0;
-    }
     .prdItemList ul li .prd_text p.prdbarnd{
         display: none;
     }
     .prdItemList ul li .prd_text p.prdnene{
         font-size: 10px;
+    }
+
+    .prdItemList ul li .prd_text{
+        flex: 1;
+    }
+    .price{
+        flex: 1;
+        margin-top: 10px;
+    }
+    .price span{
+        display: block;
+        text-align: left;
     }
 }/* max-width:656px */
 
