@@ -141,7 +141,7 @@ function Swiper_event () {
                 },
             375:{
                 slidesPerView: 1,
-                spaceBetween: 10,
+                spaceBetween: 5,
                 centeredSlides: true,
                 },
         }
