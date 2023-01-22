@@ -8,16 +8,20 @@ body {
 } */
 .prettyprint.lang_html {
     line-height: 1.4;
+    padding:10px 20px;
 }
-.prettyprint.lang_html span:first-child.pln {
+pre .pln {
+    white-space:normal;
+}
+/* .prettyprint.lang_html span:first-child.pln {
     display: none;
 }
 .prettyprint.lang_html br +span.pln {
     display: none;
-}
-.pln +.tag {
+} */
+/* .pln +.tag {
     margin-right: 5px;
-}
+} */
 .guide_wrap {
     display: flex;
 }
