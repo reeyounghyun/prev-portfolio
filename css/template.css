@@ -143,7 +143,7 @@ ul.menu_sub li a::after {
 }
 .paren .paren_num {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     color: #f06c5e;
     padding-left: 2px;
 }
@@ -265,22 +265,131 @@ ul.menu_sub li a::after {
         color: #666;
         padding: 10px;
     }
-
-    /* 상품 레이아웃 */
     .case_clo-4 {
         display: flex;
         flex-wrap: wrap;
     }
-
     .case_clo-4>div {
         flex: 1 0 0%;
     }
 
-    /* 상품 레이아웃 */
-
     /* 상품 스타일 */
+
+    /* 베스트 아이콘 시작 */
+    .product-card .sorting-badge[data-v-4816c20e] {
+        position: absolute;
+        top: 21px;
+        left: -8px;
+        height: 38px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 4;
+    }
+    .sorting-badge[data-v-f4242480]:before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 16px;
+        background: #f06c5e;
+        -webkit-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+    }
+
+    .sorting-badge[data-v-f4242480]:before {
+        top: 12px;
+        right: 1px;
+        border-radius: 0 5px 0 0;
+        -webkit-transform: skewX(-18deg);
+        transform: skewX(-18deg);
+    }
+
+    .sorting-badge .inner[data-v-f4242480] {
+        z-index: 2;
+        position: relative;
+        display: inline-block;
+        min-width: 41px;
+        height: 28px;
+        padding: 0 9px 0 12px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-radius: 5px 0 0 0;
+        background: #f06c5e;
+        color: #fff;
+        line-height: 28px;
+        font-size: 12px;
+    }
+
+    .sorting-badge[data-v-f4242480]:after, .sorting-badge[data-v-f4242480]:before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 16px;
+        background: #f06c5e;
+        -webkit-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+    }
+
+    .sorting-badge[data-v-f4242480]:after {
+        top: 24px;
+        right: -4px;
+        border-radius: 0 0 5px 0;
+        -webkit-transform: skewX(18deg);
+        transform: skewX(18deg);
+    }
+
+    .sorting-badge[data-v-f4242480] {
+        position: relative;
+        display: inline-block;
+    }
+
+    .sorting-badge .inner[data-v-f4242480]:after, .sorting-badge .inner[data-v-f4242480]:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 8px;
+        border-radius: 4px 0 0 5px;
+    }
+    .sorting-badge .inner[data-v-f4242480]:before {
+        top: 0;
+        height: 38px;
+        background: #f06c5e;
+    }
+
+    .sorting-badge .inner[data-v-f4242480]:after {
+        top: 28px;
+        height: 10px;
+        background: #a61e0f;
+    }
+
+    .sorting-badge .inner[data-v-f4242480]:after, .sorting-badge .inner[data-v-f4242480]:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 8px;
+        border-radius: 4px 0 0 5px;
+    }
+
+    .sorting-badge .inner[data-v-f4242480] {
+        z-index: 2;
+        position: relative;
+        display: inline-block;
+        min-width: 41px;
+        height: 28px;
+        padding: 0 9px 0 12px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-radius: 5px 0 0 0;
+        background: #f06c5e;
+        color: #fff;
+        line-height: 28px;
+        font-size: 12px;
+    }
+    
+    /* 베스트 아이콘 끝 */
+
     .sub_btn_xl {
-        margin-top: 20px;
+        display: inline-block;
+        border-bottom: 1.5px solid #999;
     }
 
     .sub_container_titel {
@@ -294,7 +403,7 @@ ul.menu_sub li a::after {
         border-radius: 20px;
         padding: 6px 10px;
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     .sub_box_item {
@@ -323,7 +432,7 @@ ul.menu_sub li a::after {
 
     .sub_aside {
         width: 100%;
-        max-width: 200px;
+        max-width: 250px;
         margin-top: 25.5px;
     }
 
@@ -339,7 +448,7 @@ ul.menu_sub li a::after {
 
     .sub_aside .a_top span {
         color: #f06c5e;
-        font-weight: 500;
+        font-weight: 600;
         display: inline-block;
         padding: 5px 5px 10px 5px;
         font-size: 16px;
@@ -451,7 +560,7 @@ ul.menu_sub li a::after {
 
     .product_titel {
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 1.3;
     }
 
@@ -467,6 +576,7 @@ ul.menu_sub li a::after {
         width: 100%;
         display: inline-block;
         margin-right: 10px;
+        position: relative;
     }
 
     .prd_img {
@@ -494,7 +604,7 @@ ul.menu_sub li a::after {
     .prdview {
         padding-bottom: 20px;
         font-size: 16px;
-        line-height: 1.3;
+        line-height: 1.5;
         font-weight: 600;
     }
 
@@ -611,33 +721,25 @@ ul.menu_sub li a::after {
     .paginate_list a.this {
         color: #f06c5e;
     }
-    .sub_box_item_title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
 
-        width: 100%;
-        margin-bottom: 30px;
+    .sub_box_item_title>div{
+        margin-bottom: 16px;
     }
-    .sub_container_bg .sub_box_item_title h4 {
-        font-size: 15px;
+    .intro_samil_titel h4 {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.2;
     }
-    .sub_container_bg .sub_box_item_title a {
-        font-size: 14px;
-        border-bottom: 2px solid #999;
+    .sub_box_item_title a {
+        font-size: 20px;
+        padding-bottom: 5px;
+        font-weight: 600;
+        color: #999;
     }
-    .sub_container_bg .sub_box_item_title h4 br {
-        display: none;
-    }
-
     .sub_head_wrap nav ul {
         width: auto;
     }
 
-    .sub_container_bg .sub_box_item_title a {
-        font-size: 14px;
-        border-bottom: 2px solid #999;
-    }
     .range_product ul li select {
         max-width: 178px;
         width: auto;
@@ -718,6 +820,9 @@ ul.menu_sub li a::after {
 
     .prdItemList ul li .prdItem span {
         display: inline-block;
+        position: absolute;
+        top: 12px;
+        left: -3px;
     }
     .prdItemList ul li .prdItem span img {
         width: 100%;
@@ -784,9 +889,7 @@ ul.menu_sub li a::after {
     .sub_aside {
         display: none;
     }
-    .prdItemList ul li .prdinfo span {
-        display: none;
-    }
+
     .prdItemList ul li .prd_text{
         flex: 1 0 230px;
     }
@@ -798,14 +901,9 @@ ul.menu_sub li a::after {
         display: none
         ;
     }
-}
-
-
-@media screen and (max-width:768px) {
-    .aside_con{
-        padding: 0;
+    .prdItemList>ul>li{
+        flex-direction: column;
     }
-
     .case_clo-4>div {
         flex: 1 0 50%;
     }
@@ -813,6 +911,21 @@ ul.menu_sub li a::after {
     .prdItemList {
         padding: 20px;
     }
+    .prdItemList ul li .prdItem{
+        max-width:inherit;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    .prdItemList ul li .prdinfo span {
+        display: none;
+    }
+    .aside_con{
+        padding: 0;
+    }
+
 
     .range_product .add_remove {
         display: none;
@@ -951,9 +1064,7 @@ ul.menu_sub li a::after {
     .subtitle{
         font-size: 12px;
     }
-    .prdItemList>ul>li{
-        flex-direction: column;
-    }
+
     .prdItemList ul li .prdItem{
         max-width: 100%;
     }
