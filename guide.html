@@ -27,147 +27,161 @@
             $('.menu_wrap .left_bar>ul>li').on('mouseout',function(){
                 $('.menu_wrap .left_bar>ul>li>.in_sub_m').removeClass('on')
             })
+
+            // 이동식 클릭 이벤트
+            $('.guide_wrap .lnb_list li a').click(function(){
+                var target_this = $(this)
+                var test = target_this.offset()
+                console.log(test);
+            })
         })
     </script>
 </head>
 
 <body>
-    <h1>하나투어 웹퍼블리싱 가이드</h1>
-    <h1><a href="./index.html">메인페이지 이동</a></h1>
     <div class="guide_wrap">
         <div class="guide_lnb">
+            <h1>하나투어 퍼블리싱 가이드</h1>
             <h2 class="lnb_title">퍼블리싱 메뉴</h2>
             <ul class="lnb_list">
-                <li><a href="#">프로젝트세팅</a></li>
-                <li><a href="#">마크업가이드</a></li>
-                <li><a href="#">테스트3</a></li>
-                <li><a href="#">테스트4</a></li>
+                <li><a href="#tit-1">프로젝트 환경</a></li>
+                <li><a href="#tit-2">프로젝트 파일/규칙</a></li>
+                <li><a href="#tit-3">레이아웃 구조</a></li>
+                <li><a href="#tit-4">본문 타이틀</a></li>
+                <li><a href="#tit-5">메뉴</a></li>
+                <li><a href="#tit-6">슬라이드</a></li>
+                <li><a href="#tit-7">탭 메뉴</a></li>
+                <li><a href="#tit-8">달력</a></li>
             </ul>
         </div>
         <div class="guide_area">
-            <div class="project_settings">
-                <h2 class="project_title">프로젝트 환경</h2>
-                <div class="table_area">
-                    <table>
-                        <caption></caption>
-                        <colgroup>
-                            <col style="width: 200px;">
-                            <col style="width: 750px;">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>문서 및 버전</th>
-                                <td>HTML5, CSS3</td>
-                            </tr>
-                            <tr>
-                                <th>인코딩</th>
-                                <td>UTF_8</td> 
-                            </tr>
-                            <tr>
-                                <th>웹 유형</th>
-                                <td>PC,Mobile</td>
-                            </tr>
-                            <tr>
-                                <th>pc 웹 호환성</th>
-                                <td>Chrome, safari </td>
-                            </tr>
-                            <tr>
-                                <th>mobile 웹 호환성</th>
-                                <td>안드로이드, ios 사파리, 크롬, 삼성인터넷</td>
-                            </tr>
-                            <tr>
-                                <th>웹 접근성</th>
-                                <td>none</td>
-                            </tr>
-                            <tr>
-                                <th>해상도 기준&#47;디자인 너비</th>
-                                <td>1920px&#47;1200px</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="project_settings">
-                <h2 class="project_title">프로젝트 파일&#47;규칙</h2>
-                <div class="table_area">
-                    <table>
-                        <caption></caption>
-                        <colgroup>
-                            <col style="width: 250px;">
-                            <col style="width: 550px;">
-                            <col style="width: 550px;">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th style="text-align: center;">분류파일</th>
-                                <th style="text-align: center;">파일이름</th>
-                                <th style="text-align: center;">파일설명</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>fonts</th>
-                                <td>https://image.hanatour.com/usr/static/fonts/hnt/OTF/JourneyItself-Regular.otf
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th>css</th>
-                                <td>
-                                    common <br>
-                                    reset <br>
-                                    style <br>
-                                    guide_style <br>
-                                    template <br>
-                                </td> 
-                                <td>
-                                    common &#45;공통 <br>
-                                    reset &#45;초기화 <br>
-                                    style &#45;메인 <br>
-                                    guide_style &#45;가이드 <br>
-                                    template &#45;서브 <br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>js</th>
-                                <td>
-                                    script <br>
-                                    jquery-3.6.0.min <br>
-                                    jquery-ui <br>
-                                </td>
-                                <td>
-                                    script &#45;공통 <br>
-                                    jquery-3.6.0.min &#45;제이쿼리 플러그인 <br>
-                                    jquery-ui &#45;제이쿼리 플러그인 <br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>html</th>
-                                <td>
-                                    guide <br>
-                                    index <br>
-                                    template <br>
-                                </td>
-                                <td>
-                                    guide &#45;가이드 <br>
-                                    index &#45;메인 <br>
-                                    template &#45;서브 <br>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
             <div class="markup_guide">
                 <div class="guide_item">
                     <div class="guide_title">
-                        <h2 class="title">레이아웃구조</h2>
+                        <h2 class="title" id="tit-1">프로젝트 환경</h2>
+                    </div>
+                    <div class="table_area">
+                        <table>
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width: 200px;">
+                                <col style="width: 750px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>문서 및 버전</th>
+                                    <td>HTML5, CSS3</td>
+                                </tr>
+                                <tr>
+                                    <th>인코딩</th>
+                                    <td>UTF_8</td> 
+                                </tr>
+                                <tr>
+                                    <th>웹 유형</th>
+                                    <td>PC,Mobile</td>
+                                </tr>
+                                <tr>
+                                    <th>pc 웹 호환성</th>
+                                    <td>Chrome, safari </td>
+                                </tr>
+                                <tr>
+                                    <th>mobile 웹 호환성</th>
+                                    <td>안드로이드, ios 사파리, 크롬, 삼성인터넷</td>
+                                </tr>
+                                <tr>
+                                    <th>웹 접근성</th>
+                                    <td>none</td>
+                                </tr>
+                                <tr>
+                                    <th>해상도 기준&#47;디자인 너비</th>
+                                    <td>1920px&#47;1200px</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="guide_item">
+                    <div class="guide_title" id="tit-2">
+                        <h2 class="title">프로젝트 파일&#47;규칙</h2>
+                    </div>
+                    <div class="table_area">
+                        <table>
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width: 250px;">
+                                <col style="width: 550px;">
+                                <col style="width: 550px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th style="text-align: center;">분류파일</th>
+                                    <th style="text-align: center;">파일이름</th>
+                                    <th style="text-align: center;">파일설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>fonts</th>
+                                    <td>https://image.hanatour.com/usr/static/fonts/hnt/OTF/JourneyItself-Regular.otf
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>css</th>
+                                    <td>
+                                        common <br>
+                                        reset <br>
+                                        style <br>
+                                        guide_style <br>
+                                        template <br>
+                                    </td> 
+                                    <td>
+                                        common &#45;공통 <br>
+                                        reset &#45;초기화 <br>
+                                        style &#45;메인 <br>
+                                        guide_style &#45;가이드 <br>
+                                        template &#45;서브 <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>js</th>
+                                    <td>
+                                        script <br>
+                                        jquery-3.6.0.min <br>
+                                        jquery-ui <br>
+                                    </td>
+                                    <td>
+                                        script &#45;공통 <br>
+                                        jquery-3.6.0.min &#45;제이쿼리 플러그인 <br>
+                                        jquery-ui &#45;제이쿼리 플러그인 <br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>html</th>
+                                    <td>
+                                        guide <br>
+                                        index <br>
+                                        template <br>
+                                    </td>
+                                    <td>
+                                        guide &#45;가이드 <br>
+                                        index &#45;메인 <br>
+                                        template &#45;서브 <br>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="guide_item">
+                    <div class="guide_title" id="tit-3">
+                        <h2 class="title">레이아웃 구조</h2>
                     </div>
                     <!-- <div class="guide-result"></div> -->
                     <div class="guide_content">
@@ -181,7 +195,7 @@
                     </div>
                 </div>
                 <div class="guide_item">
-                    <div class="guide_title">
+                    <div class="guide_title" id="tit-4">
                         <h2 class="title">본문 타이틀</h2>
                     </div>
                     <div class="guide_result guide_height">
@@ -201,7 +215,7 @@
 
                 <div class="guide_item">
                     <div class="guide_title">
-                        <h2 class="title">메뉴</h2>
+                        <h2 class="title" id="tit-5">메뉴</h2>
                     </div>
                     <div class="guide_result">
                         <div class="gnb">
@@ -281,7 +295,7 @@
 
                 <div class="guide_item">
                     <div class="guide_title">
-                        <h2 class="title">슬라이드</h2>
+                        <h2 class="title" id="tit-6">슬라이드</h2>
                     </div>
                     <div class="guide_result">
                             <div class="wrapper">
@@ -378,7 +392,7 @@
                 </div>
                 <div class="guide_item">
                     <div class="guide_title">
-                        <h2 class="title">탭 메뉴</h2>
+                        <h2 class="title" id="tit-7">탭 메뉴</h2>
                     </div>
                     <div class="guide_result">
                         <div class="main_le">
@@ -450,25 +464,12 @@
                 </div>
                 <div class="guide_item">
                     <div class="guide_title">
-                        <h2 class="title">달력</h2>
+                        <h2 class="title" id="tit-8">달력</h2>
                     </div>
                     <div class="guide_result">
                         <div class="le_box">
                             <ul>
                                 <li>
-                                    <div class="bnt_le">
-                                        <span> <i></i> 인천/김포 출발</span>
-                                        <ul class="btn_a">
-                                            <li>서울(인천/김포)</li>
-                                            <li>부산</li>
-                                            <li>대구</li>
-                                            <li>청주</li>
-                                            <li>광주(무안)</li>
-                                            <li>제주</li>
-                                            <li>양양</li>
-                                            <li>강원</li>
-                                        </ul>
-                                    </div>
                                     <div class="bnt_ri">
                                         <div class="calendar_button">
                                             <span class=""><i></i> 여행시작일 선택</span>
