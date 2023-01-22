@@ -767,10 +767,14 @@
         align-items:center;
         overflow-x: scroll;
         /* padding: 16px 0; */
+        padding-bottom: 15px;
     }
     .hana_rules ul li{
         width: 100%;
         flex: 1 0 240px;
+    }
+    .hana_rules ul li:first-child{
+        margin-left: 15px;
     }
     .hana_rules ul li + li{
         margin-left: 15px;
@@ -1171,9 +1175,21 @@
     }
     .package_wrap ul {
         padding: 10px 0 10px 0px;
+        overflow-x: auto;
+        margin: 0 -15px;
+    }
+    .package_wrap ul li {
+        flex:0 0 60px;
+    }
+    .package_wrap ul li:first-child {
+        margin-left: 15px;
+    }
+    .package_wrap ul li:last-child {
+        margin-right: 15px;
     }
     .package_wrap ul li a span {
         font-size: 12px;
+        white-space: nowrap;
     }
     .package_wrap img {
         width: 40px;
@@ -1190,6 +1206,7 @@
     }
     .service_wrap .p_reface {
         font-size: 12px;
+        white-space: nowrap;
     }
     .timesale_box span.timesale_item {
         font-size: 18px;
@@ -1652,6 +1669,10 @@
         width: 1200px;
         max-width: 100%;
         margin: 0 auto ;
+    }
+    .content.content_type {
+        /* margin:0 -7px; */
+        overflow:visible;
     }
     .footer_box{
         padding: 0 15px;
