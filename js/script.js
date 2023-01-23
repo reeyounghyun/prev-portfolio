@@ -13,6 +13,31 @@ function common_load(){
         menu_hover_event() // 메뉴 호버 이벤트
         banner_close_event() // 상단 배너 닫기 이벤트
         allmenu() // allmenu 이벤트
+
+        // 전체메뉴 클릭 이벤트
+        $(".mb_right_btn").click(function(){
+            console.log('들어옴');
+            $(".quick_menu").toggleClass("acitve");
+            $("body").css({
+                "overflow":"hidden",
+                "position":"fixed"
+            })
+        });
+        
+        // 모바일 메뉴 취소버튼    
+        $(".quick_menu .mobile_close").click(function(){
+            if($(".quick_menu").hasClass("acitve")) {
+            $(".quick_menu").removeClass("acitve");
+            $("this").removeClass("acitve");
+            }else{
+                $(".quick_menu").addClass("acitve");
+                $(this).addClass("acitve");
+            }
+            $("body").css({
+                "overflow":"visible",
+                "position":"static"
+            })
+        });
     })
     $('.footer').load('footer.html .footer .footer_inner',function(){
         // 공지사항
@@ -62,7 +87,7 @@ function Swiper_event () {
 
     });
     // 비쥬얼 슬라이드 배경
-    visual_swiper.on('slideChange', function(e) {
+    visual_swiper.on('slideChange', function() {
         var current_slide = visual_swiper.activeIndex
         if (current_slide == "1") {
             $(".wrapper").css("background-color", "#E2DAF2");
@@ -79,9 +104,7 @@ function Swiper_event () {
         } else {
             $(".wrapper").css("background-color", "#F1E6CC");
         }
-
     });
-
     
     // 비쥬얼 슬라이드 컨트롤러
     $('.btn_play').click(function() {
@@ -94,10 +117,6 @@ function Swiper_event () {
             $(this).addClass('stop')
         }
     });
-    
-    // $('.Stop').on('click', function() {
-    //     swiper.autoplay.start();
-    // });
 
     // 실시간 검색 순위
     var swiper = new Swiper(".rank_list", {
@@ -376,34 +395,13 @@ function btnClick_event() {
         }
 
     });
-
-    // 모바일 메뉴 취소버튼
-    $(".mb_right_btn>img").click(function(){
-        $(".quick_menu").toggleClass("acitve");
-        $("body").css({
-            "overflow":"hidden",
-            "position":"fixed"
-        })
-    });
-    
-    $(".quick_menu .mobile_close").click(function(){
-        if($(".quick_menu").hasClass("acitve")) {
-         $(".quick_menu").removeClass("acitve");
-         $("this").removeClass("acitve");
-         }else{
-             $(".quick_menu").addClass("acitve");
-             $(this).addClass("acitve");
-         }
-         $("body").css({
-            "overflow":"visible",
-            "position":"static"
-         })
-     });
 }
 
 // allmenu 이벤트
 function allmenu() {
+    console.log($('.all_menu .btn_all_menu'));
     $('.all_menu .btn_all_menu').click(function(){
+        console.log('들어옴');
         $(this).siblings('.all_sam').toggleClass('on')
     })
     $('.all_menu .all_sam .btn_close').click(function(){

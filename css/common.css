@@ -564,6 +564,9 @@
         text-align: center
     }
     .mb_gnb_in .mb_right_btn{
+        appearance: none;
+        border:0;
+        background-color: transparent;
         width: 50px;
         opacity: 0.8;
     }
@@ -1152,10 +1155,14 @@
     }
 
     .main_slider .swiper-button-next{
-        top: 48%;
+        top: 49%;
     }
     .main_slider .swiper-button-prev{
-        top: 48%;
+        top: 49%;
+    }
+
+    .main_slider .btn_play {
+        bottom: 80px!important;;
     }
 
     .mb_nav_bottom{

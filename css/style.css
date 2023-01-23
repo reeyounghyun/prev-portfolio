@@ -723,7 +723,7 @@
     background-repeat: no-repeat;
     bottom: 0;
     left: 0;
-    transform: translate(141px, 255px);
+    transform: translate(141px, 248px);
     width: 16px;
     height: 16px;
     position: absolute;
@@ -733,13 +733,16 @@
     background-repeat: no-repeat;
     left:0;  
     bottom: 0;
-    transform: translate(107px, 255px);
+    transform: translate(107px, 248px);
     z-index: 119;
     width: 16px;
     height: 19px;
     position: absolute;
 } 
 .main_slider .btn_play{
+    appearance: none;
+    border:0;
+    background-color: transparent;
     background-image: url(../images/stop_paly_icon.png);
     background-color: #fff;
     background-position: 4px 27px;
@@ -749,7 +752,7 @@
     border-radius: 50%;
     position: absolute;
     left: 180px;
-    bottom: 49px;
+    bottom: 55px;
     z-index: 10;
     transition: all 0s;
 } 
@@ -2476,4 +2479,10 @@ border-radius: 38px;
 -webkit-animation: animatedgradient 5s alternate infinite;
         animation: animatedgradient 5s alternate infinite;
 background-size: 300% 300%;
+}
+
+@media screen and (max-width:767px) {
+    .main_slider .btn_play {
+        display: none;
+    }
 }
