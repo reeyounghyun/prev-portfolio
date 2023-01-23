@@ -794,7 +794,7 @@
 }
 .best_inner>ul li+li{
     flex: 1;
-    /* margin-left: 24px; */
+    margin-left: 24px;
 }
 .best_inner>ul li img{
     height: 210px;
@@ -949,7 +949,7 @@
 }
  .tr_off_inner .item_wrap{
     position: relative;
-    /* padding: 0 10px; */
+    padding: 0 10px;
 }
 .tr_off_inner .off_slide a{
     display: block;
@@ -1520,7 +1520,6 @@
     }
     .best_inner{
         margin-top: 20px;
-        /* margin:20px -15px 0; */
         background: #fff;
     }
     /* .visual_wrap{
@@ -1617,8 +1616,6 @@
     .Korea_travel{
         margin-top: 30px;
     }
-
-
     .best_tit h4 {
         display: none;
         font-size: 18px;
@@ -1627,13 +1624,14 @@
     .best_inner ul li{
         border-radius: 20px;
         box-shadow: 0 3px 13px 0 rgb(0 0 0 / 10%);
-        margin: 0 7px 20px;
+        margin-bottom: 20px;
+    }
+    .best_inner>ul li+li{
+        margin-left: 0;
     }
     .best_inner ul li:last-child{
         margin-bottom: 0;
     }
-
-
     .best_inner ul li img {
         height: 100%;
         width: 100%;
@@ -1658,7 +1656,7 @@
         margin: 0 -15px;
     }
     .time_wrap .time_inner{
-        padding: 20px 15px;
+        padding: 20px;
     }
     .time_wrap .time_inner .timesale_box{
         padding: 20px 0;
@@ -1727,7 +1725,6 @@
     .best_inner>ul{
         flex-direction: column;
         /* margin: 20px; */
-        margin:0 -7px;
     }
     .Korea_travel ul{
         flex-direction: column;
@@ -1811,7 +1808,7 @@
         display: none;
     }
     .tr_off_inner .item_wrap {
-        /* padding: 0 20px; */
+        padding: 0 20px;
     }
     .tr_off_inner .item_wrap .swiper-slide{
         max-width: auto;
