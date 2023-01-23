@@ -1251,6 +1251,10 @@
 .submain_inner ul li a{
     display: block;
     width: 100%;
+
+
+
+
     height: 100%;
 }
 .submain_inner ul li .video{
@@ -1593,22 +1597,27 @@
         text-align: left;
         font-size: 20px;
     }
+
     .Korea_travel .item_text{
         text-align: left;
+    }
+    .Korea_travel ul li .image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .Korea_travel img{
         border-radius: 20px 20px 0 0;
         width: 100%;
-        height: auto;
-        min-height: 300px;
+        height: 210px;
         object-fit: cover;
     }
     .Korea_travel ul li:nth-child(3) img{
-        border-radius: 20px 20px 0 0;
         width: 100%;
-        height: inherit;
+        height: 210px;
         object-fit: cover;
-    }
+        border-radius: 20px 20px 0 0;
+    } 
     .submain{
         display: none;
     }
@@ -1641,7 +1650,9 @@
     .best_inner ul li{
         border-radius: 20px;
         box-shadow: 0 3px 13px 0 rgb(0 0 0 / 10%);
-        margin-bottom: 20px;
+        margin: 0 0 20px 0;
+        flex: 1;
+        width: 100%;
     }
     .best_inner>ul li+li{
         margin-left: 0;
@@ -1649,8 +1660,8 @@
     .best_inner ul li:last-child{
         margin-bottom: 0;
     }
-    .best_inner ul li img {
-        height: 100%;
+    .best_inner>ul li .image img{
+      
         width: 100%;
         border-radius: 20px 20px 0 0;
         object-fit: cover;
@@ -1663,6 +1674,7 @@
     }
     .offer_text{
         padding: 20px 20px 40px 20px;
+        position: relative;
     }
     .inner_tab{
         display: none;
@@ -1770,11 +1782,13 @@
     }
     .best_travel .best_item{
         background: url(../images/best_travel_img01.jpg) no-repeat;
-        width: 240px;
         height: 240px;
         background-size: cover;
         border-radius: 20px;
-        flex: 1 0 240px;
+        flex: 1 0 auto;
+    }
+    .best_travel .best_item:nth-child(1){
+        margin-left: 15px;
     }
     .best_travel .best_item:nth-child(2){
         background: url(../images/best_travel_img02.jpg) no-repeat;
@@ -1797,7 +1811,6 @@
         display: block;
         width: 100%;
         height: 100%;
-        border-radius: 20px;
     }
     .best_travel .best_item .best_link::after{
         content: "";

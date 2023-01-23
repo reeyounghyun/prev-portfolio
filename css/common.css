@@ -1234,14 +1234,11 @@
     .time_wrap .time_inner .timesale_box .timesale_btn .timesale_wrap {
         font-size: 14px;
     }
-    .offer_text {
-        padding: 12px 15px 20px 15px;
-    }
     .mb_offer_text {
         padding: 12px 15px 20px 15px;
         position: relative;
     }
-    .best_inner ul li .mb_offer_text::after{
+    .mb_offer_text::after{
         content: "HOTEL";
         clear: both;
         position: absolute;
@@ -1264,7 +1261,6 @@
     .best_inner ul li:nth-child(4) .mb_offer_text::after{
         background:#70a265;
     }
-
     .banner_slider_mb{
         margin: 0 -15px;
     }
