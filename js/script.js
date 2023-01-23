@@ -63,18 +63,18 @@ function Swiper_event () {
     });
     // 비쥬얼 슬라이드 배경
     visual_swiper.on('slideChange', function(e) {
-        console.log(swiper.activeIndex);
-        if (swiper.activeIndex == "0") {
+        var current_slide = visual_swiper.activeIndex
+        if (current_slide == "1") {
             $(".wrapper").css("background-color", "#E2DAF2");
-        } else if (swiper.activeIndex == "1") {
+        } else if (current_slide == "2") {
             $(".wrapper").css("background-color", "#E4EFD0");
-        } else if (swiper.activeIndex == "2") {
+        } else if (current_slide == "3") {
             $(".wrapper").css("background-color", "#F1E6CC");
-        } else if (swiper.activeIndex == "3") {
+        } else if (current_slide == "4") {
             $(".wrapper").css("background-color", "#D5EAFD");
-        } else if (swiper.activeIndex == "4") {
+        } else if (current_slide == "5") {
             $(".wrapper").css("background-color", "#E2DAF2");
-        } else if (swiper.activeIndex == "5") {
+        } else if (current_slide == "6") {
             $(".wrapper").css("background-color", "#E4EFD0");
         } else {
             $(".wrapper").css("background-color", "#F1E6CC");
