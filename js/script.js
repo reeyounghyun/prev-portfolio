@@ -195,7 +195,7 @@ function aside_event() {
 function banner_close_event() {
     // 상단 배너 닫기 이벤트
     $(".list_close").click(function(){
-        $(".banner_wrap").css("display",'none')
+        $(".banner_wrap").slideUp()
     });
 }
 

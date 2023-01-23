@@ -34,6 +34,7 @@
 /* banner_wrap stert */
 .banner_wrap{
     background-color: #fef2f4;
+    transition: all 0.1s;
 }
 .banner_wrap .banner_inner{
     position: relative;
