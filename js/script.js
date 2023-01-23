@@ -15,14 +15,35 @@ function common_load(){
         allmenu() // allmenu 이벤트
     })
     $('.footer').load('footer.html .footer .footer_inner',function(){
-        Swiper_event () // 슬라이드 이벤트
-    })
+        // 공지사항
+        var swiper = new Swiper(".notice", {
+            direction: 'vertical',   
+            loop: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },
+        });
+
+        // footer 슬라이드
+        var swiper = new Swiper(".footer_swiper", {
+            slidesPerView:3,
+            slidesPerGroup:3,
+            loop: true,
+            navigation: {
+                nextEl: ".next-footer",
+                prevEl: ".prev-footer",
+            },
+            });
+        })
 }
 
 // 슬라이드 이벤트
 function Swiper_event () {
     // 비쥬얼 슬라이드
-    var swiper = new Swiper(".color_slide", {
+    var visual_swiper = new Swiper(".color_slide", {
         spaceBetween: 30,
         centeredSlides: true,
         loop:true,
@@ -41,7 +62,8 @@ function Swiper_event () {
 
     });
     // 비쥬얼 슬라이드 배경
-    swiper.on('slideChange', function(e) {
+    visual_swiper.on('slideChange', function(e) {
+        console.log(swiper.activeIndex);
         if (swiper.activeIndex == "0") {
             $(".wrapper").css("background-color", "#E2DAF2");
         } else if (swiper.activeIndex == "1") {
@@ -62,12 +84,20 @@ function Swiper_event () {
 
     
     // 비쥬얼 슬라이드 컨트롤러
-    $('.Start').on('click', function() {
-        swiper.autoplay.stop();
+    $('.btn_play').click(function() {
+        var state = $(this).hasClass('stop')
+        if (state) {
+            visual_swiper.autoplay.start();
+            $(this).removeClass('stop')
+        } else if (!state) {
+            visual_swiper.autoplay.stop();
+            $(this).addClass('stop')
+        }
     });
-    $('.Stop').on('click', function() {
-        swiper.autoplay.start();
-    });
+    
+    // $('.Stop').on('click', function() {
+    //     swiper.autoplay.start();
+    // });
 
     // 실시간 검색 순위
     var swiper = new Swiper(".rank_list", {
