@@ -423,7 +423,7 @@ ul.menu_sub li a::after {
 
     .sub_cont_wrap {
         width: 100%;
-        max-width: 1200px;
+        max-width: 1280px;
         margin: 0 auto;
         display: flex;
         margin-top: 50px;
@@ -881,10 +881,14 @@ ul.menu_sub li a::after {
     .sub_box_item_title {
         display: none;
     }
+    /* .sub_cont_wrap{
+        margin: 15px;
+    } */
     .aside_con {
-        margin-left: 0;
-        max-width:inherit;
-        padding: 0 50px;
+        max-width: inherit;
+        width: 100%;
+        margin: 0 10px;
+        overflow: hidden;
     }
     .sub_aside {
         display: none;
@@ -909,7 +913,7 @@ ul.menu_sub li a::after {
     }
 
     .prdItemList {
-        padding: 20px;
+        padding: 20px 10px;
     }
     .prdItemList ul li .prdItem{
         max-width:inherit;
