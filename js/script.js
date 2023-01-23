@@ -340,6 +340,10 @@ function btnClick_event() {
     // 모바일 메뉴 취소버튼
     $(".mb_right_btn>img").click(function(){
         $(".quick_menu").toggleClass("acitve");
+        $("body").css({
+            "overflow":"hidden",
+            "position":"fixed"
+        })
     });
     
     $(".quick_menu .mobile_close").click(function(){
@@ -350,7 +354,10 @@ function btnClick_event() {
              $(".quick_menu").addClass("acitve");
              $(this).addClass("acitve");
          }
-
+         $("body").css({
+            "overflow":"visible",
+            "position":"static"
+         })
      });
 
 
