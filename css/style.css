@@ -810,6 +810,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 275px;
 }
 .best_inner>ul li .image img {
     width: 100%;
@@ -1521,7 +1522,7 @@
 @media screen and (max-width: 1280px){
 
     .best_inner>ul li .image{
-        height: 600px;
+        height: 500px;
     }
     .visual_wrap{
         margin-bottom: 30px;
@@ -1534,8 +1535,9 @@
         max-width: 100%;
     }
     .best_inner{
-        margin-top: 20px;
+        /* margin-top: 20px; */
         background: #fff;
+        margin:20px -15px 0
     }
     /* .visual_wrap{
        margin: 10px;
@@ -1626,7 +1628,7 @@
     }
     .tr_off_inner .off_slide img{
         min-height: 230px;
-        border-radius: 40px 40px 0 0;
+        /* border-radius: 40px 40px 0 0; */
     }
 
     /* 갑자기 찾아온 겨울. 지금 인기최고 여행지_s */
@@ -1649,7 +1651,7 @@
         margin-left: 0;
     }
     .best_inner ul li:last-child{
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
     }
     .best_inner>ul li .image img{
       
@@ -1676,7 +1678,7 @@
         margin: 0 -15px;
     }
     .time_wrap .time_inner{
-        padding: 20px;
+        padding: 15px;
     }
     .time_wrap .time_inner .timesale_box{
         padding: 20px 0;
@@ -1744,17 +1746,22 @@
     }
     .best_inner>ul{
         flex-direction: column;
-        /* margin: 20px; */
+        margin: 0 auto;
+        width:calc(100% - 40px)
+
     }
     .Korea_travel ul{
         flex-direction: column;
+        width: calc(100% - 10px);
+        margin:0 auto;
         /* margin: 20px; */
     }
     .Korea_travel ul li{
         margin-bottom: 30px;
         border-radius: 20px;
         box-shadow: 0 3px 13px 0 rgb(0 0 0 / 10%);
-        width: 100%;
+        margin:0 -5px 30px;
+        width: calc(100% - 10px);
     }
     .travel_sug .tr_sug .trs{
         position: relative;
@@ -1830,7 +1837,7 @@
         display: none;
     }
     .tr_off_inner .item_wrap {
-        padding: 0 20px;
+        padding: 0;
     }
     .tr_off_inner .item_wrap .swiper-slide{
         max-width: auto;

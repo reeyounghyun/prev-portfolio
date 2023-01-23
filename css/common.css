@@ -1298,14 +1298,14 @@
         padding: 10px 10px 20px 10px;
     }
     .Korea_travel ul li:nth-child(3) img{ 
-        height: 190px;
+        /* height: 190px; */
         /* min-height: 190px; */
     }
     /* .best_wrap{
         flex-direction: column;
     } */
     .best_travel .best_item{
-        width: 100%;
+        /* width: 100%; */
     }
     /* .best_travel .best_item + .best_item{
         margin-top:10px;
