@@ -162,9 +162,10 @@
 .header_wrap .header_left .searchform_com .input_keyword {
     width: 334px;
     line-height: 40px;
-    color: #bbb;
+    color: #333;
     padding: 2px;
     display: inline-block;
+    letter-spacing: 1.5px;
 }
 .header_wrap .header_left .searchform_com .input_keyword:focus{
     width: 310px;
@@ -731,7 +732,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px 0;
+        padding: 40px 0;
     }
     .service_wrap ul li{
         display: flex;
@@ -1073,7 +1074,6 @@
         text-align: center;
     }
 
-
     .right_wrap{
         display: none;
     }
@@ -1178,15 +1178,10 @@
         min-width:367px;
         border-top: 1px solid #ccc;
     }
-
-    /* .travel_sug .tr_sug {
-        padding: 30px;
-    } */
-
     /* h5 추가 */
 
     .main_tit_wrap{
-        margin: 30px 0 20px 0;
+        padding: 30px 0 0 16px;
     }
 
 }
@@ -1320,30 +1315,9 @@
         padding: 0 0 5px 0;
         font-weight: 600;
     }
-    /* .Korea_travel img {
-        height: 190px;
-    } */
     .Korea_travel ul li a .item_box {
         padding: 10px 10px 20px 10px;
     }
-    .Korea_travel ul li:nth-child(3) img{ 
-        /* height: 190px; */
-        /* min-height: 190px; */
-    }
-    /* .best_wrap{
-        flex-direction: column;
-    } */
-    .best_travel .best_item{
-        /* width: 100%; */
-    }
-    /* .best_travel .best_item + .best_item{
-        margin-top:10px;
-        margin-left:14px;
-    }
-     */
-    /* .best_inner ul li img{
-        height: 336px;
-    } */
     .travel_sug .trs .tr_text{
         max-width: auto;
     }
@@ -1351,10 +1325,6 @@
     .package_add ul li a span.bedge::after{
         content: none;
     }
-}
-
-@media screen and (max-width: 375px){
-
 }
 
 /* footer style stert */
@@ -1709,6 +1679,9 @@
     .inder_time{
         display: none;
     }
+    .inder_service{
+        display: none;
+    }
     .footer_slide{
         display: none;
     }
@@ -1770,8 +1743,8 @@
         display: none;
     }
     .footer_Inform_wrap .footer_item_left ul li{
-        margin: 0 5px;
-        padding: 0 5px;
+        margin:5px;
+        padding:5px;
     }
     .footer_Inform_wrap .footer_item_left ul{
         flex-wrap: wrap;

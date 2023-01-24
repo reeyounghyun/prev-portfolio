@@ -389,13 +389,14 @@
     font-size: 17px;
     padding: 0 35px;
     color: #fff;
+    transition: all 0.3s;
 }/* 패키지&호텔 버튼 */
 
 .le_box button:hover,
 .main_but button:hover{
-    background-color: #000 ;
+    background-color: #5e2bb8;
     border:1px solid #000;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 .main_but_th{
     border: 1px solid #ccc;
@@ -608,7 +609,6 @@
 }
  .hotel{
     width: 100%;
-    height: 100%;
     display: block;
     position: relative;
 } 
@@ -1442,8 +1442,90 @@
     padding-right: 10px;
 }
 /* 하나투어닷컴 고객센터 */
-.inder_time{
+
+.service_center{
+    margin-bottom: 100px;
     background: #f7f7f7;
+}
+.serv_box{
+    padding: 70px 0 0;
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.serv_box ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.serv_box ul li{
+    position: relative;
+    background-color: #fff;
+    flex: 1;
+    padding: 38px 0;
+}
+.serv_box ul li + li{
+    margin-left: 5px;
+}
+.serv_box ul li::before{
+    content: "";
+    clear: both;
+    position: absolute;
+    background-image: url(../images/spr_man.png);
+    background-position: 17px -70px;
+    top: 36px;
+    left: 30px;
+    width: 50px;
+    height: 30px;
+}
+.serv_box ul li:nth-child(2):before {
+    background-position: -34px -70px;
+    left: 50px;
+    width: 30px;
+    height: 30px;
+}
+.serv_box ul li:nth-child(3):before {
+    background-position: -62px -70px;
+    top: 36px;
+    left: 47px;
+    width: 33px;
+}
+.serv_box ul li:nth-child(4):before {
+    background-position: -92px -70px;
+    width: 34px;
+    left: 46px;
+}
+.servbox ul li:nth-child(5):before {
+    background-position: -128px -70px;
+    width: 30px;
+    left: 48px;
+}
+.serv_box ul li:nth-child(6):before {
+    background-position: -160px -70px;
+    width: 30px;
+    left: 48px;
+}
+.serv_box ul li:nth-child(7):before {
+    background-position: -191px -70px;
+    width: 30px;
+    left: 48px;
+}
+.serv_box ul li:nth-child(8):before {
+    background-position: -224px -70px;
+    width: 30px;
+    left: 48px;
+}
+.serv_box ul li:nth-child(9):before {
+    background-position: -257px -70px;
+    width: 30px;
+    left: 48px;
+}
+.serv_box ul li a{
+    text-align: center;
+    padding-top: 35px;
+    font-size: 15px;
+}
+.inder_time{
     padding: 70px 0 54px;
 }
 .inder_time .info_wrap{
@@ -1558,13 +1640,9 @@
         max-width: 100%;
     }
     .best_inner{
-        /* margin-top: 20px; */
         background: #fff;
         margin:20px -15px 0
     }
-    /* .visual_wrap{
-       margin: 10px;
-    } */
     .main_le{
         display: none;
     }
@@ -1589,7 +1667,6 @@
     }
     .travel_sug .tr_sug .trs img{
         position: relative;
-        /* border-radius: 30px; */
         width: 100%;
     }
     .travel_sug .trs .tr_text {
@@ -1602,7 +1679,6 @@
         background: linear-gradient(180deg, rgba(255,255,255,10) 10%, rgba(255,255,255,0.1) 80%);
         display: block;
         margin-left: 0;
-        /* border-radius: 40px; */
         max-width: 100%;
         width: 100%;
     }
@@ -1616,7 +1692,6 @@
         text-align: left;
         font-size: 20px;
     }
-
     .Korea_travel .item_text{
         text-align: left;
     }
@@ -1625,10 +1700,6 @@
         align-items: center;
         justify-content: center;
     }
-    /* .Korea_travel img{
-        border-radius: 20px 20px 0 0;
-        width: 100%;
-    } */
     .Korea_travel ul li img{
         width: 100%;
         height: 100%;
@@ -1651,7 +1722,6 @@
     }
     .tr_off_inner .off_slide img{
         min-height: 230px;
-        /* border-radius: 40px 40px 0 0; */
     }
 
     /* 갑자기 찾아온 겨울. 지금 인기최고 여행지_s */
@@ -1673,11 +1743,8 @@
     .best_inner>ul li+li{
         margin-left: 0;
     }
-    .best_inner ul li:last-child{
-        /* margin-bottom: 0; */
-    }
+
     .best_inner>ul li .image img{
-      
         width: 100%;
         border-radius: 20px 20px 0 0;
         object-fit: cover;
@@ -1698,7 +1765,7 @@
 
     .time_wrap{
         background-color: #f5f5f5;
-        margin: 0 -15px;
+        margin: 15px -15px;
     }
     .time_wrap .time_inner{
         padding: 15px;
