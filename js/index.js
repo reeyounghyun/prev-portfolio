@@ -1,9 +1,16 @@
 $(document).ready(function(){
-    $('#fullpage').fullpage({
-      //options here
-      autoScrolling:true,
-      scrollHorizontally: true
-    });
+    var if_event = $('body,html').width()
+    if (if_event >= 1280) {
+        fullpage_event()
+    }
+    
+    function fullpage_event() {
+        $('#fullpage').fullpage({
+        //options here
+        autoScrolling:true,
+        scrollHorizontally: true
+        });
+    }
 
     var makeItRain = function() {
         //clear out everything
