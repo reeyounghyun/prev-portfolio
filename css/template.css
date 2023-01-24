@@ -828,6 +828,12 @@ ul.menu_sub li a::after {
 
 
 @media screen and (max-width:1280px) {
+    .hanatour {
+        margin:0 -15px;
+    }
+    .titi_wrap {
+        margin:0 -15px;
+    }
     .hana_area {
         padding: 50px 0 0 0;
     }
@@ -892,7 +898,14 @@ ul.menu_sub li a::after {
     .prdItemList ul li .prdItem{
         max-width:inherit;
     }
-
+    .sub_cont_wrap {
+        width: auto;
+        margin: 50px -15px 0;
+        max-width: none;
+    }
+    .paginate {
+        margin-top:0;
+    }
 }
 
 
@@ -927,6 +940,11 @@ ul.menu_sub li a::after {
         font-size: 12px;
     }
 
+    .sub_head_wrap nav {
+        /* margin-bottom: 20px; */
+        margin:0 -15px 20px;
+    }
+
     .sub_head_wrap nav ul {
         width: auto;
         flex-direction: column;
@@ -941,6 +959,9 @@ ul.menu_sub li a::after {
         box-sizing: border-box;
         margin-bottom: 5px;
         flex: inherit;
+    }
+    .sub_head_wrap nav ul li:last-child {
+        margin-bottom:0;
     }
 
     .hanatour .hana_tit h3 {
