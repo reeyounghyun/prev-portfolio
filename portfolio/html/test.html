@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 스와이퍼 플러그인-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <title>Document</title>
+
+    <script>
+        $(document).ready(function () {
+            var swiper = new Swiper(".color_slide", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                loop:true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+
+            });
+
+            $('.Start').on('click', function() {
+                swiper.autoplay.stop();
+            });
+            $('.Stop').on('click', function() {
+                swiper.autoplay.start();
+            });
+
+            swiper.on('slideChange', function(e) {
+                if (swiper.activeIndex == "0") {
+                    $(".wrapper").css("background-color", "#E2DAF2");
+                } else if (swiper.activeIndex == "1") {
+                    $(".wrapper").css("background-color", "#E4EFD0");
+                } else if (swiper.activeIndex == "2") {
+                    $(".wrapper").css("background-color", "#F1E6CC");
+                } else if (swiper.activeIndex == "3") {
+                    $(".wrapper").css("background-color", "#D5EAFD");
+                } else if (swiper.activeIndex == "4") {
+                    $(".wrapper").css("background-color", "#E2DAF2");
+                } else if (swiper.activeIndex == "5") {
+                    $(".wrapper").css("background-color", "#E4EFD0");
+                } else {
+                    $(".wrapper").css("background-color", "#F1E6CC");
+                }
+
+            });
+        });
+    </script>
+
+    <style>
+        .flex-wrap{
+            display: flex;
+        }
+        .flex-item{
+            width: 100%;
+            max-width: 250px;
+            height: 250px;
+            background-color: red;
+            flex: 1 1 40%;
+        }
+
+        .flex-item1{
+            background-color: #000;
+        }
+        .flex-item2{
+            background-color: yellow;
+        }
+        .flex-item3{
+            background-color: green;
+        }
+        .flex-item4{
+            background-color: blue;
+        }
+        .flex-item5{
+            background-color: plum;
+        }
+
+        /* 두번째 flex 박스 */
+        .flex-box{
+            display: flex;
+        }
+        .flex-items{
+            width: 100%;
+            max-width: 250px;
+            height: 250px;
+            background-color: red;
+            flex: 1 1 100%;
+        }
+
+        /* 세번째 flex 박스 */
+        .flex-cont{
+            display: flex;
+        } 
+        .flex-itemx{
+            width: 100%;
+            max-width: 250px;
+            height: 250px;
+            background-color: red;
+            flex: 1 1 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="flex-wrap">
+        <div class="flex-item"></div>
+        <div class="flex-item flex-item1"></div>        
+        <div class="flex-item flex-item2"></div>
+        <div class="flex-item flex-item3"></div>        
+        <div class="flex-item flex-item4"></div>
+        <div class="flex-item flex-item5"></div>
+    </div>
+
+    <div class="flex-box">
+        <div class="flex-items"></div>
+        <div class="flex-items flex-item1"></div>        
+        <div class="flex-items flex-item2"></div>
+        <div class="flex-items flex-item3"></div>        
+        <div class="flex-items flex-item4"></div>
+        <div class="flex-items flex-item5"></div>
+    </div>
+
+    <div class="flex-cont">
+        <div class="flex-itemx"></div>
+        <div class="flex-itemx flex-item1"></div>        
+        <div class="flex-itemx flex-item2"></div>
+        <div class="flex-itemx flex-item3"></div>        
+        <div class="flex-itemx flex-item4"></div>
+        <div class="flex-itemx flex-item5"></div>
+    </div>
+
+    <div class="w_m_wrap">
+        <div class="visual_wrap">
+            <div class="wrapper">
+                <div class="slide_in common_cont">
+                    <!-- 전체를 묶은 div -->
+                    <div class="main_slider">
+                        <div class="swiper color_slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./images/slide01.jpg"
+                                            alt="막강한 할인 혜택 블랙 프라이데이 #스페셜 상품부터 쿠폰까지 #특가로 떠나는 여행">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./images/slide02.jpg"
+                                            alt="하나LIVE 1주년 페스티벌 총 300만원 이벤트와 방송 특가 매주 수요일 오후8시! 방송 상품 구매 만해도 참여 완료!">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./images/slide03.jpg"
+                                            alt="여행의 시작과 끝, Always 방콕 언제가도 새로운 매력을 발견하는 곳">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./images/slide04.jpg"
+                                            alt="찬바람이 반가운 여행 겨울엔 일본 사전예약할인, 모일수록 할인 가족여행지원금,명물 화과자까지">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./images/slide05.jpg"
+                                            alt="할인+혜택 추가! 신년 할인특가 해외항공권&해외패키지특가 20만원대 부터~">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./images/slide06.jpg"
+                                            alt="더 가까워진 겨울 여행 지방 출발 해외 여행 #부산,대구,무안,양양,제주,청주 출발 #인천까지 갈 시간 없으니까">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./images/slide07.jpg"
+                                            alt="미리 준비하는 신년여행 2023 새해 설 연휴 연휴기간 좌석확부! 시즌 인기 추천상품 PICK!">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <!-- 메인 슬라이드-->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
