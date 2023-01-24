@@ -1625,16 +1625,27 @@
 
 /* 미디어 쿼리 stert */
 @media screen and (max-width: 1280px){
-
+    .mb_none {
+        display: none;
+    }
+    .service_center {
+        display: none;
+    }
+    .travel_sug .tr_sug {
+        padding: 0 0 65px;
+    }
+    .travel_wrap{
+        margin-bottom: 40px;
+    } 
     .best_inner>ul li .image{
         height: 500px;
     }
     .visual_wrap{
-        margin-bottom: 30px;
+        margin:0 -15px 30px;
     }
-    .bt_p{
+    /* .bt_p{
         margin:0;
-    }
+    } */
     .w_m{
         width: auto;
         max-width: 100%;
@@ -1657,7 +1668,7 @@
         height: auto;
     }
     .wrapper{
-        border-radius: 30px;
+        /* border-radius: 30px; */
     }
     .travel_sug .swiper-slide{
        width: 100%;
@@ -1927,7 +1938,7 @@
         display: none;
     }
     .tr_off_inner .item_wrap {
-        padding: 0;
+        padding: 0 25px;
     }
     .tr_off_inner .item_wrap .swiper-slide{
         max-width: auto;
