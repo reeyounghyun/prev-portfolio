@@ -71,7 +71,15 @@ body {
 
 .info-wrap .info-title {
     margin-top: 100px;
-
+}
+.info-wrap .info-title.title-type {
+    margin-top: 20px;
+}
+.info-wrap .info-title.title-type {
+    margin-top: 20px;
+}
+.info-wrap .info-title.title-type .title {
+    margin:0 0 10px 0;
 }
 .info-wrap .info-title .title {
     font-size: 60px;
@@ -80,6 +88,8 @@ body {
 
 .info-wrap .info-title .min-title {
     font-size: 30px;
+    text-align: left;
+    padding: 15px 30px;
 }
 
 .personal-information .info-area {
@@ -151,3 +161,79 @@ body {
 .info-content-detail .detail_bold{
     font-weight: 600;
 }
+
+.info-project{
+    display: flex;
+    flex-wrap: wrap;
+    padding:40px;
+    margin:0 -10px;
+}
+
+.info_area .info-tit{
+    text-align: left;
+}
+.info_area .info-tit h2{
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.info-project.flex-type>li {
+    flex: calc(33.3333% - 20px)
+}
+
+.info-project>li{
+    flex: 0 1 calc(25% - 20px);
+    margin:0 10px;
+}
+
+.info-project>li>a {
+    display: block;
+    position: relative;
+}
+
+.font-box {
+    width: 100%;
+    height: calc(100% - 55px);
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left:0;
+    top:0;
+    transition: all 0.5s;
+    padding-top: 20px;
+}
+.info-project>li>a:hover .font-box {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+    position: absolute;
+    background-color: rgba(0,0,0,60%);
+}
+
+.info-project>li .font-box p {
+    color:#fff;
+    padding-top: 5px;
+}
+
+.info-project>li .font-box p.font-tit {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.info-project li .porject_font {
+    margin-top: 20px;
+
+}
+.info-project li .porject-font span{
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    padding: 15px;
+}
+
+.info-project li .porject-font strong{
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
