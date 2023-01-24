@@ -291,13 +291,12 @@
 }
 .menu_left .all_menu .all_sam {
     position: absolute;
-    top: 50px;
+    top: 58px;
     right: 0;
     left: 0;
     background-color: #fff;
     height: 100%;
     min-height: 500px;
-    border-top: 1px solid #000;
     box-sizing: border-box;
     z-index: 300;
     display: none;
@@ -306,14 +305,13 @@
     display: block;
 }
 
-
 .menu_left .all_menu .all_sam .sam_in{
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 30px;
     position: relative;
- }
- .menu_left .all_menu .all_sam .sam_di{
+}
+.menu_left .all_menu .all_sam .sam_di{
     font-size: 13px;
     display: table-cell;
     width: 200px;

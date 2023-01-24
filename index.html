@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+  <title>포트폴리오 소개페이지</title>
+  <style>
+
+  </style>
+  <script>
+    $(document).ready(function(){
+      $('#fullpage').fullpage({
+        //options here
+        autoScrolling:true,
+        scrollHorizontally: true
+      });
+  })
+  </script>
+</head>
+<body>
+
+  <div id="fullpage">
+    <section class="section">
+      <div class="content-1">
+        <div class="container-flex">
+          <div class="my-introduce">
+            <span>이영현<strong class="text-bold">웹퍼블리셔</strong></span>
+          </div>
+          <div class="my-image">
+            <img src="./images/young_hyun.jpg" alt="이영현">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="content-2">
+        <div class="container-flex">
+          <div class="my-image">
+            <img src="./images/coding.jpg" alt="코딩">
+          </div>
+          <div class="personal-information">
+            <div class="info-wrap">
+              <div class="info-title">
+                <h2 class="title">About me</h2>
+              </div>
+              <ul class="info-area">
+                <li>
+                  <div class="info-box">
+                    <div class="info-content-left">
+                      <strong class="tit">인정사항</strong>
+                    </div>
+                    <div class="info-content-right">
+                      <div class="content-box-left">
+                        <span>성명</span>
+                        <span>생년월일</span>
+                        <span>거주지</span>
+                        <span>이메일</span>
+                      </div>
+                      <div class="content-box-right">
+                        <span>이영현</span>
+                        <span>1996년 8월 6일</span>
+                        <span>경기도 군포시</span>
+                        <span>b3960241@naver.com</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-box">
+                    <div class="info-content-left">
+                      <strong class="tit">경력</strong>
+                    </div>
+                    <div class="info-content-right">
+                      <div class="info-content-detail">
+                        <p>2022. 02.07 ~ 2022. 12.31</p>
+                        <p class="detail_bold">와이지앤(YGN) | 디자인팀원</p>
+                        <p>웹 퍼블리셔 <span>HTML CSS jquery javascript / 개발언어PHP</span> </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-box">
+                    <div class="info-content-left">
+                      <strong class="tit">교육</strong>
+                    </div>
+                    <div class="info-content-right">
+                      <div class="info-content-detail">
+                        <p>2021. 06 ~ 2021. 11</p>
+                        <p class="detail_bold">ui/ux 반응형 웹디자인&웹퍼블리셔 양성과정 | 그린컴퓨터아트학원 수료</p>
+                        <p>웹 퍼블리셔 <span>HTML CSS jquery photoshop illustration</span> </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="content-3">
+        <div class="container-flex">
+          <div class="info-wrap">  
+            <div class="info-title">
+              <h2 class="title">project</h2>
+            </div>
+            <ul class="info_area info_project">
+              <li>
+                <div class="info-title">
+                  <h2 class="min-title">기업 프로젝트</h2>
+                </div>
+                <ul>
+                  <li><a href="#"><span>미트식스 |new project</span></a></li>
+                  <li><a href="#"><span>청원 |new project</span></a></li>
+                  <li><a href="#"><span>YGN |renewal project</span></a></li>
+                  <li><a href="#"><span>대한민국희망안전재단 |renewal project</span></a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="info-title">
+                  <h2 class="min-title">개인 프로젝트</h2>
+                </div>
+                <ul>
+                  <li><a href="#"><span>하나투어 가이드</span></a></li>
+                  <li><a href="#"><span>하나투어 메인페이지</span></a></li>
+                  <li><a href="#"><span>하나투어 서브페이지</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="my-image">
+            <img src="./images/project.jpg" alt="프로젝트">  
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
