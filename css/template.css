@@ -95,17 +95,24 @@
     max-width: 842px;
 }
 .menu_sub {
-    padding-top: 15px;
-    display: none;
     background-color: #f7f7f7;
+    margin-top: 15px;
+    padding: 10px 0;  
+}
+.menu_list{
+    display: none;
+    background: #f7f7f7;
+}
+.menu_list.acitve{
+    display: block;
+}
+.menu_list li{
+    padding: 10px 5px 5px 10px;
 }
 .menu_sub li {
     position: relative;
     display: block;
     padding: 5px 20px 5px 33px;
-}
-.menu_sub li:last-child {
-    padding-bottom: 15px;
 }
 ul.menu_sub li a::after {
     position: absolute;
@@ -457,27 +464,29 @@ ul.menu_sub li a::after {
     .sub_aside>ul>li {
         box-sizing: border-box;
         border-top: 1px solid #e5e5e5;
+        padding: 7px 5px;
     }
 
     .sub_aside ul li.active a {
         color: #f06c5e;
     }
 
-    .sub_aside ul li:hover a {
+    .sub_aside ul li:hover>a>span{
         color: #f06c5e;
         font-weight: 500;
     }
 
-    .sub_aside>ul>li>a {
+    .sub_aside ul li  span {
         font-size: 15px;
-        padding: 14px 5px;
+        display: inline-block
     }
-
-    .sub_aside>ul>li>a.on {
+    .sub_aside ul li a{
+        padding: 5px 0;
+    }
+    .sub_aside ul li a.menu_icon {
         position: relative;
     }
-
-    .sub_aside>ul>li>a.on::after {
+    .sub_aside ul li a.menu_icon::after {
         content: "";
         clear: both;
         position: absolute;
@@ -489,37 +498,17 @@ ul.menu_sub li a::after {
         opacity: 0.5;
     }
 
-    .menu_sub {
-        background-color: #f7f7f7;
-    }
-
-    .menu_sub li {
-        position: relative;
-        display: block;
-        padding: 5px 20px 5px 33px;
-    }
-
-    .menu_sub {
-        padding-top: 15px;
-        display: none;
-    }
-
-    .menu_sub li:last-child {
-        padding-bottom: 15px;
-    }
-
-    .menu_sub li a::after {
-        position: absolute;
-        top: 13px;
-        left: 20px;
+    
+    .sub_aside ul li .menu_icon::after.acitve{
         content: "";
-        width: 3px;
-        height: 3px;
-        border-top-left-radius: 50%;
-        border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
-        border-bottom-left-radius: 50%;
-        background: #ccc;
+        clear: both;
+        position: absolute;
+        width: 21px;
+        height: 22px;
+        right: 0;
+        background: url(../images/spr_com.png) no-repeat;
+        background-position: -477px -182px;
+        opacity: 0.5;
     }
 
     .sub_aside ul li a .menu_sub.onfoo {
@@ -744,21 +733,6 @@ ul.menu_sub li a::after {
         max-width: 178px;
         width: auto;
         font-size: 12px;
-    }
-    .menu_sub {
-        background-color: #f7f7f7;
-    }
-    .menu_sub li {
-        position: relative;
-        display: block;
-        padding: 5px 20px 5px 33px;
-    }
-    .menu_sub {
-        padding-top: 15px;
-        display: none;
-    }
-    .menu_sub li:last-child {
-        padding-bottom: 15px;
     }
     .menu_sub li a::after {
         position: absolute;
