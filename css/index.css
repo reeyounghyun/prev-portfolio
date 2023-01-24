@@ -60,7 +60,7 @@ body {
     max-width: 100%;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .container-flex .my-introduce {
@@ -92,7 +92,7 @@ body {
     margin-top: 20px;
 }
 .info-wrap .info-title.title-type {
-    margin-top: 20px;
+    margin-top: 100px;
 }
 .info-wrap .info-title.title-type .title {
     margin:0 0 10px 0;
@@ -100,6 +100,7 @@ body {
 .info-wrap .info-title .title {
     font-size: 60px;
     margin:0 0 50px 0;
+    color: #fff;
 }
 
 .info-wrap .info-title .min-title {
@@ -113,7 +114,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     margin:0 50px;
-    border:1px solid #000;
+    border:1px solid #404040;
 }
 
 .personal-information .info-area>li+li {
@@ -128,21 +129,22 @@ body {
 .personal-information .info-area>li .info-box .info-content-left {
     flex: 0 0 150px;
     width:150px;
-    border-top:5px solid #000;
+    border-top: 5px solid #404040;
     margin-right: 25px;
 }
 
 .personal-information .info-area>li .info-box .info-content-left .tit {
     display: block;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
+    color: #fff;
 }
 
 .personal-information .info-area>li .info-box .info-content-right {
     flex : 1 1 auto;
     display: flex;
-    border-top:5px solid #000;
+    border-top: 5px solid #404040;
 }
 
 .personal-information .info-area>li .info-box .info-content-right .content-box-left {
@@ -153,8 +155,9 @@ body {
 .personal-information .info-area>li .info-box .info-content-right .content-box-left>span {
     display: flex;
     text-align: left;
-    line-height: 1.5;
+    line-height: 2;
     font-size: 16px;
+    color: #fff;
 }
 
 .personal-information .info-area>li .info-box .info-content-right .content-box-right {
@@ -165,13 +168,16 @@ body {
 .personal-information .info-area>li .info-box .info-content-right .content-box-right>span {
     display: block;
     text-align: left;
-    line-height: 1.5;
+    line-height: 2;
     font-size: 16px;
+    color: #fff;
 }
 
 .info-content-detail>p{
     text-align: left;
     line-height: 2;
+    color: #fff;
+    font-size: 16px;
 }
 
 .info-content-detail .detail_bold{
@@ -184,7 +190,9 @@ body {
     padding:40px;
     margin:0 -10px;
 }
-
+.info_area{
+  margin-top: 50px;
+}
 .info_area .info-tit{
     text-align: left;
 }
@@ -192,6 +200,7 @@ body {
     font-size: 18px;
     font-weight: 600;
     padding-left: 20px;
+    color: #fff;
 }
 
 .info-project.flex-type>li {
@@ -246,18 +255,21 @@ body {
     font-size: 15px;
     text-align: center;
     padding: 15px;
+    color: #c6c6c6;
 }
 
 .info-project li .porject-font strong{
-    font-size: 18px;
-    padding-bottom: 5px;
-}
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #fff;
+  }
 
 .rain {
     position: absolute;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%;    
+    background-color: #111;
   }
 
   .rain.back-row {
@@ -430,7 +442,7 @@ body {
   .text-container:after, .text-container:before {
     position: absolute;
     top: 0;
-    color: #16a085;
+    color: #2fff26;
     font-size: 42px;
     line-height: 45px;
     -webkit-animation-name: opacity;
@@ -441,8 +453,10 @@ body {
     animation-iteration-count: infinite;
   }
   .text-tit {
-    font-size: 50px;
+    font-size: 90px;
     display: block;
+    color: #fff;
+    font-weight: 600;
     /* margin-top: 10px; */
   }
   .text-list {
@@ -460,8 +474,10 @@ body {
   .text-item {
     margin-top: 3px;
     line-height: 45px;
-    font-size: 32px;
+    font-size: 40px;
     text-align: center;
+    color: #fff;
+    font-weight: 400;
   }
 
   @-webkit-keyframes opacity {
