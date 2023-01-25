@@ -262,10 +262,6 @@ span, p{
     transition: all 0.5s;
     position: absolute;
     background-color: rgb(0, 0, 0, 50%);
-    border-left: 1px solid #333;
-    border-right: 1px solid #333;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #919191;
 }
 
 .info-project>li .font-box p {
