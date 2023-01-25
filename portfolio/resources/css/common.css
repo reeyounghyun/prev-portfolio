@@ -713,7 +713,6 @@
     .package_wrap span{
         color: #5e2bb8;
         display: inline-block;
-        font-weight: 600;
     }
     .package_wrap ul li a span{
         padding: 5px 0;
