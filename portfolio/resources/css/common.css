@@ -1235,6 +1235,7 @@
     .content .tr_off_inner {
         margin:20px 0;
     }
+}
 
 @media screen and (max-width: 768px){
     .footer_licensee span::before,
@@ -1378,6 +1379,7 @@
  
 }
 
+
 /* footer style stert */
 .notice_bor{
     padding: 10px 0;
@@ -1461,6 +1463,7 @@
 }
 
 /* footer 공지사항 및 sns 아이콘 stert */
+
 .footer_box{
     display: flex;
     justify-content: space-between;
@@ -1760,8 +1763,7 @@
         width: 100%;
     }
 
-}
-/*pc_max-width:1280px */
+}/*pc_max-width:1280px */
 
 @media screen and (max-width: 768px){
     /* 슬라이드 부분 */
@@ -1888,6 +1890,3 @@
         border-right: 1px solid #ccc;
     }
 }
-/*tablet-max-width:768px */
-@media screen and (max-width: 375px){}
-/*mobile_max-width:375px*/
