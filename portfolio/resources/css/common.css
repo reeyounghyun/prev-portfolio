@@ -12,8 +12,8 @@
     z-index: 300;
 } */
 
-#skip {
-}
+/* #skip {
+} */
 #skip>ul>li>a {
     position: relative;
     display: block;

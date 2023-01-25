@@ -4,8 +4,6 @@ body {
     min-width: 900px;
 }
 
-
-
 /* 컨텐츠 웹폰트 */
 @font-face {
     font-family: 'Pretendard-Regular';
@@ -16,6 +14,7 @@ body {
 
 .guide_wrap .guide_lnb h1{
     font-family: 'Pretendard-Regular';
+    font-weight: 600;
 }
 
 .guide_wrap .guide_lnb .lnb_list li a{
@@ -24,6 +23,7 @@ body {
 
 .guide_wrap .guide_lnb .lnb_title{
     font-family: 'Pretendard-Regular';
+    font-weight: 600;
 }
 
 /* span:first-child.pln {
@@ -55,6 +55,10 @@ pre .pln {
     z-index: 10;
     width: 200px;
     padding-right: 20px;
+    height: 100%;
+    box-shadow: 4px 5px 4px rgb(0 0 0 / 10%);
+    padding-top: 20px;
+
 }
 .guide_wrap .guide_lnb h1 {
     display: inline-block;
@@ -63,8 +67,12 @@ pre .pln {
     letter-spacing: -0.2rem;
     padding:30px 0;
 }
+.guide_wrap .guide_lnb h1 strong{
+    color: rgb(94 43 184);
+}
+
 .guide_wrap .guide_lnb .lnb_title {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
 }
 .guide_wrap .guide_lnb{
@@ -76,15 +84,22 @@ pre .pln {
 .guide_wrap .guide_lnb .lnb_list li {
     height: 40px;
     line-height: 40px;
-    text-align: center;
+    padding-left: 36px;
 }
 .guide_wrap .guide_lnb .lnb_list li + li {
-    margin-top: 10px;
+    margin-top: 4px;
 }
 
 .guide_wrap .guide_lnb .lnb_list li a {
-    font-size: 20px;
+    font-size: 18px;
+    transition: all 0.3s;
 }
+
+.guide_wrap .guide_lnb .lnb_list li:hover a{
+    color: rgb(94 43 184);
+    transition: all 0.3s;
+}
+
 .guide_wrap .guide_area {
     flex: 1 1 auto;
     padding-left: 225px;
@@ -100,10 +115,8 @@ h1 {
     display: block;
     width: 100%;
     z-index: 100;
-    background-color: #fff;
     padding:50px 0;
     font-size: 24px;
-    font-weight: bold;
     text-align: center;
 }
 /* .title{
