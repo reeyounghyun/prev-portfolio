@@ -244,7 +244,7 @@ span, p{
     width: 100%;
     height: calc(100% - 77px);
     visibility: hidden;
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     left:0;
     top:0;
@@ -261,7 +261,11 @@ span, p{
     opacity: 1;
     transition: all 0.5s;
     position: absolute;
-    background-color: rgba(0,0,0,60%);
+    background-color: rgb(0, 0, 0, 50%);
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #919191;
 }
 
 .info-project>li .font-box p {
