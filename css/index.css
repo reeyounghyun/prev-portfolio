@@ -578,7 +578,7 @@ span, p{
         font-size: 24px;
     }
     .text-item {
-        font-size: 16px;
+        font-size: 24px;
     }
 
     .info-wrap .info-title {
@@ -586,7 +586,7 @@ span, p{
     }
 
     .info-wrap .info-title .title {
-        font-size: 24px;
+        font-size: 30px;
         margin-bottom: 15px;
     }
 
@@ -602,9 +602,10 @@ span, p{
     }
 
     .personal-information .info-area>li .info-box .info-content-left {
-        flex:auto;
-        margin-right: 0;
-        margin-bottom:20px;
+      flex: auto;
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 100%;
     }
 
     .personal-information .info-area>li+li {
