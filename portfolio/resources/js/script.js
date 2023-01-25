@@ -37,6 +37,18 @@ function common_load(){
                 "position":"static"
             })
         });
+
+            // 실시간 검색 순위
+        var swiper = new Swiper(".rank_list", {
+            direction: 'vertical',   
+            loop: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
     })
     $('.footer').load('footer.html .footer .footer_inner',function(){
         // 공지사항
@@ -115,18 +127,6 @@ function Swiper_event () {
             visual_swiper.autoplay.stop();
             $(this).addClass('stop')
         }
-    });
-
-    // 실시간 검색 순위
-    var swiper = new Swiper(".rank_list", {
-        direction: 'vertical',   
-        loop: true,
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
     });
 
     // 공지사항
