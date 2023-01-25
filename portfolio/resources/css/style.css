@@ -1991,19 +1991,21 @@
 }
 
 @media screen and (max-width: 768px){
-    /* .best_inner ul {
-        justify-content: center;
-    } */
-
     .inder_time{
         display: none;
     }
-    /* .best_inner ul li{
-        padding: 0;
-        border-radius: 20px;
-    } */
     .Korea_travel ul li{
         padding: 0;
+    }
+
+    .best_inner>ul li .image {
+        height: 300px;
+    }
+    .best_inner>ul li a .get{
+        height: 300px;
+    }
+    .Korea_travel ul li .image{
+        height: 300px;
     }
 }
 @media screen and (max-width: 375px){
@@ -2011,6 +2013,8 @@
         width: 100%;
         max-width: initial;
     }
+
+
 }
 
 /* 기능추거 */

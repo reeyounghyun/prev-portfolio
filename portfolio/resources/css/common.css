@@ -689,7 +689,7 @@
         position: relative;
     }
     .package_wrap ul li:nth-child(2)::after{
-        content: "스키시즌";
+        content: "스키 시즌";
         clear: both;
         position: absolute;
         right: 0;
