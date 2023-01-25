@@ -918,6 +918,7 @@
         overflow-x: scroll;
         z-index: 1000;
         background-color: #fff;
+        overflow: hidden;
     }
     .mobile_menu_list{
         padding-bottom: 80px;
