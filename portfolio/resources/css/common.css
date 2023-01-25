@@ -665,7 +665,9 @@
      .mb_wrap{
         display: block;
      }
-
+     .mb_wrap>div{
+        margin-bottom: 10px;
+     }
     .package_wrap ul{
         display: flex;
         align-items: center;
@@ -1019,6 +1021,7 @@
         line-height: 12px;
         top: 10px;
         right:0;
+        left: 60px;
     }
     .category_wrap2 ul li {
         line-height: 40px;
