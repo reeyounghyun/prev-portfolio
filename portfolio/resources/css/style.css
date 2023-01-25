@@ -1,5 +1,43 @@
 @charset "utf-8";
 
+/* font inter */
+@font-face {
+	font-family: "hnt-font";
+	font-weight: 400;
+	src: url(https://image.hanatour.com/usr/static/fonts/hnt/OTF/JourneyItself-Regular.otf);
+}
+@font-face {
+	font-family: "hnt-font";
+	font-weight: 500;
+	src: url(https://image.hanatour.com/usr/static/fonts/hnt/OTF/JourneyItself-Light.otf);
+}
+@font-face {
+	font-family: "hnt-font";
+	font-weight: 600;
+	src: url(https://image.hanatour.com/usr/static/fonts/hnt/OTF/JourneyItself-Bold.otf);
+}
+@font-face {
+	font-family: "hnt-font";
+	font-weight: 400;
+	src: url(https://image.hanatour.com/usr/static/fonts/hnt/OTF/JourneyItself-Regular.ttf);
+}
+@font-face {
+	font-family: "hnt-font";
+	font-weight: 500;
+	src: url(https://image.hanatour.com/usr/static/fonts/hnt/OTF/JourneyItself-Light.ttf);
+}
+@font-face {
+	font-family: "hnt-font";
+	font-weight: 600;
+	src: url(https://image.hanatour.com/usr/static/fonts/hnt/OTF/JourneyItself-Bold.ttf);
+}
+
+
+
+
+
+
+
 /* 타이포 css stert*/
 .main_tit_xl{
     font-size: 26px;
