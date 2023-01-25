@@ -386,6 +386,36 @@ function btnClick_event() {
     });
 
 
+    //메인 페이지 팝업
+    $(".popup_title").click(function () {
+        if ($(".popup_wrap").hasClass("active")) {
+            $(".popup_wrap").removeClass("active");
+            $(this).removeClass("active");
+        } else {
+            $(".popup_wrap").addClass("active");
+            $(this).addClass("active");
+        }
+    })
+
+    $(function(){
+        $('.close_btn').click(function(){
+            $('.popup_wrap').fadeToggle();
+        });
+    });
+
+
+
+
+
+
+    // $(".popup_title").click(function(){   
+    //     $(".popup_wrap").removeClass('active');
+    //     $(this).addClass("active");
+    //     $(".popup_wrap").removeClass("active");
+    // }); 
+
+ 
+
     //가상요소 스크립트
     // $(".sub_menu").click(function () {
     //     if ($(".menu_icon::after").hasClass("acitve")) {
