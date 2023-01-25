@@ -289,7 +289,6 @@ function tab_event() {
 
 // 클릭 이벤트
 function btnClick_event() {
-
     //bnt_ri button
     $(".bnt_ri").click(function () {
         if ($(this).hasClass("on")) {
@@ -385,15 +384,11 @@ function btnClick_event() {
     //         $(this).addClass("acitve");
     //     }
     // })
-
-
 }
 
 // allmenu 이벤트
 function allmenu() {
-    console.log($('.all_menu .btn_all_menu'));
     $('.all_menu .btn_all_menu').click(function(){
-        console.log('들어옴');
         $(this).siblings('.all_sam').toggleClass('on')
     })
     $('.all_menu .all_sam .btn_close').click(function(){
