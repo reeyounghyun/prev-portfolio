@@ -28,7 +28,7 @@ strong{
   font-family: 'Pretendard-Regular';
   font-weight: 500;
 }
-span{
+span, p{
   font-family: 'Pretendard-Regular';
   font-weight: 400;
 }
@@ -222,7 +222,6 @@ span{
 }
 .info_area .info-tit h2{
     font-size: 18px;
-    font-weight: 600;
     padding-left: 20px;
     color: #fff;
 }
@@ -243,14 +242,19 @@ span{
 
 .font-box {
     width: 100%;
-    height: calc(100% - 55px);
+    height: calc(100% - 77px);
     visibility: hidden;
     opacity: 0;
     position: absolute;
     left:0;
     top:0;
     transition: all 0.5s;
-    padding-top: 10px;
+    padding-top: 20px;
+}
+
+.font-img{
+  width: 70%;
+  margin: 0 auto;
 }
 .info-project>li>a:hover .font-box {
     visibility: visible;
@@ -607,6 +611,11 @@ span{
         margin-top: 10px;
     }
 
+    .bracket{
+      color: #2fff26;
+      display: inline-block;
+    }
+
     .info-project {
         flex-wrap: wrap;
         margin:0;
@@ -621,9 +630,9 @@ span{
         margin-top: 20px;
     }
 
-    .info_area>li {
-        /* overflow-y: hidden; */
-    }
+    /* .info_area>li {
+         overflow-y: hidden; 
+    } */
 
     .container-flex .my-introduce {
         margin:50px 0;
@@ -644,4 +653,5 @@ span{
     .info-project.flex-type>li+li {
         margin-top: 20px;
     }
+
 }
