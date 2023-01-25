@@ -4,6 +4,7 @@ body {
     margin:0;
 }
 
+/* 제목 웹폰트 */
 @font-face {
   font-family: 'Tenada';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
@@ -13,6 +14,23 @@ body {
 
 h2{
   font-family: 'Tenada';
+}
+
+/* 컨텐츠 웹폰트 */
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+strong{
+  font-family: 'Pretendard-Regular';
+  font-weight: 500;
+}
+span{
+  font-family: 'Pretendard-Regular';
+  font-weight: 400;
 }
 
 .content-1::before {
@@ -140,7 +158,7 @@ h2{
 .personal-information .info-area>li .info-box .info-content-left {
     flex: 0 0 150px;
     width:150px;
-    border-top: 5px solid #404040;
+    border-top: 3px solid #fff;
     margin-right: 25px;
 }
 
@@ -148,14 +166,13 @@ h2{
     display: block;
     margin-top: 10px;
     font-size: 18px;
-    font-weight: 600;
     color: #fff;
 }
 
 .personal-information .info-area>li .info-box .info-content-right {
     flex : 1 1 auto;
     display: flex;
-    border-top: 5px solid #404040;
+    border-top: 3px solid #fff;
 }
 
 .personal-information .info-area>li .info-box .info-content-right .content-box-left {
@@ -181,18 +198,14 @@ h2{
     text-align: left;
     line-height: 2;
     font-size: 16px;
-    color: #fff;
+    color: #c6c6c6;
 }
 
 .info-content-detail>p{
     text-align: left;
     line-height: 2;
-    color: #fff;
+    color: #c6c6c6;
     font-size: 16px;
-}
-
-.info-content-detail .detail_bold{
-    font-weight: 600;
 }
 
 .info-project{
