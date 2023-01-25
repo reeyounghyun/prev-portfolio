@@ -256,6 +256,7 @@ span, p{
   width: 70%;
   margin: 0 auto;
 }
+
 .info-project>li>a:hover .font-box {
     visibility: visible;
     opacity: 1;
