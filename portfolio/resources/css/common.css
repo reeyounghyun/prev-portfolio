@@ -669,7 +669,7 @@
     .package_wrap ul{
         display: flex;
         align-items: center;
-        padding: 25px 0 10px 26px;
+        padding: 25px 0 25px 0;
     }
     .package_wrap ul li{
         width: 60px;
@@ -709,8 +709,10 @@
     .package_wrap img{
         width: 50px;
         height: 50px
-    }    display: flex;
-    flex-wrap: wrap;
+    }
+    .package_wrap ul li a{
+       display: flex;
+        flex-wrap: wrap;
         color: #5e2bb8;
         display: inline-block;
     }
@@ -1233,7 +1235,6 @@
     .content .tr_off_inner {
         margin:20px 0;
     }
-}
 
 @media screen and (max-width: 768px){
     .footer_licensee span::before,
@@ -1706,6 +1707,14 @@
 
 /* 미디어 쿼리_S */
 @media screen and (max-width: 1280px){ 
+    .package_add ul li a span.bedge::after {
+        content: "온수풀";
+        clear: both;
+        position: absolute;
+        right: -6px;
+        top: -25px;
+    }
+
     body {
         min-width: 375px;
     }
