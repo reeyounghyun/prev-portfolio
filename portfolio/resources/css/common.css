@@ -1016,6 +1016,7 @@
         height: 12px;
         line-height: 12px;
         top: 10px;
+        right:0;
     }
     .category_wrap2 ul li {
         line-height: 40px;
@@ -1373,9 +1374,7 @@
     .package_add ul li a span.bedge::after{
         content: none;
     }
-    .category_wrap1 .cate_icon::after {
-        right: 0;
-    }
+ 
 }
 
 /* footer style stert */
