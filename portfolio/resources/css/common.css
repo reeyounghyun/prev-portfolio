@@ -292,10 +292,11 @@
 }
 .menu_left .all_menu .all_sam {
     position: absolute;
-    top: 60px;
+    top: 56px;
     right: 0;
     left: 0;
     background-color: #fff;
+    border-top: 1px solid #ddd;
     height: 100%;
     min-height: 500px;
     box-sizing: border-box;
