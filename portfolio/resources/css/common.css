@@ -1373,6 +1373,9 @@
     .package_add ul li a span.bedge::after{
         content: none;
     }
+    .category_wrap1 .cate_icon::after {
+        right: 0;
+    }
 }
 
 /* footer style stert */
