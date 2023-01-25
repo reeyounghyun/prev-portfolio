@@ -3,6 +3,29 @@
 body {
     min-width: 900px;
 }
+
+
+
+/* 컨텐츠 웹폰트 */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.guide_wrap .guide_lnb h1{
+    font-family: 'Pretendard-Regular';
+}
+
+.guide_wrap .guide_lnb .lnb_list li a{
+    font-family: 'Pretendard-Regular';
+}
+
+.guide_wrap .guide_lnb .lnb_title{
+    font-family: 'Pretendard-Regular';
+}
+
 /* span:first-child.pln {
     display: none;
 } */
