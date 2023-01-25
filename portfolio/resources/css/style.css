@@ -1667,9 +1667,9 @@
     .main_slider .swiper{
         height: auto;
     }
-    .wrapper{
-        /* border-radius: 30px; */
-    }
+    /* .wrapper{
+         border-radius: 30px; 
+    } */
     .travel_sug .swiper-slide{
        width: 100%;
     }

@@ -16,7 +16,6 @@ function common_load(){
 
         // 전체메뉴 클릭 이벤트
         $(".mb_right_btn").click(function(){
-            console.log('들어옴');
             $(".quick_menu").toggleClass("acitve");
             $("body").css({
                 "overflow":"hidden",
