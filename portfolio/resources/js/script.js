@@ -373,6 +373,18 @@ function btnClick_event() {
         }
     })
 
+    //서브페이지 정렬 버튼
+    $(".prd_add_btn").click(function(){
+        $("prdItemList ul li").addClass("add");
+        $(this).addClass("add");
+        $(".prd_remove_btn").removeClass("add");
+    });
+    $(".prd_remove_btn").click(function(){
+        $("prdItemList ul li").removeClass("add");
+        $(this).addClass("add");
+        $(".prd_add_btn").removeClass("add");
+    });
+
 
     //가상요소 스크립트
     // $(".sub_menu").click(function () {
