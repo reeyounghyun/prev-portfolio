@@ -278,7 +278,6 @@
 .gnb{
     position: relative;
     border-top: 1px solid #ddd;
-    border-bottom: 1px solid #111;
     box-sizing: border-box; 
 }
 .gnb .menu_wrap{
