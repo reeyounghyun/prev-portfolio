@@ -64,7 +64,6 @@
     color: #fff;
     font-size: 30px;
     line-height: 38px;
-    font-family: 'hnt-font'; 
     padding-bottom: 0;
 }
 .blind{
@@ -868,10 +867,15 @@
 .best_inner>ul li img{
     width: 100%;
     height: 100%;
+    border-radius: 20px 20px 0 0;
 }
 .best_inner>ul li a{
     display: block;
 }
+.best_inner>ul li a .get {
+    border-radius: 20px 20px 0 0;
+}
+
 .best_inner>ul li .image {
     display: flex;
     align-items: center;
@@ -934,7 +938,6 @@
     color: #fff;
     font-size: 36px;
     line-height: 1.3;
-    font-family: 'hnt-font';
     margin-bottom: 40px;
 }
 /* 마침내 특가 버튼 */
@@ -1206,7 +1209,6 @@
     font-weight: 600;
 }
 .trs .tr_text .product_box .item_title{
-    font-family: 'hnt-font';
     font-size: 32px;
     color: #111;
     display: block;
