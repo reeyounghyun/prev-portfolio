@@ -211,7 +211,7 @@ span, p{
 .info-project{
     display: flex;
     flex-wrap: wrap;
-    padding:40px;
+    padding: 10px 40px 40px;
     margin:0 -10px;
 }
 .info_area{
@@ -231,25 +231,35 @@ span, p{
 }
 
 .info-project>li{
-    flex: 0 1 calc(25% - 20px);
+    flex: 0 1 calc(33.333% - 20px);
     margin:0 10px;
+}
+
+.info-project>li:last-child a{
+  border-bottom: none;
 }
 
 .info-project>li>a {
     display: block;
-    position: relative;
+    padding: 25px 0;
+    border-bottom: 1px solid #fff;
+    /* position: relative; */
+}
+
+.flex-type>li>a{
+  border-bottom: none;
 }
 
 .font-box {
     width: 100%;
     height: calc(100% - 77px);
-    visibility: hidden;
-    opacity: 1;
-    position: absolute;
+    /* visibility: hidden; */
+    /* opacity: 1; */
+    /* position: absolute;
     left:0;
     top:0;
-    transition: all 0.5s;
-    padding-top: 20px;
+    transition: all 0.5s; */
+    /* padding-top: 20px; */
 }
 
 .font-img{
@@ -257,13 +267,13 @@ span, p{
   margin: 0 auto;
 }
 
-.info-project>li>a:hover .font-box {
+/* .info-project>li>a:hover .font-box {
     visibility: visible;
     opacity: 1;
     transition: all 0.5s;
     position: absolute;
     background-color: rgb(0, 0, 0, 50%);
-}
+} */
 
 .info-project>li .font-box p {
     color:#fff;
@@ -280,7 +290,11 @@ span, p{
 
 }
 .info-project li .porject-font span{
-    display: block;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     font-size: 15px;
     text-align: center;
     padding: 15px;
@@ -289,7 +303,8 @@ span, p{
 
 .info-project li .porject-font strong{
     font-size: 20px;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
+    padding-right: 5px;
     color: #fff;
   }
 

@@ -1,5 +1,12 @@
 $(document).ready(function(){
     var if_event = $('body,html').width()
+    $(window).on("resize",function(){
+    var mobile_size = $('body,html').width()
+        if(mobile_size){
+            
+        }
+    })
+   
     if (if_event >= 1280) {
         fullpage_event()
     }
