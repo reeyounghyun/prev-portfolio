@@ -255,6 +255,10 @@ span, p{
     /* position: relative; */
 }
 
+.info-project>li:hover>a {
+  text-decoration: underline;
+}
+
 .flex-type>li>a{
   border-bottom: none;
 }
