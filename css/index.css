@@ -175,6 +175,11 @@ span, p{
     border-top: 3px solid #fff;
 }
 
+.personal-information .info-area>li .info-box  .content-flex{
+  flex-direction: column;
+
+}
+
 .personal-information .info-area>li .info-box .info-content-right .content-box-left {
     flex: 0 0 100px;
     padding-top:10px;
@@ -199,6 +204,10 @@ span, p{
     line-height: 2;
     font-size: 16px;
     color: #c6c6c6;
+}
+
+.personal-information .info-area>li .info-box .info-content-right .detail-1{
+  padding-bottom: 20px;
 }
 
 .info-content-detail>p{
