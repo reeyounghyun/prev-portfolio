@@ -328,13 +328,13 @@ span, p{
   }
 .rain {
     position: absolute;
-    left: 0;
+    left: 0; 
     width: 100%;
     height: 100%;    
     background-color: #111;
   }
 
-  .rain.back-row {
+  /* .rain.back-row {
     display: none;
     z-index: 1;
     bottom: 60px;
@@ -343,9 +343,9 @@ span, p{
 
   body.back-row-toggle .rain.back-row {
     display: block;
-  }
+  } */
 
-  .drop {
+  /* .drop {
     position: absolute;
     bottom: 100%;
     width: 15px;
@@ -387,7 +387,7 @@ span, p{
     100% {
       opacity: 0;
     }
-  }
+  } */
 
   .splat {
     width: 15px;
