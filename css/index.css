@@ -689,4 +689,12 @@ span, p{
         margin-top: 20px;
     }
 
+    .info-project li:hover .porject-font strong{
+      color: #fff;
+    }
+
+    .info-project>li>a:hover{
+      border-top: #fff;
+    }
+
 }
