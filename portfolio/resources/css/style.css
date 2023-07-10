@@ -562,9 +562,8 @@
 	background-color: #fff;
 	margin-top: 10px;
 	padding-left: 12px;
-	border-radius: 5px;
-	border: 1px solid #ccc;
-	box-sizing: border-box;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 .bnt_le span,
 .bnt_ri span {
@@ -591,17 +590,18 @@
 }
 .bnt_le ul.btn_a {
 	background-color: #fff;
-	width: 161px;
+	width: 160px;
 	position: absolute;
-	left: 0px;
+	left: -1px;
 	top: 39px;
 	border: 1px solid #5e2bb8;
 	box-sizing: border-box;
 	z-index: 100;
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 	display: none;
 	transition: all 0.3s;
+	border-top: 1px solid rgb(79 79 79 / 62%);
 }
 .bnt_le ul.btn_a.active {
 	display: block;
@@ -615,9 +615,9 @@
 .bnt_le ul li:hover {
 	background-color: #ccc;
 }
-.bnt_le ul li:first-child {
+/* .bnt_le ul li:first-child {
 	padding-top: 10px;
-}
+} */
 .le_box > ul > li:nth-child(2) {
 	display: flex;
 	display: -webkit-box;
@@ -2098,7 +2098,7 @@
 	width: 410px;
 }
 .card_container .calendar_container {
-	width: 370px;
+	width: 342px;
 }
 .card_container .calendar_container thead {
 	border-right: 1px solid #ccc;
@@ -2344,8 +2344,8 @@
 }
 .card_container .card_calendar .btn_closed {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 4px;
+	right: 10px;
 	width: 32px;
 	height: 32px;
 	background: url(../images/ico-alllmenu_close.png) center center no-repeat;
@@ -2356,8 +2356,8 @@
 .card_container .card_calendar .btn_closed:hover {
 	width: 32px;
 	height: 32px;
-	border-radius: 16px;
-	background-color: #f4f7fb;
+	/* border-radius: 16px; */
+	background-color: #efefef;
 }
 .card_container .tab_menu {
 	margin: 15px;
