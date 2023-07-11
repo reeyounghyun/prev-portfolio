@@ -666,6 +666,7 @@
 	}
 	.package_wrap ul {
 		display: flex;
+		justify-content: space-around;
 		align-items: center;
 		padding: 25px 0 25px 0;
 	}
@@ -936,6 +937,7 @@
 
 	.cate_titel span {
 		display: inline-block;
+		font-weight: 600;
 	}
 
 	.text_wrap {
@@ -1066,6 +1068,7 @@
 	}
 	.menu_item4 ul {
 		display: flex;
+		justify-content: space-around;
 		align-items: center;
 	}
 	.menu_item4 ul li {
