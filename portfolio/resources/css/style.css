@@ -806,7 +806,7 @@
 	display: inline-block;
 	position: absolute;
 	left: 85px;
-	top: 7px;
+	top: 12px;
 	color: #777;
 }
 .main_slider .swiper-button-next {
@@ -1464,7 +1464,7 @@
 	height: 12px;
 	position: absolute;
 	right: -14px;
-	background-position: -30px 4px;
+	background-position: -30px 0px;
 	padding: 15px 0;
 }
 /* 두번째 li */
@@ -2095,10 +2095,11 @@
 	width: 100%;
 }
 .card_container {
-	width: 410px;
+	width: 330px;
+	display: inline-block;
 }
 .card_container .calendar_container {
-	width: 342px;
+	width: 300px;
 }
 .card_container .calendar_container thead {
 	border-right: 1px solid #ccc;
@@ -2229,7 +2230,7 @@
 .card_container .card_calendar {
 	display: inline-flex;
 	position: relative;
-	padding: 20px;
+	padding: 15px;
 	border-radius: 12px;
 	-webkit-box-shadow: 0px 6px 20px rgba(50, 54, 60, 0.1);
 	box-shadow: 0px 6px 20px rgba(50, 54, 60, 0.1);
@@ -2261,8 +2262,8 @@
 .card_container .card_calendar #tableCalendar tr td {
 	padding: 6px 0;
 	text-align: center;
-	height: 25px;
-	line-height: 25px;
+	height: 20px;
+	line-height: 20px;
 	font-size: 15px;
 	border-right: 1px solid #ccc;
 	border-left: 1px solid #ccc;
