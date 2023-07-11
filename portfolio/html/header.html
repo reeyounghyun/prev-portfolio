@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="../resources/css/common.css">
     <link rel="stylesheet" href="../resources/css/style.css">
+    <link rel="stylesheet" href="../../scss/style.scss">
 
     <!-- 제이쿼리 플러그인 -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
@@ -31,11 +32,11 @@
     <!-- 스크립트 js-->
     <script src="../resources/js/script.js"></script>
 
-     <script>
+    <script>
         var rand = Math.floor((Math.random() * 10000));
-        document.write('<link rel="stylesheet" href="./css/style.css?'+rand+'">');
-        document.write('<link rel="stylesheet" href="./css/common.css?'+rand+'">');
-    </script> 
+        document.write('<link rel="stylesheet" href="./css/style.css?' + rand + '">');
+        document.write('<link rel="stylesheet" href="./css/common.css?' + rand + '">');
+    </script>
 </head>
 
 <body>
@@ -52,12 +53,14 @@
                     <ul>
                         <li class="virt_elem">
                             <a href="#">
-                                <img src="../resources/images/pc_top_2.jpg" alt="구매고객 대상 럭키드로우 EVENT 해외항공권 예약하고 200만원 받자!">
+                                <img src="../resources/images/pc_top_2.jpg"
+                                    alt="구매고객 대상 럭키드로우 EVENT 해외항공권 예약하고 200만원 받자!">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="../resources/images/pc_top_2_42.jpg" alt="가성비 패키지, 월요일 오후2시! 동유럽 타임세일 199만원대~">
+                                <img src="../resources/images/pc_top_2_42.jpg"
+                                    alt="가성비 패키지, 월요일 오후2시! 동유럽 타임세일 199만원대~">
                             </a>
                         </li>
                     </ul>
@@ -95,8 +98,8 @@
                                         <fieldset class="fld_search">
                                             <legend class="blind">통합 검색어 입력폼</legend>
                                             <div class="box_search deletable" style="position: relative;">
-                                                <input type="text" id="input_keyword" title="검색어" placeholder="검색어를 입력해주세요"
-                                                    maxlength="30" class="input_keyword">
+                                                <input type="text" id="input_keyword" title="검색어"
+                                                    placeholder="검색어를 입력해주세요" maxlength="30" class="input_keyword">
                                                 <!-- <span class="v-reset-input">✖</span> -->
                                                 <button type="button" class="search">
                                                     <span class="search_btn"></span>
