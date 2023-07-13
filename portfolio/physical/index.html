@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1980">
+    <meta name="apple-mobile-web-app-title" content="YG&amp; Mall">
+    <meta name="robots" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:title" content="YG&amp; Mall" />
+    <meta property="og:site_name" content="YG&amp; Mall" />
+    <meta property="og:description" content="YG&amp; Mall" />
+    <title>김계란</title>
+
+    <!-- ico -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/basic.css">
+    <link rel="stylesheet" href="./assets/css/skin_1.css">
+
+    <!-- banner_plugin:css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- icon -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
+    <script src="./assets/js/skin_1.js"></script>
+
+    <!-- banner_plugin:js -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="top_tit">
+            <!-- <ul class="top_link_blank">
+                <li class="contan">
+                    <a href="https://mn.sellering.co.kr/" target="_blank">마스터</a>
+                    <a href="https://supply.sellering.co.kr/" target="_blank">공급사</a>
+                    <a href="https://seller.sellering.co.kr/" target="_blank">셀러</a>
+                    <a href="./assets/introduction.pdf" target="_blank">소개서</a>
+                </li>
+            </ul> -->
+            <ul class="contan top_btn">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="logo_con">
+            <div class="contan">
+                <div class="logo">
+                    <h1>
+                        <a href="index.html">
+                            <img src="./images/sellering_logo.jpg" alt="physical" class="pc">
+                            <img src="./images/sellering_logo.jpg" alt="physical" class="mb">
+                        </a>
+                    </h1>
+                </div>
+                <div class="logo_l_i">
+                    <ul>
+                        <li><a href="#"><i class="xi-user-o"></i></a></li>
+                        <li><a href="#"><i class="xi-cart-o"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="side_m">
+            <div class="side_all_btn">
+                <div class="slid_ham">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <button type="button">CATEGORY</button>
+            </div>
+            <ul>
+                <li><a href="#">기획전</a></li>
+                <li><a href="#">쿠폰</a></li>
+                <li><a href="#">TOP100</a></li>
+            </ul>
+            <div class="main_search">
+                <button type="button" data-bs-toggle="modal" data-bs-target=".search_modal">
+                    <i class="xi-search"></i>
+                    <span>통합검색</span>
+                </button>
+            </div>
+
+            <div class="search_conten">
+                <div class="search_wrap">
+                    <div class="contan">
+                        <div class="search_all">
+                            <p>브랜드 검색</p>
+                            <div class="brand_s_form search_inner">
+                                <input type="text">
+                                <button type="button"><i class="xi-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="mob_brand_close search_btn  mb"><i class="xi-close"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!--검색모달:s-->
+        <div class="modal fade search_modal" tabindex="-1" aria-labelledby="search_modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered  modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="search_mod_close" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="xi-close"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="search_mod_form">
+                            <div class="search_mod_input">
+                                <div class="smi_input">
+                                    <input type="text">
+                                </div>
+                                <button type="button"><i class="xi-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--검색모달:e-->
+
+        <div class="slid_category">
+            <div class="slid_mask"></div>
+            <div class="mask_category">
+                <div class="mask_close">
+                    <button type="button"><i class="xi-close-thin"></i></button>
+                </div>
+                <div class="category_cover">
+                    <div class="cat_tit_mem">
+                        <ul>
+                            <li>
+                                <a href="#">마이페이지</a>
+                            </li>
+                            <li>
+                                <a href="#">배송조회</a>
+                            </li>
+                        </ul>
+                        <div class="cat_t_btn">
+                            <div class="btn_list">
+                                <a href="#">로그인</a>
+                                <a href="#">회원가입</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="all_menu">
+                        <ul class="con_cate accordion-menu">
+                            <li>
+                                <a class="dropdownlink">가구/인테리어<i class="xi-angle-down-min"></i></a>
+                                <ul class="submenuItems">
+                                    <li><a href="#">가구 <i class="xi-angle-right-min"></i></a></li>
+                                    <li><a href="#">인테리어 <i class="xi-angle-right-min"></i></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdownlink">디지털/가전 <i class="xi-angle-down-min"></i></a>
+                                <ul class="submenuItems">
+                                    <li><a href="#">가전 <i class="xi-angle-right-min"></i></a></li>
+                                    <li><a href="#">컴퓨터/디지털 <i class="xi-angle-right-min"></i></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdownlink">반려동물 <i class="xi-angle-down-min"></i></a>
+                                <ul class="submenuItems">
+                                    <li><a href="#">고양이/강아지 <i class="xi-angle-right-min"></i></a></li>
+                                    <li><a href="#">기타동물 <i class="xi-angle-right-min"></i></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdownlink">뷰티<i class="xi-angle-down-min"></i></a>
+                                <ul class="submenuItems">
+                                    <li><a href="#">화장품/소품 <i class="xi-angle-right-min"></i></a></li>
+                                    <li><a href="#">남성화장품 <i class="xi-angle-right-min"></i></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdownlink">생활/주방 <i class="xi-angle-down-min"></i></a>
+                                <ul class="submenuItems">
+                                    <li><a href="#">생활용품 <i class="xi-angle-right-min"></i></a></li>
+                                    <li><a href="#">주방용품 <i class="xi-angle-right-min"></i></a></li>
+                                    <li><a href="#">자동차용품 <i class="xi-angle-right-min"></i></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdownlink">스포츠/레저 <i class="xi-angle-down-min"></i></a>
+                                <ul class="submenuItems">
+                                    <li><a href="#">스포츠 <i class="xi-angle-right-min"></i></a></li>
+                                    <li><a href="#">레저 <i class="xi-angle-right-min"></i></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdownlink">식품 <i class="xi-angle-down-min"></i></a>
+                                <ul class="submenuItems">
+                                    <li><a href="#">신선식품 <i class="xi-angle-right-min"></i></a></li>
+                                    <li><a href="#">가공식품 <i class="xi-angle-right-min"></i></a></li>
+                                    <li><a href="#">건강/다이어트식품 <i class="xi-angle-right-min"></i></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdownlink">여행/티켓/쿠폰 <i class="xi-angle-down-min"></i></a>
+                                <ul class="submenuItems">
+                                    <li><a href="#">여행/항공 <i class="xi-angle-right-min"></i></a></li>
+                                    <li><a href="#">쿠폰/상품권<i class="xi-angle-right-min"></i></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdownlink">의류/잡화 <i class="xi-angle-down-min"></i></a>
+                                <ul class="submenuItems">
+                                    <li><a href="#">의류 <i class="xi-angle-right-min"></i></a></li>
+                                    <li><a href="#">패션잡화 <i class="xi-angle-right-min"></i></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdownlink">출산/유아동 <i class="xi-angle-down-min"></i></a>
+                                <ul class="submenuItems">
+                                    <li><a href="#">출산 <i class="xi-angle-right-min"></i></a></li>
+                                    <li><a href="#">유아동 <i class="xi-angle-right-min"></i></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdownlink">문구/사무용품 <i class="xi-angle-down-min"></i></a>
+                                <ul class="submenuItems">
+                                    <li><a href="#">문구 <i class="xi-angle-right-min"></i></a></li>
+                                    <li><a href="#">사무용품 <i class="xi-angle-right-min"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cate_bottom">
+                        <div class="cb_customer">
+                            <ul>
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">Q&amp;A</a></li>
+                            </ul>
+                        </div>
+                        <div class="cb_call">
+                            <p>CUSTOMEER CENTER</p>
+                            <a href="tel:1855-3834"><i class="xi-call"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--skin header:e-->
+    </header>
+
+    <div class="visual_ban">
+        <div class="main_b">
+            <div class="single">
+                <!-- <img src="./images/main_banner.jpg" alt="PHYSICAL" class="pc">
+            <img src="./images/main_banner_mb.jpg" alt="PHYSICAL" class="mb"> -->
+
+
+                <div class="slider banner_img">
+                    <div>
+                        <img src="./images/main_banner.jpg" alt="PHYSICAL">
+                    </div>
+                    <!-- <div>
+                        <img src="./images/main_banner_mb.jpg" alt="PHYSICAL" class="mb">
+                    </div> -->
+                    <!-- 김계란 배너 -->
+                    <div>
+                        <img src="./images/ban_1.jpg" alt="짱구는못말려" alt="PHYSICAL">
+                    </div>
+                    <!-- <div>
+                        <img src="./images/ban_1_mb.jpg" alt="짱구는못말려" alt="PHYSICAL" class="mb"> 
+                    </div> -->
+                    <div>
+                        <img src="./images/ban_2.jpg" alt="짱구는못말려" alt="PHYSICAL">
+                    </div>
+                    <!-- <div>
+                        <img src="./images/ban_2_mb.jpg" alt="짱구는못말려" alt="PHYSICAL" class="mb">
+                    </div> -->
+                    <!-- 짱구는 못말려 배너 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 슬라이드 추가 -->
+
+    <div class="in_slide contan">
+        <div class="in_ban">
+            <div class="single">
+                <div class="slider single_item">
+                    <div>
+                        <img src="./images/main_slide.jpg" alt="김계란&피지컬갤러리공식굿즈">
+                    </div>
+                    <div>
+                        <img src="./images/main_slide.jpg" alt="김계란&피지컬갤러리공식굿즈">
+                    </div>
+                    <div>
+                        <img src="./images/main_slide.jpg" alt="김계란&피지컬갤러리공식굿즈">
+                    </div>
+                    <div>
+                        <img src="./images/main_slide.jpg" alt="김계란&피지컬갤러리공식굿즈">
+                    </div>
+                </div>
+            </div>
+            <!-- single_item -->
+
+            <div class="single">
+                <div class="slider right_single">
+                    <div>
+                        <img src="./images/main_slides.jpg" alt="마그네틱탈부착시스템">
+                    </div>
+                    <div>
+                        <img src="./images/main_slides.jpg" alt="마그네틱탈부착시스템">
+                    </div>
+                    <div>
+                        <img src="./images/main_slides.jpg" alt="마그네틱탈부착시스템">
+                    </div>
+                    <div>
+                        <img src="./images/main_slides.jpg" alt="마그네틱탈부착시스템">
+                    </div>
+                </div>
+                <!-- right_single -->
+            </div>
+        </div>
+    </div>
+    <!--skin visual_banner:e-->
+
+    <hr>
+
+    <div class="best_wrap">
+        <div class="titl_products contan">
+            <h1><span>R</span>ECOMMEND PRODUCT</h1>
+            <p>와이지앤 몰의 추천상품을 만나보세요.</p>
+            <ul class="pro_list_all r_product">
+                <li>
+                    <div class="por_img">
+                        <a href="./animal_friend_all.html" class="pro_img_clk">
+                            <img src="./images/animal_friend_all.png" alt="짱구는 못말려 동물친구들 베리톡, 5종 세트" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="#">셀러링 단독</a>
+                        <a class=" pro_name" href="#">짱구는 못말려 동물친구들 베리톡, 5종 세트</a>
+                        <p class="pp_num">43,900 원</p>
+                    </div>
+                </li>
+                <!-- 동물친구들 시리즈 -->
+
+                <li>
+                    <div class="por_img">
+                        <a href="jjang_paeg_all.html" class="pro_img_clk">
+                            <img src="./images/jjang_all.png" alt="짱구는 못말려 못말리는 짱구가족 베리톡, 5종 세트" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="#">셀러링 단독</a>
+                        <a class=" pro_name" href="#">짱구는 못말려 못말리는 짱구가족 베리톡, 5종 세트</a>
+                        <p class="pp_num">43,900 원</p>
+                    </div>
+                </li>
+                <!-- 짱구가족 시리즈 -->
+
+
+                <!-- 짱구는 못말려 상품 -->
+
+                <li>
+                    <div class="por_img">
+                        <a href="./detail.html" class="pro_img_clk">
+                            <img src="./images/prb1.jpg" alt="원하는디자인으로1초만에툭! verytok" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+                    <div class="pro_text">
+                        <a class="brand_name" href="./detail.html">셀러링 단독</a>
+                        <a class="prd_name pro_name" href="./detail.html">김계란 베리톡</a>
+                        <p class="pp_num">24,000 원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="por_img">
+                        <a href="./phone_detail.html" class="pro_img_clk">
+                            <img src="./images/pb_list1.jpg" alt="김계란 phone case" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="./phone_detail.html">셀러링 단독</a>
+                        <a class=" pro_name" href="./phone_detail.html">김계란 케이스</a>
+                        <p class="pp_num">24,000 원</p>
+                    </div>
+                </li>
+                <!-- 김계란 상품 -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="new_prd">
+        <div class="contan">
+            <div class="titl_products">
+                <h1><span>N</span>ew Product</h1>
+                <p>따끈따끈한 신상들을 만나보세요.</p>
+            </div>
+            <ul class="pro_list_all">
+
+                <li>
+                    <div class="por_img">
+                        <a href="./detail.html" class="prd_img_clk pro_img_clk">
+                            <img src="./images/prb1.jpg" alt="원하는디자인으로1초만에툭! verytok" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn"><i class="xi-heart"></i> <span>찜하기</span></button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="./pg_berrytalk.html">셀러링 단독</a>
+                        <a class="pro_name" href="./pg_berrytalk.html">김계란 베리톡</a>
+                        <p class="pp_num">24,000 원</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="por_img">
+                        <a href="./phone_detail.html" class="pro_img_clk">
+                            <img src="./images/prb3.jpg" alt="gimgyelanphonecase" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+                    <div class="pro_text">
+                        <a class="brand_name" href="./phone_detail.html">셀러링 단독</a>
+                        <a class="pro_name" href="./phone_detail.html">김계란 케이스</a>
+                        <p class="pp_num">24,000 원</p>
+                    </div>
+                </li>
+                <!-- 김계란 상품 -->
+
+                <li>
+                    <div class="por_img">
+                        <a href="./animal_friend_1.html" class="pro_img_clk">
+                            <img src="./images/animal_friend_1.png" alt="짱구는 못말려 동물친구들 베리톡, 캥거루" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="./animal_friend_1.html">셀러링 단독</a>
+                        <a class=" pro_name" href="./animal_friend_1.html">짱구는 못말려 동물친구들 베리톡, 캥거루</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="por_img">
+                        <a href="./animal_friend_2.html" class="pro_img_clk">
+                            <img src="./images/animal_friend_2.png" alt="짱구는 못말려 동물친구들 베리톡, 펭귄짱구" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="./animal_friend_2.html">셀러링 단독</a>
+                        <a class=" pro_name" href="./animal_friend_2.html">짱구는 못말려 동물친구들 베리톡, 펭귄짱구</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="por_img">
+                        <a href="./animal_friend_3.html" class="pro_img_clk">
+                            <img src="./images/animal_friend_3.png" alt="짱구는 못말려 동물친구들 베리톡, 코알라남매" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="./animal_friend_3.html">셀러링 단독</a>
+                        <a class=" pro_name" href="./animal_friend_3.html">짱구는 못말려 동물친구들 베리톡, 코알라남매</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="por_img">
+                        <a href="./animal_friend_4.html" class="pro_img_clk">
+                            <img src="./images/animal_friend_4.png" alt="짱구는 못말려 동물친구들 베리톡, 양네마리" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="./animal_friend_4.html">셀러링 단독</a>
+                        <a class=" pro_name" href="./animal_friend_4.html">짱구는 못말려 동물친구들 베리톡, 양네마리</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="por_img">
+                        <a href="./animal_friend_5.html" class="pro_img_clk">
+                            <img src="./images/animal_friend_5.png" alt="짱구는 못말려 동물친구들 베리톡, 양네마리" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="./animal_friend_5.html">셀러링 단독</a>
+                        <a class=" pro_name" href="./animal_friend_5.html">짱구는 못말려 동물친구들 베리톡, 사슴</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <!-- 1 동물친구들 시리즈 끝 -->
+
+                <li>
+                    <div class="por_img">
+                        <a href="./woldeu_1.html" class="pro_img_clk">
+                            <img src="./images/woldeu_1.png" alt="짱구는 못말려 떡잎월드 베리톡, 짱구월드" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="./woldeu_1.html">셀러링 단독</a>
+                        <a class=" pro_name" href="./woldeu_1.html">짱구는 못말려 떡잎월드 베리톡, 짱구월드</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="por_img">
+                        <a href="./woldeu_2.html" class="pro_img_clk">
+                            <img src="./images/woldeu_2.png" alt="짱구는 못말려 떡잎월드 베리톡, 철수월드" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="./woldeu_2.html">셀러링 단독</a>
+                        <a class=" pro_name" href="./woldeu_2.html">짱구는 못말려 떡잎월드 베리톡, 철수월드</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="por_img">
+                        <a href="./woldeu_3.html" class="pro_img_clk">
+                            <img src="./images/woldeu_3.png" alt="짱구는 못말려 떡잎월드 베리톡, 유리월드" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="./woldeu_3.html">셀러링 단독</a>
+                        <a class=" pro_name" href="./woldeu_3.html">짱구는 못말려 떡잎월드 베리톡, 유리월드</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="por_img">
+                        <a href="./woldeu_4.html" class="pro_img_clk">
+                            <img src="./images/woldeu_4.png" alt="짱구는 못말려 떡잎월드 베리톡, 맹구와훈이" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="./woldeu_4.html">셀러링 단독</a>
+                        <a class=" pro_name" href="./woldeu_4.html">짱구는 못말려 떡잎월드 베리톡, 맹구와훈이</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="por_img">
+                        <a href="./woldeu_5.html" class="pro_img_clk">
+                            <img src="./images/woldeu_5.png" alt="짱구는 못말려 떡잎월드 베리톡, 위아더떡잎월드" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="./woldeu_5.html">셀러링 단독</a>
+                        <a class=" pro_name" href="./woldeu_5.html">짱구는 못말려 떡잎월드 베리톡, 위아더떡잎월드</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <!-- 2 떡잎월드 시리즈 -->
+
+                <li>
+                    <div class="por_img">
+                        <a href="jjang_paeg_1.html" class="pro_img_clk">
+                            <img src="./images/jjang_1.png" alt="짱구는 못말려 못말리는 짱구가족 베리톡, 굿잡" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="jjang_paeg_1.html">셀러링 단독</a>
+                        <a class=" pro_name" href="jjang_paeg_1.html">짱구는 못말려 못말리는 짱구가족 베리톡, 굿잡</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="por_img">
+                        <a href="jjang_paeg_2.html" class="pro_img_clk">
+                            <img src="./images/jjang_2.png" alt="짱구는 못말려 못말리는 짱구가족 베리톡, 한잔해" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="jjang_paeg_2.html">셀러링 단독</a>
+                        <a class=" pro_name" href="jjang_paeg_2.html">짱구는 못말려 못말리는 짱구가족 베리톡, 한잔해</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="por_img">
+                        <a href="jjang_paeg_3.html" class="pro_img_clk">
+                            <img src="./images/jjang_3.png" alt="짱구는 못말려 못말리는 짱구가족 베리톡, 부끄" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="jjang_paeg_3.html">셀러링 단독</a>
+                        <a class=" pro_name" href="jjang_paeg_3.html">짱구는 못말려 못말리는 짱구가족 베리톡, 부끄</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="por_img">
+                        <a href="jjang_paeg_4.html" class="pro_img_clk">
+                            <img src="./images/jjang_4.png" alt="짱구는 못말려 못말리는 짱구가족 베리톡, 설렘" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="jjang_paeg_4.html">셀러링 단독</a>
+                        <a class=" pro_name" href="jjang_paeg_4.html">짱구는 못말려 못말리는 짱구가족 베리톡, 설렘</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="por_img">
+                        <a href="jjang_paeg_5.html" class="pro_img_clk">
+                            <img src="./images/jjang_5.png" alt="짱구는 못말려 못말리는 짱구가족 베리톡, 러브레터" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="jjang_paeg_5.html">셀러링 단독</a>
+                        <a class=" pro_name" href="jjang_paeg_5.html">짱구는 못말려 못말리는 짱구가족 베리톡, 러브레터</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <!-- 3 못말리는 짱구가족 시리즈 -->
+
+                <li>
+                    <div class="por_img">
+                        <a href="toy_friends_1.html" class="pro_img_clk">
+                            <img src="./images/toy_friends_1.png" alt=" 짱구는 못말려 짱구와 장난감친구들 베리톡, 짱구빔" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="toy_friends_1.html">셀러링 단독</a>
+                        <a class=" pro_name" href="toy_friends_1.html"> 짱구는 못말려 짱구와 장난감친구들 베리톡, 짱구빔
+                        </a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="por_img">
+                        <a href="toy_friends_2.html" class="pro_img_clk">
+                            <img src="./images/toy_friends_2.png" alt="짱구는 못말려 짱구와 장난감친구들 베리톡, 부리부리" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="toy_friends_2.html">셀러링 단독</a>
+                        <a class=" pro_name" href="toy_friends_2.html"> 짱구는 못말려 짱구와 장난감친구들 베리톡, 부리부리</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="por_img">
+                        <a href="toy_friends_3.html" class="pro_img_clk">
+                            <img src="./images/toy_friends_3.png" alt="짱구는 못말려 짱구와 장난감친구들 베리톡, 액션펀치" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="toy_friends_3.html">셀러링 단독</a>
+                        <a class=" pro_name" href="toy_friends_3.html">짱구는 못말려 짱구와 장난감친구들 베리톡, 액션펀치</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="por_img">
+                        <a href="toy_friends_4.html" class="pro_img_clk">
+                            <img src="./images/toy_friends_4.png" alt="짱구는 못말려 짱구와 장난감친구들 베리톡, 건담로봇" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="toy_friends_4.html">셀러링 단독</a>
+                        <a class=" pro_name" href="toy_friends_4.html">짱구는 못말려 짱구와 장난감친구들 베리톡, 건담로봇</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="por_img">
+                        <a href="toy_friends_5.html" class="pro_img_clk">
+                            <img src="./images/toy_friends_5.png" alt="짱구는 못말려 짱구와 장난감친구들 베리톡, 엉덩이공룡" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="toy_friends_5.html">셀러링 단독</a>
+                        <a class=" pro_name" href="toy_friends_5.html">짱구는 못말려 짱구와 장난감친구들 베리톡, 엉덩이공룡</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <!-- 4 장난감친구들 -->
+
+                <li>
+                    <div class="por_img">
+                        <a href="./jjanggu_day_1.html" class="pro_img_clk">
+                            <img src="./images/jjanggu_day_1.png" alt="짱구는 못말려 짱구의 하루 베리톡, 굿모닝" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="./jjanggu_day_1.html">셀러링 단독</a>
+                        <a class=" pro_name" href="./jjanggu_day_1.html">짱구는 못말려 짱구의 하루 베리톡, 굿모닝</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="por_img">
+                        <a href="./jjanggu_day_2.html" class="pro_img_clk">
+                            <img src="./images/jjanggu_day_2.png" alt="짱구는 못말려 짱구의 하루 베리톡, 풍선여행" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="./jjanggu_day_2.html">셀러링 단독</a>
+                        <a class=" pro_name" href="./jjanggu_day_2.html">짱구는 못말려 짱구의 하루 베리톡, 풍선여행</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="por_img">
+                        <a href="./jjanggu_day_3.html" class="pro_img_clk">
+                            <img src="./images/jjanggu_day_3.png" alt="짱구는 못말려 짱구의 하루 베리톡, 초코비" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="./jjanggu_day_3.html">셀러링 단독</a>
+                        <a class=" pro_name" href="./jjanggu_day_3.html">짱구는 못말려 짱구의 하루 베리톡, 초코비</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="por_img">
+                        <a href="./jjanggu_day_4.html" class="pro_img_clk">
+                            <img src="./images/jjanggu_day_4.png" alt="짱구는 못말려 짱구의 하루 베리톡, 유치원" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="./jjanggu_day_4.html">셀러링 단독</a>
+                        <a class=" pro_name" href="./jjanggu_day_4.html">짱구는 못말려 짱구의 하루 베리톡, 유치원</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="por_img">
+                        <a href="./jjanggu_day_5.html" class="pro_img_clk">
+                            <img src="./images/jjanggu_day_5.png" alt="짱구는 못말려 짱구의 하루 베리톡, 아이스크림" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="./jjanggu_day_5.html">셀러링 단독</a>
+                        <a class=" pro_name" href="./jjanggu_day_5.html">짱구는 못말려 짱구의 하루 베리톡, 아이스크림</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <!-- 5 짱구의하루 -->
+
+                <li>
+                    <div class="por_img">
+                        <a href="ChocoBee_1.html" class="pro_img_clk">
+                            <img src="./images/ChocoBee_1.png" alt="짱구는 못말려 초코비 공룡 베리톡, 초코비공룡" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="ChocoBee_1.html">셀러링 단독</a>
+                        <a class=" pro_name" href="ChocoBee_1.html">짱구는 못말려 초코비 공룡 베리톡, 초코비공룡</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="por_img">
+                        <a href="ChocoBee_2.html" class="pro_img_clk">
+                            <img src="./images/ChocoBee_2.png" alt="짱구는 못말려 초코비 공룡 베리톡, 등장" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="ChocoBee_2.html">셀러링 단독</a>
+                        <a class=" pro_name" href="ChocoBee_2.html">짱구는 못말려 초코비 공룡 베리톡, 등장</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="por_img">
+                        <a href="ChocoBee_3.html" class="pro_img_clk">
+                            <img src="./images/ChocoBee_3.png" alt="짱구는 못말려 초코비 공룡 베리톡, 한숨" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="ChocoBee_3.html">셀러링 단독</a>
+                        <a class=" pro_name" href="ChocoBee_3.html">짱구는 못말려 초코비 공룡 베리톡, 한숨</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="por_img">
+                        <a href="ChocoBee_4.html" class="pro_img_clk">
+                            <img src="./images/ChocoBee_4.png" alt="짱구는 못말려 초코비 공룡 베리톡, 초코비패턴" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="ChocoBee_4.html">셀러링 단독</a>
+                        <a class=" pro_name" href="ChocoBee_4.html">짱구는 못말려 초코비 공룡 베리톡, 초코비패턴</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="por_img">
+                        <a href="ChocoBee_5.html" class="pro_img_clk">
+                            <img src="./images/ChocoBee_5.png" alt="짱구는 못말려 초코비 공룡 베리톡, 공룡패턴" class="scale_img">
+                        </a>
+                        <button type="button" class="wish_btn">
+                            <i class="xi-heart"></i>
+                            <span>찜하기</span>
+                        </button>
+                    </div>
+
+                    <div class="pro_text">
+                        <a class="brand_name" href="ChocoBee_5.html">셀러링 단독</a>
+                        <a class=" pro_name" href="ChocoBee_5.html">짱구는 못말려 초코비 공룡 베리톡, 공룡패턴</a>
+                        <p class="pp_num">29,700 원</p>
+                    </div>
+                </li>
+                <!-- 6 초코비공룡 -->
+
+                <!-- 짱구는 못말려 상품 -->
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_top_box">
+            <div class="foo_wrap">
+                <div class="menu_bor">
+                    <div class="contan link_foo">
+                        <ul>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foo_contan">
+                    <div class="contan">
+                        <div class="foo_customer">
+                            <h4>CUSTOMER CENTER</h4>
+                            <a href="tel:1855-3834">070-8028-7323</a>
+                            <p><span>평일</span> 오전 10:00 ~ 오후 19:00</p>
+                            <p><span>휴무</span> 토/일/공휴일 휴무</p>
+                        </div>
+                        <div class=" foo_bank">
+                            <h4>BANK INFO</h4>
+                            <p><span>기업</span> 주식회사 와이지앤</p>
+                            <p class="bank_no">666-041792-04-017</p>
+                        </div>
+                        <div class="foo_notice">
+                            <h4>NOTICE</h4>
+                        </div>
+                        <div class="footInfo">
+                            <h4>(주)와이지앤쇼핑</h4>
+                            <p> <span> 대표 :</span> 남윤기 </p>
+                            <p> <span>사업자등록증: </span>674-88-02340</p>
+                            <p> <span>통신판매업:</span>2022-서울양천-1239</p>
+                            <p> <span>전화번호:</span>070-8028-7323</p>
+                            <p> <span>이메일:</span>tchian00@t-chain.io</p>
+                            <p> <span>팩스:</span>02-837-5504</p>
+                            <p> <span>주소:</span>서울특별시 양천구 중앙로43길 14, 107동 904호(신정동, 래미안 목동 아델리체)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="copy">COPYRIGHT © YG&amp;. ALL RIGHTS RESERVED.</p>
+
+        <div class="foo_link">
+            <ul class="contan">
+                <li><a href="https://case.sellering.co.kr" target="_blank">단독상품 스토어</a></li>
+                <li><a href="https://hulala.sellering.co.kr/main" target="_blank">브랜드 포트폴리오</a></li>
+                <li><a href="https://eggkim.sellering.co.kr/main" target="_blank">셀러 포트폴리오</a></li>
+                <!-- <li><a href="./assets/application_form.xlsx" download="">입점문의</a></li> -->
+                <li><a href="./application_form.html" target="_blank">가입문의</a></li>
+                <li><a href="./how_pop.html" target="_blank">사용방법</a></li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+</html>
