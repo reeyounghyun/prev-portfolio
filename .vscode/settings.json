@@ -1,4 +1,12 @@
 {
 	"liveServer.settings.port": 5502,
-	"liveSassCompile.settings.generateMap": false
+	"liveSassCompile.settings.generateMap": false, // 만일 .map 파일 생성을 끄고 싶다면
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "../scss/style.scss"
+		}
+	],
+	"liveServer.settings.donotShowInfoMsg": true
 }
