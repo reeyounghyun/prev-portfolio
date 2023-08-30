@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+
+<!-- meta -->	
+<meta property="og:title" content="YG&amp; Mall" />
+<meta property="og:site_name" content="YG&amp; Mall" />
+<meta property="og:description" content="YG&amp; Mall" />
+<meta property="og:image" content="../images/message_img.jpg">
+<title>YG&amp; Mall</title>
+
+<!-- ico -->
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+
+<!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- css -->
+<link rel="stylesheet" href="./assets/css/basic.css">
+<link rel="stylesheet" href="./assets/css/skin_2.css"><!--스킨::css-->
+<link rel="stylesheet" href="./assets/css/page_style.css"><!--list,detail,mypage::css-->
+
+
+<!-- banner_plugin:css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- icon -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+<!-- jquery -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="./assets/js/jquery-ui.min.js"></script>
+<script src="./assets/js/skin_2.js"></script><!--스킨::js-->
+
+<!-- banner_plugin:js -->
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<style>
+	body{background:#f9f9f9;}
+</style>
+<div class="shop_con">
+     <div class="cont_path">
+        <ul class="cont_p_list">
+            <li><a href="./main.php">홈</a></li>
+            <li>
+                <i class="xi-angle-right-min"></i>
+                로그인
+            </li>
+        </ul>
+    </div>
+	<h1 class="login_title">LOGIN</h1>
+    <div class="login">
+        <div class="login_box">
+            <form>
+                <input type="text" placeholder="아이디" class="login_text">
+                <input type="text" placeholder="비밀번호" class="login_text">
+
+                <div class="login_check">
+                    <input type="checkbox" id="log_check">
+                    <label for="log_check">아이디 저장</label>
+                </div>
+
+                <button type="button" class="login_btn">로그인</button>
+
+                <div class="login_find">
+                    <ul>
+                        <li><a href="./join.php">회원가입</a></li>
+                        <li><a href="">아이디 찾기</a></li>
+                        <li><a href="">비밀번호 찾기</a></li>
+                    </ul>
+                </div>
+            </form>
+            <div class="login_sns">
+                <h2>SNS 로그인</h2>
+                <ul>
+                    <li class="sns_naver"><a href=""><i class="xi-naver-square"></i><p>네이버</p></a></li>
+                    <li class="sns_face"><a href=""><i class="xi-facebook-official"></i><p>페이스북</p></a></li>
+                    <li class="sns_twit"><a href=""><i class="xi-twitter"></i><p>트위터</p></a></li>
+                    <li class="sns_kakao"><a href=""><i class="xi-kakaotalk"></i><p>카카오톡</p></a></li>
+                </ul>
+            </div>
+
+            <div class="login_pbox">
+                <p><a href="./join.php"><span>회원가입</span></a>을 하시면 더 많은 혜택을 얻으실 수 있습니다.</p>
+                <button type="button" class="login_nm" onclick="location.href='login_nomember.php' ">비회원 주문조회</button>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .foot_sns{display: none;}
+</style>
+<footer>
+    <div class="meni_top_box">
+	    <div class="shop_con">
+            <div class="meun_bar con">
+                <ul>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">쇼핑몰 소개</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">사업제휴</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fcb_con">
+            <div class="shop_con">
+                <div class="fcb_customer">
+                    <h4>CUSTOMER CENTER</h4>
+                    <a href="tel:1855-3834">1855.3834</a>
+                    <p><span>평일</span> 오전 10:00 ~ 오후 06:00</p>
+                    <p><span>점심</span> 오후 12:30 ~ 오후 01:30</p>
+                    <p><span>휴무</span> 토/일/공휴일 휴무</p>
+                </div>
+                <div class="fcb_bank">
+                    <h4>BANK INFO</h4>
+                    <p><span>기업</span> 주식회사 와이지앤</p>
+                    <p class="bank_no">560-1234-0000-000</p>
+                </div>
+                <div class="fcb_notice">
+                    <h4>NOTICE</h4>
+                    <ul>
+                        <li><a href=""><p>공지사항 내용을 확인 가능하십니다.</p> <span>2022-05-02</span></a></li>
+                        <li><a href=""><p>다양한 공지사항 내용을 확인하세요.</p> <span>2022-05-01</span></a></li>
+                        <li><a href=""><p>반응형 쇼핑몰 주문 제작.</p> <span>2022-04-22</span></a></li>
+                        <li><a href=""><p>쇼핑몰 제작 하루 만에 뚝딱!!.</p> <span>2022-03-16</span></a></li>
+                        <li><a href=""><p>다양한 상품들을 한눈에 확인.</p> <span>2022-02-01</span></a></li>
+                    </ul>
+                </div>
+                <div class="footInfo">
+                    <h4>(주)와이지앤</h4>
+                    <p>대표 : 남윤기 </p>
+                    <p>주소 : 서울 금천구 가산디지털로1로 137, IT캐슬2차 11층</p>
+                    <p>대표번호 1855-3834</p>
+                    <p>사업자등록번호 : 356-81-00810</p>
+                    <p>통신판매업 : 제2018-서울금천-0582호</p>
+                    <div class="social_btn">
+                        <ul>
+                            <li class="kakao_sns"><a href=""><i class="xi-kakaotalk"></i></a></li>
+                            <li class="instar_sns"><a href=""><i class="xi-instagram"></i></a></li>
+                            <li class="face_sns"><a href=""><i class="xi-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+	    
+	    
+    </div>
+    <p class="copy">COPYRIGHT © YG&amp;. ALL RIGHTS RESERVED.</p>
+</footer>
