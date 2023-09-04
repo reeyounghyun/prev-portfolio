@@ -280,7 +280,9 @@ p {
 .info-project > li > a:hover {
 	border-top: 1px solid rgb(228, 188, 46);
 }
-
+.info-project-pt2 > li > a:hover {
+	border-top: 1px solid rgb(168 135 225);
+}
 .flex-type > li > a {
 	border-bottom: none;
 }
@@ -344,6 +346,10 @@ p {
 
 .info-project li:hover .porject-font strong {
 	color: rgb(228, 188, 46);
+}
+
+.info-project-pt2 li:hover .porject-font strong {
+	color: rgb(168 135 225);
 }
 .rain {
 	position: absolute;
