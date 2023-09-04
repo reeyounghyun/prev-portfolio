@@ -77,6 +77,12 @@ p {
 	background-size: cover;
 }
 
+.container-flex_pt2 {
+	background: url(../images/back_imgs.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
 .container-flex > div {
 	flex: 1 1 50%;
 	width: 50%;
@@ -123,6 +129,7 @@ p {
 }
 .content-3 .container-flex .info-wrap {
 	background-color: #111;
+	opacity: 0.8;
 }
 .info-wrap {
 	height: 100%;
