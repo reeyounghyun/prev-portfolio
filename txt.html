@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스크롤 애니메이션</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        const scrollPosition = $(this).scrollTop();
+        const elementPosition = $('.animated-text').offset().top;
+
+        if (scrollPosition >= elementPosition - 300) {
+          $('.animated-text').addClass('animated');
+        }
+      });
+    });
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .animated-text {
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .animated {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="animated-text">이 텍스트가 스크롤마다 올라옵니다.</div>
+  </div>
+
+
+
+
+</body>
+
+</html>
