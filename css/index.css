@@ -230,6 +230,16 @@ p {
 	padding-bottom: 20px;
 }
 
+.personal-information .info-area > li .info-box .info-content-right .detail-2 {
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.info-content-detail {
+	padding-top: 20px;
+}
 .info-content-detail > p {
 	text-align: left;
 	line-height: 2;
