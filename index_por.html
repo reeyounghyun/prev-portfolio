@@ -1,0 +1,352 @@
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" type="image/png"
+    href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+  <meta name="apple-mobile-web-app-title" content="CodePen">
+
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+  <link rel="mask-icon" type="image/x-icon"
+    href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg"
+    color="#111">
+
+  <script
+    src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+  <title>CodePen - Parallax Landing Page - Rellax.js</title>
+
+  <link rel="canonical" href="https://codepen.io/bradtraversy/pen/OJVaEVN">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+    :root {
+      --primary-color: #2d2254;
+      --secondary--color: #f5c42f;
+      --text-color: #c5bbec;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--primary-color);
+      color: #fff;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-bottom: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .btn {
+      display: inline-block;
+      border: 0;
+      background: var(--secondary--color);
+      color: #fff;
+      border-radius: 20px;
+      padding: 8px 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      transform: scale(0.98);
+    }
+
+    .primary-text {
+      color: var(--primary-color);
+    }
+
+    .secondary-text {
+      color: var(--secondary--color);
+    }
+
+    .section {
+      position: relative;
+      padding: 0 20px;
+    }
+
+    /* Section Top */
+    .section-top {
+      min-height: 500px;
+      background: url('https://i.ibb.co/PhVR2Vh/bg1.png') no-repeat center center/cover;
+    }
+
+    .section-top h1 {
+      font-size: 70px;
+      line-height: 1.3;
+    }
+
+    .section-top .content {
+      position: absolute;
+      top: 100px;
+      right: 20px;
+      width: 55%;
+    }
+
+    /* Section Stream */
+    .section-stream {
+      min-height: 700px;
+      background: url('https://i.ibb.co/bsX6RV0/bg2.png') no-repeat center center/cover;
+    }
+
+    .section-stream h2 {
+      font-size: 35px;
+    }
+
+    .section-stream .play {
+      width: 27%;
+      position: absolute;
+      top: 100px;
+      left: 50px;
+    }
+
+    .section-stream .content {
+      position: absolute;
+      width: 50%;
+      top: 130px;
+      right: 70px;
+    }
+
+    .section-stream .content>div,
+    .section-grid>div {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    /* Section Grid */
+    .section-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+      text-align: center;
+    }
+
+    .section-grid p {
+      color: var(--text-color);
+    }
+
+    .section-grid .dot {
+      font-size: 40px;
+      padding-left: 2px;
+    }
+
+    /* Footer */
+    .footer {
+      border-top: var(--text-color) 1px solid;
+      padding: 30px;
+      margin-top: 20px;
+    }
+
+    .footer ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+    /* Mobile */
+    @media (max-width: 700px) {
+
+      .section-top .content,
+      .section-stream .play,
+      .section-stream .content {
+        position: static;
+        width: 100%;
+      }
+
+      .section-top {
+        min-height: 200px;
+        padding-top: 20px;
+      }
+
+      .section-top .content {
+        text-align: center;
+      }
+
+      .section-top .content h1 {
+        font-size: 45px;
+      }
+
+      .section-stream {
+        min-height: 400px;
+      }
+
+      .section-stream .play {
+        width: 50%;
+        display: block;
+        margin: 30px auto;
+      }
+
+      .section-grid {
+        display: block;
+        margin-top: 0;
+      }
+
+      .footer ul {
+        display: block;
+      }
+    }
+  </style>
+
+  <script>
+    window.console = window.console || function (t) { };
+  </script>
+
+</head>
+
+<body translate="no">
+  <section class="section section-top">
+    <div class="content rellax" data-rellax-speed="5" style="transform: translate3d(0px, -793px, 0px);">
+      <h1>Community Based Driven Video</h1>
+      <a href="#" class="btn btn-primary">Learn More</a>
+    </div>
+  </section>
+  <section class="section section-stream">
+    <img class="play rellax" src="https://i.ibb.co/TvdbMhQ/play-button.png" alt="" data-rellax-speed="-1"
+      data-rellax-xs-speed="-5" style="transform: translate3d(0px, 114px, 0px);">
+    <div class="content rellax" data-rellax-speed="10" style="transform: translate3d(0px, -1319px, 0px);">
+      <div>
+        <h2 class="secondary-text">Stream Everything</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+          dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+        </p>
+      </div>
+      <div>
+        <h2 class="secondary-text">Short is the New Long</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+          dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="section section-grid">
+    <div class="rellax" data-rellax-speed="1" data-rellax-xs-speed="3"
+      style="transform: translate3d(0px, -154px, 0px);">
+      <i class="fas fa-video fa-3x secondary-text"></i>
+      <h2>Watch<span class="secondary-text dot">.</span></h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+        dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+      </p>
+    </div>
+    <div class="rellax" data-rellax-speed="4" data-rellax-xs-speed="3"
+      style="transform: translate3d(0px, -615px, 0px);">
+      <i class="fas fa-users fa-3x secondary-text"></i>
+      <h2>Share<span class="secondary-text dot">.</span></h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+        dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+      </p>
+    </div>
+    <div class="rellax" data-rellax-speed="7" data-rellax-xs-speed="3"
+      style="transform: translate3d(0px, -1076px, 0px);">
+      <i class="fas fa-book fa-3x secondary-text"></i>
+      <h2>Learn<span class="secondary-text dot">.</span></h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+        dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+      </p>
+    </div>
+  </section>
+  <section class="section section-stream">
+    <img class="play rellax" src="https://i.ibb.co/TvdbMhQ/play-button.png" alt="" data-rellax-speed="-1"
+      data-rellax-xs-speed="-5" style="transform: translate3d(0px, 114px, 0px);">
+    <div class="content rellax" data-rellax-speed="10" style="transform: translate3d(0px, -1319px, 0px);">
+      <div>
+        <h2 class="secondary-text">Stream Everything</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+          dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+        </p>
+      </div>
+      <div>
+        <h2 class="secondary-text">Short is the New Long</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+          dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="section section-grid">
+    <div class="rellax" data-rellax-speed="1" data-rellax-xs-speed="3"
+      style="transform: translate3d(0px, -154px, 0px);">
+      <i class="fas fa-video fa-3x secondary-text"></i>
+      <h2>Watch<span class="secondary-text dot">.</span></h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+        dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+      </p>
+    </div>
+    <div class="rellax" data-rellax-speed="4" data-rellax-xs-speed="3"
+      style="transform: translate3d(0px, -615px, 0px);">
+      <i class="fas fa-users fa-3x secondary-text"></i>
+      <h2>Share<span class="secondary-text dot">.</span></h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+        dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+      </p>
+    </div>
+    <div class="rellax" data-rellax-speed="7" data-rellax-xs-speed="3"
+      style="transform: translate3d(0px, -1076px, 0px);">
+      <i class="fas fa-book fa-3x secondary-text"></i>
+      <h2>Learn<span class="secondary-text dot">.</span></h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore et
+        dicta consectetur incidunt omnis nam quis quidem nisi ipsa deserunt.
+      </p>
+    </div>
+  </section>
+  <footer class="footer">
+    <ul>
+      <li><a href="#">Faq</a></li>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Privacy Notice</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script id="rendered-js">
+      let rellax = new Rellax('.rellax');
+      //# sourceURL=pen.js
+    </script>
+
+
+
+
+
+  </footer>
+</body>
+
+</html>

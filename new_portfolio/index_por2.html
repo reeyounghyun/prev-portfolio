@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+  <title>포폴_20231017</title>
+
+  <style>
+    body {
+      color: #333;
+    }
+
+    :root {
+      --ti-cursor-color: rgb(131, 255, 30);
+      --ti-cursor-font-size: 20px;
+      --ti-cursor-font-weight: bold:
+    }
+
+    section {
+      display: block;
+      box-sizing: border-box;
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+
+    section h2 {
+      display: block;
+      position: absolute;
+      left: 200px;
+      top: 200px;
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    .sec_2>span {
+      display: inline-block;
+      position: absolute;
+      font-size: 40px;
+      font-weight: bold;
+      border: 1px solid red;
+      box-sizing: border-box;
+      top: 50px;
+      font-size: 100px;
+    }
+
+    .sec_2 .txt-one {
+      right: 500px;
+      top: 50px;
+    }
+
+    .sec_2 .txt-two {
+      right: 510px;
+    }
+
+    .sec_2 .txt-tree {
+      right: 100px;
+    }
+
+    .sec_3 {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .sec_3 .run_txt {
+      margin-left: 300px;
+      border: 1px solid red;
+      box-sizing: border-box;
+    }
+
+    .sec_3 .run_txt span {
+      width: 100%;
+      display: block;
+      padding-bottom: 7px;
+      font-size: 40px;
+      letter-spacing: 1.5px;
+    }
+
+    .sec_3 .run img {
+      width: 100%;
+    }
+
+    .sec_3 .run {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 500px;
+      width: 100%;
+      animation: updown .5s linear infinite alternate;
+    }
+
+    .sec_3 .hand1 {
+      position: absolute;
+      z-index: 1;
+      top: 19.7%;
+      left: 45%;
+      width: 17%;
+      animation: hand1 1s linear infinite alternate;
+      transform-origin: 100% 10%;
+    }
+
+    .sec_3 .hand2 {
+      position: absolute;
+      z-index: -1;
+      top: 19.4%;
+      left: 46%;
+      width: 16%;
+      animation: hand2 1s linear infinite alternate;
+      transform-origin: 100% 20%;
+    }
+
+    .sec_3 .foot1-1 {
+      position: absolute;
+      z-index: -2;
+      top: 45%;
+      left: 48.7%;
+      width: 22%;
+      animation: foot1-1 1s linear infinite alternate;
+      transform-origin: 40% 10%;
+    }
+
+    .sec_3 .foot1-2 {
+      position: absolute;
+      z-index: -1;
+      top: 92%;
+      left: 60%;
+      width: 121%;
+      animation: foot1-2 2s linear infinite;
+      transform-origin: 26% 4%;
+    }
+
+    .sec_3 .foot1-3 {
+      position: absolute;
+      z-index: 1;
+      bottom: 0%;
+      right: 0%;
+      width: 27%;
+      animation: toe1 2s linear infinite;
+      transform-origin: left bottom;
+    }
+
+    .sec_3 .foot2-1 {
+      position: absolute;
+      z-index: -1;
+      top: 45%;
+      left: 48.7%;
+      width: 22%;
+      animation: foot2-1 1s linear infinite alternate;
+      transform-origin: 40% 10%;
+    }
+
+    .sec_3 .foot2-2 {
+      position: absolute;
+      z-index: -1;
+      top: 92%;
+      left: 60%;
+      width: 121%;
+      animation: foot2-2 2s linear infinite;
+      transform-origin: 26% 4%;
+    }
+
+    .sec_3 .foot2-3 {
+      position: absolute;
+      z-index: 1;
+      bottom: 0%;
+      right: 0%;
+      width: 27%;
+      animation: toe2 2s linear infinite;
+      transform-origin: left bottom;
+    }
+
+    /* 키프레임 */
+    @keyframes hand1 {
+      from {
+        transform: rotate(0);
+      }
+
+      to {
+        transform: rotate(-60deg);
+      }
+    }
+
+    @keyframes hand2 {
+      from {
+        transform: rotate(-90deg);
+      }
+
+      to {
+        transform: rotate(0);
+      }
+    }
+
+    @keyframes foot1-1 {
+      from {
+        transform: rotate(50deg);
+      }
+
+      to {
+        transform: rotate(0);
+      }
+    }
+
+    @keyframes foot1-2 {
+      from {
+        transform: rotate(67deg);
+      }
+
+      40% {
+        transform: rotate(50deg);
+      }
+
+      50% {
+        transform: rotate(0);
+      }
+
+      90% {
+        transform: rotate(0);
+      }
+
+      to {
+        transform: rotate(67deg);
+      }
+    }
+
+    @keyframes toe1 {
+      from {
+        transform: rotate(0deg);
+      }
+
+      50% {
+        transform: rotate(0deg);
+      }
+
+      80% {
+        transform: rotate(-30deg);
+      }
+
+      90% {
+        transform: rotate(-30deg);
+      }
+
+      to {
+        transform: rotate(0deg);
+      }
+    }
+
+    @keyframes foot2-1 {
+      from {
+        transform: rotate(0);
+      }
+
+      to {
+        transform: rotate(50deg);
+      }
+    }
+
+    @keyframes foot2-2 {
+      from {
+        transform: rotate(0);
+      }
+
+      40% {
+        transform: rotate(0);
+      }
+
+      50% {
+        transform: rotate(67deg);
+      }
+
+      90% {
+        transform: rotate(50deg);
+      }
+
+      to {
+        transform: rotate(0);
+      }
+    }
+
+    @keyframes toe2 {
+      from {
+        transform: rotate(0deg);
+      }
+
+      30% {
+        transform: rotate(-30deg);
+      }
+
+      40% {
+        transform: rotate(-30deg);
+      }
+
+      50% {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(0deg);
+      }
+    }
+
+    @keyframes updown {
+      from {
+        margin-top: -8px;
+      }
+
+      to {
+        margin-top: 0;
+      }
+    }
+
+    .sec_4 {
+      width: 100%;
+      height: 100vh;
+      background: rgb(44, 4, 50);
+      background: linear-gradient(180deg, rgba(44, 4, 50, 1) 0%, rgba(138, 74, 194, 1) 73%);
+      overflow: hidden;
+    }
+
+    .sec_4 .cont-inner {
+      position: absolute;
+      top: 200px;
+      left: 3%;
+    }
+
+    .sec_4 .title {
+      font-size: 50px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .sec_box {
+      display: flex;
+      justify-content: center;
+    }
+
+    .sec_box .por {
+      position: relative;
+      border: 1px solid #b58bbf;
+      width: 400px;
+      padding: 10px;
+      margin: 0 50px;
+      background: #b58bbfab;
+      color: #fff;
+      border-radius: 15px;
+
+    }
+
+    .por_tit {
+      position: absolute;
+      background-color: #fff;
+      /* border: 1px solid #3e114d; */
+      box-sizing: content-box;
+      top: -15px;
+      left: 30px;
+      font-size: 20px;
+      /* font-weight: 600; */
+      z-index: 100;
+      /* color: #fff; */
+      padding: 0 10px;
+      border-radius: 7px;
+      /* letter-spacing: 15px; */
+      /* text-align: center; */
+      display: inline-block;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="project_wrap">
+    <section class="sec_1">
+      <h2 class="tit_box rellax" data-rellax-speed="10"></h2>
+      <!-- <p>저는 웹개발자 이영현 입니다.</p> //소개 글-->
+    </section>
+    <section class="sec_2">
+      <span class="rellax txt-one" data-rellax-speed="30">Hello</span>
+      <span class="rellax txt-two" data-rellax-speed="7"> I am Younghyun Lee,</span>
+      <span class="rellax txt-tree" data-rellax-speed="-2">a web developer.</span>
+    </section>
+    <section class="sec_3">
+      <div class="run_txt">
+        <span>목표를 위해서라면</span>
+        <span>멈추지 않고</span>
+        <span><strong class="str1">열심히!</strong>달려가는</span>
+        <span>퍼블리셔가 <strong class='str1'>꿈</strong>이자 <strong class="str1">목표</strong>입니다.</span>
+      </div>
+      <div class="run">
+        <!-- 몸전체 이미지 -->
+        <img src="./imag/man.png">
+
+        <!-- 팔 -->
+        <div class="hand1">
+          <img src="./imag/hand1.png">
+        </div>
+
+        <div class="hand2">
+          <img src="./imag/hand1.png">
+        </div>
+
+
+        <!-- 다리 -->
+        <div class="foot1-1">
+          <img src="./imag/foot1-1.png">
+          <div class="foot1-2">
+            <img src="./imag/foot1-2.png">
+            <div class="foot1-3">
+              <img src="./imag/foot1-3.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="foot2-1">
+          <img src="./imag/foot2-1.png">
+          <div class="foot2-2">
+            <img src="./imag/foot2-2.png">
+            <div class="foot2-3">
+              <img src="./imag/foot2-3.png">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="sec_4">
+      <div class="cont-inner">
+        <h3 class="title">About me</h3>
+        <div class="sec_box">
+          <div class="por por_1 rellax" data-rellax-speed="10">
+            <span class="por_tit">경력</span>
+            <p>이트라이브 | UX그룹 | 웹퍼블리셔</p>
+            <P>롯데정보통신 운영직 계약직 파견</P>
+            <p>2023,02,01 ~ 2023,04,30</p>
+          </div>
+          <div class="por por_2 rellax" data-rellax-speed="20">
+            <span class="por_tit">경력</span>
+            <p>와이지앤 | 디자인팀 | 웹퍼블리셔</p>
+            <P>자사몰 리뉴얼 | 쇼핑몰 스킨 구축</P>
+            <p>2022,02,01 ~ 2022,12,31</p>
+          </div>
+          <div class="por por_3 rellax" data-rellax-speed="40">
+            <span class="por_tit">교육활동</span>
+            <p>UX/UI 반응형 웹디자인&퍼블리셔 양성과정 | 그런컴퓨터아트학원</p>
+            <p>2021,06,05 ~ 2021,11,05</p>
+          </div>
+          <div class="por por_3 rellax" data-rellax-speed="80">
+            <span class="por_tit">교육활동</span>
+            <p>리액트 프론트앤드 개발 실무 (React JS) | 디코드학원</p>
+            <p>2023,03.05 ~ 2023,06,24</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec_5"> </section>
+  </div>
+
+  <script>
+    new TypeIt(".tit_box", {
+      strings: ["안녕하세요!", "저는 웹개발자 이영현 입니다."], //로그 되었을 때 나오는 문장
+      speed: 100, //문장이 타이핑 되는 속도
+      pause: 1000, //1분동안 쉬었다가
+    })
+      //1분동안 쉬었다가 재생할 아이템
+      .delete(13, { delay: 1000 }) //13개의 문자를 지웠다가 1분뒤에
+      .pause(1000)
+      .type("퍼블리셔 이영현 입니다.") //쉬었다가 타이밍이 될 텍스트
+      .go(); //시작
+
+    var rellax = new Rellax('.rellax');
+  </script>
+
+</body>
+
+</html>
